@@ -10,7 +10,6 @@ body {
  	top: 0;
  	left: 0;
  	position: fixed;
- 	z-index: 5;
 	background: url(icons/home.png) repeat-x;
 }
 ul {
