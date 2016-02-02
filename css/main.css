@@ -12,7 +12,9 @@ body {
  	left: 0;
  	position: fixed;
  	z-index: -1;
-	background: url(icons/home.png) repeat-x;
+	background-image: url('/icons/home.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 ul {
 	list-style-type: none;
