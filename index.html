@@ -3,9 +3,52 @@
 <head>
 	<title>Peter Fonseca</title>
 	<!-- link to main stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
 	<!-- load javascript for parallax -->
 	<!-- <script src="js/parallax.js"></script> -->
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+		body {
+			background-color: rgb(110, 111, 127);
+			background-size: cover;
+			height: 2000px;
+			font-family: 'Open Sans',serif;
+		}
+		#honda {
+			width: 100%;
+			height: 100%;
+		 	top: 0;
+		 	left: 0;
+		 	position: fixed;
+		 	z-index: -1;
+			background-image: url('./icons/home.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+		li {
+			float: left;
+		}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: #111;
+		}
+		.active {
+			background-coolor: #4CAF50;
+		}
+	</style>
 </head>
 <body>
 	<ul>
