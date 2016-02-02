@@ -10,7 +10,7 @@ body {
 	left: 0;
 	position: fixed;
 	z-index: -1;
-	background: url(icons/honda.2.png) 5% 50% no-repeat;
+	background: url("icons/honda.2.png");
 }
 ul {
 	list-style-type: none;
