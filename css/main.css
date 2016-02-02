@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body {
+	background-color: rgb(110, 111, 127);
+	background-size: cover;
 	height: 2000px;
 	font-family: 'Open Sans',serif;
-	background-color: rgb(110, 111, 127);
 }
 #honda {
 	width: 100%;
@@ -10,6 +11,7 @@ body {
  	top: 0;
  	left: 0;
  	position: fixed;
+ 	z-index: -1;
 	background: url(icons/home.png) repeat-x;
 }
 ul {
