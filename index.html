@@ -29,7 +29,6 @@
 		}
 		#home {
 			left: -100%;
-			top: 500;
 			z-index: -2;
 			background-image: url('./icons/home.png');
 		}
@@ -99,7 +98,7 @@
 		  var scrolltop = window.pageYOffset // save number of pixels scolled
 		  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // save amount scrolled in (%)
 		  honda.style.top = -scrolltop * .2 + 'px' // move honda at 20% of scroll rate
-		  home.style.left = 
+		  home.style.left = -100 + scrollamount + '%' // set position of fish in percentage (starts at -100%)
 		  //move other objects here
 		}
 
