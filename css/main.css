@@ -12,7 +12,7 @@ body {
  	left: 0;
  	position: fixed;
  	z-index: -1;
-	background-image: url('/icons/home.png');
+	background-image: url('./icons/home.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 }
