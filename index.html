@@ -6,6 +6,8 @@
 	<!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
 	<!-- load javascript for parallax -->
 	<!-- <script src="js/parallax.js"></script> -->
+
+<!-- CSS -->
 	<style>
 		@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 		body {
@@ -14,7 +16,7 @@
 			height: 2000px;
 			font-family: 'Open Sans',serif;
 		}
-		#honda {
+		#honda, #home {
 			width: 100%;
 			height: 100%;
 		 	top: 0;
@@ -24,6 +26,9 @@
 			background-image: url('./icons/honda.2.png');
 			background-repeat: repeat;
 			background-size: 10%;
+		}
+		#home {
+			background-image: url('./icons/home.png');
 		}
 		ul {
 			list-style-type: none;
@@ -66,8 +71,11 @@
 		</ul>
 	</ul>
 
-	<div id="honda"> is my div here? </div>
+	<div id="honda"></div>
+	<div id="home"></div>
 
+
+<!-- JAVASCRIPT -->
 	<script>
 		// imrpoves performance, loading rapidly on scroll, need to consider performance
 		//this way waits for next screen repaint to run
@@ -78,16 +86,28 @@
 		  || function(f){setTimeout(f, 1000/60)}
 
 		var honda = document.getElementById('honda')
+		var home = document.getElementById('home')
 		//dceclare other objects here
+
+		var scrollheight = document.body.scrollHeight // height of entire doc
+		var windowheight = window.innerHeight // height of browers window
 
 		function parallax() {
 		  var scrolltop = window.pageYOffset // save number of pixels scolled
+		  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // save amount scrolled in (%)
 		  honda.style.top = -scrolltop * .2 + 'px' // move honda at 20% of scroll rate
+		  home.style.left = 
 		  //move other objects here
 		}
 
 		window.addEventListener('scroll', function(){ // on page scroll
 		  requestAnimationFrame(parallax) // call parallax () on next available screen paint
+		}, false)
+
+		window.addEventListener('resize', function(){ // on window resize
+		  var scrolltop = window.pageYOffset // get number if px doc has scrolled vertically
+		  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrollef in %
+		  home.style.left = -100 + scrollamount + '%' // set pos of home in percentage (starts at -10)
 		}, false)
 	</script>
 </body>
