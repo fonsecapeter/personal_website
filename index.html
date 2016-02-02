@@ -16,7 +16,7 @@
 			height: 2000px;
 			font-family: 'Open Sans',serif;
 		}
-		#honda, #home {
+		#honda, #home, #octocat {
 			width: 100%;
 			height: 100%;
 		 	top: 0;
@@ -27,10 +27,14 @@
 			background-repeat: repeat;
 			background-size: 10%;
 		}
-		#home {
+		#honda {
 			left: -100%;
 			z-index: -2;
 			background-image: url('./icons/honda.2.png');
+		}
+		#octocat{
+			z-index: -3;
+			background-image: url('./icons/GitHub-Mark-Light-32px.png');
 		}
 		ul {
 			list-style-type: none;
@@ -75,6 +79,7 @@
 
 	<div id="honda"></div>
 	<div id="home"></div>
+	<div id="octocat"></div>
 
 
 <!-- JAVASCRIPT -->
@@ -89,6 +94,7 @@
 
 		var honda = document.getElementById('honda')
 		var home = document.getElementById('home')
+		var octocat = document.getElementByID('octocat')
 		//dceclare other objects here
 
 		var scrollheight = document.body.scrollHeight // height of entire doc
@@ -97,8 +103,9 @@
 		function parallax() {
 		  var scrolltop = window.pageYOffset // save number of pixels scolled
 		  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // save amount scrolled in (%)
-		  honda.style.top = -scrolltop * .2 + 'px' // move honda at 20% of scroll rate
-		  home.style.left = -100 + scrollamount + '%' // set position of fish in percentage (starts at -100%)
+		  home.style.top = -scrolltop * .2 + 'px' // move honda at 20% of scroll rate
+		  octocat.style.top = -scrolltop * .1 + 'px' // move octocat at 10% of scroll rate
+		  honda.style.left = -100 + scrollamount + '%' // set position of fish in percentage (starts at -100%)
 		  //move other objects here
 		}
 
@@ -109,7 +116,7 @@
 		window.addEventListener('resize', function(){ // on window resize
 		  var scrolltop = window.pageYOffset // get number if px doc has scrolled vertically
 		  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrollef in %
-		  home.style.left = -100 + scrollamount + '%' // set pos of home in percentage (starts at -10)
+		  honda.style.left = -100 + scrollamount + '%' // set pos of home in percentage (starts at -10)
 		}, false)
 	</script>
 </body>
