@@ -9,7 +9,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background-image: url("icons/honda.2.png");
+	background: url(icons/honda.2.png) repeat-x;
 }
 ul {
 	list-style-type: none;
