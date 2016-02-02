@@ -15,10 +15,11 @@
 			background-size: cover;
 			height: 8000px;
 			font-family: 'Open Sans',serif;
+			color: white;
 		}
 		#home, #octocat, #honda {
 			width: 100%;
-			height: 50%;
+			height: 100%;
 		 	top: 0;
 		 	left: 0;
 		 	position: fixed;
@@ -31,6 +32,10 @@
 			z-index: -2;
 			background-image: url('./icons/GitHub-Mark-Light-32px.png');
 			background-size: 3%;
+		}
+		#block_1 {
+			top: 50%;
+			background-color: #333;
 		}
 		#honda {
 			left: -100%;
@@ -52,7 +57,6 @@
 		}
 		li a {
 			display: block;
-			color: white;
 			text-align: center;
 			padding: 14px 16px;
 			text-decoration: none;
@@ -66,6 +70,7 @@
 	</style>
 </head>
 <body>
+<!-- top menu -->
 	<ul>
 		<li><a href="#home">Test 1</a></li>
 		<li><a href="#home">Test 2</a></li>
@@ -75,10 +80,16 @@
 			<li><a href="https://github.com/fonsecapeter"><img height="25px" src="icons/GitHub-Mark-Light-32px.png" /></a></li>
 		</ul>
 	</ul>
-
-	<div id="honda"></div>
-	<div id="home"></div>
+<!-- parallaxing backdrops -->
+	<div id="home"</div>
 	<div id="octocat"></div>
+<!-- first text block -->
+	<div id="block_1">
+		<h2>Peter Fonseca</h2>
+		<p>I can put some text here</p>
+		<p>And here</p>
+	</div>
+	<div id="honda"/div>
 
 
 <!-- JAVASCRIPT -->
