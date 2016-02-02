@@ -4,6 +4,7 @@ body {
 	background-color: rgb(110, 111, 127);
 }
 #honda {
+	width: 500px;
 	background: url(icons/honda.2.png) repeat-x;
 }
 ul {
