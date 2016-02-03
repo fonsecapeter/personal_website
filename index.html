@@ -16,7 +16,7 @@
 			font-family: 'Open Sans',serif;
 			color: white;
 		}
-		#home {
+		#laptop, #science {
 			width: 100%;
 			height: 500px;
 		 	top: 0;
@@ -28,11 +28,12 @@
 			background-size: 300px;
 			background-position: center;
 		}
-		/*#octocat{
+		#science{
 			z-index: -2;
-			background-image: url('./icons/GitHub-Mark-Light-32px.png');
-			background-size: 25px;
-		}*/
+			background-image: url('./icons/science.png');
+			background-size: 200px;
+			background-position: 300px, 12px;
+		}
 		#block_1 {
 			position: absolute;
 			top: 500px;
@@ -98,7 +99,8 @@
 		</ul>
 	</ul>
 <!-- parallaxing backdrops -->
-	<div id="home"></div>
+	<div id="laptop"></div>
+	<div id="science"></div>
 <!-- first text block -->
 	<div id="block_1">
 		<h2>Peter Fonseca</h2>
@@ -119,8 +121,8 @@
 		  || function(f){setTimeout(f, 1000/60)}
 
 		////var honda = document.getElementById('honda')
-		var home = document.getElementById('home')
-		////var octocat = document.getElementById('octocat')
+		var laptop = document.getElementById('laptop')
+		var science = document.getElementById('science')
 		//dceclare other objects here
 
 		////var scrollheight = document.body.scrollHeight // height of entire doc
@@ -129,8 +131,8 @@
 		function parallax() {
 		  var scrolltop = window.pageYOffset // save number of pixels scolled
 		  //var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // save amount scrolled in (%)
-		  home.style.top = -scrolltop * .5 + 'px' // move home at 20% of scroll rate
-		  ////octocat.style.top = -scrolltop * .1 + 'px' // move octocat at 10% of scroll rate
+		  laptop.style.top = -scrolltop * .5 + 'px' // move laptop at 50% of scroll rate
+		  science.style.top = -scrolltop * .3 + 'px' // move science at 30% of scroll rate
 		  ////honda.style.left = -100 + scrollamount + '%' // set position of honda in percentage (starts at -100%)
 		  //move other objects here
 		}
