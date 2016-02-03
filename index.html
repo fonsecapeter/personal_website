@@ -19,14 +19,14 @@
 		#home, #octocat, #honda {
 			width: 100%;
 			height: 5000px;
-		 	top: 50;
+		 	top: 0;
 		 	left: 0;
 		 	position: fixed;
 		 	z-index: -1;
 			background-image: url('./icons/laptop.png');
-			background-repeat: repeat;
-			background-size: 200px;
-			background-position: 20px 20px;
+			background-repeat: no-repeat;
+			background-size: 300px;
+			background-position: center;
 		}
 		/*#octocat{
 			z-index: -2;
@@ -129,7 +129,7 @@
 		function parallax() {
 		  var scrolltop = window.pageYOffset // save number of pixels scolled
 		  //var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // save amount scrolled in (%)
-		  home.style.top = -scrolltop * .5 + 50 + 'px' // move home at 20% of scroll rate
+		  home.style.top = -scrolltop * .5 + 'px' // move home at 20% of scroll rate
 		  ////octocat.style.top = -scrolltop * .1 + 'px' // move octocat at 10% of scroll rate
 		  ////honda.style.left = -100 + scrollamount + '%' // set position of honda in percentage (starts at -100%)
 		  //move other objects here
