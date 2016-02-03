@@ -16,7 +16,7 @@
 			font-family: 'Open Sans',serif;
 			color: white;
 		}
-		#laptop, #science {
+		#laptop, #science, #design {
 			width: 100%;
 			height: 500px;
 		 	top: 0;
@@ -28,11 +28,14 @@
 			background-size: 300px;
 			background-position: center;
 		}
-		#science{
+		#science, #design {
 			z-index: -2;
 			background-image: url('./icons/science.png');
 			background-size: 150px;
 			background-position: 10% 150px;
+		}
+		#design {
+			background-position: -10% 150px;
 		}
 		#block_1 {
 			position: absolute;
@@ -101,6 +104,7 @@
 <!-- parallaxing backdrops -->
 	<div id="laptop"></div>
 	<div id="science"></div>
+	<div id="design"></div>
 <!-- first text block -->
 	<div id="block_1">
 		<h2>Peter Fonseca</h2>
@@ -123,6 +127,7 @@
 		////var honda = document.getElementById('honda')
 		var laptop = document.getElementById('laptop')
 		var science = document.getElementById('science')
+		var design = document.getElementById('design')
 		//dceclare other objects here
 
 		////var scrollheight = document.body.scrollHeight // height of entire doc
@@ -133,6 +138,7 @@
 		  //var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // save amount scrolled in (%)
 		  laptop.style.top = -scrolltop * .5 + 'px' // move laptop at 50% of scroll rate
 		  science.style.top = -scrolltop * .3 + 'px' // move science at 30% of scroll rate
+		  design.style.top = -scrolltop * .3 + 'px' // move design at 30% of scroll rate
 		  ////honda.style.left = -100 + scrollamount + '%' // set position of honda in percentage (starts at -100%)
 		  //move other objects here
 		}
