@@ -16,6 +16,31 @@
 			font-family: 'Open Sans',serif;
 			color: white;
 		}
+		li a{
+			display: block;
+			text-align: center;
+			color: white;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: #111;
+		}
+		#banner {
+			position: fixed;
+			width: 100%;
+			left: 0;
+			top: 0;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			z-index: 2;
+			overflow: hidden;
+			background-color: #333;
+		}
+		#banner_links {
+			float: left;
+		}
 		#laptop, #science, #design {
 			width: 100%;
 			height: 500px;
@@ -67,39 +92,14 @@
 			background-image: url('./icons/honda.2.png');
 			background-size: 500px;
 		}
-		ul {
-			position: fixed;
-			width: 100%;
-			left: 0;
-			top: 0;
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			z-index: 2;
-			overflow: hidden;
-			background-color: #333;
-		}
-		li {
-			float: left;
-		}
-		li a {
-			display: block;
-			text-align: center;
-			color: white;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
-		li a:hover {
-			background-color: #111;
-		}
 	</style>
 </head>
 <body>
 <div id="home"></div>
 <!-- top menu -->
-	<ul>
-		<li><a href="#home"><img height ="25px" src="icons/home.png" /></a></li>
-		<li><a href="https://github.com/fonsecapeter" target="_blank"><img height="25px" src="icons/GitHub-Mark-Light-32px.png" /></a></li>
+	<ul id="banner">
+		<li id="banner_links"><a href="#home"><img height ="25px" src="icons/home.png" /></a></li>
+		<li id="banner_links"><a href="https://github.com/fonsecapeter" target="_blank"><img height="25px" src="icons/GitHub-Mark-Light-32px.png" /></a></li>
 	</ul>
 <!-- parallaxing backdrops -->
 	<div id="laptop"></div>
@@ -108,7 +108,11 @@
 <!-- first text block -->
 	<div id="block_1">
 		<h1>Peter Fonseca</h2>
-		<h3>science      code      design</h3>
+		<ul>
+			<li><a href="http://google.com">science</a></li>
+			<li><a href="http://google.com">code</a></li>
+			<li><a href="http://google.com">design</a></li>
+		<ul>
 		<p>I can put some text here</p>
 		<p>And here</p>
 	</div>
