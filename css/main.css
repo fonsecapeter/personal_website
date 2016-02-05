@@ -50,12 +50,12 @@ ul#banner {
 	overflow: hidden;
 	background-color: #333;
 }
-ul#banner li a.banner_links {
+ul li a.banner_links {
 	display: block;
 	padding: 12px 18px;
 	float: left;
 }
-ul#banner li.contact_info {
+ul li.contact_info {
 	display: block;
 	padding: 12px 12px;
 	float: right;
