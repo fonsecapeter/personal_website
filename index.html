@@ -128,13 +128,6 @@
 			z-index: 0;
 			background-color: rgb(110, 111, 127);
 		}
-		#honda {
-			left: -100%;
-			top: 1000px;
-			z-index: 10;
-			background-image: url(icons/honda.2.png);
-			background-size: 500px;
-		}
 	</style>
 </head>
 <body>
@@ -164,7 +157,6 @@
 		<ul>
 	</div>
 	<div id="backdrop_cover"></div>
-	<div id="honda"></div>
 
 
 <!-- JAVASCRIPT -->
@@ -180,30 +172,18 @@
 		var laptop = document.getElementById('laptop')
 		var science = document.getElementById('science')
 		var design = document.getElementById('design')
-		var honda = document.getElementById('honda')
-		//dceclare other objects here
-
-		var scrollheight = document.body.scrollHeight // height of entire doc
-		var windowheight = window.innerHeight // height of browers window
+		//declare other objects here
 
 		function parallax() {
 		  var scrolltop = window.pageYOffset // save number of pixels scolled
-		  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // save amount scrolled in (%)
+
 		  laptop.style.top = -scrolltop * .5 + 'px' // move laptop at 50% of scroll rate
 		  science.style.top = -scrolltop * .4 + 'px' // move science at 40% of scroll rate
 		  design.style.top = -scrolltop * .3 + 'px' // move design at 30% of scroll rate
-		  honda.style.left = -100 + scrollamount + '%' // set position of honda in percentage (starts at -100%)
-		  //move other objects here
 		}
 
 		window.addEventListener('scroll', function(){ // on page scroll
 		  requestAnimationFrame(parallax) // call parallax () on next available screen paint
-		}, false)
-
-		window.addEventListener('resize', function(){ // on window resize
-		  var scrolltop = window.pageYOffset // get number if px doc has scrolled vertically
-		  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrollef in %
-		  honda.style.left = -100 + scrollamount + '%' // set pos of honda in percentage (starts at -10)
 		}, false)
 	</script>
 </body>
