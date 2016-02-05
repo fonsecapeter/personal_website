@@ -6,7 +6,44 @@
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<!-- load javascript for parallax -->
 	<!-- <script src="js/parallax.js"></script> -->
-
+<style>
+	#laptop, #science, #design {
+		width: 100%;
+		height: 500px;
+	 	top: 0;
+	 	left: 0;
+	 	position: fixed;
+	 	z-index: -1;
+		background-image: url(./icons/laptop.png);
+		background-repeat: no-repeat;
+		background-size: 300px;
+		background-position: center;
+	}
+	#science, #design {
+		z-index: -2;
+		background-image: url(./icons/science.png);
+		background-size: 115px;
+		background-position: 10% 225px;
+	}
+	#design {
+		background-image: url(./icons/design.png);
+		background-size: 150px;
+		background-position: 90% 235px;
+	}
+	.headshot {
+		position: absolute;
+		display: block;
+		top: 400px;
+		left: 50%;
+		margin-left: -150px;
+		z-index: 2;
+		width: 300px;
+		height: 300px;
+		border-radius: 150px;
+		background: url(icons/headshot.jpg);
+		background-size: contain;
+	}
+</style>
 <!-- CSS
 	<style>
 		@import url(https://fonts.googleapis.com/css?family=Open+Sans);
