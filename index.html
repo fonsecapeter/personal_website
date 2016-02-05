@@ -43,18 +43,6 @@
 		li a:hover {
 			background-color: #111;
 		}
-		.headshot {
-			position: absolute;
-			display: block;
-			top: 400px;
-			left: 50%;
-			margin-left: -150px;
-			width: 300px;
-			height: 300px;
-			border-radius: 150px;
-			background: url(icons/headshot.jpg);
-			background-size: contain;
-		}
 		#banner {
 			position: fixed;
 			width: 100%;
@@ -62,7 +50,7 @@
 			top: 0;
 			margin: 0;
 			padding: 0;
-			z-index: 2;
+			z-index: 3;
 			overflow: hidden;
 			background-color: #333;
 		}
@@ -92,6 +80,19 @@
 			background-image: url(./icons/design.png);
 			background-size: 150px;
 			background-position: 90% 235px;
+		}
+		.headshot {
+			position: absolute;
+			display: block;
+			top: 400px;
+			left: 50%;
+			margin-left: -150px;
+			z-index: 2;
+			width: 300px;
+			height: 300px;
+			border-radius: 150px;
+			background: url(icons/headshot.jpg);
+			background-size: contain;
 		}
 		#block_1 {
 			position: absolute;
@@ -137,6 +138,10 @@
 <!-- first text block -->
 	<div class="headshot"></div>
 	<div id="block_1">
+		<br>
+		<br>
+		<br>
+		<br>
 		<h1>Peter Fonseca</h2>
 		<h2>Clinical Research Coordinator</h2>
 		<br>
