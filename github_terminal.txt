@@ -20,23 +20,15 @@ p code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
 }
 .header {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
   height: 25px;
   display: block;
-  background: -moz-linear-gradient(top,  #f7f7f7 0%, #cfcfcf 5%, #aaaaaa 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(5%,#cfcfcf), color-stop(100%,#aaaaaa));
-  background: -webkit-linear-gradient(top,  #f7f7f7 0%,#cfcfcf 5%,#aaaaaa 100%);
-  background: -o-linear-gradient(top,  #f7f7f7 0%,#cfcfcf 5%,#aaaaaa 100%);
-  background: -ms-linear-gradient(top,  #f7f7f7 0%,#cfcfcf 5%,#aaaaaa 100%);
-  background: linear-gradient(top,  #f7f7f7 0%,#cfcfcf 5%,#aaaaaa 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#aaaaaa',GradientType=0 );
-  border: 1px solid #9c9c9c;
-  border-bottom-color: #111;
+  background-color: rgb(220, 220, 220);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   text-align: center;
   font-size: 13px;
   line-height: 25px;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
   color: #444;
 }
 .path {
@@ -83,7 +75,7 @@ p code {
 <p>My first paragraph.</p>
 
     <div class="terminal">
-        <div class="header"></div>
+        <div class="header">terminal</div>
         <div class="shell">
           <p><span class="path">~</span><span class="prompt">$</span>git clone https://github.com/<em>username</em>/<em>username</em>.github.io</p>
         </div>
