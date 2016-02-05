@@ -39,7 +39,7 @@ ul li a {
 li a:hover {
 	background-color: #111;
 }
-ul #banner {
+ul#banner {
 	position: fixed;
 	width: 100%;
 	left: 0;
@@ -50,12 +50,12 @@ ul #banner {
 	overflow: hidden;
 	background-color: #333;
 }
-ul li a .banner_links {
+ul#banner li a.banner_links {
 	display: block;
 	padding: 12px 18px;
 	float: left;
 }
-ul li .contact_info {
+ul#banner li.contact_info {
 	display: block;
 	padding: 12px 12px;
 	float: right;
