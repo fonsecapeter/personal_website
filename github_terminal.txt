@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+div, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+p code {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+.header {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  height: 25px;
+  display: block;
+  background-color: rgb(220, 220, 220);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+  color: #444;
+}
+.path {
+  color: rgb(112, 183, 219);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-right: 0.6em;
+}
+.prompt {
+  color: rgb(230, 115, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-right: 0.6em;
+}
+.shell {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 17px;
+  line-height: 28px;
+  color: rgb(204, 204, 204);
+  background-color: rgb(41, 47, 61);
+  overflow: hidden;
+  padding: 20px;
+  margin: 0;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  text-align: left;
+  display: block;
+}
+.terminal {
+  width: 700px;
+  margin: 30px auto 0;
+}
+</style>
+</head>
+<body>
+<div class="terminal">
+        <div class="header">terminal</div>
+        <div class="shell">
+          <p><span class="path">~</span><span class="prompt">$</span>jarvs</p>
+        </div>
+      </div>
+</body>
+</html>
