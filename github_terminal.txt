@@ -3,22 +3,6 @@
 <head>
 <title>Page Title</title>
 <style>
-div, span {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-p code {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 2px 5px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-}
 .header {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   height: 25px;
@@ -70,11 +54,12 @@ p code {
 </style>
 </head>
 <body>
-<div class="terminal">
-        <div class="header">terminal</div>
-        <div class="shell">
-          <p><span class="path">~</span><span class="prompt">$</span>jarvs</p>
-        </div>
+  <div class="terminal">
+    <div class="header">terminal</div>
+      <div class="shell">
+        <p><span class="path">~</span><span class="prompt">$</span>jarvs</p>
+        <p class="prompt">Hello, Peter,<br>How may I assist you?</p>
       </div>
+  </div>
 </body>
 </html>
