@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body {
-	background-color: rgb(110, 111, 127);
+	background-color: rgb(166, 166, 166);
 	height: 8000px;
 	font-family: 'Open Sans',serif;
 	font-weight: normal;
-	color: white;
+	color: rgb(38, 38, 38);
 }
 h1 {
 	font-size: 40px;
@@ -69,7 +69,7 @@ li.contact_info {
 	display: block;
 	z-index: 1;
 	text-align: center;
-	background-color: #333;
+	background-color: rgb(255, 255, 255);
 }
 #backdrop_cover {
 	position: absolute;
@@ -79,5 +79,5 @@ li.contact_info {
 	height: 3000px;
 	display: block;
 	z-index: 0;
-	background-color: rgb(110, 111, 127);
+	background-color: rgb(166, 166, 166);
 }
