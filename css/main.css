@@ -36,9 +36,6 @@ ul li a {
 	text-decoration: none;
 	white-space: nowrap;
 	}
-li a:hover {
-	background-color: #111;
-}
 ul#banner {
 	position: fixed;
 	width: 100%;
@@ -61,6 +58,9 @@ li.contact_info, li a.contact_info {
 	display: block;
 	padding: 12px 12px;
 	float: right;
+}
+li a.banner_links:hover, li a.contact_info:hover {
+	background-color: #111;
 }
 #block_1 {
 	position: absolute;
