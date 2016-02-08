@@ -28,17 +28,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.25"
-     inkscape:cx="-1052.7013"
-     inkscape:cy="462.95088"
+     inkscape:zoom="0.5"
+     inkscape:cx="-349.25078"
+     inkscape:cy="982.31239"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showborder="false"
      inkscape:window-width="1680"
-     inkscape:window-height="1001"
-     inkscape:window-x="-4"
-     inkscape:window-y="26"
+     inkscape:window-height="1031"
+     inkscape:window-x="1676"
+     inkscape:window-y="-4"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -57,18 +57,18 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:none;fill-opacity:1;stroke:#333333;stroke-width:44;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#333333;stroke-width:30.0729084;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4136"
-       width="1358.8267"
-       height="852.53528"
-       x="-1239.8391"
-       y="-90.334023"
-       ry="5.2196069"
+       width="1358.7538"
+       height="856.73016"
+       x="-1239.8026"
+       y="-90.297569"
+       ry="5.2452898"
        inkscape:export-filename="laptop.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#333333;stroke-width:44;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;fill-rule:evenodd;stroke:#333333;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="m -1377.5686,766.64793 1634.28574,0 c 0,0 -6.19048,90 -93.33334,90 l -1439.0476,0 c -97.1429,0 -101.9048,-90 -101.9048,-90 z"
        id="path4138"
        inkscape:connector-curvature="0"
@@ -89,13 +89,13 @@
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
        inkscape:export-filename="laptop.png"
-       ry="4.3983722"
-       y="-0.030567223"
-       x="-1153.9149"
-       height="718.40027"
-       width="1186.9783"
+       ry="4.3563828"
+       y="-0.10144662"
+       x="-1153.9858"
+       height="711.54199"
+       width="1187.1201"
        id="rect4141"
-       style="fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:43.9238472;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:29.85824203;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#a6a6a6;stroke-width:44;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -985.71429,149.50507 202.85715,148.57142 -208.57143,151.42858"
@@ -106,5 +106,11 @@
        d="m -694.28571,520.93364 282.85714,0"
        id="path4145"
        inkscape:connector-curvature="0" />
+    <circle
+       style="fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:10.79722023;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4139"
+       cx="-560.42572"
+       cy="-45.745884"
+       r="15.116109" />
   </g>
 </svg>
