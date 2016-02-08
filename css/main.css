@@ -3,16 +3,16 @@ body {
 	background-color: rgb(166, 166, 166);
 	height: 8000px;
 	font-family: 'Open Sans',serif;
-	font-weight: light;
+	font-weight: 300;
 	color: rgb(38, 38, 38);
 }
 h1 {
 	font-size: 40px;
-	font-weight: light;
+	font-weight: 300;
 }
 h2 {
 	font-size: 30px;
-	font-weight: light;
+	font-weight: 300;
 }
 ul {
 	margin: 0;
