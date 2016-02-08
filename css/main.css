@@ -5,6 +5,7 @@ body {
 	font-family: 'Open Sans',serif;
 	font-weight: 300;
 	color: rgb(38, 38, 38);
+	min-width: 900px;
 }
 h1 {
 	font-size: 40px;
@@ -41,6 +42,10 @@ ul#banner {
 	width: 100%;
 	left: 0;
 	top: 0;
+	height: 50px;
+	line-height: 25px;
+	white-space: nowrap;
+	min-width: 900px;
 	margin: 0;
 	padding: 0;
 	z-index: 3;
