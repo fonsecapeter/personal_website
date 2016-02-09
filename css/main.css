@@ -6,8 +6,8 @@ body {
     font-size:12px;
 	color:#2a3845;
 	background:#ffffff;
-  padding:0;
-  margin:0;
+	padding:0;
+	margin:0;
 }
 
 #wrapper {
@@ -16,11 +16,11 @@ body {
 }
 
 #nav {
-	font-size:14px;
+	font-size:10px;
 	background:#06a;
 	text-align:right;
 	color:#f6dde3;
-  padding:10px 20px 10px 20px;
+	padding:10px 20px 10px 20px;
 }
 
 #header {}
@@ -41,9 +41,9 @@ body {
 #left-column {
 	width:300px;
 	float:left;
-  padding-left:10px;
-  padding-right:10px;
-  padding-bottom:30px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:30px;
 }
 
 #right-column {
@@ -56,7 +56,7 @@ body {
     background:url('http://img404.imageshack.us/img404/3092/shadowh.jpg') no-repeat top;
 	width:218px;
 	margin:0 auto;
-  padding:10px 25px 10px 25px;
+	padding:10px 25px 10px 25px;
 }
 
 /* Global Styling */
@@ -99,13 +99,13 @@ h3 {
 }
 
 div {
-  margin-right:1px;
-  margin-left:1px
+	margin-right:1px;
+	margin-left:1px
 }
 
 p {
-  padding:0;
-  margin:0;
+	padding:0;
+	margin:0;
 }
 
 ul {
