@@ -4,6 +4,8 @@ body {
     font:normal 12px/1.6em Arial, Helvetica, sans-serif;
 	color:#2a3845;
 	background:#ffffff;
+  padding:0;
+  margin:0;
 }
 
 #wrapper {
@@ -15,6 +17,7 @@ body {
 	background:#06a;
 	text-align:right;
 	color:#f6dde3;
+  padding:10px 20px 10px 20px;
 }
 
 #header {
@@ -37,6 +40,9 @@ body {
 #left-column {
 	width:300px;
 	float:left;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:30px;
 }
 
 #right-column {
@@ -49,12 +55,14 @@ body {
     background:url('http://img404.imageshack.us/img404/3092/shadowh.jpg') no-repeat top;
 	width:218px;
 	margin:0 auto;
+  padding:10px 25px 10px 25px;
 }
 
 #footer {
 	position: relative;
 	height: 3em;
 	margin-top: -3em;
+  padding:10px 25px 10px 25px;
 }
 
 /* Global Styling */
@@ -93,6 +101,16 @@ h3 {
 	padding-bottom:10px;
 	font:bold 14px Arial, Helvetica, sans-serif;
 	border-bottom:1px solid #efece7;
+}
+
+div {
+  margin-right:1px;
+  margin-left:1px
+}
+
+p {
+  padding:0;
+  margin:0;
 }
 
 ul {
