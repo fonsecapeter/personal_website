@@ -43,6 +43,8 @@
 		}
 		#jarvs {
 			top: 1000px;
+			background: none;
+			z-index: 10;
 		}
 	</style>
 </head>
@@ -75,7 +77,15 @@
 	</div>
 	<div id="backdrop_cover"></div>
 <!-- code parallax -->
-	<div id="jarvs"></div>
+	<div id="jarvs">
+		<div class="terminal">
+			<div class="terminal_cap">&nbsp x - +</div>
+			<div class="terminal_shell">
+				<p><span class="terminal_path">~</span><span class="terminal_prompt">$</span> jarvs</p>
+				<p class="terminal_jarvs">Hello, Peter,<br>How may I assist you?</p>
+			</div>
+		</div>
+	</div>
 	<div id="attendings"></div>
 	<div id="mri_blinder"></div>
 <!-- code text block -->
