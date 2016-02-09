@@ -69,7 +69,7 @@ li a.contact_info {
 li a.banner_links:hover, li a.contact_info:hover {
 	background-color: #111;
 }
-#block_1 {
+#block_1, #block_2 {
 	position: absolute;
 	top: 500px;
 	left: 0px;
@@ -80,6 +80,7 @@ li a.banner_links:hover, li a.contact_info:hover {
 	text-align: center;
 	background-color: rgb(255, 255, 255);
 }
+#block_2 {top: 1500px;}
 #backdrop_cover {
 	position: absolute;
 	top: 1000px;
