@@ -18,7 +18,7 @@ function parallax() {
   laptop.style.top = -scrolltop * .5 + 'px' // move laptop at 50% of scroll rate
   science.style.top = -scrolltop * .4 + 'px' // move science at 40% of scroll rate
   design.style.top = -scrolltop * .3 + 'px' // move design at 30% of scroll rate
-  jarvs.style.top = -scrolltop * .5 + 'px' // move design at 50% of scroll rate
+  jarvs.style.top = -scrolltop * .5 + 1000 + 'px' // move design at 50% of scroll rate
 }
 
 window.addEventListener('scroll', function(){ // on page scroll
