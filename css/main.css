@@ -3,7 +3,7 @@
 body {
     font-family:'Dosis', sans-serif;
     font-weight:300;
-    font-size:12px;
+    font-size:14px;
 	color:#2a3845;
 	background:#ffffff;
 	padding:0;
@@ -62,13 +62,13 @@ body {
 /* Global Styling */
 
 a:visited, a:link {
-	color:white;
+	color:#2a3845;
 	text-decoration:none;
 	background:none;
 }
 
 a:hover {
-	color:white;
+	color:#2a3845;
 	text-decoration:none;
 	background:none;
 }
@@ -135,7 +135,8 @@ ul {
 /* ID's */
 
 #nav a {
-	margin: 0 10px;
+	margin:0 10px;
+	color:white;
 }
 
 #nav a:visited, #nav a:link {
