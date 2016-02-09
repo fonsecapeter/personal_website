@@ -124,6 +124,10 @@ ul {
 
 .box h1, h3 { color:white; }
 
+.circular {
+	border-radius:160px;
+}
+
 /* ID's */
 
 #nav a {
