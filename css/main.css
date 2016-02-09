@@ -44,13 +44,10 @@ ul#banner {
 	top: 0;
 	height: 50px;
 	line-height: 25px;
-	align-items: center;
 	white-space: nowrap;
-	min-width: 900px;
 	margin: 0;
 	padding: 0;
 	z-index: 3;
-
 	overflow: hidden;
 	background-color: #333;
 }
