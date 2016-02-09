@@ -33,7 +33,7 @@ if ( detectmob==false ) {
 	var jarvs_top = 1000
 }
 else {
-	var jarvs_top = 500
+	var jarvs_top = 250
 }
 function parallax() {
   var scrolltop = window.pageYOffset // save number of pixels scolled
