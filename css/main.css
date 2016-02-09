@@ -1,7 +1,8 @@
 /* Layout */
 
 body {
-    font:normal 12px/1.6em Helvetica, sans-serif;
+    font-family:'Dosis', sans-serif;
+    font-weight:300;
 	color:#2a3845;
 	background:#ffffff;
   padding:0;
@@ -59,9 +60,9 @@ body {
 }
 
 #footer {
-	position: relative;
-	height: 3em;
-	margin-top: -3em;
+	position:relative;
+	height:3em;
+	margin-top:-3em;
   padding:10px 25px 10px 25px;
 }
 
@@ -83,7 +84,7 @@ h1 {
 	color:#7a2e40;
 	margin:0 0 10px;
 	padding-bottom:10px;
-	font:normal 17px Georgia, serif;
+	font-size:17px;
 	border-bottom:1px solid #efece7;
 }
 
@@ -91,7 +92,7 @@ h2 {
 	color:#7a2e40;
 	margin:20px 0 10px;
 	padding-bottom:10px;
-	font:normal 17px Georgia, serif;
+	font-size:17px;
 	border-bottom:1px solid #efece7;
 }
 
@@ -99,7 +100,8 @@ h3 {
 	color:#7a2e40;
 	margin:10px 0;
 	padding-bottom:10px;
-	font:bold 14px Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:600;
 	border-bottom:1px solid #efece7;
 }
 
@@ -141,6 +143,6 @@ ul {
 
 #logo {
 	margin-bottom:20px;
-	font:normal 18px Georgia, serif;
+	font-size:18px;
 	color:#fa7393;
 }
