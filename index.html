@@ -1,110 +1,28 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Peter Fonseca</title>
-	<!-- link to main stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-	<style>
-		#laptop, #science, #design {
-			width: 100%;
-			height: 500px;
-		 	top: 0;
-		 	left: 0;
-		 	position: fixed;
-		 	z-index: -1;
-			background-image: url(./icons/laptop.png);
-			background-repeat: no-repeat;
-			background-size: 300px;
-			background-position: center;
-		}
-		#science, #design {
-			z-index: -2;
-			background-image: url(./icons/science.png);
-			background-size: 115px;
-			background-position: 10% 165px;
-		}
-		#design {
-			background-image: url(./icons/design.png);
-			background-size: 160px;
-			background-position: 90% 235px;
-		}
-		#headshot {
-			position: absolute;
-			display: block;
-			top: 400px;
-			left: 50%;
-			margin-left: -150px;
-			z-index: 3;
-			width: 300px;
-			height: 300px;
-			border-radius: 150px;
-			background: url(icons/headshot.jpg);
-			background-size: contain;
-		}
-		#jarvs {
-			width: 100%;
-			height: 500px;
-		 	top: 1000px;
-		 	left: 0;
-		 	position: fixed;
-		 	z-index: 1;
-		}
-	</style>
+  <link href='https://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-<div id="wrap">
-	<div id="home"></div>
-<!-- top menu -->
-	<ul id="banner">
-		<li><a href="#home" class="banner_links"><img height ="32px" src="icons/home.png" /></a></li>
-		<li><a href="https://github.com/fonsecapeter" target="_blank" class="banner_links"><img height="32px" src="icons/GitHub-Mark-Light-32px.png" /></a></li>
-		<li ><a href="tel:+1-707-889-2431" class="contact_info">(707) 889-2431</a></li>
-		<li><a href="mailto:peter.nfonseca@gmail.com" class="contact_info">peter.nfonseca@gmail.com</a></li>
-	</ul>
-<!-- parallaxing backdrops -->
-	<div id="laptop"></div>
-	<div id="science"></div>
-	<div id="design"></div>
-<!-- first text block -->
-	<div id="headshot"></div>
-	<div id="block_1">
-		<br><br><br><br><br><br><br><br>
-		<h1>Peter Fonseca</h2>
-		<h2>Clinical Research Coordinator</h2>
-		<br>
-		<ul>
-			<li><a href="terminal.html">&lt science &gt</a></li>
-			<li><a href="terminal.html">&lt code &gt</a></li>
-			<li><a href="terminal.html">&lt design &gt</a></li>
-		<ul>
-	</div>
-	<div id="backdrop_cover"></div>
-<!-- code parallax -->
-	<div id="jarvs">
-		<div class="terminal">
-			<div class="terminal_cap">&nbsp x - +</div>
-			<div class="terminal_shell">
-				<p><span class="terminal_path">~</span><span class="terminal_prompt">$</span> jarvs</p>
-				<p class="terminal_jarvs">Hello, Peter,<br>How may I assist you?</p>
-			</div>
-		</div>
-	</div>
-	<div id="attendings"></div>
-	<div id="mri_blinder"></div>
-<!-- code text block -->
-	<div id="block_2">
-		<h1>Code</h1>
-		<h2>Jarvs</h2>
-		<p>Jarvs is my biggest pet project yet. I first created jarvs to serve as an intuitive and quick ui for calling a couple scripts that I wrote to help manage the rvs program (more on that below). The idea grew into a very chipper personal assistant that just runs in the terminal. Jarvs is still in alpha, so there are many more functions to build. So far, Jarvs mostly utilizes pre-existing utilities. <br><br> You can read up on Jarvs and even download your own at my <a href="https://www.github.com/fonsecapeter">github repository.</a></p>
-		<br>
-		<h2>RVS's</h2>
-		<p>Research Visit Summaries (RVS's) are an important part of big research, especially in a clinical setting. I wrote two major scripts to help manage the rvs program I worked on. Jarvs ended up absorbing these functionalities. <br><br> You can find out more about RVS's and what attendings are at my other <a href="https://www.github.com/fonsecapeter">github repository.</a></p>
-		<br>
-		<h2>MRI Blinder</h2>
-		<p>Researchers often find themselves knowing too much about their own projects. I ran into this issue when I had to subjectively grade mri's and didn't want to impart any bias from knowing who belonged to the "test" group and who belonged to the "control" group. Of course this could have been accomplished by hand from someone external, but it would take hours to get through the number of files I was dealing with, even at a small-scale first-pass. Of course I wanted this to be very user friendly so that other researchers at the center could use it. <br><br> I have another <a href="https://github.com/fonsecapeter">github repository</a> for this.</p>
-	</div>
-<!-- load javascript for parallax -->
-	<script src="js/parallax.js"></script>
-</div>
+  <img id="logo" src="http://codecademy.com/assets/codecademy_log0_small.png" />
+  <h1 id="greeting"></h1>
+  <ul id="nav_container">
+    <li><a href="home.html">home</a></li>
+    <li><a href="portfolio.html">portfolio</a></li>
+    <li><a href="design.html">design</a></li>
+    <li><a href="contact.html">contact</a></li>
+  </ul>
+  <div id="main_content">
+    <div class="right_column">
+      <img src="http://i1150.photobucket.com/albums/o605/slaundy/160x600ad.gif" width="100"/>
+    </div>
+    <div class="left_column">
+      <img src="https://avatars0.githubusercontent.com/u/13894514?v=3&s=400" width="100"/>
+      <p>Peter Fonseca</p>
+      <p>Lorem ipsum the bizzle sizzle amizzle, shit adipiscing elit. Nullam sapizzle velizzle, pot dope, suscipizzle quizzle, fo shizzle mah nizzle fo rizzle, mah home g-dizzle vizzle, arcu. Pellentesque izzle tortizzle. Sed erizzle. Da bomb gangster dolizzle dapibus turpis tempus tempor. Maurizzle gangster ghetto izzle da bomb. Shizzlin dizzle izzle tortor. Pellentesque gizzle rhoncizzle phat. In hac doggy phat dictumst. Its fo rizzle its fo rizzle. Curabitur tellizzle urna, pretizzle cool, mattizzle bling bling, eleifend fo shizzle, nunc. Bizzle suscipizzle. Sheezy break yo neck, yall velit sizzle yo mamma.<br><br>Curabitizzle shizznit diam quizzle nisi fo shizzle mollizzle. Suspendisse fo. Morbi odio. Vivamus neque. Fizzle orci. Nizzle maurizzle shizzlin dizzle, cool a, gizzle ghetto gangster, bow wow wow you son of a bizzle, ma nizzle. Pellentesque break yo neck, yall. You son of a bizzle ma nizzle mi, volutpizzle in, sure sizzle, crackalackin sempizzle, velit. Mammasay mammasa mamma oo sa izzle ipsizzle. Pot volutpizzle nizzle brizzle we gonna chung. Cras quizzle justo in purizzle sodales ornare. Yippiyo crackalackin justo izzle lacizzle. Nunc sheezy. Suspendisse check it out placerizzle lacizzle. Curabitur the bizzle owned. Nunc pharetra, gizzle away dapibus hendrerizzle, shit felizzle elementizzle sizzle, yo aliquet magna felis luctus pede. Rizzle a nisl. Class aptent taciti that's the shizzle izzle litora torquent away conubia nostra, per inceptos fo shizzle. Aliquizzle interdum, yo sure boofron izzle, nisl orci sheezy leo, in sempizzle risizzle arcu yo mamma sizzle.</p>
+    </div>
+  </div>
 </body>
 </html>
