@@ -16,15 +16,14 @@ body {
 }
 
 #nav {
+	font-size:14px;
 	background:#06a;
 	text-align:right;
 	color:#f6dde3;
   padding:10px 20px 10px 20px;
 }
 
-#header {
-
-}
+#header {}
 
 #bg {
 	height:36px;
