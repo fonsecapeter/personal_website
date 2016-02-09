@@ -62,13 +62,13 @@ body {
 /* Global Styling */
 
 a:visited, a:link {
-	color:#a43b55;
+	color:white;
 	text-decoration:underline;
 	background:none;
 }
 
 a:hover {
-	color:#a43b55;
+	color:white;
 	text-decoration:none;
 	background:none;
 }
@@ -120,6 +120,8 @@ ul {
 	padding:15px;
 	color:white;
 }
+
+.box h1, h3 { color:white; }
 
 #nav a {
 	margin: 0 10px;
