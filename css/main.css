@@ -111,8 +111,9 @@ p {
 ul {
 	padding:0;
 	margin:0 0 0 17px;
-    list-style:square url('http://img525.imageshack.us/img525/1890/bulletr.gif');
 }
+
+/* Classes */
 
 .box {
 	background:#595959;
@@ -122,6 +123,8 @@ ul {
 }
 
 .box h1, h3 { color:white; }
+
+/* ID's */
 
 #nav a {
 	margin: 0 10px;
