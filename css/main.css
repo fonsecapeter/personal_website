@@ -152,8 +152,12 @@ ul {
 	color:white;
 }
 
-#languages {
-	
+#box_left {
+	float:left;
+}
+
+#box_right {
+	float:right;
 }
 
 #logo {
