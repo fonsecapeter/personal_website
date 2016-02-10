@@ -36,6 +36,14 @@ body {
   background:#ffffff;
 }
 
+#load {
+	display:none;
+	background: url(images/ajax-loader.gif);
+	width:43px;
+	height:11px;
+	text-indent:-9999em;
+}
+
 #main-content {
 	margin:0 auto;
 }
