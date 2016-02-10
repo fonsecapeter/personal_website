@@ -21,6 +21,7 @@ body {
 	text-align:center;
 	font-weight:300;
 	color:white;
+  width: 1005;
 	padding:10px 20px 10px 20px;
 }
 
@@ -116,8 +117,7 @@ ul {
 /* Classes */
 
 .box {
-	background:#595959;
-	border:1px solid #404040;
+	background:#729f98;
 	padding:15px;
 	width:210px;
 	float:left;
@@ -159,8 +159,7 @@ ul {
 #box_right {
 	float:right;
 	margin-right:26px;
-	background:#ff9900;
-	border:1px solid #cc7a00;
+	background:#aa863a;
 }
 
 #elevator_pitch {
