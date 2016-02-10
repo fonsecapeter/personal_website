@@ -23,13 +23,17 @@ body {
 	color:white;
   width:inherit;
 	padding:10px 20px 10px 20px;
+  margin-left:0;
 }
 
-#header {  width: 100%; }
+#header {
+  width: 100%;
+  margin-left:0;
+}
 
 #bg {
 	height:36px;
-    background:#ffffff;
+  background:#ffffff;
 }
 
 #main-content {
