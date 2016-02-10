@@ -53,7 +53,6 @@ body {
 }
 
 .sidebar {
-    background:url('http://img404.imageshack.us/img404/3092/shadowh.jpg') no-repeat top;
 	width:218px;
 	margin:0 auto;
 	padding:10px 25px 10px 25px;
@@ -159,6 +158,7 @@ ul {
 #box_right {
 	float:right;
 	margin-right:26px;
+	background:#ff9900;
 }
 
 #elevator_pitch {
