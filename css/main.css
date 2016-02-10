@@ -2,7 +2,7 @@
 
 body {
     font-family:'Dosis', sans-serif;
-    font-weight:300;
+    font-weight:400;
     font-size:14px;
 	color:#2a3845;
 	background:#ffffff;
@@ -19,6 +19,7 @@ body {
 	font-size:14px;
 	background:#06a;
 	text-align:center;
+	font-weight:300;
 	color:white;
 	padding:10px 20px 10px 20px;
 }
