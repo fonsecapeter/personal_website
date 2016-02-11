@@ -111,6 +111,13 @@ h3 {
 	border-bottom:1px solid #efece7;
 }
 
+h4 {
+	color:#00bfff;
+	margin-bottom:20px;
+	font-size:18px;
+	font-weight:600;
+}
+
 div {
 	margin-right:1px;
 	margin-left:1px
@@ -144,14 +151,6 @@ ul {
 
 .img_list {
 	list-style-type: none;
-}
-
-h1.logo {
-	margin-bottom:20px;
-	font-size:18px;
-	font-weight:600;
-	color:#00bfff;
-	border-bottom:none;
 }
 
 /* ID's */
