@@ -1,9 +1,9 @@
 /* Layout */
 
 body {
-  font-family:'Dosis', sans-serif;
-  font-weight:400;
-  font-size:14px;
+	font-family:'Dosis', sans-serif;
+	font-weight:400;
+	font-size:14px;
 	color:#2a3845;
 	background:#ffffff;
 	padding:0;
@@ -27,13 +27,13 @@ body {
 }
 
 #header {
-  width: 100%;
-  margin-left:0;
+	width: 100%;
+	margin-left:0;
 }
 
 #bg {
 	height:36px;
-  background:#ffffff;
+	background:#ffffff;
 }
 
 #load {
