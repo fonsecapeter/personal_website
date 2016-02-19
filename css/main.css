@@ -158,6 +158,8 @@ ul {
 
 a.contact { color:#1476b8; }
 
+a.contact:hover { text-decoration:underline; }
+
 /* ID's */
 
 #nav a {
