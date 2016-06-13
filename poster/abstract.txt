@@ -1,0 +1,21 @@
+http://www.neurology.org/content/86/16_Supplement/P5.191
+
+April 20, 2016
+Poster Session V
+Aging and Dementia: Neuropsychology/Neuropsychiatry
+Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks (P5.191)
+Natanya Russek1, Babu Adhimoolam1, Suzanne Shdo1, Peter Fonseca1, Heaven Mesfun1, Laura Bouvet1, Clinton Mielke1, Tal Shany-Ur1, Bruce Miller2 and Katherine Rankin1
+AFFILIATIONS
+  1University of California San Francisco San Francisco CA United States
+  2University of California, San Francisco San Francisco CA United States
+
+Published online before print April 8, 2015,
+Neurology April 5, 2016 vol. 86 no. 16 Supplement P5.191
+
+OBJECTIVE: To evaluate the additive benefit of testing dissociable (emotional and non-emotional) social functions to predict structural damage and diagnostic syndrome in neurodegenerative patients. BACKGROUND: Distinct atrophy patterns emerge in neurodegenerative diseases, targeting intrinsic connectivity networks (ICNs). Although the correlation between ICNs and atrophic patterns is established, it remains unclear whether identification of specific cross-test patterns of performance on socioemotional measures can better predict ICN involvement, improving diagnostic prediction. DESIGN/METHODS: We evaluated 402 participants, 316 with neurodegenerative disease [behavioral variant FTD (n=77); nonfluent variant PPA (n=36); semantic variant PPA (n=54); AD (n=102); progressive supranuclear palsy (n=47)] and 86 older healthy controls [NC] on video-based tasks measuring emotion naming (TASIT-Emotion Evaluation Task) and non-emotional social perspective taking (UCSF Cognitive Theory Of Mind (cTOM)). SPM8 Dartel preprocessing was performed with structural MRIs, and covariates-only voxel-based morphometry analyses were performed. Region of interest analysis and multivariate modeling were performed to identify test-specific atrophy patterns corresponding to key ICNs (default mode (DMN), salience (SN), frontoparietal (FPN), and semantic appraisal (SAN)). RESULTS: When atrophy predicting reduced cTOM scores was segregated into sets of network-specific ROIs, networks independently predicting non-emotional social cognition were DMN (precuneus, posterior cingulate, dorsomedial prefrontal ROIs), FPN (dorsolateral parietal/frontal), and SAN (anterior temporal, subgenual PFC) (R2=0.45, p<0.001). Only SN (anterior insula, anterior cingulate) independently predicted TASIT-EET emotion reading in the model (R2=0.48, p<0.001). CONCLUSIONS: Atrophy in distinct ICNs contributes to differential performance deficits on emotional versus non-emotional aspects social function in neurodegenerative disease patients. Poor non-emotional social cognition appearing in isolation predicts damage to dorsal networks (DMN, FPN) (e.g., suggestive of AD, nfvPPA), while additional emotion reading deficits predict inclusion of more ventral networks (SN) (e.g., suggestive of bvFTD). Sociocognitive assessments can provide important neuroanatomic and diagnostic information to clinicians even when MRI is unavailable. STUDY SUPPORTED BY: R01AG029577-06, P01AG019724-11, P01AG019724-04, K23AG021606-02
+
+Disclosure: Dr. Russek has nothing to disclose. Dr. Adhimoolam has nothing to disclose. Dr. Shdo has nothing to disclose. Dr. Fonseca has nothing to disclose. Dr. Mesfun has nothing to disclose. Dr. Bouvet has nothing to disclose. Dr. Mielke has nothing to disclose. Dr. Shany-Ur has nothing to disclose. Dr. Miller has nothing to disclose. Dr. Rankin has research support from Quest Diagnostics.
+
+Wednesday, April 20 2016, 8:30 am-7:00 pm
+
+Copyright © 2016 by AAN Enterprises, Inc.
