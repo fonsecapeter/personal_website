@@ -3,7 +3,7 @@
 body {
 	font-family:'Dosis', sans-serif;
 	font-weight:400;
-	font-size:14px;
+	font-size:16px;
 	color:#2a3845;
 	background:#ffffff;
 	padding:0;
@@ -16,7 +16,7 @@ body {
 }
 
 #nav {
-	font-size:14px;
+	font-size:16px;
 	background:#06a;
 	text-align:center;
 	font-weight:300;
@@ -90,7 +90,7 @@ h1 {
 	color:#1a1a1a;
 	margin:0 0 10px;
 	padding-bottom:10px;
-	font-size:17px;
+	font-size:19px;
 	border-bottom:1px solid #efece7;
 }
 
@@ -98,7 +98,7 @@ h2 {
 	color:#1a1a1a;
 	margin:20px 0 10px;
 	padding-bottom:10px;
-	font-size:17px;
+	font-size:19px;
 	border-bottom:1px solid #efece7;
 }
 
@@ -106,7 +106,7 @@ h3 {
 	color:#1a1a1a;
 	margin:10px 0;
 	padding-bottom:10px;
-	font-size:17px;
+	font-size:19px;
 	font-weight:600;
 	border-bottom:1px solid #efece7;
 }
@@ -114,7 +114,7 @@ h3 {
 h4 {
 	color:#00bfff;
 	margin-bottom:20px;
-	font-size:22px;
+	font-size:24px;
 	font-weight:600;
 }
 
