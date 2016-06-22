@@ -6,7 +6,7 @@ $(document).ready(function(){
 	  let href = $(this).attr('href');
 	  if(hash === href.substr(0,href.length-5)){
       const toLoad = hash + '.html #content';
-      $('#content').load(toLoad);
+      $('#left-column').load('./home.html');
 	  }
 	});
 
