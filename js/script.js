@@ -1,13 +1,14 @@
 // load jQuery  when dom is loaded
 $(document).ready(function(){
 	// check url and load content accordingly (if user type #something directly into url)
-	const hash = window.location.hash.substr(1);
-	let $href = $('#nav a').each(function(){
-	  let href = $(this).attr('href');
-	  if(hash === href.substr(0,href.length-5)){
-      const toLoad = hash + '.html #content';
-      $('#left-column').load('./home.html');
-	  }
+	// const hash = window.location.hash.substr(1);
+	// let $href = $('#nav a').each(function(){
+	//   let href = $(this).attr('href');
+	//   if(hash === href.substr(0,href.length-5)){
+  //     const toLoad = hash + '.html #content';
+	// 		$('#left-column').load('./' );
+	//   }
+		$('#left-column').load('./home.html');
 	});
 
   // when menu item is clicked
