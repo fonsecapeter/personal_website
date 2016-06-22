@@ -29,7 +29,7 @@ $(document).ready(function(){
   // function showNewContent(){
   function loadContent($anchor){
 		console.log($anchor.attr('href'));
-		$('#main-content').load('./' + $anchor.attr('href'));
+		$('#left-column').load('./' + $anchor.attr('href'));
     // $('#content').show('normal',hideLoader);
   }
   //hide loader function
