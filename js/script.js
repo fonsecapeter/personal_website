@@ -8,8 +8,8 @@ $(document).ready(function(){
   //     const toLoad = hash + '.html #content';
 	// 		$('#left-column').load('./' );
   // }
-		$('#left-column').load('./home.html');
-	});
+	// });
+	$('#left-column').load('./home.html');
 
   // when menu item is clicked
   $('#nav a').click(function(event){
