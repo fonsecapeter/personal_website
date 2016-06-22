@@ -1,6 +1,7 @@
 // load jQuery  when dom is loaded
 $(document).ready(function(){
-	let googleMapScript = undefined;
+	let googleMapScript1 = undefined;
+	let googleMapScript2 = undefined;
 
 	// check url and load content accordingly (if user type #something directly into url)
 	// const hash = window.location.hash.substr(1);
@@ -33,14 +34,26 @@ $(document).ready(function(){
 
   function loadContent($anchor){
 		$('#left-column').load('./' + $anchor.attr('href'));
-		// only load googleMapScript if it hasn't been loaded yet
+		// only load googleMapScript's if it hasn't been loaded yet
 		if ($anchor.attr('href') === 'contact.html' &&
-				googleMapScript === undefined) {
-			googleMapScript = $('<script />');
-			googleMapScript.attr({
+				googleMapScript1 === undefined &&
+				googleMapScript2 === undefined) {
+			googleMapScript1 = $('<script />');
+			googleMapScript1.attr({
+				type: "text/javascript",
 				src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap"
 			});
-			$('#left-column').append(googleMapScript);
+			$('#left-column').append(googleMapScript1);
+
+			googleMapScript2 = $('<script />');
+			googleMapScript2.attr({
+				type: "text/javascript",
+				src: "http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4"
+			});
+			$('#left-column').append(googleMapScript2);
 		}
   }
 });
+
+
+/*<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4"></script>*/
