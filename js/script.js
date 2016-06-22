@@ -34,10 +34,10 @@ $(document).ready(function(){
 
   function loadContent($anchor){
 		$('#left-column').load('./' + $anchor.attr('href'));
-		only load googleMapScript's if it hasn't been loaded yet
+		// // only load googleMapScript's if it hasn't been loaded yet
 		// if ($anchor.attr('href') === 'contact.html' &&
-				googleMapScript1 === undefined &&
-				googleMapScript2 === undefined) {
+		// 		googleMapScript1 === undefined &&
+		// 		googleMapScript2 === undefined) {
 			googleMapScript1 = $('<script />');
 			googleMapScript1.attr({
 				type: "text/javascript",
