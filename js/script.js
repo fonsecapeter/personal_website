@@ -38,19 +38,19 @@ $(document).ready(function(){
 		// if ($anchor.attr('href') === 'contact.html' &&
 		// 		googleMapScript1 === undefined &&
 		// 		googleMapScript2 === undefined) {
-			googleMapScript1 = $('<script />');
-			googleMapScript1.attr({
-				type: "text/javascript",
-				src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap"
-			});
-			$('body').append(googleMapScript1);
-
-			googleMapScript2 = $('<script />');
-			googleMapScript2.attr({
-				type: "text/javascript",
-				src: "http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4"
-			});
-			$('body').append(googleMapScript2);
+			// googleMapScript1 = $('<script />');
+			// googleMapScript1.attr({
+			// 	type: "text/javascript",
+			// 	src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap"
+			// });
+			// $('body').append(googleMapScript1);
+			//
+			// googleMapScript2 = $('<script />');
+			// googleMapScript2.attr({
+			// 	type: "text/javascript",
+			// 	src: "http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4"
+			// });
+			// $('body').append(googleMapScript2);
 		// }
   }
 });
