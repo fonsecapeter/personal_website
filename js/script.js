@@ -9,6 +9,7 @@ $(document).ready(function(){
 	// 		$('#left-column').load('./' );
   // }
 	// });
+	// initialize to #home
 	$('#left-column').load('./home.html');
 
   // when menu item is clicked
@@ -20,23 +21,12 @@ $(document).ready(function(){
     // hide old content
     $('#content').hide('fast',loadContent($(this)));
     $('#load').remove();
-    // loading graphic
-    // $('#wrapper').append('<span id="load">loading...</span>');
-    // $('#load').fadeIn('normal');
+
     // url to show #html file name
     window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
   });
-  //load content function
-  // function showNewContent(){
+
   function loadContent($anchor){
 		$('#left-column').load('./' + $anchor.attr('href'));
-    // $('#content').show('normal',hideLoader);
   }
-  //hide loader function
-  // function hideLoader(){
-  //   $('#load').fadeOut('normal');
-  // }
-  // return false;
-
-  // });
 });
