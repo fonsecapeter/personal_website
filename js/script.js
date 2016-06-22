@@ -43,14 +43,14 @@ $(document).ready(function(){
 				type: "text/javascript",
 				src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap"
 			});
-			$('#left-column').append(googleMapScript1);
+			$('body').append(googleMapScript1);
 
 			googleMapScript2 = $('<script />');
 			googleMapScript2.attr({
 				type: "text/javascript",
 				src: "http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4"
 			});
-			$('#left-column').append(googleMapScript2);
+			$('body').append(googleMapScript2);
 		}
   }
 });
