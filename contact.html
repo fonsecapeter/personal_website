@@ -38,16 +38,16 @@
 		            center: {lat: 37.7905581, lng: -122.4293888},
 		            zoom: 12
 
-								geocoder.geocode({
-									'address': '2085 Sacracmento St, San Francisco, CA 94109'
-								}, (results) => {
-									let marker = new google.maps.Marker({
-										position: results[0].geometry.location,
-										map: this,
-										title: "San Francisco"
-									})
-								})
 		        });
+						geocoder.geocode({
+							'address': '2085 Sacracmento St, San Francisco, CA 94109'
+						}, (results) => {
+							let marker = new google.maps.Marker({
+								position: results[0].geometry.location,
+								map: map,
+								title: "San Francisco"
+							})
+						})
 		      }
 		    </script>
 		    <script async defer
