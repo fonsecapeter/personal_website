@@ -1,5 +1,7 @@
 // load jQuery  when dom is loaded
 $(document).ready(function(){
+	let googleMapScript = undefined;
+
 	// check url and load content accordingly (if user type #something directly into url)
 	// const hash = window.location.hash.substr(1);
 	// let $href = $('#nav a').each(function(){
@@ -23,10 +25,22 @@ $(document).ready(function(){
     $('#load').remove();
 
     // url to show #html file name
-    window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
+    window.location.hash = $(this)
+			.attr('href')
+			.substr(0,$(this)
+			.attr('href').length-5);
   });
 
   function loadContent($anchor){
 		$('#left-column').load('./' + $anchor.attr('href'));
+		// only load googleMapScript if it hasn't been loaded yet
+		if ($anchor.attr('href') === 'contact.html' &&
+				googleMapScript === undefined) {
+			googleMapScript = $('<script />');
+			googleMapScript.attr({
+				src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap"
+			});
+			$('#left-column').append(googleMapScript);
+		}
   }
 });
