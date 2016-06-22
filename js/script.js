@@ -7,7 +7,7 @@ $(document).ready(function(){
 	//   if(hash === href.substr(0,href.length-5)){
   //     const toLoad = hash + '.html #content';
 	// 		$('#left-column').load('./' );
-	//   }
+  // }
 		$('#left-column').load('./home.html');
 	});
 
@@ -37,7 +37,7 @@ $(document).ready(function(){
   // function hideLoader(){
   //   $('#load').fadeOut('normal');
   // }
-  return false;
+  // return false;
 
   // });
 });
