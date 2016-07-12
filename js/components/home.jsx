@@ -52,7 +52,7 @@ const Home = React.createClass({
             <p><em>2013 - 2014</em> &nbsp; UCSC Kellogg Lab</p>
             <p>Primary Focus: Cell Size Control<br /><br /></p>
             <ul>
-              <li>Conducted research on enzymatic pathways involving nutrient-mediated cell size control in <em>S. cerevesiase</em>, focusing on Pkh1/2 and the Trs1 subunit of the PP2A complex</li>
+              <li>Conducted research on enzymatic pathways involving nutrient-mediated cell size control in <em>S. cerevesiase</em>, focusing on Pkh1/2 and the Rtrs1 subunit of the PP2A complex</li>
               <li>Designed and performed experiments</li>
               <li>Formally presented results</li>
               <li>Worked with PCR, Timecourse, and Western Blot protocols</li>
