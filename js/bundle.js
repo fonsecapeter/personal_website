@@ -26706,12 +26706,6 @@
 	          '   ',
 	          React.createElement(
 	            Link,
-	            { to: 'design' },
-	            'Design'
-	          ),
-	          ' ',
-	          React.createElement(
-	            Link,
 	            { to: 'contact' },
 	            'Contact'
 	          )
@@ -26755,7 +26749,7 @@
 	  render: function render() {
 	    return React.createElement(
 	      "div",
-	      null,
+	      { className: "fixed" },
 	      React.createElement(
 	        "div",
 	        { id: "main-image" },

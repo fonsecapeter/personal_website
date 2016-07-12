@@ -5,7 +5,7 @@ const React = require('react');
 const SideBar = React.createClass ({
   render () {
     return (
-      <div>
+      <div className="fixed">
         <div id="main-image"><img className="circular" src="icons/headshot.jpg" width="160" /></div>
   			<div className="sidebar">
   				<p>Peter Fonseca</p>

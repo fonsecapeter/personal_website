@@ -152,6 +152,10 @@ ul {
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
+.fixed {
+	position: fixed;
+}
+
 .img_list {
 	list-style-type: none;
 }
