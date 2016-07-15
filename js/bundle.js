@@ -26766,7 +26766,7 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Software Developer"
+	          "Software Engineer"
 	        ),
 	        React.createElement("h3", null),
 	        React.createElement(
@@ -27003,7 +27003,7 @@
 	              null,
 	              "S. cerevesiase"
 	            ),
-	            ", focusing on Pkh1/2 and the Trs1 subunit of the PP2A complex"
+	            ", focusing on Pkh1/2 and the Rtrs1 subunit of the PP2A complex"
 	          ),
 	          React.createElement(
 	            "li",
