@@ -26823,19 +26823,19 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "I worked for two years as a Clinical Research Coordinator on the flagship study for the UCSF Memory and Aging Center (a global leader in neurodegenerative disease research, treatment, and clinical care). As the study moved through a period of rapid growth, taking in up to 35 participants a month (each visit lasting one week, generating thousands of data points each), I found myself performing more and more monotonous tasks that I knew a computer could do. After beginning to use bash and matlab for imaging data, I wanted to learn more about how programming could make our study more efficient. I ended up teaching myself, automating every possible aspect I could along the way. After that, I had had enough time to take on new responsibilites when the senior team leader resigned.",
+	          "As a Clinical Research Coordinator in the field of dementia, I was positioned between administrative tasks, technical concepts, and health care. While teaching myself bash and matlab for MRI image processing/analysis, I discoverd that the same principles could apply to my own administrative tasks. I continued to learn Python and SQL to automate as much of our studies procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.",
 	          React.createElement("br", null),
 	          React.createElement("br", null),
-	          "I also developed a new management system for research visist summaries (see ",
+	          "I am most proud of the management system I developed for our research visist summaries (see ",
 	          React.createElement(
 	            "a",
 	            { href: "https://github.com/fonsecapeter/jarvs" },
 	            "Jarvs"
 	          ),
-	          " in my portfolio for more information). Jarvs ended up being adopeted by another large study in the center, which felt so rewarding. Not only did I make my co-workers lives easier, I was helping our research participants recieve better care.",
+	          " in my portfolio for more information). Jarvs continues to help the study and even ended up being adopeted by another large study in the center. In building this, not only did I make my co-workers lives easier, I was helping our research participants recieve better care.",
 	          React.createElement("br", null),
 	          React.createElement("br", null),
-	          "While working on these projects, I realized that I my greatest services to the study came through programming. Incidentally, I enjoyed this work so much more. After much consideration, I decided that I wanted to become a programmer and continue to learn how I could leverage technology to help others.",
+	          "While working on these projects, I realized that I my greatest services to the study came through programming. Incidentally, I enjoyed this work more than my othre responsibilities. I decided that I wanted to do this kind of work every day and continue to learn how I can leverage technology to help others.",
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        )
@@ -27230,7 +27230,79 @@
 	        React.createElement(
 	          "h1",
 	          null,
-	          "Jarvs"
+	          "Glia · ",
+	          React.createElement(
+	            "a",
+	            { href: "https://github.com/fonsecapeter/Glia", target: "blank", className: "contact" },
+	            "github"
+	          ),
+	          " · ",
+	          React.createElement(
+	            "a",
+	            { href: "http://glia-app.herokuapp.com", target: "blank", className: "contact" },
+	            "live"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          React.createElement(
+	            "em",
+	            null,
+	            "2016"
+	          ),
+	          "   App Academy"
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Ruby, Rails, JavaScript, React",
+	          React.createElement("br", null),
+	          React.createElement("br", null)
+	        ),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Glia is an online support group for caregivers of dementia patients."
+	        ),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "p",
+	          null,
+	          "I built Glia with the Flux design pattern on the front end and a Rails-PostgreSQL back end."
+	        ),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "ul",
+	          null,
+	          React.createElement(
+	            "li",
+	            null,
+	            "Data caching"
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            "Rich content editing"
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            "User authentication"
+	          )
+	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "h1",
+	          null,
+	          "Jarvs · ",
+	          React.createElement(
+	            "a",
+	            { href: "https://github.com/fonsecapeter/jarvs", target: "blank", className: "contact" },
+	            "github"
+	          )
 	        ),
 	        React.createElement(
 	          "p",
@@ -27254,13 +27326,7 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Jarvs is an ubuntu app for maintaining and managing research visit summaries, designed with large-scale clinical research in mind. This app iimplements modified versions of the RVS scripts below and was a necessary step in making them available to those who don't code or use the terminal. Jarvs also holds all the different scripts together and links them to a scalable, dynamic database so that different studies of different size can still use the same app. Check out the ",
-	          React.createElement(
-	            "a",
-	            { href: "https://github.com/fonsecapeter/jarvs", target: "blank", className: "contact" },
-	            "github repository"
-	          ),
-	          " for more information."
+	          "Jarvs is an ubuntu app for maintaining and managing research visit summaries, designed with large-scale clinical research in mind. This app iimplements modified versions of the RVS scripts below and was a necessary step in making them available to those who don't code or use the terminal. Jarvs also holds all the different scripts together and links them to a scalable, dynamic database so that different studies of different size can still use the same app."
 	        ),
 	        React.createElement("br", null),
 	        React.createElement(
@@ -27286,6 +27352,68 @@
 	            "li",
 	            null,
 	            "Bash toolkit"
+	          )
+	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "h1",
+	          null,
+	          "Color Shift · ",
+	          React.createElement(
+	            "a",
+	            { href: "https://github.com/fonsecapeter/color-shift", target: "blank", className: "contact" },
+	            "github"
+	          ),
+	          " · ",
+	          React.createElement(
+	            "a",
+	            { href: "http://peterfonseca.gq/color-shift", target: "blank", className: "contact" },
+	            "live"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          React.createElement(
+	            "em",
+	            null,
+	            "2016"
+	          ),
+	          "   App Academy"
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "JavaScript",
+	          React.createElement("br", null),
+	          React.createElement("br", null)
+	        ),
+	        React.createElement("br", null),
+	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/color-shift/master/docs/color-shift-screenshot.png", width: "526px" }),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Color Shift is a JavaScript canvas game."
+	        ),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "ul",
+	          null,
+	          React.createElement(
+	            "li",
+	            null,
+	            "2d Collision Physics"
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            "Full object oriented game logic"
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            "DOM manipulation"
 	          )
 	        ),
 	        React.createElement("br", null),
