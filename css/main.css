@@ -246,8 +246,6 @@ and (max-device-width : 667px) {
 	}
 	#contact {
 		margin: auto;
-		padding-left: 4px;
-		padding-right: 4px;
 	}
 	.sidebar {
 		margin: auto;
