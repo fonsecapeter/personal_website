@@ -26,9 +26,6 @@ h2 > a:hover:before {
   transform: scaleX(1);
 }
 
-img {
-	border-radius: 10px;
-}
 /* Layout */
 
 body {
@@ -107,16 +104,16 @@ body {
 
 /* Global Styling */
 
-a:visited, a:link {
-	color:#2a3845;
-	text-decoration:none;
-	background:none;
+a {
+	color:#5ec0ed;
+	text-decoration: none;
 }
 
-a:hover {
-	color:#2a3845;
-	text-decoration:none;
-	background:none;
+a:hover { text-decoration:underline; }
+
+div {
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
@@ -151,9 +148,8 @@ h4 {
 	font-weight:600;
 }
 
-div {
-	margin: 0;
-	padding: 0;
+img {
+	border-radius: 4px;
 }
 
 p {
@@ -193,10 +189,6 @@ ul {
 	list-style-type: none;
 }
 
-a.contact { color:#1476b8; }
-
-a.contact:hover { text-decoration:underline; }
-
 /* ID's */
 
 #nav a {
@@ -235,5 +227,35 @@ a.contact:hover { text-decoration:underline; }
 }
 
 #map {
-	border-radius: 3px;
+	border-radius: 4px;
+}
+
+@media (only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)) {
+	#left-column, #right-column {
+		width: auto;
+		float: none;
+	}
+	#right-column > .fixed {
+		position: fixed;
+	}
+}
+@media (max-width: 800px) {
+	#left-column, #right-column {
+		width: 100%;
+	  float: none;
+		margin: auto;
+		padding: 20px;
+	}
+	#wrapper {
+		width: 90%;
+		margin: 0;
+	}
+	.sidebar {
+		margin: auto;
+	}
+  .fixed {
+    position: static;
+	}
 }

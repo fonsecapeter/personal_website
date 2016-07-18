@@ -26694,19 +26694,19 @@
 	          { id: 'nav' },
 	          React.createElement(
 	            Link,
-	            { to: '/' },
+	            { className: 'header', to: '/' },
 	            'Home'
 	          ),
-	          '   ',
+	          '  ',
 	          React.createElement(
 	            Link,
-	            { to: 'portfolio' },
+	            { className: 'header', to: 'portfolio' },
 	            'Portfolio'
 	          ),
-	          '   ',
+	          '  ',
 	          React.createElement(
 	            Link,
-	            { to: 'contact' },
+	            { className: 'header', to: 'contact' },
 	            'Contact'
 	          )
 	        ),
@@ -26823,19 +26823,19 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "As a Clinical Research Coordinator in the field of dementia, I was positioned between administrative tasks, technical concepts, and health care. While teaching myself bash and matlab for MRI image processing/analysis, I discoverd that the same principles could apply to my own administrative tasks. I continued to learn Python and SQL to automate as much of our studies procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.",
+	          "As a Clinical Research Coordinator in the field of dementia, I was positioned between administrative tasks, technical concepts, and health care. While teaching myself bash and matlab for MRI image processing/analysis, I discoverd that the same principles could apply to my own administrative tasks. I continued to learn Python and SQL to automate as much of our study's procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.",
 	          React.createElement("br", null),
 	          React.createElement("br", null),
-	          "I am most proud of the management system I developed for our research visist summaries (see ",
+	          "I grew into a role of improving our procedures with technology and am most proud of the management system I developed for our research visist summaries (see ",
 	          React.createElement(
 	            "a",
 	            { href: "https://github.com/fonsecapeter/jarvs" },
 	            "Jarvs"
 	          ),
-	          " in my portfolio for more information). Jarvs continues to help the study and even ended up being adopeted by another large study in the center. In building this, not only did I make my co-workers lives easier, I was helping our research participants recieve better care.",
+	          " in my portfolio for more information). Jarvs continues to help the study and even ended up being adopeted by another large study in the center.",
 	          React.createElement("br", null),
 	          React.createElement("br", null),
-	          "While working on these projects, I realized that I my greatest services to the study came through programming. Incidentally, I enjoyed this work more than my othre responsibilities. I decided that I wanted to do this kind of work every day and continue to learn how I can leverage technology to help others.",
+	          "While working on these projects, I realized that I my greatest services to the study came through programming. Not only did I make my co-workers lives easier, I was helping our research participants recieve better care. I enjoyed this work more than my other responsibilities and decided that I wanted to do it every day. My goal is to continue learning how I can leverage technology to help others.",
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        )
@@ -26846,13 +26846,7 @@
 	        React.createElement(
 	          "h1",
 	          null,
-	          "Full Stack Coding"
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "Languages I work with:",
-	          React.createElement("br", null)
+	          "Languages I Work With:"
 	        ),
 	        React.createElement(
 	          "ul",
@@ -26934,22 +26928,27 @@
 	          React.createElement(
 	            "li",
 	            null,
-	            "Investigated a decade of data quality issues, designing and implementing new policies to prevent future buildup"
+	            "Expanded scope of data requests and presentations using scientific Python, initiating new policies to improve data quality and reduce errors"
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Expanded scope of data requests using python and matlab"
+	            "Accelerated dictation approval bottleneck by building ",
+	            React.createElement(
+	              "a",
+	              { href: "https://launchpad.net/jarvs", target: "blank" },
+	              "Jarvs"
+	            )
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Reduced turnaround time for participant records by automating and building a management system"
+	            "Automated administrative tasks and improved scalability of recruitment"
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Led weekly meetings, reporting to PI"
+	            "Coordinated a team to compile a $5M competitive grant renewal application"
 	          ),
 	          React.createElement(
 	            "li",
@@ -26959,12 +26958,7 @@
 	          React.createElement(
 	            "li",
 	            null,
-	            "Automated pre-visit preparation"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "Acquired MRIs and tested with laptop-based psychometry"
+	            "Conducted cognitive tests and ran MRIs"
 	          )
 	        ),
 	        React.createElement("br", null),
@@ -27002,13 +26996,12 @@
 	              "em",
 	              null,
 	              "S. cerevesiase"
-	            ),
-	            ", focusing on Pkh1/2 and the Rtrs1 subunit of the PP2A complex"
+	            )
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Designed and performed experiments"
+	            "Discredited a hypothesized back-regulation of PP2A-Rts1 by Pkh1/2"
 	          ),
 	          React.createElement(
 	            "li",
@@ -27019,11 +27012,6 @@
 	            "li",
 	            null,
 	            "Worked with PCR, Timecourse, and Western Blot protocols"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "Made my own strains and culture"
 	          )
 	        ),
 	        React.createElement("br", null),
@@ -27092,22 +27080,12 @@
 	          React.createElement(
 	            "li",
 	            null,
-	            "Fabricated complete amplifiers"
+	            "Doubled fabrication rate of amplifiers from schematics"
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Built complete tube-driven circuits from schematics"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "Designed logos and components"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "Trained new staff"
+	            "Designed logos and components with Adobe Illustrator to grow the brand"
 	          )
 	        )
 	      ),
@@ -27123,6 +27101,31 @@
 	      React.createElement(
 	        "div",
 	        null,
+	        React.createElement(
+	          "h1",
+	          null,
+	          React.createElement(
+	            "a",
+	            { href: "https://www.appacademy.io/", target: "blank" },
+	            "App Academy"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          React.createElement(
+	            "em",
+	            null,
+	            "May - July 2016"
+	          ),
+	          "   San Francisco"
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Industry-focused programming course"
+	        ),
+	        React.createElement("br", null),
 	        React.createElement(
 	          "h1",
 	          null,

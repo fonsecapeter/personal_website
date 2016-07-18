@@ -10,7 +10,10 @@ const App = React.createClass({
     return (
       <div>
         <div id="header">
-          <div id="nav"><Link to="/">Home</Link> &nbsp; <Link to="portfolio">Portfolio</Link> &nbsp; <Link to="contact">Contact</Link></div>
+          <div id="nav">
+            <Link className="header" to="/">Home</Link> &nbsp;
+            <Link className="header" to="portfolio">Portfolio</Link> &nbsp;
+            <Link className="header" to="contact">Contact</Link></div>
           <div id="bg"></div>
         </div>
         <div id="wrapper">
