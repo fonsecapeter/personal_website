@@ -44,10 +44,10 @@ body {
 }
 
 #nav {
-	font-size:16px;
+	font-size:20px;
 	background:#3963ac;
 	text-align:center;
-	font-weight:300;
+	font-weight:600;
 	color:white;
 	width:100%;
 	padding:10px 20px 10px 20px;
@@ -259,6 +259,10 @@ and (max-device-width : 667px) {
   .fixed {
     position: static;
 	}
+	#nav {
+		font-size: 26px;
+		font-weight: 600;
+	}
 }
 @media (max-width: 800px) {
 	#left-column, #right-column {
@@ -285,5 +289,9 @@ and (max-device-width : 667px) {
 	}
   .fixed {
     position: static;
+	}
+	#nav {
+		font-size: 26px;
+		font-weight: 600;
 	}
 }
