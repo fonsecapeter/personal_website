@@ -25,6 +25,10 @@ h2 > a:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+img {
+	border-radius: 10px;
+}
 /* Layout */
 
 body {
@@ -221,8 +225,15 @@ a.contact:hover { text-decoration:underline; }
 	background:#24a866;
 }
 
-#contact { margin-left:168px; }
+#contact {
+	margin-top: 26px;
+	margin-left:168px;
+}
 
 #elevator_pitch {
 	clear:both;
+}
+
+#map {
+	border-radius: 3px;
 }

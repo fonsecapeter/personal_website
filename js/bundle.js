@@ -27261,6 +27261,7 @@
 	          React.createElement("br", null)
 	        ),
 	        React.createElement("br", null),
+	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/Glia/master/docs/screenshots/glia-question-detail.png", width: "526px" }),
 	        React.createElement(
 	          "p",
 	          null,
@@ -27279,17 +27280,17 @@
 	          React.createElement(
 	            "li",
 	            null,
-	            "Data caching"
+	            "Minimized data requests with nested Flux resources to reduce load time"
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Rich content editing"
+	            "Leveraged 3rd party libraries to offer modern text-formatting experience, complete with drag-and-drop image uploading"
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "User authentication"
+	            "Incorporated responsive design for mobile users"
 	          )
 	        ),
 	        React.createElement("br", null),
@@ -27317,22 +27318,22 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Python, Bash, SQLite",
+	          "Python, GTK, Bash, SQLite",
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
 	        React.createElement("br", null),
-	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_attends.png", width: "526px" }),
+	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png", width: "526px" }),
 	        React.createElement(
 	          "p",
 	          null,
-	          "Jarvs is an ubuntu app for maintaining and managing research visit summaries, designed with large-scale clinical research in mind. This app iimplements modified versions of the RVS scripts below and was a necessary step in making them available to those who don't code or use the terminal. Jarvs also holds all the different scripts together and links them to a scalable, dynamic database so that different studies of different size can still use the same app."
+	          "Jarvs is an Ubuntu app that I built to help manage research dictations by scraping data out of file-names."
 	        ),
 	        React.createElement("br", null),
 	        React.createElement(
 	          "p",
 	          null,
-	          "This app is still in development, but has the minimum functionality necessary and is currently live. Features include:"
+	          "This app is still in development, but has the minimum functionality necessary and is currently live and in use.:"
 	        ),
 	        React.createElement("br", null),
 	        React.createElement(
@@ -27341,17 +27342,22 @@
 	          React.createElement(
 	            "li",
 	            null,
-	            "Python-Gtk+ front end"
+	            "Distributed via Ubuntu PPA to increase accessibility for non-technical users"
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Python-SQLite frameword"
+	            "Delegated intensive file computations to Bash, optimizing for small cloud instances"
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Bash toolkit"
+	            "Capable of sending weekly emails only to those who have work to do with crontab"
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            "Visualize data through matplotlib"
 	          )
 	        ),
 	        React.createElement("br", null),
@@ -27394,7 +27400,7 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Color Shift is a JavaScript canvas game."
+	          "Color Shift is a JavaScript canvas game that makes learning about a neurologic concept fun."
 	        ),
 	        React.createElement("br", null),
 	        React.createElement(
@@ -27403,17 +27409,12 @@
 	          React.createElement(
 	            "li",
 	            null,
-	            "2d Collision Physics"
+	            "Simulated collision and drag physics with vector computations"
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Full object oriented game logic"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "DOM manipulation"
+	            "Modified DOM with game state logic for start/end gating"
 	          )
 	        ),
 	        React.createElement("br", null),
@@ -27467,53 +27468,7 @@
 	            null,
 	            "Polymorphic classes"
 	          )
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "h1",
-	          null,
-	          "RVS Scripts"
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          React.createElement(
-	            "em",
-	            null,
-	            "2015 - 2016"
-	          ),
-	          "   UCSF Memory and Aging Center"
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "Bash",
-	          React.createElement("br", null),
-	          React.createElement("br", null)
-	        ),
-	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/rvs/sample_docs/figure_1.png", width: "526px" }),
-	        React.createElement(
-	          "p",
-	          null,
-	          "These scripts opened a door to automated management of research visit summaries (an RVS is a detailed note of findings and recommendations from a participant's visit)."
-	        ),
-	        React.createElement(
-	          "ul",
-	          null,
-	          React.createElement(
-	            "li",
-	            null,
-	            "Targeted group emails"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "Visualization of data from file-names"
-	          )
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null)
+	        )
 	      )
 	    );
 	  }
