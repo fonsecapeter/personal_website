@@ -291,7 +291,6 @@ and (max-device-width : 667px) {
     position: static;
 	}
 	#nav {
-		font-size: 26px;
-		font-weight: 600;
+		font-weight: 400;
 	}
 }
