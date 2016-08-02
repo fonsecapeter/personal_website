@@ -53,16 +53,16 @@ const Portfolio = React.createClass({
             <li>Modified DOM with game state logic for start/end gating</li>
           </ul>
           <br/><br/>
-          <h1>Ruby Chess</h1>
+          <h1>Ruby Chess · <a href="https://github.com/fonsecapeter/ruby_chess" target="blank" className="contact">github</a></h1>
           <p><em>2016</em> &nbsp; AppAcademy</p>
           <p>Ruby<br /><br /></p>
           <br/>
-          <img src="https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/sc.png"/>
-          <p>Ruby chess is a command line game built for 2 players. Check out the <a href="https://github.com/fonsecapeter/ruby_chess" target="blank" className="contact">github repository</a> for more information.</p>
+          <img src="https://github.com/fonsecapeter/ruby_chess/blob/master/media/pawn_promotion.gif"/>
+          <p>Ruby chess is a command line game built for 2 players.</p>
           <br/>
           <ul>
-            <li>Unit and integration tests</li>
-            <li>Polymorphic classes</li>
+            <li>Computer player that will intelligently pick moves</li>
+            <li>Unit and integration tested with RSpec</li>
           </ul>
         </div>
       </div>
