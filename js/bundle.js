@@ -27619,8 +27619,8 @@
 	  getContent: function getContent(modalName) {
 	    return React.createElement(
 	      'div',
-	      { style: { background: "transparent" } },
-	      React.createElement('img', { className: 'poster', src: 'poster/AAN2016_FinalPoster.png', alt: 'poster' })
+	      null,
+	      React.createElement('img', { className: 'poster-modal', src: 'poster/AAN2016_FinalPoster.png', alt: 'poster' })
 	    );
 	  },
 	

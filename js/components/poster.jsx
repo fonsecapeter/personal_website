@@ -10,8 +10,8 @@ const Poster = React.createClass({
   },
 
   getContent: function(modalName){
-    return <div style={{ background: "transparent" }}>
-      <img className="poster" src="poster/AAN2016_FinalPoster.png" alt="poster"></img>
+    return <div>
+      <img className="poster-modal" src="poster/AAN2016_FinalPoster.png" alt="poster"></img>
     </div>;
   },
 
