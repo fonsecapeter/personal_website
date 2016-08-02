@@ -27450,7 +27450,7 @@
 	          React.createElement("br", null)
 	        ),
 	        React.createElement("br", null),
-	        React.createElement("img", { src: "https://github.com/fonsecapeter/ruby_chess/blob/master/media/pawn_promotion.gif" }),
+	        React.createElement("img", { src: "https://github.com/fonsecapeter/ruby_chess/blob/master/media/sc.png" }),
 	        React.createElement(
 	          "p",
 	          null,
