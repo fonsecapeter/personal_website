@@ -57,7 +57,7 @@ const Portfolio = React.createClass({
           <p><em>2016</em> &nbsp; AppAcademy</p>
           <p>Ruby<br /><br /></p>
           <br/>
-          <img src="https://github.com/fonsecapeter/ruby_chess/blob/master/media/sc.png"/>
+          <img src="https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif"/>
           <p>Ruby chess is a command line game built for 2 players.</p>
           <br/>
           <ul>
