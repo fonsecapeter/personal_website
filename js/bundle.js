@@ -27425,7 +27425,12 @@
 	        React.createElement(
 	          "h1",
 	          null,
-	          "Ruby Chess"
+	          "Ruby Chess · ",
+	          React.createElement(
+	            "a",
+	            { href: "https://github.com/fonsecapeter/ruby_chess", target: "blank", className: "contact" },
+	            "github"
+	          )
 	        ),
 	        React.createElement(
 	          "p",
@@ -27445,17 +27450,11 @@
 	          React.createElement("br", null)
 	        ),
 	        React.createElement("br", null),
-	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/sc.png" }),
+	        React.createElement("img", { src: "https://github.com/fonsecapeter/ruby_chess/blob/master/media/pawn_promotion.gif" }),
 	        React.createElement(
 	          "p",
 	          null,
-	          "Ruby chess is a command line game built for 2 players. Check out the ",
-	          React.createElement(
-	            "a",
-	            { href: "https://github.com/fonsecapeter/ruby_chess", target: "blank", className: "contact" },
-	            "github repository"
-	          ),
-	          " for more information."
+	          "Ruby chess is a command line game built for 2 players."
 	        ),
 	        React.createElement("br", null),
 	        React.createElement(
@@ -27464,12 +27463,12 @@
 	          React.createElement(
 	            "li",
 	            null,
-	            "Unit and integration tests"
+	            "Computer player that will intelligently pick moves"
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Polymorphic classes"
+	            "Unit and integration tested with RSpec"
 	          )
 	        )
 	      )
@@ -27524,11 +27523,11 @@
 	    var geocoder = new google.maps.Geocoder();
 	    var mapDiv = document.getElementById('map');
 	    var map = new google.maps.Map(mapDiv, {
-	      center: { lat: 37.7905581, lng: -122.4293888 },
+	      center: { lat: 37.7789680, lng: -122.424572 },
 	      zoom: 12
 	    });
 	    geocoder.geocode({
-	      'address': '2085 Sacracmento St, San Francisco, CA 94109'
+	      'address': '1817 California St, San Francisco, CA 94109'
 	    }, function (results) {
 	      var marker = new google.maps.Marker({
 	        position: results[0].geometry.location,
@@ -27570,7 +27569,7 @@
 	      React.createElement(
 	        'p',
 	        null,
-	        '2085 Sacramento St'
+	        '1817 California St'
 	      ),
 	      React.createElement(
 	        'p',
