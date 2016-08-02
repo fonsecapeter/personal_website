@@ -1,6 +1,7 @@
 "use strict";
 
 const React = require('react');
+const Link = require('react-router').Link;
 
 const Home = React.createClass({
   render () {
@@ -90,7 +91,8 @@ const Home = React.createClass({
             <h4>Posters/Presentations</h4>
             <p></p>
             <ul style={{marginTop:'10px'}}>
-              <li><a href="http://www.neurology.org/content/86/16_Supplement/P5.191">Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks</a> <em>(<a href="poster2016.html">poster</a>: AAN 2016)</em></li>
+              {/*<li><a href="http://www.neurology.org/content/86/16_Supplement/P5.191">Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks</a> <em>(<a href="poster2016.html">poster</a>: AAN 2016)</em></li>*/}
+              <li><a href="http://www.neurology.org/content/86/16_Supplement/P5.191">Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks</a> <em>(<Link to="poster">poster</Link>: AAN 2016)</em></li>
               <li>PP2A-Rts1: Master Regulator of Nutrient-Modulated Cell Size Control in <em>S. cerevisiae</em> <em>(presentation: Kellogg Lab Undergraduate Researchers Talks 2014)</em></li>
             </ul>
           </div>

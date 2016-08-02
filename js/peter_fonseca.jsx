@@ -17,6 +17,7 @@ const Home = require('./components/home');
 const Portfolio = require('./components/portfolio');
 const Design = require('./components/design');
 const Contact = require('./components/contact');
+const Poster = require('./components/poster');
 
 const appRouter = (
   <Router history={ hashHistory }>
@@ -25,6 +26,7 @@ const appRouter = (
       <Route path="/portfolio" component={ Portfolio } />
       <Route path="/design" component={ Design } />
       <Route path="/contact" component={ Contact } />
+      <Route path="/poster" component={ Poster } />
     </Route>
   </Router>
 );

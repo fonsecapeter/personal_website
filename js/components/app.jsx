@@ -8,7 +8,7 @@ const SideBar = require('./side_bar');
 const App = React.createClass({
   render () {
     return (
-      <div>
+      <div className="shadowed">
         <div id="header">
           <div id="nav">
             <Link className="header" to="/">Home</Link> &nbsp;
