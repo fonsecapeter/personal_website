@@ -27306,6 +27306,12 @@
 	            "a",
 	            { href: "https://github.com/fonsecapeter/jarvs", target: "blank", className: "contact" },
 	            "github"
+	          ),
+	          " · ",
+	          React.createElement(
+	            "a",
+	            { href: "https://launchpad.net/jarvs", target: "blank", className: "contact" },
+	            "launchpad"
 	          )
 	        ),
 	        React.createElement(
@@ -27355,12 +27361,12 @@
 	          React.createElement(
 	            "li",
 	            null,
-	            "Capable of sending weekly emails only to those who have work to do with crontab"
+	            "Capable of sending weekly emails only to those who have work to do using crontab"
 	          ),
 	          React.createElement(
 	            "li",
 	            null,
-	            "Visualize data through matplotlib"
+	            "Can visualize data with matplotlib"
 	          )
 	        ),
 	        React.createElement("br", null),

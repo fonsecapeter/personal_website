@@ -25,7 +25,7 @@ const Portfolio = React.createClass({
             <li>Incorporated responsive design for mobile users</li>
           </ul>
           <br/><br/>
-          <h1>Jarvs · <a href="https://github.com/fonsecapeter/jarvs" target="blank" className="contact">github</a></h1>
+          <h1>Jarvs · <a href="https://github.com/fonsecapeter/jarvs" target="blank" className="contact">github</a> · <a href="https://launchpad.net/jarvs" target="blank" className="contact">launchpad</a></h1>
           <p><em>2016</em> &nbsp; UCSF Memory and Aging Center</p>
           <p>Python, GTK, Bash, SQLite<br /><br /></p>
           <br/>
@@ -37,8 +37,8 @@ const Portfolio = React.createClass({
           <ul>
             <li>Distributed via Ubuntu PPA to increase accessibility for non-technical users</li>
             <li>Delegated intensive file computations to Bash, optimizing for small cloud instances</li>
-            <li>Capable of sending weekly emails only to those who have work to do with crontab</li>
-            <li>Visualize data through matplotlib</li>
+            <li>Capable of sending weekly emails only to those who have work to do using crontab</li>
+            <li>Can visualize data with matplotlib</li>
           </ul>
           <br/><br/>
           <h1>Color Shift · <a href="https://github.com/fonsecapeter/color-shift" target="blank" className="contact">github</a> · <a href="http://peterfonseca.gq/color-shift" target="blank" className="contact">live</a></h1>
