@@ -26783,7 +26783,7 @@
 	          React.createElement(
 	            "a",
 	            { href: "https://www.linkedin.com/in/peter-fonseca-727576121", target: "_blank" },
-	            React.createElement("img", { src: "icons/In-2C-28px-R.png" })
+	            React.createElement("img", { src: "icons/In-2C-28px.png" })
 	          ),
 	          "   ",
 	          React.createElement(
