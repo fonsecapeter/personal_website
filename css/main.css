@@ -1,8 +1,8 @@
 html, body, a, header, nav, p, div, span, img {
-	-webkit-transition: all 500ms ease-out;
-  -moz-transition: all 500ms ease-out;
-  -o-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
+	-webkit-transition: all 250ms ease-out;
+  -moz-transition: all 250ms ease-out;
+  -o-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
 }
 
 h2 > a:before {
@@ -119,11 +119,14 @@ body {
 /* Global Styling */
 
 a {
-	color:#d99985;
+	color:#e7a07e;
 	text-decoration: none;
 }
 
-a:hover { text-decoration:underline; }
+a:hover {
+	/*text-decoration:underline; */
+	color: #313e4b;
+}
 
 div {
 	margin: 0;
@@ -135,7 +138,7 @@ h1 {
 	margin:0 0 10px;
 	padding-bottom:10px;
 	font-size:19px;
-	border-bottom:1px solid #efece7;
+	border-bottom:2px solid #c0c6cc;
 }
 
 h2 {
@@ -143,7 +146,7 @@ h2 {
 	margin:20px 0 10px;
 	padding-bottom:10px;
 	font-size:19px;
-	border-bottom:1px solid #efece7;
+	border-bottom:2px solid #c0c6cc;
 }
 
 h3 {
@@ -152,7 +155,7 @@ h3 {
 	padding-bottom:10px;
 	font-size:19px;
 	font-weight:600;
-	border-bottom:1px solid #efece7;
+	border-bottom:2px solid #c0c6cc;
 }
 
 h4 {
@@ -215,9 +218,11 @@ ul {
 	color:white;
 }
 
+#nav a:link:hover {
+}
+
 #nav a:hover {
-	text-decoration:underline;
-	color:white;
+	color:#e7a07e;
 }
 
 #box_left {
