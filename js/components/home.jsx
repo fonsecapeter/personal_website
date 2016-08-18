@@ -9,6 +9,7 @@ const Home = React.createClass({
       <div>
         <div id="elevator_pitch">
           <br />
+          <img src="icons/lab.png" className="partial_width partial_width_centered"></img>
             <h2>From Science to Tech</h2>
             <p>
               As a Clinical Research Coordinator in the field of dementia, I was positioned between administrative tasks, technical concepts, and health care. While teaching myself bash and matlab for MRI image processing/analysis, I discoverd that the same principles could apply to my own administrative tasks. I continued to learn Python and SQL to automate as much of our study's procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.
@@ -21,7 +22,8 @@ const Home = React.createClass({
           </div>
           <div>
             <h1>Languages I Work With:</h1>
-            <ul style={{marginTop:'10px'}}>
+            <img src="icons/code-logos.png" className="partial_width"></img>
+            {/*<ul style={{marginTop:'10px'}}>
               <li>Ruby</li>
               <li>Rails</li>
               <li>SQL</li>
@@ -29,10 +31,10 @@ const Home = React.createClass({
               <li>Python</li>
               <li>Bash</li>
               <li>HTML/CSS</li>
-            </ul>
+            </ul>*/}
           </div>
           <div id="work_experience">
-            <h4>Work Experience</h4>
+            <h4><img src="icons/pdf.png" className="icon"></img>  &nbsp; Work Experience</h4>
           </div>
           <div>
             <h1>Clinical Research Coordinator</h1>

@@ -7,6 +7,8 @@ const Portfolio = React.createClass({
     return (
       <div>
         <div>
+          <br />
+          <img src="icons/workspace.png" className="full_width"></img>
           <h4>Coding Projects</h4>
         </div>
         <div>

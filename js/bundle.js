@@ -26818,6 +26818,7 @@
 	        'div',
 	        { id: 'elevator_pitch' },
 	        React.createElement('br', null),
+	        React.createElement('img', { src: 'icons/lab.png', className: 'partial_width partial_width_centered' }),
 	        React.createElement(
 	          'h2',
 	          null,
@@ -26851,45 +26852,7 @@
 	          null,
 	          'Languages I Work With:'
 	        ),
-	        React.createElement(
-	          'ul',
-	          { style: { marginTop: '10px' } },
-	          React.createElement(
-	            'li',
-	            null,
-	            'Ruby'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Rails'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'SQL'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'JavaScript (Node, JQuery, React, Flux)'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Python'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Bash'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'HTML/CSS'
-	          )
-	        )
+	        React.createElement('img', { src: 'icons/code-logos.png', className: 'partial_width' })
 	      ),
 	      React.createElement(
 	        'div',
@@ -26897,7 +26860,8 @@
 	        React.createElement(
 	          'h4',
 	          null,
-	          'Work Experience'
+	          React.createElement('img', { src: 'icons/pdf.png', className: 'icon' }),
+	          '    Work Experience'
 	        )
 	      ),
 	      React.createElement(
@@ -27224,6 +27188,8 @@
 	      React.createElement(
 	        "div",
 	        null,
+	        React.createElement("br", null),
+	        React.createElement("img", { src: "icons/workspace.png", className: "full_width" }),
 	        React.createElement(
 	          "h4",
 	          null,
