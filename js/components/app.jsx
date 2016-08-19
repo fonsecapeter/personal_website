@@ -11,7 +11,8 @@ const App = React.createClass({
       <div className="shadowed">
         <div id="header">
           <div id="nav">
-            <Link className="header" to="/">Home</Link> &nbsp;
+            <Link className="header" to="/">About</Link> &nbsp;
+            <Link className="header" to="experience">Experience</Link> &nbsp;
             <Link className="header" to="portfolio">Portfolio</Link> &nbsp;
             <Link className="header" to="contact">Contact</Link></div>
           <div id="bg"></div>

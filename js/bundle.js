@@ -61,6 +61,8 @@
 	//Components
 	var App = __webpack_require__(234);
 	var Home = __webpack_require__(236);
+	var About = __webpack_require__(256);
+	var Experience = __webpack_require__(257);
 	var Portfolio = __webpack_require__(237);
 	var Design = __webpack_require__(238);
 	var Contact = __webpack_require__(239);
@@ -72,7 +74,8 @@
 	  React.createElement(
 	    Route,
 	    { path: "/", component: App },
-	    React.createElement(IndexRoute, { component: Home }),
+	    React.createElement(IndexRoute, { component: About }),
+	    React.createElement(Route, { path: "/experience", component: Experience }),
 	    React.createElement(Route, { path: "/portfolio", component: Portfolio }),
 	    React.createElement(Route, { path: "/design", component: Design }),
 	    React.createElement(Route, { path: "/contact", component: Contact }),
@@ -26697,7 +26700,13 @@
 	          React.createElement(
 	            Link,
 	            { className: 'header', to: '/' },
-	            'Home'
+	            'About'
+	          ),
+	          '  ',
+	          React.createElement(
+	            Link,
+	            { className: 'header', to: 'experience' },
+	            'Experience'
 	          ),
 	          '  ',
 	          React.createElement(
@@ -28979,6 +28988,404 @@
 	    }
 	});
 
+
+/***/ },
+/* 256 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	var React = __webpack_require__(1);
+	var Link = __webpack_require__(172).Link;
+	
+	var About = React.createClass({
+	  displayName: 'About',
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(
+	        'div',
+	        { id: 'elevator_pitch' },
+	        React.createElement('br', null),
+	        React.createElement(
+	          'div',
+	          null,
+	          React.createElement('img', { src: 'icons/lab.png', className: 'partial_width partial_width_centered' }),
+	          React.createElement(
+	            'h2',
+	            null,
+	            'From Science to Tech'
+	          ),
+	          React.createElement(
+	            'p',
+	            null,
+	            'As a Clinical Research Coordinator in the field of dementia, I was positioned between administrative tasks, technical concepts, and health care. While teaching myself bash and matlab for MRI image processing/analysis, I discoverd that the same principles could apply to my own administrative tasks. I continued to learn Python and SQL to automate as much of our study\'s procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.',
+	            React.createElement('br', null),
+	            React.createElement('br', null),
+	            'I grew into a role of improving our procedures with technology and am most proud of the management system I developed for our research visist summaries (see ',
+	            React.createElement(
+	              'a',
+	              { href: 'https://github.com/fonsecapeter/jarvs' },
+	              'Jarvs'
+	            ),
+	            ' in my portfolio for more information). Jarvs continues to help the study and even ended up being adopeted by another large study in the center.',
+	            React.createElement('br', null),
+	            React.createElement('br', null),
+	            'While working on these projects, I realized that I my greatest services to the study came through programming. Not only did I make my co-workers lives easier, I was helping our research participants recieve better care. I enjoyed this work more than my other responsibilities and decided that I wanted to do it every day. My goal is to continue learning how I can leverage technology to help others.',
+	            React.createElement('br', null),
+	            React.createElement('br', null)
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          null,
+	          React.createElement(
+	            'h1',
+	            null,
+	            'Languages I Work With:'
+	          ),
+	          React.createElement('img', { src: 'icons/code-logos.png', className: 'partial_width' })
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	module.exports = About;
+
+/***/ },
+/* 257 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	var React = __webpack_require__(1);
+	var Link = __webpack_require__(172).Link;
+	
+	var Home = React.createClass({
+	  displayName: 'Home',
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement('br', null),
+	      React.createElement(
+	        'div',
+	        { id: 'work_experience' },
+	        React.createElement(
+	          'h4',
+	          null,
+	          React.createElement('img', { src: 'icons/pdf.png', className: 'icon' }),
+	          '    Work Experience'
+	        )
+	      ),
+	      React.createElement(
+	        'div',
+	        null,
+	        React.createElement(
+	          'h1',
+	          null,
+	          'Clinical Research Coordinator'
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          React.createElement(
+	            'em',
+	            null,
+	            '2014 - present'
+	          ),
+	          '   UCSF Memory and Aging Center'
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          'Primary Study: Frontotemporal Dementia: Genes, Images and Emotions',
+	          React.createElement('br', null),
+	          React.createElement('br', null)
+	        ),
+	        React.createElement(
+	          'ul',
+	          null,
+	          React.createElement(
+	            'li',
+	            null,
+	            'Expanded scope of data requests and presentations using scientific Python, initiating new policies to improve data quality and reduce errors'
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Accelerated dictation approval bottleneck by building ',
+	            React.createElement(
+	              'a',
+	              { href: 'https://launchpad.net/jarvs', target: 'blank' },
+	              'Jarvs'
+	            )
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Automated administrative tasks and improved scalability of recruitment'
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Coordinated a team to compile a $5M competitive grant renewal application'
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Managed metrics, IRB approval, competitive grant renewal, and external presentations'
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Conducted cognitive tests and ran MRIs'
+	          )
+	        ),
+	        React.createElement('br', null),
+	        React.createElement('br', null),
+	        React.createElement(
+	          'h1',
+	          null,
+	          'Undergraduate Researcher'
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          React.createElement(
+	            'em',
+	            null,
+	            '2013 - 2014'
+	          ),
+	          '   UCSC Kellogg Lab'
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          'Primary Focus: Cell Size Control',
+	          React.createElement('br', null),
+	          React.createElement('br', null)
+	        ),
+	        React.createElement(
+	          'ul',
+	          null,
+	          React.createElement(
+	            'li',
+	            null,
+	            'Conducted research on enzymatic pathways involving nutrient-mediated cell size control in ',
+	            React.createElement(
+	              'em',
+	              null,
+	              'S. cerevesiase'
+	            )
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Discredited a hypothesized back-regulation of PP2A-Rts1 by Pkh1/2'
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Formally presented results'
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Worked with PCR, Timecourse, and Western Blot protocols'
+	          )
+	        ),
+	        React.createElement('br', null),
+	        React.createElement('br', null),
+	        React.createElement(
+	          'h1',
+	          null,
+	          'Volunteer Lab Assistant'
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          React.createElement(
+	            'em',
+	            null,
+	            '2012 - 2013 Summers'
+	          ),
+	          '   Novato Medical Center'
+	        ),
+	        React.createElement('br', null),
+	        React.createElement(
+	          'ul',
+	          null,
+	          React.createElement(
+	            'li',
+	            null,
+	            'Managed medical records and appointments'
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Directed incoming patients, calls, and mail'
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Sterilized medical equipment'
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Conducted urinalysis and RST\'s'
+	          )
+	        ),
+	        React.createElement('br', null),
+	        React.createElement('br', null),
+	        React.createElement(
+	          'h1',
+	          null,
+	          'Technician'
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          React.createElement(
+	            'em',
+	            null,
+	            '2010 - 2012 Summers'
+	          ),
+	          '   Vintage 47 Amplifiers'
+	        ),
+	        React.createElement('br', null),
+	        React.createElement(
+	          'ul',
+	          null,
+	          React.createElement(
+	            'li',
+	            null,
+	            'Doubled fabrication rate of amplifiers from schematics'
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'Designed logos and components with Adobe Illustrator to grow the brand'
+	          )
+	        )
+	      ),
+	      React.createElement(
+	        'div',
+	        null,
+	        React.createElement(
+	          'h4',
+	          null,
+	          'Education'
+	        )
+	      ),
+	      React.createElement(
+	        'div',
+	        null,
+	        React.createElement(
+	          'h1',
+	          null,
+	          React.createElement(
+	            'a',
+	            { href: 'https://www.appacademy.io/', target: 'blank' },
+	            'App Academy'
+	          )
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          React.createElement(
+	            'em',
+	            null,
+	            'May - July 2016'
+	          ),
+	          '   San Francisco'
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          'Industry-focused programming course'
+	        ),
+	        React.createElement('br', null),
+	        React.createElement(
+	          'h1',
+	          null,
+	          'Bachelor of Science in Biology'
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          React.createElement(
+	            'em',
+	            null,
+	            '2010 - 2014'
+	          ),
+	          '   University of California, Santa Cruz'
+	        ),
+	        React.createElement(
+	          'p',
+	          null,
+	          'Minor in Chemistry'
+	        )
+	      ),
+	      React.createElement(
+	        'div',
+	        null,
+	        React.createElement(
+	          'h4',
+	          null,
+	          'Posters/Presentations'
+	        ),
+	        React.createElement('p', null),
+	        React.createElement(
+	          'ul',
+	          { style: { marginTop: '10px' } },
+	          React.createElement(
+	            'li',
+	            null,
+	            React.createElement(
+	              'a',
+	              { href: 'http://www.neurology.org/content/86/16_Supplement/P5.191' },
+	              'Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks'
+	            ),
+	            ' ',
+	            React.createElement(
+	              'em',
+	              null,
+	              '(',
+	              React.createElement(
+	                Link,
+	                { to: 'poster' },
+	                'poster'
+	              ),
+	              ': AAN 2016)'
+	            )
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            'PP2A-Rts1: Master Regulator of Nutrient-Modulated Cell Size Control in ',
+	            React.createElement(
+	              'em',
+	              null,
+	              'S. cerevisiae'
+	            ),
+	            ' ',
+	            React.createElement(
+	              'em',
+	              null,
+	              '(presentation: Kellogg Lab Undergraduate Researchers Talks 2014)'
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	module.exports = Home;
 
 /***/ }
 /******/ ]);
