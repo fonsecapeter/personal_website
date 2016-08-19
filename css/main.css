@@ -47,7 +47,7 @@ body {
 	font-size:18px;
 	background:#5e6c75;
 	text-align:center;
-	font-weight:300;
+	font-weight:600;
 	color:white;
 	width:100%;
 	padding:10px 20px 10px 20px;
@@ -325,6 +325,6 @@ and (max-device-width : 667px) {
     position: static;
 	}
 	#nav {
-		font-weight: 300;
+		font-weight: 600;
 	}
 }
