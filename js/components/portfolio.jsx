@@ -34,7 +34,7 @@ const Portfolio = React.createClass({
           <img src="https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png" width="526px"/>
           <p>Jarvs is an Ubuntu app that I built to help manage research dictations by scraping data out of file-names.</p>
           <br/>
-          <p>This app is still in development, but has the minimum functionality necessary and is currently live and in use.</p>
+          <p>This app is still in development, but has the minimum functionality necessary and is currently in use.</p>
           <br/>
           <ul>
             <li>Distributed via Ubuntu PPA to increase accessibility for non-technical users</li>
