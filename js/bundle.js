@@ -27248,19 +27248,19 @@
 	          React.createElement(
 	            'p',
 	            null,
-	            'As a Clinical Research Coordinator in the field of dementia, I was positioned between administrative tasks, technical concepts, and health care. While teaching myself bash and matlab for MRI image processing/analysis, I discoverd that the same principles could apply to my own administrative tasks. I continued to learn Python and SQL to automate as much of our study\'s procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.',
+	            'While working in clinical research, my time was split between administrative tasks, technology concepts, science, and health care. While learning how to use Bash and MatLab for MRI image processing/analysis, I discoverd that the same principles could apply to the rest of my work. I continued to learn Python and SQL to automate as much of the study\'s procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.',
 	            React.createElement('br', null),
 	            React.createElement('br', null),
-	            'I grew into a role of improving our procedures with technology and am most proud of the management system I developed for our research visist summaries (see ',
+	            'I grew into a role of improving our procedures and data with technology and am most proud of the management system I developed for our research visist summaries (',
 	            React.createElement(
 	              'a',
 	              { href: 'https://github.com/fonsecapeter/jarvs' },
 	              'Jarvs'
 	            ),
-	            ' in my portfolio for more information). Jarvs continues to help the study and even ended up being adopeted by another large study in the center.',
+	            '). While working on these projects, I realized that my greatest services to the study came through programming. Not only was I making my co-workers lives easier, I was helping our research participants recieve better care.',
 	            React.createElement('br', null),
 	            React.createElement('br', null),
-	            'While working on these projects, I realized that I my greatest services to the study came through programming. Not only did I make my co-workers lives easier, I was helping our research participants recieve better care. I enjoyed this work more than my other responsibilities and decided that I wanted to do it every day. My goal is to continue learning how I can leverage technology to help others.',
+	            'I also enjoyed this work more than my other responsibilities. It kept me working early in the morning and late at night, and I couldn\'t help myself from finishing a new project. I decided that I wanted to do it every day and my goal is to continue learning how I can leverage technology to help others.',
 	            React.createElement('br', null),
 	            React.createElement('br', null)
 	          )
@@ -27364,7 +27364,7 @@
 	          React.createElement(
 	            'li',
 	            null,
-	            'Managed metrics, IRB approval, competitive grant renewal, and external presentations'
+	            'Managed metrics, IRB approval, team meetings, and external presentations'
 	          ),
 	          React.createElement(
 	            'li',
