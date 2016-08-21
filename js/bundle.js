@@ -27755,7 +27755,7 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "This app is still in development, but has the minimum functionality necessary and is currently live and in use."
+	          "This app is still in development, but has the minimum functionality necessary and is currently in use."
 	        ),
 	        React.createElement("br", null),
 	        React.createElement(
