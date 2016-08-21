@@ -43,7 +43,7 @@ const Home = React.createClass({
               <li>Accelerated dictation approval bottleneck by building <a href="https://launchpad.net/jarvs" target="blank">Jarvs</a></li>
               <li>Automated administrative tasks and improved scalability of recruitment</li>
               <li>Coordinated a team to compile a $5M competitive grant renewal application</li>
-              <li>Managed metrics, IRB approval, competitive grant renewal, and external presentations</li>
+              <li>Managed metrics, IRB approval, team meetings, and external presentations</li>
               <li>Conducted cognitive tests and ran MRIs</li>
             </ul>
             <br /><br />

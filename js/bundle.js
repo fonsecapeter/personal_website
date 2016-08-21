@@ -26956,7 +26956,7 @@
 	          React.createElement(
 	            'li',
 	            null,
-	            'Managed metrics, IRB approval, competitive grant renewal, and external presentations'
+	            'Managed metrics, IRB approval, team meetings, and external presentations'
 	          ),
 	          React.createElement(
 	            'li',
