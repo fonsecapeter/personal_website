@@ -27476,7 +27476,8 @@
 	        React.createElement(
 	          'h1',
 	          null,
-	          'Technician'
+	          React.createElement('img', { src: 'icons/tube.png', className: 'icon' }),
+	          '   Technician'
 	        ),
 	        React.createElement(
 	          'p',

@@ -44,7 +44,7 @@ const Home = React.createClass({
             <li>Conducted urinalysis and RST's</li>
           </ul>
           <br /><br />
-          <h1>Technician</h1>
+          <h1><img src="icons/tube.png" className="icon"></img> &nbsp; Technician</h1>
           <p><em>2010 - 2012 Summers</em> &nbsp; Vintage 47 Amplifiers</p>
           <br />
           <ul>
