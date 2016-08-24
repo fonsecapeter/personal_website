@@ -34,7 +34,7 @@ const Home = React.createClass({
             <li>Worked with PCR, Timecourse, and Western Blot protocols</li>
           </ul>
           <br /><br />
-          <h1>Volunteer Lab Assistant</h1>
+          <h1><img src="icons/stethoscope.png" className="icon"></img>Volunteer Lab Assistant</h1>
           <p><em>2012 - 2013 Summers</em> &nbsp; Novato Medical Center</p>
           <br />
           <ul>

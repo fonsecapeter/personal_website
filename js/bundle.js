@@ -27434,6 +27434,7 @@
 	        React.createElement(
 	          'h1',
 	          null,
+	          React.createElement('img', { src: 'icons/stethoscope.png', className: 'icon' }),
 	          'Volunteer Lab Assistant'
 	        ),
 	        React.createElement(
