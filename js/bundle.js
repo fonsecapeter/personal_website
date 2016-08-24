@@ -27304,8 +27304,12 @@
 	        React.createElement(
 	          'h4',
 	          null,
-	          React.createElement('img', { src: 'icons/pdf.png', className: 'icon' }),
-	          '    Work Experience'
+	          React.createElement(
+	            'a',
+	            { href: 'resume/PeterFonsecaResume.pdf', target: 'blank' },
+	            React.createElement('img', { src: 'icons/pdf.png', className: 'icon' })
+	          ),
+	          '   Work Experience'
 	        )
 	      ),
 	      React.createElement(
