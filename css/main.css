@@ -210,16 +210,34 @@ ul {
 	margin-left: 20%;
 }
 
+.row {
+	float: left;
+	width: 100%;
+	white-space: nowrap;
+}
+
+.experience-entry {
+}
+
+.experience-left {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.experience-right {
+	display: inline-block;
+}
+
 .full_width {
 	width: 100%;
 }
 
 .icon {
-	width: 40px;
+	width: 50px;
 }
 
 .icon-slightly-larger {
-	width: 60px;
+	width: 80px;
 }
 
 .img_list {

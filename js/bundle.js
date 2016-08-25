@@ -27316,73 +27316,99 @@
 	        'div',
 	        null,
 	        React.createElement(
-	          'h1',
-	          null,
-	          React.createElement('img', { src: 'icons/brain.png', className: 'icon-slightly-larger' }),
-	          '   Clinical Research Coordinator'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
+	          'div',
+	          { className: 'experience-entry' },
 	          React.createElement(
-	            'em',
-	            null,
-	            '2014 - present'
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	              'div',
+	              { className: 'experience-left' },
+	              React.createElement('img', { src: 'icons/brain.png', className: 'icon-slightly-larger' })
+	            ),
+	            React.createElement(
+	              'div',
+	              { className: 'experience-right' },
+	              React.createElement(
+	                'h1',
+	                null,
+	                'Clinical Research Coordinator'
+	              ),
+	              React.createElement(
+	                'p',
+	                null,
+	                React.createElement(
+	                  'em',
+	                  null,
+	                  '2014 - present'
+	                ),
+	                '   UCSF Memory and Aging Center'
+	              ),
+	              React.createElement(
+	                'p',
+	                null,
+	                'Primary Study: Frontotemporal Dementia: Genes, Images and Emotions',
+	                React.createElement('br', null),
+	                React.createElement('br', null)
+	              )
+	            )
 	          ),
-	          '   UCSF Memory and Aging Center'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'Primary Study: Frontotemporal Dementia: Genes, Images and Emotions',
+	          React.createElement(
+	            'ul',
+	            null,
+	            React.createElement('br', null),
+	            React.createElement('br', null),
+	            React.createElement('br', null),
+	            React.createElement('br', null),
+	            React.createElement('br', null),
+	            React.createElement('br', null),
+	            React.createElement(
+	              'li',
+	              null,
+	              'Expanded scope of data requests and presentations using scientific Python, initiating new policies to improve data quality and reduce errors'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'Accelerated dictation approval bottleneck by building ',
+	              React.createElement(
+	                'a',
+	                { href: 'https://launchpad.net/jarvs', target: 'blank' },
+	                'Jarvs'
+	              )
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'Automated administrative tasks and improved scalability of recruitment'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'Coordinated a team to compile a $5M competitive grant renewal application'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'Managed metrics, IRB approval, team meetings, and external presentations'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'Conducted cognitive tests and ran MRIs'
+	            )
+	          ),
 	          React.createElement('br', null),
 	          React.createElement('br', null)
 	        ),
 	        React.createElement(
-	          'ul',
+	          'p',
 	          null,
-	          React.createElement(
-	            'li',
-	            null,
-	            'Expanded scope of data requests and presentations using scientific Python, initiating new policies to improve data quality and reduce errors'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Accelerated dictation approval bottleneck by building ',
-	            React.createElement(
-	              'a',
-	              { href: 'https://launchpad.net/jarvs', target: 'blank' },
-	              'Jarvs'
-	            )
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Automated administrative tasks and improved scalability of recruitment'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Coordinated a team to compile a $5M competitive grant renewal application'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Managed metrics, IRB approval, team meetings, and external presentations'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Conducted cognitive tests and ran MRIs'
-	          )
+	          React.createElement('img', { src: 'icons/microscope.png', className: 'icon-slightly-larger' })
 	        ),
-	        React.createElement('br', null),
-	        React.createElement('br', null),
 	        React.createElement(
 	          'h1',
 	          null,
-	          React.createElement('img', { src: 'icons/microscope.png', className: 'icon-slightly-larger' }),
 	          'Undergraduate Researcher'
 	        ),
 	        React.createElement(
@@ -27434,9 +27460,13 @@
 	        React.createElement('br', null),
 	        React.createElement('br', null),
 	        React.createElement(
+	          'p',
+	          null,
+	          React.createElement('img', { src: 'icons/stethoscope.png', className: 'icon-slightly-larger' })
+	        ),
+	        React.createElement(
 	          'h1',
 	          null,
-	          React.createElement('img', { src: 'icons/stethoscope.png', className: 'icon-slightly-larger' }),
 	          'Volunteer Lab Assistant'
 	        ),
 	        React.createElement(
@@ -27477,10 +27507,14 @@
 	        React.createElement('br', null),
 	        React.createElement('br', null),
 	        React.createElement(
+	          'p',
+	          null,
+	          React.createElement('img', { src: 'icons/tube.png', className: 'icon' })
+	        ),
+	        React.createElement(
 	          'h1',
 	          null,
-	          React.createElement('img', { src: 'icons/tube.png', className: 'icon' }),
-	          '   Technician'
+	          'Technician'
 	        ),
 	        React.createElement(
 	          'p',
