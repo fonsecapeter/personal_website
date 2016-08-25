@@ -27351,194 +27351,246 @@
 	                React.createElement('br', null),
 	                React.createElement('br', null)
 	              )
-	            )
+	            ),
+	            React.createElement('br', null)
 	          ),
 	          React.createElement(
-	            'ul',
-	            null,
-	            React.createElement('br', null),
-	            React.createElement('br', null),
-	            React.createElement('br', null),
-	            React.createElement('br', null),
-	            React.createElement('br', null),
-	            React.createElement('br', null),
+	            'div',
+	            { className: 'row' },
 	            React.createElement(
-	              'li',
-	              null,
-	              'Expanded scope of data requests and presentations using scientific Python, initiating new policies to improve data quality and reduce errors'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'Accelerated dictation approval bottleneck by building ',
+	              'ul',
+	              { className: 'experience-bullets' },
 	              React.createElement(
-	                'a',
-	                { href: 'https://launchpad.net/jarvs', target: 'blank' },
-	                'Jarvs'
+	                'li',
+	                null,
+	                'Expanded scope of data requests and presentations using scientific Python, initiating new policies to improve data quality and reduce errors'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Accelerated dictation approval bottleneck by building ',
+	                React.createElement(
+	                  'a',
+	                  { href: 'https://launchpad.net/jarvs', target: 'blank' },
+	                  'Jarvs'
+	                )
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Automated administrative tasks and improved scalability of recruitment'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Coordinated a team to compile a $5M competitive grant renewal application'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Managed metrics, IRB approval, team meetings, and external presentations'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Conducted cognitive tests and ran MRIs'
 	              )
 	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'Automated administrative tasks and improved scalability of recruitment'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'Coordinated a team to compile a $5M competitive grant renewal application'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'Managed metrics, IRB approval, team meetings, and external presentations'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'Conducted cognitive tests and ran MRIs'
-	            )
-	          ),
-	          React.createElement('br', null),
-	          React.createElement('br', null)
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement('img', { src: 'icons/microscope.png', className: 'icon-slightly-larger' })
-	        ),
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Undergraduate Researcher'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement(
-	            'em',
-	            null,
-	            '2013 - 2014'
-	          ),
-	          '   UCSC Kellogg Lab'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'Primary Focus: Cell Size Control',
-	          React.createElement('br', null),
-	          React.createElement('br', null)
-	        ),
-	        React.createElement(
-	          'ul',
-	          null,
-	          React.createElement(
-	            'li',
-	            null,
-	            'Conducted research on enzymatic pathways involving nutrient-mediated cell size control in ',
-	            React.createElement(
-	              'em',
-	              null,
-	              'S. cerevesiase'
-	            )
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Discredited a hypothesized back-regulation of PP2A-Rts1 by Pkh1/2'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Formally presented results'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Worked with PCR, Timecourse, and Western Blot protocols'
+	            React.createElement('br', null),
+	            React.createElement('br', null)
 	          )
 	        ),
-	        React.createElement('br', null),
-	        React.createElement('br', null),
 	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement('img', { src: 'icons/stethoscope.png', className: 'icon-slightly-larger' })
-	        ),
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Volunteer Lab Assistant'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
+	          'div',
+	          { className: 'experience-entry' },
 	          React.createElement(
-	            'em',
-	            null,
-	            '2012 - 2013 Summers'
-	          ),
-	          '   Novato Medical Center'
-	        ),
-	        React.createElement('br', null),
-	        React.createElement(
-	          'ul',
-	          null,
-	          React.createElement(
-	            'li',
-	            null,
-	            'Managed medical records and appointments'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Directed incoming patients, calls, and mail'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Sterilized medical equipment'
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	              'div',
+	              { className: 'experience-left' },
+	              React.createElement('img', { src: 'icons/microscope.png', className: 'icon-slightly-larger' })
+	            ),
+	            React.createElement(
+	              'div',
+	              { className: 'experience-right' },
+	              React.createElement(
+	                'h1',
+	                null,
+	                'Undergraduate Researcher'
+	              ),
+	              React.createElement(
+	                'p',
+	                null,
+	                React.createElement(
+	                  'em',
+	                  null,
+	                  '2013 - 2014'
+	                ),
+	                '   UCSC Kellogg Lab'
+	              ),
+	              React.createElement(
+	                'p',
+	                null,
+	                'Primary Focus: Cell Size Control',
+	                React.createElement('br', null),
+	                React.createElement('br', null)
+	              )
+	            ),
+	            React.createElement('br', null)
 	          ),
 	          React.createElement(
-	            'li',
-	            null,
-	            'Conducted urinalysis and RST\'s'
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	              'ul',
+	              { className: 'experience-bullets' },
+	              React.createElement(
+	                'li',
+	                null,
+	                'Conducted research on enzymatic pathways involving nutrient-mediated cell size control in ',
+	                React.createElement(
+	                  'em',
+	                  null,
+	                  'S. cerevesiase'
+	                )
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Discredited a hypothesized back-regulation of PP2A-Rts1 by Pkh1/2'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Formally presented results'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Worked with PCR, Timecourse, and Western Blot protocols'
+	              )
+	            ),
+	            React.createElement('br', null),
+	            React.createElement('br', null)
 	          )
 	        ),
-	        React.createElement('br', null),
-	        React.createElement('br', null),
 	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement('img', { src: 'icons/tube.png', className: 'icon' })
-	        ),
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Technician'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
+	          'div',
+	          { className: 'experience-entry' },
 	          React.createElement(
-	            'em',
-	            null,
-	            '2010 - 2012 Summers'
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	              'div',
+	              { className: 'experience-left' },
+	              React.createElement('img', { src: 'icons/stethoscope.png', className: 'icon-slightly-larger' })
+	            ),
+	            React.createElement(
+	              'div',
+	              { className: 'experience-right' },
+	              React.createElement(
+	                'h1',
+	                null,
+	                'Volunteer Lab Assistant'
+	              ),
+	              React.createElement(
+	                'p',
+	                null,
+	                React.createElement(
+	                  'em',
+	                  null,
+	                  '2012 - 2013 Summers'
+	                ),
+	                '   Novato Medical Center'
+	              )
+	            ),
+	            React.createElement('br', null),
+	            React.createElement('br', null)
 	          ),
-	          '   Vintage 47 Amplifiers'
-	        ),
-	        React.createElement('br', null),
-	        React.createElement(
-	          'ul',
-	          null,
 	          React.createElement(
-	            'li',
-	            null,
-	            'Doubled fabrication rate of amplifiers from schematics'
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	              'ul',
+	              { className: 'experience-bullets' },
+	              React.createElement(
+	                'li',
+	                null,
+	                'Managed medical records and appointments'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Directed incoming patients, calls, and mail'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Sterilized medical equipment'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Conducted urinalysis and RST\'s'
+	              )
+	            ),
+	            React.createElement('br', null),
+	            React.createElement('br', null)
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'experience-entry' },
+	          React.createElement(
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	              'div',
+	              { className: 'experience-left' },
+	              React.createElement('img', { src: 'icons/tube.png', className: 'icon' })
+	            ),
+	            React.createElement(
+	              'div',
+	              { className: 'experience-right' },
+	              React.createElement(
+	                'h1',
+	                null,
+	                'Technician'
+	              ),
+	              React.createElement(
+	                'p',
+	                null,
+	                React.createElement(
+	                  'em',
+	                  null,
+	                  '2010 - 2012 Summers'
+	                ),
+	                '   Vintage 47 Amplifiers'
+	              )
+	            ),
+	            React.createElement('br', null),
+	            React.createElement('br', null)
 	          ),
 	          React.createElement(
-	            'li',
-	            null,
-	            'Designed logos and components with Adobe Illustrator to grow the brand'
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	              'ul',
+	              { className: 'experience-bullets' },
+	              React.createElement(
+	                'li',
+	                null,
+	                'Doubled fabrication rate of amplifiers from schematics'
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                'Designed logos and components with Adobe Illustrator to grow the brand'
+	              )
+	            ),
+	            React.createElement('br', null),
+	            React.createElement('br', null)
 	          )
 	        )
 	      ),

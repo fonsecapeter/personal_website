@@ -213,10 +213,13 @@ ul {
 .row {
 	float: left;
 	width: 100%;
-	white-space: nowrap;
 }
 
 .experience-entry {
+}
+
+.experience-bullets {
+	padding-left: 20px;
 }
 
 .experience-left {
