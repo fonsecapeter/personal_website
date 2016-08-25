@@ -12,7 +12,7 @@ const Home = React.createClass({
           <h4><a href="resume/PeterFonsecaResume.pdf" target="blank"><img src="icons/pdf.png" className="icon"></img></a> &nbsp; Work Experience</h4>
         </div>
         <div>
-          <h1>Clinical Research Coordinator</h1>
+          <h1><img src="icons/brain.png" className="icon-slightly-larger"></img> &nbsp; Clinical Research Coordinator</h1>
           <p><em>2014 - present</em> &nbsp; UCSF Memory and Aging Center</p>
           <p>Primary Study: Frontotemporal Dementia: Genes, Images and Emotions<br /><br /></p>
           <ul>
@@ -24,7 +24,7 @@ const Home = React.createClass({
             <li>Conducted cognitive tests and ran MRIs</li>
           </ul>
           <br /><br />
-          <h1>Undergraduate Researcher</h1>
+          <h1><img src="icons/microscope.png" className="icon-slightly-larger"></img>Undergraduate Researcher</h1>
           <p><em>2013 - 2014</em> &nbsp; UCSC Kellogg Lab</p>
           <p>Primary Focus: Cell Size Control<br /><br /></p>
           <ul>
@@ -34,7 +34,7 @@ const Home = React.createClass({
             <li>Worked with PCR, Timecourse, and Western Blot protocols</li>
           </ul>
           <br /><br />
-          <h1><img src="icons/stethoscope.png" className="icon"></img>Volunteer Lab Assistant</h1>
+          <h1><img src="icons/stethoscope.png" className="icon-slightly-larger"></img>Volunteer Lab Assistant</h1>
           <p><em>2012 - 2013 Summers</em> &nbsp; Novato Medical Center</p>
           <br />
           <ul>

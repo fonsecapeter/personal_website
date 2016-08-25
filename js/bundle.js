@@ -27318,7 +27318,8 @@
 	        React.createElement(
 	          'h1',
 	          null,
-	          'Clinical Research Coordinator'
+	          React.createElement('img', { src: 'icons/brain.png', className: 'icon-slightly-larger' }),
+	          '   Clinical Research Coordinator'
 	        ),
 	        React.createElement(
 	          'p',
@@ -27381,6 +27382,7 @@
 	        React.createElement(
 	          'h1',
 	          null,
+	          React.createElement('img', { src: 'icons/microscope.png', className: 'icon-slightly-larger' }),
 	          'Undergraduate Researcher'
 	        ),
 	        React.createElement(
@@ -27434,7 +27436,7 @@
 	        React.createElement(
 	          'h1',
 	          null,
-	          React.createElement('img', { src: 'icons/stethoscope.png', className: 'icon' }),
+	          React.createElement('img', { src: 'icons/stethoscope.png', className: 'icon-slightly-larger' }),
 	          'Volunteer Lab Assistant'
 	        ),
 	        React.createElement(

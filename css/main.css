@@ -218,6 +218,10 @@ ul {
 	width: 40px;
 }
 
+.icon-slightly-larger {
+	width: 60px;
+}
+
 .img_list {
 	list-style-type: none;
 }
