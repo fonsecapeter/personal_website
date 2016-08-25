@@ -27338,11 +27338,20 @@
 	                'p',
 	                null,
 	                React.createElement(
-	                  'em',
-	                  null,
-	                  '2014 - present'
+	                  'span',
+	                  { className: 'date' },
+	                  React.createElement(
+	                    'em',
+	                    null,
+	                    '2014 -2016'
+	                  )
 	                ),
-	                '   UCSF Memory and Aging Center'
+	                '   ',
+	                React.createElement(
+	                  'a',
+	                  { href: 'http://memory.ucsf.edu/', target: 'blank' },
+	                  'UCSF Memory and Aging Center'
+	                )
 	              ),
 	              React.createElement(
 	                'p',
@@ -27423,11 +27432,20 @@
 	                'p',
 	                null,
 	                React.createElement(
-	                  'em',
-	                  null,
-	                  '2013 - 2014'
+	                  'span',
+	                  { className: 'date' },
+	                  React.createElement(
+	                    'em',
+	                    null,
+	                    '2013 - 2014'
+	                  )
 	                ),
-	                '   UCSC Kellogg Lab'
+	                '   ',
+	                React.createElement(
+	                  'a',
+	                  { href: 'http://www.kellogglab.com/', target: 'blank' },
+	                  'UCSC Kellogg Lab'
+	                )
 	              ),
 	              React.createElement(
 	                'p',
@@ -27498,11 +27516,20 @@
 	                'p',
 	                null,
 	                React.createElement(
-	                  'em',
-	                  null,
-	                  '2012 - 2013 Summers'
+	                  'span',
+	                  { className: 'date' },
+	                  React.createElement(
+	                    'em',
+	                    null,
+	                    '2012 - 2013 Summers'
+	                  )
 	                ),
-	                '   Novato Medical Center'
+	                '   ',
+	                React.createElement(
+	                  'a',
+	                  { href: 'http://doctor.webmd.com/practice/novato-medical-center-3fd2a3c8-4703-e211-a42b-001f29e3eb44-overview', target: 'blank' },
+	                  'Novato Medical Center'
+	                )
 	              )
 	            ),
 	            React.createElement('br', null),
@@ -27562,11 +27589,20 @@
 	                'p',
 	                null,
 	                React.createElement(
-	                  'em',
-	                  null,
-	                  '2010 - 2012 Summers'
+	                  'span',
+	                  { className: 'date' },
+	                  React.createElement(
+	                    'em',
+	                    null,
+	                    '2010 - 2012 Summers'
+	                  )
 	                ),
-	                '   Vintage 47 Amplifiers'
+	                '   ',
+	                React.createElement(
+	                  'a',
+	                  { href: 'http://www.vintage47amps.com/', target: 'blank' },
+	                  'Vintage 47 Amplifiers'
+	                )
 	              )
 	            ),
 	            React.createElement('br', null),
@@ -27619,9 +27655,13 @@
 	          'p',
 	          null,
 	          React.createElement(
-	            'em',
-	            null,
-	            'May - July 2016'
+	            'span',
+	            { className: 'date' },
+	            React.createElement(
+	              'em',
+	              null,
+	              'May - July 2016'
+	            )
 	          ),
 	          '   San Francisco'
 	        ),
@@ -27640,9 +27680,13 @@
 	          'p',
 	          null,
 	          React.createElement(
-	            'em',
-	            null,
-	            '2010 - 2014'
+	            'span',
+	            { className: 'date' },
+	            React.createElement(
+	              'em',
+	              null,
+	              '2010 - 2014'
+	            )
 	          ),
 	          '   University of California, Santa Cruz'
 	        ),

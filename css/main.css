@@ -119,7 +119,7 @@ body {
 /* Global Styling */
 
 a {
-	color:#e7a07e;
+	color:#d75f28;
 	text-decoration: none;
 }
 
@@ -202,6 +202,10 @@ ul {
 	position: fixed;
 }
 
+.date {
+	color: #e77282;
+}
+
 .partial_width {
 	margin-left: 5%;
 	width: 60%;
@@ -263,7 +267,7 @@ ul {
 }
 
 #nav a:hover {
-	color:#e7a07e;
+	color:#e38f68;
 }
 
 #box_left {
