@@ -26688,6 +26688,23 @@
 	var App = React.createClass({
 	  displayName: 'App',
 	  render: function render() {
+	    var path = this.props.location.pathname;
+	
+	    var aboutClass = "header";
+	    var experienceClass = "header";
+	    var portfolioClass = "header";
+	    var contactClass = "header";
+	
+	    if (path === "/" || path === "/about") {
+	      aboutClass += " active";
+	    } else if (path === "/experience") {
+	      experienceClass += " active";
+	    } else if (path === "/portfolio") {
+	      portfolioClass += " active";
+	    } else if (path === "/contact") {
+	      contactClass += " active";
+	    }
+	
 	    return React.createElement(
 	      'div',
 	      { className: 'shadowed' },
@@ -26699,25 +26716,25 @@
 	          { id: 'nav' },
 	          React.createElement(
 	            Link,
-	            { className: 'header', to: '/' },
+	            { className: aboutClass, to: '/' },
 	            'About'
 	          ),
 	          '  ',
 	          React.createElement(
 	            Link,
-	            { className: 'header', to: 'experience' },
+	            { className: experienceClass, to: 'experience' },
 	            'Experience'
 	          ),
 	          '  ',
 	          React.createElement(
 	            Link,
-	            { className: 'header', to: 'portfolio' },
+	            { className: portfolioClass, to: 'portfolio' },
 	            'Portfolio'
 	          ),
 	          '  ',
 	          React.createElement(
 	            Link,
-	            { className: 'header', to: 'contact' },
+	            { className: contactClass, to: 'contact' },
 	            'Contact'
 	          )
 	        ),
@@ -27288,7 +27305,7 @@
 	            React.createElement(
 	              'li',
 	              null,
-	              'SQL          Python  Bash     Matlab'
+	              'SQL          Python  Bash      Matlab'
 	            ),
 	            React.createElement(
 	              'li',
@@ -27516,7 +27533,7 @@
 	            React.createElement(
 	              'div',
 	              { className: 'experience-left' },
-	              React.createElement('img', { src: 'icons/stethoscope.png', className: 'icon-slightly-larger' })
+	              React.createElement('img', { src: 'icons/stethoscope.png', className: 'icon' })
 	            ),
 	            React.createElement(
 	              'div',
@@ -27649,51 +27666,88 @@
 	        'div',
 	        null,
 	        React.createElement(
-	          'h1',
-	          null,
+	          'div',
+	          { className: 'row' },
 	          React.createElement(
-	            'a',
-	            { href: 'https://www.appacademy.io/', target: 'blank' },
-	            'App Academy'
+	            'div',
+	            { className: 'experience-left' },
+	            React.createElement('img', { src: 'icons/aa.png', className: 'icon v-center' })
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: 'experience-right' },
+	            React.createElement(
+	              'h1',
+	              null,
+	              React.createElement(
+	                'a',
+	                { href: 'https://www.appacademy.io/', target: 'blank' },
+	                'App Academy'
+	              )
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              React.createElement(
+	                'span',
+	                { className: 'date' },
+	                'May-July 2016'
+	              ),
+	              '   San Francisco'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Industry-focused programming course'
+	            )
 	          )
 	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement(
-	            'span',
-	            { className: 'date' },
-	            'May-July 2016'
-	          ),
-	          '   San Francisco'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'Industry-focused programming course'
-	        ),
+	        React.createElement('br', null),
+	        React.createElement('br', null),
+	        React.createElement('br', null),
+	        React.createElement('br', null),
+	        React.createElement('br', null),
 	        React.createElement('br', null),
 	        React.createElement(
-	          'h1',
-	          null,
-	          'Bachelor of Science in Biology'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
+	          'div',
+	          { className: 'row' },
 	          React.createElement(
-	            'span',
-	            { className: 'date' },
-	            '2010-2014'
+	            'div',
+	            { className: 'experience-left' },
+	            React.createElement('img', { src: 'icons/ucsc.png', className: 'icon v-center' })
 	          ),
-	          '   University of California, Santa Cruz'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'Minor in Chemistry'
+	          React.createElement(
+	            'div',
+	            { className: 'experience-right' },
+	            React.createElement(
+	              'h1',
+	              null,
+	              'Bachelor of Science in Biology'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              React.createElement(
+	                'span',
+	                { className: 'date' },
+	                '2010-2014'
+	              ),
+	              '   University of California, Santa Cruz'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Minor in Chemistry'
+	            )
+	          )
 	        )
 	      ),
+	      React.createElement('br', null),
+	      React.createElement('br', null),
+	      React.createElement('br', null),
+	      React.createElement('br', null),
+	      React.createElement('br', null),
+	      React.createElement('br', null),
 	      React.createElement(
 	        'div',
 	        null,
@@ -27816,7 +27870,6 @@
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
-	        React.createElement("br", null),
 	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/Glia/master/docs/screenshots/glia-question-detail.png", width: "526px" }),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
@@ -27891,7 +27944,6 @@
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
-	        React.createElement("br", null),
 	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png", width: "526px" }),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
@@ -27971,7 +28023,6 @@
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
-	        React.createElement("br", null),
 	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/color-shift/master/docs/color-shift-screenshot.png", width: "526px" }),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
@@ -28029,7 +28080,6 @@
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
-	        React.createElement("br", null),
 	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif" }),
 	        React.createElement("br", null),
 	        React.createElement("br", null),

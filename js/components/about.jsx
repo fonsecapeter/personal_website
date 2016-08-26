@@ -27,7 +27,7 @@ const About = React.createClass({
             <ul className="code-list">
               <li>JavaScript &nbsp; React &nbsp; Jasmine &nbsp; Flux &nbsp; Node</li>
               <li>Ruby &nbsp; &nbsp; &nbsp; &nbsp; Rails &nbsp; Rspec</li>
-              <li>SQL &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Python &nbsp;Bash &nbsp; &nbsp; Matlab</li>
+              <li>SQL &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Python &nbsp;Bash &nbsp; &nbsp;&nbsp; Matlab</li>
               <li>HTML  &nbsp; &nbsp; &nbsp; &nbsp; CSS</li>
             </ul>
           </div>

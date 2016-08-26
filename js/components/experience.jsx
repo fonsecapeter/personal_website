@@ -64,7 +64,7 @@ const Home = React.createClass({
           <div className="experience-entry">
             <div className="row">
               <div className="experience-left">
-                <img src="icons/stethoscope.png" className="icon-slightly-larger"></img>
+                <img src="icons/stethoscope.png" className="icon"></img>
               </div>
               <div className="experience-right">
                 <h1>Volunteer Lab Assistant</h1>
@@ -108,14 +108,35 @@ const Home = React.createClass({
           <h4>Education</h4>
         </div>
         <div>
-          <h1><a href="https://www.appacademy.io/" target="blank" >App Academy</a></h1>
-          <p><span className="date">May-July 2016</span> &nbsp; San Francisco</p>
-          <p>Industry-focused programming course</p>
-          <br />
-          <h1>Bachelor of Science in Biology</h1>
-          <p><span className="date">2010-2014</span> &nbsp; University of California, Santa Cruz</p>
-          <p>Minor in Chemistry</p>
+          <div className="row">
+            <div className="experience-left">
+              <img src="icons/aa.png" className="icon v-center"></img>
+            </div>
+            <div className="experience-right">
+              <h1><a href="https://www.appacademy.io/" target="blank" >App Academy</a></h1>
+              <p><span className="date">May-July 2016</span> &nbsp; San Francisco</p>
+              <p>Industry-focused programming course</p>
+            </div>
+          </div>
+          <br /><br />
+          <br /><br />
+          <br /><br />
+
+          <div className="row">
+            <div className="experience-left">
+              <img src="icons/ucsc.png" className="icon v-center"></img>
+            </div>
+            <div className="experience-right">
+              <h1>Bachelor of Science in Biology</h1>
+              <p><span className="date">2010-2014</span> &nbsp; University of California, Santa Cruz</p>
+              <p>Minor in Chemistry</p>
+            </div>
+          </div>
         </div>
+        <br /><br />
+        <br /><br />
+        <br /><br />
+
         <div>
           <h4>Posters/Presentations</h4>
           <p></p>
