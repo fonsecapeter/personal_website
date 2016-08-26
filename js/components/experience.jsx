@@ -109,7 +109,7 @@ const Home = React.createClass({
         </div>
         <div>
           <div className="row">
-            <div className="experience-left">
+            <div className="experience-left education-left">
               <img src="icons/aa.png" className="icon"></img>
             </div>
             <div className="experience-right">
@@ -123,7 +123,7 @@ const Home = React.createClass({
           <br /><br />
 
           <div className="row">
-            <div className="experience-left">
+            <div className="experience-left education-left">
               <img src="icons/ucsc.png" className="icon"></img>
             </div>
             <div className="experience-right">
