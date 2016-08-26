@@ -58,7 +58,7 @@ const SideBar = React.createClass ({
   				<div>
   					<a href="http://github.com/fonsecapeter" target="_blank">
               {/* <img src={ this.state.gitIcon } size="18px" onMouseOver={ this.hoverGit } onMouseOut={ this.revertGit }/> */}
-              <img className="social" src={ this.state.gitIcon } size="18px" />
+              <img className="social-git" src={ this.state.gitIcon } size="18px" />
             </a> &nbsp; &nbsp;
             <a href="https://www.linkedin.com/in/peter-fonseca-727576121" target="_blank">
               {/* <img src={ this.state.linkedIcon } onMouseOver={ this.hoverLinked } onMouseOut={ this.revertLinked }/> */}

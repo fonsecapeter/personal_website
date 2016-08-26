@@ -26840,7 +26840,7 @@
 	          React.createElement(
 	            "a",
 	            { href: "http://github.com/fonsecapeter", target: "_blank" },
-	            React.createElement("img", { className: "social", src: this.state.gitIcon, size: "18px" })
+	            React.createElement("img", { className: "social-git", src: this.state.gitIcon, size: "18px" })
 	          ),
 	          "    ",
 	          React.createElement(

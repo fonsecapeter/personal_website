@@ -285,20 +285,24 @@ ul {
 	vertical-align: middle;
 }
 
-.social {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-
-	/*-webkit-filter: brightness(12%);
-	filter: brightness(12%);*/
-}
-
 .social:hover {
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
+}
 
-	/*-webkit-filter: brightness(100%);
-	filter: brightness(100%);*/
+.social {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.social-git:hover {
+	-webkit-filter: contrast(100%);
+	filter: contrast(100%);
+}
+
+.social-git {
+	-webkit-filter: contrast(25%);
+	filter: contrast(25%);
 }
 
 /* ID's */
