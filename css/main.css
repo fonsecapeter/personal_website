@@ -3,6 +3,8 @@ html, body, a, header, nav, p, div, span, img {
   -moz-transition: all 250ms ease-out;
   -o-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
+
+	-webkit-text-size-adjust: 100%;
 }
 
 /*#nav .active:before {
