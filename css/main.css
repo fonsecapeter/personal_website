@@ -282,7 +282,7 @@ ul {
 .v-center {
 	display: inline-block;
 	height: 100%;
-	/*vertical-align: middle;*/
+	vertical-align: middle;
 }
 
 .social {

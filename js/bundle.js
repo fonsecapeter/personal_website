@@ -27345,7 +27345,7 @@
 	          null,
 	          React.createElement(
 	            'a',
-	            { className: 'code', href: 'resume/PeterFonsecaResume.pdf', target: 'blank' },
+	            { className: 'code v-center', href: 'resume/PeterFonsecaResume.pdf', target: 'blank' },
 	            '[PDF]'
 	          ),
 	          '   Work Experience'
@@ -27671,7 +27671,7 @@
 	          React.createElement(
 	            'div',
 	            { className: 'experience-left' },
-	            React.createElement('img', { src: 'icons/aa.png', className: 'icon v-center' })
+	            React.createElement('img', { src: 'icons/aa.png', className: 'icon' })
 	          ),
 	          React.createElement(
 	            'div',
@@ -27714,7 +27714,7 @@
 	          React.createElement(
 	            'div',
 	            { className: 'experience-left' },
-	            React.createElement('img', { src: 'icons/ucsc.png', className: 'icon v-center' })
+	            React.createElement('img', { src: 'icons/ucsc.png', className: 'icon' })
 	          ),
 	          React.createElement(
 	            'div',

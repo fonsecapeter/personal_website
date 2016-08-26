@@ -10,7 +10,7 @@ const Home = React.createClass({
         <br />
         <div id="work_experience">
           {/* <h4><a href="resume/PeterFonsecaResume.pdf" target="blank"><img src="icons/pdf.png" className="icon"></img></a> &nbsp; Work Experience</h4> */}
-          <h4><a className="code" href="resume/PeterFonsecaResume.pdf" target="blank">[PDF]</a> &nbsp; Work Experience</h4>
+          <h4><a className="code v-center" href="resume/PeterFonsecaResume.pdf" target="blank">[PDF]</a> &nbsp; Work Experience</h4>
         </div>
         <div>
           <div className="experience-entry">
@@ -110,7 +110,7 @@ const Home = React.createClass({
         <div>
           <div className="row">
             <div className="experience-left">
-              <img src="icons/aa.png" className="icon v-center"></img>
+              <img src="icons/aa.png" className="icon"></img>
             </div>
             <div className="experience-right">
               <h1><a href="https://www.appacademy.io/" target="blank" >App Academy</a></h1>
@@ -124,7 +124,7 @@ const Home = React.createClass({
 
           <div className="row">
             <div className="experience-left">
-              <img src="icons/ucsc.png" className="icon v-center"></img>
+              <img src="icons/ucsc.png" className="icon"></img>
             </div>
             <div className="experience-right">
               <h1>Bachelor of Science in Biology</h1>
