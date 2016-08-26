@@ -25,10 +25,13 @@ const About = React.createClass({
             <h1>Languages I Work With:</h1>
             {/* <img src="icons/code-logos.png" className="partial_width"></img> */}
             <ul className="code-list">
-              <li>JavaScript &nbsp; React &nbsp; Jasmine &nbsp; Flux &nbsp; Node</li>
-              <li>Ruby &nbsp; &nbsp; &nbsp; &nbsp; Rails &nbsp; Rspec</li>
-              <li>SQL &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Python &nbsp;Bash &nbsp; &nbsp;&nbsp; Matlab</li>
-              <li>HTML  &nbsp; &nbsp; &nbsp; &nbsp; CSS</li>
+              <li>JavaScript ( React, Jasmine, Flux, Node )</li>
+              <li>Ruby ( Rails, Rspec )</li>
+              <li>SQL</li>
+              <li>Python</li>
+              <li>Bash</li>
+              <li>Matlab</li>
+              <li>HTML / CSS</li>
             </ul>
           </div>
         </div>

@@ -27295,22 +27295,37 @@
 	            React.createElement(
 	              'li',
 	              null,
-	              'JavaScript   React   Jasmine   Flux   Node'
+	              'JavaScript ( React, Jasmine, Flux, Node )'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
-	              'Ruby         Rails   Rspec'
+	              'Ruby ( Rails, Rspec )'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
-	              'SQL          Python  Bash      Matlab'
+	              'SQL'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
-	              'HTML          CSS'
+	              'Python'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'Bash'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'Matlab'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'HTML / CSS'
 	            )
 	          )
 	        )

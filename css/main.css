@@ -3,8 +3,6 @@ html, body, a, header, nav, p, div, span, img {
   -moz-transition: all 250ms ease-out;
   -o-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
-
-	-webkit-text-size-adjust: 100%;
 }
 
 /*#nav .active:before {
@@ -238,9 +236,9 @@ ul {
 .code-list {
 	margin-top: 10px;
 
-	font-family: "Source Code Pro", monospace;
-	font-size: 14px;
-	list-style: none;
+	/*font-family: "Source Code Pro", monospace;*/
+	/*font-size: 14px;*/
+	/*list-style: none;*/
 }
 
 .code {
@@ -359,6 +357,10 @@ ul {
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
+	html, body, a, header, nav, p, div, span, img {
+		-webkit-text-size-adjust: 150%;
+	}
+
 	#left-column, #right-column {
 		width: 100%;
 	  float: none;
