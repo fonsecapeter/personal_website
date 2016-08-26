@@ -10,7 +10,7 @@ const About = React.createClass({
         <div id="elevator_pitch">
           <br />
           <div>
-            <img src="icons/lab.png" className="partial_width partial_width_centered"></img>
+            {/* <img src="icons/lab.png" className="partial_width partial_width_centered"></img> */}
             <h2>From Science to Tech</h2>
             <p>
               While working in clinical research, my time was split between administrative tasks, technology concepts, science, and health care. While learning how to use Bash and MatLab for MRI image processing/analysis, I discoverd that the same principles could apply to the rest of my work. I continued to learn Python and SQL to automate as much of the study's procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.
@@ -23,16 +23,13 @@ const About = React.createClass({
           </div>
           <div>
             <h1>Languages I Work With:</h1>
-            <img src="icons/code-logos.png" className="partial_width"></img>
-            {/*<ul style={{marginTop:'10px'}}>
-              <li>Ruby</li>
-              <li>Rails</li>
-              <li>SQL</li>
-              <li>JavaScript (Node, JQuery, React, Flux)</li>
-              <li>Python</li>
-              <li>Bash</li>
-              <li>HTML/CSS</li>
-            </ul>*/}
+            {/* <img src="icons/code-logos.png" className="partial_width"></img> */}
+            <ul className="code-list">
+              <li>JavaScript &nbsp; React &nbsp; Jasmine &nbsp; Flux &nbsp; Node</li>
+              <li>Ruby &nbsp; &nbsp; &nbsp; &nbsp; Rails &nbsp; Rspec</li>
+              <li>SQL &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Python &nbsp;Bash &nbsp; &nbsp; Matlab</li>
+              <li>HTML  &nbsp; &nbsp; &nbsp; &nbsp; CSS</li>
+            </ul>
           </div>
         </div>
       </div>

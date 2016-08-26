@@ -57,13 +57,16 @@ const SideBar = React.createClass ({
   				<h3></h3>
   				<div>
   					<a href="http://github.com/fonsecapeter" target="_blank">
-              <img src={ this.state.gitIcon } size="18px" onMouseOver={ this.orangeGit } onMouseOut={ this.revertGit }/>
+              {/* <img className="social" src={ this.state.gitIcon } size="18px" onMouseOver={ this.orangeGit } onMouseOut={ this.revertGit }/> */}
+              <img className="social" src={ this.state.gitIcon } size="18px" />
             </a> &nbsp; &nbsp;
             <a href="https://www.linkedin.com/in/peter-fonseca-727576121" target="_blank">
-              <img src={ this.state.linkedIcon } onMouseOver={ this.orangeLinked } onMouseOut={ this.revertLinked }/>
+              {/* <img className="social" src={ this.state.linkedIcon } onMouseOver={ this.orangeLinked } onMouseOut={ this.revertLinked }/> */}
+              <img className="social" src={ this.state.linkedIcon } />
             </a> &nbsp;
             <a href="https://www.facebook.com/peter.fonseca.35" target="_blank">
-              <img src={ this.state.fbIcon } size="21px" onMouseOver={ this.orangeFb } onMouseOut={ this.revertFb }/>
+              {/* <img className="social" src={ this.state.fbIcon } size="21px" onMouseOver={ this.orangeFb } onMouseOut={ this.revertFb }/> */}
+              <img className="social" src={ this.state.fbIcon } size="21px" />
             </a>
   				</div>
   			</div>

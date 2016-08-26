@@ -26823,19 +26823,19 @@
 	          React.createElement(
 	            "a",
 	            { href: "http://github.com/fonsecapeter", target: "_blank" },
-	            React.createElement("img", { src: this.state.gitIcon, size: "18px", onMouseOver: this.hoverGit, onMouseOut: this.revertGit })
+	            React.createElement("img", { className: "social", src: this.state.gitIcon, size: "18px" })
 	          ),
 	          "    ",
 	          React.createElement(
 	            "a",
 	            { href: "https://www.linkedin.com/in/peter-fonseca-727576121", target: "_blank" },
-	            React.createElement("img", { src: this.state.linkedIcon, onMouseOver: this.hoverLinked, onMouseOut: this.revertLinked })
+	            React.createElement("img", { className: "social", src: this.state.linkedIcon })
 	          ),
 	          "  ",
 	          React.createElement(
 	            "a",
 	            { href: "https://www.facebook.com/peter.fonseca.35", target: "_blank" },
-	            React.createElement("img", { src: this.state.fbIcon, size: "21px", onMouseOver: this.hoverFb, onMouseOut: this.revertFb })
+	            React.createElement("img", { className: "social", src: this.state.fbIcon, size: "21px" })
 	          )
 	        )
 	      )
@@ -27239,7 +27239,6 @@
 	        React.createElement(
 	          'div',
 	          null,
-	          React.createElement('img', { src: 'icons/lab.png', className: 'partial_width partial_width_centered' }),
 	          React.createElement(
 	            'h2',
 	            null,
@@ -27273,7 +27272,30 @@
 	            null,
 	            'Languages I Work With:'
 	          ),
-	          React.createElement('img', { src: 'icons/code-logos.png', className: 'partial_width' })
+	          React.createElement(
+	            'ul',
+	            { className: 'code-list' },
+	            React.createElement(
+	              'li',
+	              null,
+	              'JavaScript   React   Jasmine   Flux   Node'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'Ruby         Rails   Rspec'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'SQL          Python  Bash     Matlab'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'HTML          CSS'
+	            )
+	          )
 	        )
 	      )
 	    );
@@ -27306,8 +27328,8 @@
 	          null,
 	          React.createElement(
 	            'a',
-	            { href: 'resume/PeterFonsecaResume.pdf', target: 'blank' },
-	            React.createElement('img', { src: 'icons/pdf.png', className: 'icon' })
+	            { className: 'code', href: 'resume/PeterFonsecaResume.pdf', target: 'blank' },
+	            '[PDF]'
 	          ),
 	          '   Work Experience'
 	        )
@@ -27340,11 +27362,7 @@
 	                React.createElement(
 	                  'span',
 	                  { className: 'date' },
-	                  React.createElement(
-	                    'em',
-	                    null,
-	                    '2014 -2016'
-	                  )
+	                  '2014-2016'
 	                ),
 	                '   ',
 	                React.createElement(
@@ -27434,11 +27452,7 @@
 	                React.createElement(
 	                  'span',
 	                  { className: 'date' },
-	                  React.createElement(
-	                    'em',
-	                    null,
-	                    '2013 - 2014'
-	                  )
+	                  '2013-2014'
 	                ),
 	                '   ',
 	                React.createElement(
@@ -27518,11 +27532,7 @@
 	                React.createElement(
 	                  'span',
 	                  { className: 'date' },
-	                  React.createElement(
-	                    'em',
-	                    null,
-	                    '2012 - 2013 Summers'
-	                  )
+	                  '2012-2013 Summers'
 	                ),
 	                '   ',
 	                React.createElement(
@@ -27591,11 +27601,7 @@
 	                React.createElement(
 	                  'span',
 	                  { className: 'date' },
-	                  React.createElement(
-	                    'em',
-	                    null,
-	                    '2010 - 2012 Summers'
-	                  )
+	                  '2010-2012 Summers'
 	                ),
 	                '   ',
 	                React.createElement(
@@ -27657,11 +27663,7 @@
 	          React.createElement(
 	            'span',
 	            { className: 'date' },
-	            React.createElement(
-	              'em',
-	              null,
-	              'May - July 2016'
-	            )
+	            'May-July 2016'
 	          ),
 	          '   San Francisco'
 	        ),
@@ -27682,11 +27684,7 @@
 	          React.createElement(
 	            'span',
 	            { className: 'date' },
-	            React.createElement(
-	              'em',
-	              null,
-	              '2010 - 2014'
-	            )
+	            '2010-2014'
 	          ),
 	          '   University of California, Santa Cruz'
 	        ),
@@ -27771,7 +27769,6 @@
 	        "div",
 	        null,
 	        React.createElement("br", null),
-	        React.createElement("img", { src: "icons/workspace.png", className: "full_width" }),
 	        React.createElement(
 	          "h4",
 	          null,
@@ -27787,13 +27784,13 @@
 	          "Glia · ",
 	          React.createElement(
 	            "a",
-	            { href: "https://github.com/fonsecapeter/Glia", target: "blank", className: "contact" },
+	            { href: "https://github.com/fonsecapeter/Glia", target: "blank", className: "project-link" },
 	            "github"
 	          ),
 	          " · ",
 	          React.createElement(
 	            "a",
-	            { href: "http://glia-app.herokuapp.com", target: "blank", className: "contact" },
+	            { href: "http://glia-app.herokuapp.com", target: "blank", className: "project-link" },
 	            "live"
 	          )
 	        ),
@@ -27801,21 +27798,28 @@
 	          "p",
 	          null,
 	          React.createElement(
-	            "em",
-	            null,
+	            "span",
+	            { className: "date" },
 	            "2016"
 	          ),
-	          "   App Academy"
+	          "   ",
+	          React.createElement(
+	            "a",
+	            { href: "https://www.appacademy.io/", target: "blank" },
+	            "App Academy"
+	          )
 	        ),
 	        React.createElement(
 	          "p",
-	          null,
-	          "Ruby, Rails, JavaScript, React",
+	          { className: "code" },
+	          "Ruby Rails JavaScript React",
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
 	        React.createElement("br", null),
 	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/Glia/master/docs/screenshots/glia-question-detail.png", width: "526px" }),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        React.createElement(
 	          "p",
 	          null,
@@ -27855,13 +27859,13 @@
 	          "Jarvs · ",
 	          React.createElement(
 	            "a",
-	            { href: "https://github.com/fonsecapeter/jarvs", target: "blank", className: "contact" },
+	            { href: "https://github.com/fonsecapeter/jarvs", target: "blank", className: "project-link" },
 	            "github"
 	          ),
 	          " · ",
 	          React.createElement(
 	            "a",
-	            { href: "https://launchpad.net/jarvs", target: "blank", className: "contact" },
+	            { href: "https://launchpad.net/jarvs", target: "blank", className: "project-link" },
 	            "launchpad"
 	          )
 	        ),
@@ -27869,21 +27873,28 @@
 	          "p",
 	          null,
 	          React.createElement(
-	            "em",
-	            null,
+	            "span",
+	            { className: "date" },
 	            "2016"
 	          ),
-	          "   UCSF Memory and Aging Center"
+	          "   ",
+	          React.createElement(
+	            "a",
+	            { href: "http://memory.ucsf.edu/", target: "blank" },
+	            "UCSF Memory and Aging Center"
+	          )
 	        ),
 	        React.createElement(
 	          "p",
-	          null,
-	          "Python, GTK, Bash, SQLite",
+	          { className: "code" },
+	          "Python GTK Bash SQLite",
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
 	        React.createElement("br", null),
 	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png", width: "526px" }),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        React.createElement(
 	          "p",
 	          null,
@@ -27928,13 +27939,13 @@
 	          "Color Shift · ",
 	          React.createElement(
 	            "a",
-	            { href: "https://github.com/fonsecapeter/color-shift", target: "blank", className: "contact" },
+	            { href: "https://github.com/fonsecapeter/color-shift", target: "blank", className: "project-link" },
 	            "github"
 	          ),
 	          " · ",
 	          React.createElement(
 	            "a",
-	            { href: "http://peterfonseca.gq/color-shift", target: "blank", className: "contact" },
+	            { href: "http://peterfonseca.gq/color-shift", target: "blank", className: "project-link" },
 	            "live"
 	          )
 	        ),
@@ -27942,21 +27953,28 @@
 	          "p",
 	          null,
 	          React.createElement(
-	            "em",
-	            null,
+	            "span",
+	            { className: "date" },
 	            "2016"
 	          ),
-	          "   App Academy"
+	          "   ",
+	          React.createElement(
+	            "a",
+	            { href: "https://www.appacademy.io/", target: "blank" },
+	            "App Academy"
+	          )
 	        ),
 	        React.createElement(
 	          "p",
-	          null,
+	          { className: "code" },
 	          "JavaScript",
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
 	        React.createElement("br", null),
 	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/color-shift/master/docs/color-shift-screenshot.png", width: "526px" }),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        React.createElement(
 	          "p",
 	          null,
@@ -27985,7 +28003,7 @@
 	          "Ruby Chess · ",
 	          React.createElement(
 	            "a",
-	            { href: "https://github.com/fonsecapeter/ruby_chess", target: "blank", className: "contact" },
+	            { href: "https://github.com/fonsecapeter/ruby_chess", target: "blank", className: "project-link" },
 	            "github"
 	          )
 	        ),
@@ -27993,21 +28011,28 @@
 	          "p",
 	          null,
 	          React.createElement(
-	            "em",
-	            null,
+	            "span",
+	            { className: "date" },
 	            "2016"
 	          ),
-	          "   AppAcademy"
+	          "   ",
+	          React.createElement(
+	            "a",
+	            { href: "https://www.appacademy.io/", target: "blank" },
+	            "App Academy"
+	          )
 	        ),
 	        React.createElement(
 	          "p",
-	          null,
+	          { className: "code" },
 	          "Ruby",
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
 	        React.createElement("br", null),
 	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif" }),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        React.createElement(
 	          "p",
 	          null,

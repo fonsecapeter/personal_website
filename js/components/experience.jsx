@@ -9,7 +9,8 @@ const Home = React.createClass({
       <div>
         <br />
         <div id="work_experience">
-          <h4><a href="resume/PeterFonsecaResume.pdf" target="blank"><img src="icons/pdf.png" className="icon"></img></a> &nbsp; Work Experience</h4>
+          {/* <h4><a href="resume/PeterFonsecaResume.pdf" target="blank"><img src="icons/pdf.png" className="icon"></img></a> &nbsp; Work Experience</h4> */}
+          <h4><a className="code" href="resume/PeterFonsecaResume.pdf" target="blank">[PDF]</a> &nbsp; Work Experience</h4>
         </div>
         <div>
           <div className="experience-entry">
@@ -19,7 +20,7 @@ const Home = React.createClass({
               </div>
               <div className="experience-right">
                 <h1>Clinical Research Coordinator</h1>
-                <p><span className="date"><em>2014 -2016</em></span> &nbsp; <a href="http://memory.ucsf.edu/" target="blank">UCSF Memory and Aging Center</a></p>
+                <p><span className="date">2014-2016</span> &nbsp; <a href="http://memory.ucsf.edu/" target="blank">UCSF Memory and Aging Center</a></p>
                 <p>Primary Study: Frontotemporal Dementia: Genes, Images and Emotions<br /><br /></p>
               </div>
               <br />
@@ -44,7 +45,7 @@ const Home = React.createClass({
               </div>
               <div className="experience-right">
                 <h1>Undergraduate Researcher</h1>
-                <p><span className="date"><em>2013 - 2014</em></span> &nbsp; <a href="http://www.kellogglab.com/" target="blank">UCSC Kellogg Lab</a></p>
+                <p><span className="date">2013-2014</span> &nbsp; <a href="http://www.kellogglab.com/" target="blank">UCSC Kellogg Lab</a></p>
                 <p>Primary Focus: Cell Size Control<br /><br /></p>
               </div>
               <br />
@@ -67,7 +68,7 @@ const Home = React.createClass({
               </div>
               <div className="experience-right">
                 <h1>Volunteer Lab Assistant</h1>
-                <p><span className="date"><em>2012 - 2013 Summers</em></span> &nbsp; <a href="http://doctor.webmd.com/practice/novato-medical-center-3fd2a3c8-4703-e211-a42b-001f29e3eb44-overview" target="blank">Novato Medical Center</a></p>
+                <p><span className="date">2012-2013 Summers</span> &nbsp; <a href="http://doctor.webmd.com/practice/novato-medical-center-3fd2a3c8-4703-e211-a42b-001f29e3eb44-overview" target="blank">Novato Medical Center</a></p>
               </div>
               <br /><br />
             </div>
@@ -89,7 +90,7 @@ const Home = React.createClass({
               </div>
               <div className="experience-right">
                 <h1>Technician</h1>
-                <p><span className="date"><em>2010 - 2012 Summers</em></span> &nbsp; <a href="http://www.vintage47amps.com/" target="blank">Vintage 47 Amplifiers</a></p>
+                <p><span className="date">2010-2012 Summers</span> &nbsp; <a href="http://www.vintage47amps.com/" target="blank">Vintage 47 Amplifiers</a></p>
               </div>
               <br /><br />
             </div>
@@ -108,11 +109,11 @@ const Home = React.createClass({
         </div>
         <div>
           <h1><a href="https://www.appacademy.io/" target="blank" >App Academy</a></h1>
-          <p><span className="date"><em>May - July 2016</em></span> &nbsp; San Francisco</p>
+          <p><span className="date">May-July 2016</span> &nbsp; San Francisco</p>
           <p>Industry-focused programming course</p>
           <br />
           <h1>Bachelor of Science in Biology</h1>
-          <p><span className="date"><em>2010 - 2014</em></span> &nbsp; University of California, Santa Cruz</p>
+          <p><span className="date">2010-2014</span> &nbsp; University of California, Santa Cruz</p>
           <p>Minor in Chemistry</p>
         </div>
         <div>
