@@ -285,22 +285,22 @@ ul {
 	vertical-align: middle;
 }
 
-.social:hover {
+.social {
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
 }
 
-.social {
+.social:hover {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
 
-.social-git:hover {
+.social-git {
 	-webkit-filter: contrast(100%);
 	filter: contrast(100%);
 }
 
-.social-git {
+.social-git:hover {
 	-webkit-filter: contrast(25%);
 	filter: contrast(25%);
 }

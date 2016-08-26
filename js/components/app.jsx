@@ -25,13 +25,14 @@ const App = React.createClass({
     }
 
     return (
-      <div className="shadowed">
+      <div>
         <div id="header">
           <div id="nav">
             <Link className={ aboutClass } to="/">About</Link> &nbsp;
             <Link className={ experienceClass } to="experience">Experience</Link> &nbsp;
             <Link className={ portfolioClass } to="portfolio">Portfolio</Link> &nbsp;
-            <Link className={ contactClass } to="contact">Contact</Link></div>
+            <Link className={ contactClass } to="contact">Contact</Link>
+          </div>
           <div id="bg"></div>
         </div>
         <div id="wrapper">
