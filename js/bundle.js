@@ -27876,13 +27876,7 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Glia is an online support group for caregivers of dementia patients."
-	        ),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "p",
-	          null,
-	          "I built Glia with the Flux design pattern on the front end and a Rails-PostgreSQL back end."
+	          "Glia is an online support group for caregivers of dementia patients. I built Glia with a React-Flux front end and a Rails-PostgreSQL back end."
 	        ),
 	        React.createElement("br", null),
 	        React.createElement(
@@ -27950,13 +27944,7 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Jarvs is an Ubuntu app that I built to help manage research dictations by scraping data out of file-names."
-	        ),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "p",
-	          null,
-	          "This app is still in development, but has the minimum functionality necessary and is currently in use."
+	          "Jarvs is an Ubuntu app that I built to help manage research dictations by scraping data out of file-names. This app is still in development, but has the minimum functionality necessary and is currently in use."
 	        ),
 	        React.createElement("br", null),
 	        React.createElement(

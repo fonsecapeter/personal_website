@@ -17,9 +17,8 @@ const Portfolio = React.createClass({
           <p className="code">Ruby Rails JavaScript React<br /><br /></p>
           <img src="https://raw.githubusercontent.com/fonsecapeter/Glia/master/docs/screenshots/glia-question-detail.png" width="526px" />
           <br/><br/>
-          <p>Glia is an online support group for caregivers of dementia patients.</p>
-          <br/>
-          <p>I built Glia with the Flux design pattern on the front end and a Rails-PostgreSQL back end.</p>
+          <p>Glia is an online support group for caregivers of dementia patients.
+          I built Glia with a React-Flux front end and a Rails-PostgreSQL back end.</p>
           <br/>
           <ul>
             <li>Minimized data requests with nested Flux resources to reduce load time</li>
@@ -33,9 +32,8 @@ const Portfolio = React.createClass({
           <p className="code">Python GTK Bash SQLite<br /><br /></p>
           <img src="https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png" width="526px"/>
           <br/><br/>
-          <p>Jarvs is an Ubuntu app that I built to help manage research dictations by scraping data out of file-names.</p>
-          <br/>
-          <p>This app is still in development, but has the minimum functionality necessary and is currently in use.</p>
+          <p>Jarvs is an Ubuntu app that I built to help manage research dictations by scraping data out of file-names.
+          This app is still in development, but has the minimum functionality necessary and is currently in use.</p>
           <br/>
           <ul>
             <li>Distributed via Ubuntu PPA to increase accessibility for non-technical users</li>

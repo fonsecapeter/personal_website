@@ -49,12 +49,11 @@ body {
 }
 
 #nav {
-	min-width: 454px;
 	font-size:18px;
 	background:#ffffff;
 	text-align:center;
 	font-weight:300;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	color:#0d0d0d;
 	width:100%;
 	padding:10px 20px 10px 0;
@@ -184,7 +183,7 @@ p {
 }
 
 ul {
-	padding:0;
+	padding:0 0 0 20px;
 	margin:0 0 0 17px;
 }
 
@@ -236,7 +235,6 @@ ul {
 
 .code-list {
 	margin-top: 10px;
-	min-width: 454px;
 
 	font-family: "Source Code Pro", monospace;
 	font-size: 14px;
