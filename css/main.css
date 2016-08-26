@@ -244,6 +244,7 @@ ul {
 .code {
 	font-family: "Source Code Pro", monospace;
 	font-size: 14px;
+	text-decoration: none;
 }
 
 .experience-entry {
