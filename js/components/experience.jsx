@@ -10,13 +10,13 @@ const Home = React.createClass({
         <br />
         <div id="work_experience">
           {/* <h4><a href="resume/PeterFonsecaResume.pdf" target="blank"><img src="icons/pdf.png" className="icon"></img></a> &nbsp; Work Experience</h4> */}
-          <h4><a className="code v-center" href="resume/PeterFonsecaResume.pdf" target="blank">[PDF]</a> &nbsp; Work Experience</h4>
+          <h4><a className="code v-super" href="resume/PeterFonsecaResume.pdf" target="blank">[PDF]</a> &nbsp; Work Experience</h4>
         </div>
         <div>
           <div className="experience-entry">
             <div className="row">
               <div className="experience-left">
-                <img src="icons/brain.png" className="icon-slightly-larger"></img>
+                <img src="icons/brain.png" className="icon"></img>
               </div>
               <div className="experience-right">
                 <h1>Clinical Research Coordinator</h1>
@@ -41,7 +41,7 @@ const Home = React.createClass({
           <div className="experience-entry">
             <div className="row">
               <div className="experience-left">
-                <img src="icons/microscope.png" className="icon-slightly-larger"></img>
+                <img src="icons/microscope.png" className="icon"></img>
               </div>
               <div className="experience-right">
                 <h1>Undergraduate Researcher</h1>
@@ -109,7 +109,7 @@ const Home = React.createClass({
         </div>
         <div>
           <div className="row">
-            <div className="experience-left education-left">
+            <div className="experience-left">
               <img src="icons/aa.png" className="icon"></img>
             </div>
             <div className="experience-right">
@@ -123,7 +123,7 @@ const Home = React.createClass({
           <br /><br />
 
           <div className="row">
-            <div className="experience-left education-left">
+            <div className="experience-left">
               <img src="icons/ucsc.png" className="icon"></img>
             </div>
             <div className="experience-right">

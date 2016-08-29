@@ -26714,6 +26714,8 @@
 	        React.createElement(
 	          'div',
 	          { id: 'nav' },
+	          React.createElement('div', { className: 'stripe2' }),
+	          React.createElement('div', { className: 'stripe1' }),
 	          React.createElement(
 	            Link,
 	            { className: aboutClass, to: '/' },
@@ -27252,7 +27254,16 @@
 	      React.createElement(
 	        'div',
 	        { id: 'elevator_pitch' },
-	        React.createElement('br', null),
+	        React.createElement(
+	          'div',
+	          null,
+	          React.createElement('br', null),
+	          React.createElement(
+	            'h4',
+	            null,
+	            'My Story'
+	          )
+	        ),
 	        React.createElement(
 	          'div',
 	          null,
@@ -27360,7 +27371,7 @@
 	          null,
 	          React.createElement(
 	            'a',
-	            { className: 'code v-center', href: 'resume/PeterFonsecaResume.pdf', target: 'blank' },
+	            { className: 'code v-super', href: 'resume/PeterFonsecaResume.pdf', target: 'blank' },
 	            '[PDF]'
 	          ),
 	          '   Work Experience'
@@ -27378,7 +27389,7 @@
 	            React.createElement(
 	              'div',
 	              { className: 'experience-left' },
-	              React.createElement('img', { src: 'icons/brain.png', className: 'icon-slightly-larger' })
+	              React.createElement('img', { src: 'icons/brain.png', className: 'icon' })
 	            ),
 	            React.createElement(
 	              'div',
@@ -27468,7 +27479,7 @@
 	            React.createElement(
 	              'div',
 	              { className: 'experience-left' },
-	              React.createElement('img', { src: 'icons/microscope.png', className: 'icon-slightly-larger' })
+	              React.createElement('img', { src: 'icons/microscope.png', className: 'icon' })
 	            ),
 	            React.createElement(
 	              'div',
@@ -27685,7 +27696,7 @@
 	          { className: 'row' },
 	          React.createElement(
 	            'div',
-	            { className: 'experience-left education-left' },
+	            { className: 'experience-left' },
 	            React.createElement('img', { src: 'icons/aa.png', className: 'icon' })
 	          ),
 	          React.createElement(
@@ -27728,7 +27739,7 @@
 	          { className: 'row' },
 	          React.createElement(
 	            'div',
-	            { className: 'experience-left education-left' },
+	            { className: 'experience-left' },
 	            React.createElement('img', { src: 'icons/ucsc.png', className: 'icon' })
 	          ),
 	          React.createElement(
@@ -28179,9 +28190,13 @@
 	      'div',
 	      { id: 'contact' },
 	      React.createElement(
-	        'h1',
+	        'div',
 	        null,
-	        'Contact Me'
+	        React.createElement(
+	          'h1',
+	          null,
+	          'Contact Me'
+	        )
 	      ),
 	      React.createElement(
 	        'p',

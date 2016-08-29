@@ -34,8 +34,8 @@ body {
 	font-weight:400;
 	font-size:16px;
 	/*font-size:12px;*/
-	/*color:#505962;*/
-	color:#0d0d0d;
+	color:#505962;
+	/*color:#0d0d0d;*/
 
 	background:#f5f1e9;
 	background:#ffffff;
@@ -52,15 +52,31 @@ body {
 
 #nav {
 	font-size:18px;
-	background:#ffffff;
+	/*background:#ffffff;*/
+	background: #47855a;
 	text-align:center;
 	font-weight:300;
 	letter-spacing: 1px;
 	color:#0d0d0d;
 	width:100%;
-	padding:10px 20px 10px 0;
+	/*padding:10px 20px 10px 0;*/
+	padding:0 0 10px 0;
 	position: fixed;
 	z-index: 10;
+}
+
+.stripe1 {
+	margin: 0 0 10px 0;
+	background: #36634d;
+	width: 100%;
+	height: 10px;
+}
+
+.stripe2 {
+	margin: 0 0 0 0;
+	background: #2d5248;
+	width: 100%;
+	height: 10px;
 }
 
 #header {
@@ -127,7 +143,8 @@ body {
 
 a {
 	/*color:#0d0d0d;*/
-	color:#999999;
+	/*color:#999999;*/
+	color: #47855a;
 
 	/*font-weight: bold;*/
 	text-decoration: underline;;
@@ -135,8 +152,8 @@ a {
 
 a:hover {
 	/*text-decoration:underline; */
-	/*color: #73808c;*/
-	color:#0d0d0d;
+	color: #8cc0b2;
+	/*color:#0d0d0d;*/
 
 }
 
@@ -221,7 +238,7 @@ ul {
 
 .date {
 	font-family: 'Source Code Pro', 'monospace';
-	color: #73808c;
+	color: #6bae9c;
 	font-size: 14px;
 }
 
@@ -245,6 +262,7 @@ ul {
 
 .code-list {
 	margin-top: 10px;
+	color: #488484;
 
 	/*font-family: "Source Code Pro", monospace;*/
 	/*font-size: 14px;*/
@@ -255,6 +273,7 @@ ul {
 	font-family: "Source Code Pro", monospace;
 	font-size: 13px;
 	text-decoration: none;
+	color: #488484;
 }
 
 .experience-entry {
@@ -267,9 +286,6 @@ ul {
 .experience-left {
 	display: inline-block;
 	padding-right: 20px;
-}
-
-.education-left {
 	vertical-align: top;
 }
 
@@ -293,10 +309,10 @@ ul {
 	list-style-type: none;
 }
 
-.v-center {
+.v-super {
 	display: inline-block;
 	height: 100%;
-	vertical-align: middle;
+	vertical-align: super;
 }
 
 .social {
@@ -323,8 +339,9 @@ ul {
 
 #nav a {
 	margin:0 15px 0 15px;
-	font-weight:400;
-	color:#0d0d0d;
+	font-weight:300;
+	/*color:#0d0d0d;*/
+	color: white;
 
 
 	text-decoration: none;
@@ -338,12 +355,13 @@ ul {
 /*#nav a:link:hover {
 }*/
 
-#nav a:hover {
-	color:#999999;
+#nav a:hover, #nav .active {
+	color:#9cc9be;
 }
 
 #nav .active {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	cursor: default;
 }
 
 #box_left {

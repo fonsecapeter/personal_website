@@ -30,7 +30,12 @@ const Contact = React.createClass ({
   render () {
     return (
       <div id="contact">
-        <h1>Contact Me</h1>
+        <div>
+          {/* <br /> */}
+          {/* <img src="icons/workspace.png" className="full_width"></img> */}
+          <h1>Contact Me</h1>
+        </div>
+        {/* <h1>Contact Me</h1> */}
         <p><a className="contact" href="mailto:peter.nfonseca@gmail.com">peter.nfonseca@gmail.com</a></p>
         <p><a className="contact" href="tel:17078892431">(707) 889-2431</a></p>
         <p>1817 California St</p>
