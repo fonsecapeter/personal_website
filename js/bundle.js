@@ -28172,13 +28172,24 @@
 	      zoom: 12,
 	      styles: [{ "featureType": "all", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "all", "stylers": [{ "visibility": "off" }, { "color": "#efebe2" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.attraction", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.business", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.government", "elementType": "all", "stylers": [{ "color": "#dfdcd5" }] }, { "featureType": "poi.medical", "elementType": "all", "stylers": [{ "color": "#dfdcd5" }] }, { "featureType": "poi.park", "elementType": "all", "stylers": [{ "color": "#bad294" }] }, { "featureType": "poi.place_of_worship", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.school", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.sports_complex", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "road.local", "elementType": "geometry.fill", "stylers": [{ "color": "#fbfbfb" }] }, { "featureType": "road.local", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#a5d7e0" }] }]
 	    });
+	
+	    var icon = {
+	      path: "m 9.8137942,-30.630352 c 0,5.420009 -4.3937853,9.813794 -9.8137942,9.813794 -5.4200089,0 -9.8137942,-4.393785 -9.8137942,-9.813794 -9e-7,-5.42001 4.393785,-9.813795 9.8137942,-9.813795 5.4200092,0 9.8137951,4.393785 9.8137942,9.813795 z M 0,-48 c -9.8,0 -17.7,7.8 -17.7,17.4 C -17.7,-15.1 0,0 0,0 0,0 17.7,-15.4 17.7,-30.6 17.7,-40.2 9.8,-48 0,-48 Z",
+	      fillColor: '#47855a',
+	      fillOpacity: 1,
+	      anchor: new google.maps.Point(0, 0),
+	      strokeWeight: 0,
+	      scale: 0.75
+	    };
+	
 	    geocoder.geocode({
 	      'address': '1817 California St, San Francisco, CA 94109'
 	    }, function (results) {
 	      var marker = new google.maps.Marker({
 	        position: results[0].geometry.location,
 	        map: map,
-	        title: "San Francisco"
+	        title: "San Francisco",
+	        icon: icon
 	      });
 	    });
 	  },
