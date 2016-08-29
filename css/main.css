@@ -5,14 +5,13 @@ html, body, a, header, nav, p, div, span, img {
   transition: all 250ms ease-out;
 }
 
-#nav a:before {
+/*#nav a:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 4px;
   bottom: 0;
 	left: 0;
-  /*left: -100%;*/
   background-color: #366358;
   visibility: hidden;
   -webkit-transform: scaleX(0);
@@ -22,11 +21,10 @@ html, body, a, header, nav, p, div, span, img {
 }
 
 #nav a:active:before {
-	/*left: 0;*/
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
+}*/
 
 /* Layout */
 
