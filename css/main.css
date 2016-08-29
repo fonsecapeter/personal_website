@@ -5,6 +5,7 @@ html, body, a, header, nav, p, div, span, img {
   transition: all 250ms ease-out;
 }
 
+/* nav click animation */
 /*#nav a:before {
   content: "";
   position: absolute;
