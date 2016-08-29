@@ -28189,14 +28189,11 @@
 	    return React.createElement(
 	      'div',
 	      { id: 'contact' },
+	      React.createElement('br', null),
 	      React.createElement(
-	        'div',
+	        'h1',
 	        null,
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Contact Me'
-	        )
+	        'Contact Me'
 	      ),
 	      React.createElement(
 	        'p',
