@@ -12,6 +12,7 @@ const Portfolio = React.createClass({
           <h4>Coding Projects</h4>
         </div>
         <div>
+          <br />
           <h1>Glia · <a href="https://github.com/fonsecapeter/Glia" target="blank" className="project-link">github</a> · <a href="http://glia-app.herokuapp.com" target="blank" className="project-link">live</a></h1>
           <p><span className="date">2016</span> &nbsp; <a href="https://www.appacademy.io/" target="blank" >App Academy</a></p>
           <p className="code">Ruby Rails JavaScript React<br /><br /></p>

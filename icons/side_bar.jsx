@@ -50,6 +50,7 @@ const SideBar = React.createClass ({
   render () {
     return (
       <div className="fixed">
+        <br /><br />
         <div id="main-image"><img className="circular" src="icons/headshot.jpg" width="160" /></div>
   			<div className="sidebar">
   				<p>Peter Fonseca</p>

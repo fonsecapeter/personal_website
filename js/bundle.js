@@ -27257,16 +27257,12 @@
 	        React.createElement(
 	          'div',
 	          null,
-	          React.createElement('br', null),
-	          React.createElement(
-	            'h4',
-	            null,
-	            'My Story'
-	          )
+	          React.createElement('br', null)
 	        ),
 	        React.createElement(
 	          'div',
 	          null,
+	          React.createElement('br', null),
 	          React.createElement(
 	            'h2',
 	            null,
@@ -27858,6 +27854,7 @@
 	      React.createElement(
 	        "div",
 	        null,
+	        React.createElement("br", null),
 	        React.createElement(
 	          "h1",
 	          null,

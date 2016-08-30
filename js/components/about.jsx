@@ -11,10 +11,11 @@ const About = React.createClass({
           <div>
             <br />
             {/* <img src="icons/workspace.png" className="full_width"></img> */}
-            <h4>My Story</h4>
+            {/* <h4>My Story</h4> */}
           </div>
           {/* <br /> */}
           <div>
+            <br />
             {/* <img src="icons/lab.png" className="partial_width partial_width_centered"></img> */}
             <h2>From Science to Tech</h2>
             <p>
