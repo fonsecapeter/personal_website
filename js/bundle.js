@@ -26714,8 +26714,6 @@
 	        React.createElement(
 	          'div',
 	          { id: 'nav' },
-	          React.createElement('div', { className: 'stripe2' }),
-	          React.createElement('div', { className: 'stripe1' }),
 	          React.createElement(
 	            Link,
 	            { className: aboutClass, to: '/' },

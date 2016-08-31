@@ -1,3 +1,8 @@
+@font-face {
+	font-family: Reef;
+	src url(Reef.otf)
+}
+
 html, body, a, header, nav, p, div, span, img {
 	-webkit-transition: all 250ms ease-out;
   -moz-transition: all 250ms ease-out;
@@ -30,7 +35,7 @@ html, body, a, header, nav, p, div, span, img {
 /* Layout */
 
 body {
-	font-family:'Dosis', sans-serif;
+	font-family: 'Dosis', 'Reef', sans-serif;
 	/*font-family:'Source Code Pro', monospace;*/
 	font-weight:400;
 	font-size:16px;
@@ -54,14 +59,15 @@ body {
 #nav {
 	font-size:18px;
 	/*background:#ffffff;*/
-	background: #47855a;
+	/*background: #47855a;*/
+	background: #36634d;
 	text-align:center;
 	font-weight:300;
 	letter-spacing: 1px;
 	color:#0d0d0d;
 	width:100%;
-	/*padding:10px 20px 10px 0;*/
-	padding:0 0 10px 0;
+	padding:10px 20px 10px 0;
+	/*padding:0 0 10px 0;*/
 	position: fixed;
 	z-index: 10;
 }
