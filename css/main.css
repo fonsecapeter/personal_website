@@ -427,9 +427,9 @@ and (max-device-width : 667px) {
   .fixed {
     position: static;
 	}
-	#nav {
-		font-size: 26px;
-		font-weight: 600;
+	#nav a {
+		/*font-size: 26px;*/
+		font-weight: 400;
 	}
 }
 @media (max-width: 800px) {
