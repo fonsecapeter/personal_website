@@ -30,9 +30,9 @@ const App = React.createClass({
           <div id="nav">
             {/* <div className="stripe2"></div>
             <div className="stripe1"></div> */}
-            <Link className={ aboutClass } to="/">About</Link> &nbsp;
-            <Link className={ experienceClass } to="experience">Experience</Link> &nbsp;
-            <Link className={ portfolioClass } to="portfolio">Portfolio</Link> &nbsp;
+            <Link className={ aboutClass } to="/">About</Link>
+            <Link className={ experienceClass } to="experience">Experience</Link>
+            <Link className={ portfolioClass } to="portfolio">Portfolio</Link>
             <Link className={ contactClass } to="contact">Contact</Link>
           </div>
           <div id="bg"></div>

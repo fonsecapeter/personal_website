@@ -52,8 +52,8 @@ const SideBar = React.createClass ({
       <div className="fixed">
         <div id="main-image"><img className="circular" src="icons/headshot.jpg" width="160" /></div>
   			<div className="sidebar">
-  				<p>Peter Fonseca</p>
-  				<p>Software Engineer</p>
+          <p>Neha Jewalikar</p>
+          <p>Content Marketing Manager</p>
   				<h3></h3>
   				<div>
   					<a href="http://github.com/fonsecapeter" target="_blank">

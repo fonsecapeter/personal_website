@@ -26719,19 +26719,16 @@
 	            { className: aboutClass, to: '/' },
 	            'About'
 	          ),
-	          '  ',
 	          React.createElement(
 	            Link,
 	            { className: experienceClass, to: 'experience' },
 	            'Experience'
 	          ),
-	          '  ',
 	          React.createElement(
 	            Link,
 	            { className: portfolioClass, to: 'portfolio' },
 	            'Portfolio'
 	          ),
-	          '  ',
 	          React.createElement(
 	            Link,
 	            { className: contactClass, to: 'contact' },
@@ -26826,12 +26823,12 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Peter Fonseca"
+	          "Neha Jewalikar"
 	        ),
 	        React.createElement(
 	          "p",
 	          null,
-	          "Software Engineer"
+	          "Content Marketing Manager"
 	        ),
 	        React.createElement("h3", null),
 	        React.createElement(
@@ -27264,24 +27261,18 @@
 	          React.createElement(
 	            'h2',
 	            null,
-	            'From Science to Tech'
+	            'About Title'
 	          ),
 	          React.createElement(
 	            'p',
 	            null,
-	            'While working in clinical research, my time was split between administrative tasks, technology concepts, science, and health care. While learning how to use Bash and MatLab for MRI image processing/analysis, I discoverd that the same principles could apply to the rest of my work. I continued to learn Python and SQL to automate as much of the study\'s procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.',
+	            'Lorem ipsum dolor sit amet, sea in esse salutandi, graeco deleniti dissentias vel id, dicam eirmod eu mel. Quis atomorum reprehendunt ne vel. Ei aliquip hendrerit mel, an tantas eripuit mei. Nec dolores qualisque te, aliquam scaevola est eu. Ad semper praesent ocurreret vis, cu wisi latine theophrastus pro.',
 	            React.createElement('br', null),
 	            React.createElement('br', null),
-	            'I grew into a role of improving our procedures and data with technology and am most proud of the management system I developed for our research visist summaries (',
-	            React.createElement(
-	              'a',
-	              { href: 'https://github.com/fonsecapeter/jarvs' },
-	              'Jarvs'
-	            ),
-	            '). While working on these projects, I realized that my greatest services to the study came through programming. Not only was I making my co-workers lives easier, I was helping our research participants recieve better care.',
+	            'Ei detracto perpetua expetenda nam, eum an utroque minimum principes. Eu eum iusto civibus corrumpit, vel at graeco constituam. Ad mei accusata dissentiunt. Mei inimicus omittantur ne.',
 	            React.createElement('br', null),
 	            React.createElement('br', null),
-	            'I also enjoyed this work more than my other responsibilities. It kept me working early in the morning and late at night, and I couldn\'t help myself from finishing a new project. I decided that I wanted to do it every day and my goal is to continue learning how I can leverage technology to help others.',
+	            'Nec dicta pertinax no. Ex eum mutat accusam. Has elit mundi posidonium ei, ei omnis ponderum vim, cu tempor lucilius mei. Mel aeterno dignissim democritum ut, ancillae laboramus et sea. Ea dictas numquam impedit nec, facer harum usu et, ut legimus neglegentur eum.',
 	            React.createElement('br', null),
 	            React.createElement('br', null)
 	          )
@@ -27292,7 +27283,7 @@
 	          React.createElement(
 	            'h1',
 	            null,
-	            'Languages I Work With:'
+	            'Maybe a List of Some Things:'
 	          ),
 	          React.createElement(
 	            'ul',
@@ -27300,37 +27291,27 @@
 	            React.createElement(
 	              'li',
 	              null,
-	              'JavaScript ( React, Jasmine, Flux, Node )'
+	              'something here'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
-	              'Ruby ( Rails, Rspec )'
+	              'another bullet'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
-	              'SQL'
+	              'more bullets'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
-	              'Python'
+	              'and maybe a fourth thing'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
-	              'Bash'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'Matlab'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'HTML / CSS'
+	              'or not'
 	            )
 	          )
 	        )
@@ -27846,7 +27827,7 @@
 	        React.createElement(
 	          "h4",
 	          null,
-	          "Coding Projects"
+	          "Writing Projects"
 	        )
 	      ),
 	      React.createElement(
@@ -28206,8 +28187,8 @@
 	        null,
 	        React.createElement(
 	          'a',
-	          { className: 'contact', href: 'mailto:peter.nfonseca@gmail.com' },
-	          'peter.nfonseca@gmail.com'
+	          { className: 'contact', href: 'mailto:neha.jewalikar@gmail.com' },
+	          'neha.jewalikar@gmail.com'
 	        )
 	      ),
 	      React.createElement(
@@ -28216,7 +28197,7 @@
 	        React.createElement(
 	          'a',
 	          { className: 'contact', href: 'tel:17078892431' },
-	          '(707) 889-2431'
+	          '(707) 246-2690'
 	        )
 	      ),
 	      React.createElement(

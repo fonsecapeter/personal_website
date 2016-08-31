@@ -43,8 +43,8 @@ const Contact = React.createClass ({
       <div id="contact">
         <br />
         <h1>Contact Me</h1>
-        <p><a className="contact" href="mailto:peter.nfonseca@gmail.com">peter.nfonseca@gmail.com</a></p>
-        <p><a className="contact" href="tel:17078892431">(707) 889-2431</a></p>
+        <p><a className="contact" href="mailto:neha.jewalikar@gmail.com">neha.jewalikar@gmail.com</a></p>
+        <p><a className="contact" href="tel:17078892431">(707) 246-2690</a></p>
         <p>1817 California St</p>
         <p>San Francisco, CA 94109</p>
         <br/>

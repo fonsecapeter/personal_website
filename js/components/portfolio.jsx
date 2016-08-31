@@ -9,7 +9,7 @@ const Portfolio = React.createClass({
         <div>
           <br />
           {/* <img src="icons/workspace.png" className="full_width"></img> */}
-          <h4>Coding Projects</h4>
+          <h4>Writing Projects</h4>
         </div>
         <div>
           <br />
