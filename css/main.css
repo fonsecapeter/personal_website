@@ -60,7 +60,8 @@ body {
 	font-size:18px;
 	/*background:#ffffff;*/
 	/*background: #47855a;*/
-	background: #36634d;
+	/*background: #36634d;*/
+	background: #476b5a;
 	text-align:center;
 	font-weight:300;
 	letter-spacing: 1px;
@@ -323,8 +324,8 @@ ul {
 }
 
 .social {
-	-webkit-filter: grayscale(0%);
-	filter: grayscale(0%);
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
 }
 
 .social:hover {
@@ -333,8 +334,8 @@ ul {
 }
 
 .social-git {
-	-webkit-filter: contrast(100%);
-	filter: contrast(100%);
+	-webkit-filter: contrast(80%);
+	filter: contrast(80%);
 }
 
 .social-git:hover {
@@ -363,7 +364,7 @@ ul {
 }*/
 
 #nav a:hover, #nav .active {
-	color:#9cc9be;
+	color:#8cc0b3;
 }
 
 #nav .active {
