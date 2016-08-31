@@ -27,6 +27,8 @@ const Portfolio = React.createClass({
             <li>Incorporated responsive design for mobile users</li>
           </ul>
           <br/><br/>
+          <br/><br/>
+          <br/><br/>
 
           <h1>Jarvs · <a href="https://github.com/fonsecapeter/jarvs" target="blank" className="project-link">github</a> · <a href="https://launchpad.net/jarvs" target="blank" className="project-link">launchpad</a></h1>
           <p><span className="date">2016</span> &nbsp; <a href="http://memory.ucsf.edu/" target="blank">UCSF Memory and Aging Center</a></p>
@@ -42,6 +44,8 @@ const Portfolio = React.createClass({
             <li>Can visualize data with matplotlib</li>
           </ul>
           <br/><br/>
+          <br/><br/>
+          <br/><br/>
 
           <h1>Color Shift · <a href="https://github.com/fonsecapeter/color-shift" target="blank" className="project-link">github</a> · <a href="http://peterfonseca.gq/color-shift" target="blank" className="project-link">live</a></h1>
           <p><span className="date">2016</span> &nbsp; <a href="https://www.appacademy.io/" target="blank" >App Academy</a></p>
@@ -54,6 +58,8 @@ const Portfolio = React.createClass({
             <li>Simulated collision and drag physics with vector computations</li>
             <li>Modified DOM with game state logic for start/end gating</li>
           </ul>
+          <br/><br/>
+          <br/><br/>
           <br/><br/>
 
           <h1>Ruby Chess · <a href="https://github.com/fonsecapeter/ruby_chess" target="blank" className="project-link">github</a></h1>

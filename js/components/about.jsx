@@ -7,14 +7,14 @@ const About = React.createClass({
   render () {
     return (
       <div>
-        <div id="elevator_pitch">
+        <div>
           <div>
             <br />
             {/* <img src="icons/workspace.png" className="full_width"></img> */}
             {/* <h4>My Story</h4> */}
           </div>
           {/* <br /> */}
-          <div>
+          <div id="elevator_pitch">
             <br />
             {/* <img src="icons/lab.png" className="partial_width partial_width_centered"></img> */}
             <h2>From Science to Tech</h2>

@@ -34,7 +34,6 @@ const Home = React.createClass({
                 <li>Managed metrics, IRB approval, team meetings, and external presentations</li>
                 <li>Conducted cognitive tests and ran MRIs</li>
               </ul>
-              <br /><br />
             </div>
           </div>
 
@@ -57,7 +56,6 @@ const Home = React.createClass({
                 <li>Formally presented results</li>
                 <li>Worked with PCR, Timecourse, and Western Blot protocols</li>
               </ul>
-              <br /><br />
             </div>
           </div>
 
@@ -79,7 +77,6 @@ const Home = React.createClass({
                 <li>Sterilized medical equipment</li>
                 <li>Conducted urinalysis and RST's</li>
               </ul>
-              <br /><br />
             </div>
           </div>
 
@@ -143,6 +140,7 @@ const Home = React.createClass({
           <ul style={{marginTop:'10px'}}>
             {/*<li><a href="http://www.neurology.org/content/86/16_Supplement/P5.191">Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks</a> <em>(<a href="poster2016.html">poster</a>: AAN 2016)</em></li>*/}
             <li><a href="http://www.neurology.org/content/86/16_Supplement/P5.191">Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks</a> <em>(<Link to="poster">poster</Link>: AAN 2016)</em></li>
+            <br />
             <li>PP2A-Rts1: Master Regulator of Nutrient-Modulated Cell Size Control in <em>S. cerevisiae</em> <em>(presentation: Kellogg Lab Undergraduate Researchers Talks 2014)</em></li>
           </ul>
         </div>

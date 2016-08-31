@@ -285,6 +285,9 @@ ul {
 }
 
 .experience-entry {
+	overflow: auto;
+	zoom: 1;
+	margin-bottom: 60px;
 }
 
 .experience-bullets {
@@ -390,6 +393,7 @@ ul {
 
 #elevator_pitch {
 	clear:both;
+	margin-bottom: 60px;
 }
 
 #map {

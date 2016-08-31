@@ -27251,7 +27251,7 @@
 	      null,
 	      React.createElement(
 	        'div',
-	        { id: 'elevator_pitch' },
+	        null,
 	        React.createElement(
 	          'div',
 	          null,
@@ -27259,7 +27259,7 @@
 	        ),
 	        React.createElement(
 	          'div',
-	          null,
+	          { id: 'elevator_pitch' },
 	          React.createElement('br', null),
 	          React.createElement(
 	            'h2',
@@ -27459,9 +27459,7 @@
 	                null,
 	                'Conducted cognitive tests and ran MRIs'
 	              )
-	            ),
-	            React.createElement('br', null),
-	            React.createElement('br', null)
+	            )
 	          )
 	        ),
 	        React.createElement(
@@ -27539,9 +27537,7 @@
 	                null,
 	                'Worked with PCR, Timecourse, and Western Blot protocols'
 	              )
-	            ),
-	            React.createElement('br', null),
-	            React.createElement('br', null)
+	            )
 	          )
 	        ),
 	        React.createElement(
@@ -27608,9 +27604,7 @@
 	                null,
 	                'Conducted urinalysis and RST\'s'
 	              )
-	            ),
-	            React.createElement('br', null),
-	            React.createElement('br', null)
+	            )
 	          )
 	        ),
 	        React.createElement(
@@ -27801,6 +27795,7 @@
 	              ': AAN 2016)'
 	            )
 	          ),
+	          React.createElement('br', null),
 	          React.createElement(
 	            'li',
 	            null,
@@ -27921,6 +27916,10 @@
 	        ),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        React.createElement(
 	          "h1",
 	          null,
@@ -27992,6 +27991,10 @@
 	        ),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        React.createElement(
 	          "h1",
 	          null,
@@ -28053,6 +28056,10 @@
 	            "Modified DOM with game state logic for start/end gating"
 	          )
 	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
 	        React.createElement(
