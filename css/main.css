@@ -429,7 +429,7 @@ and (max-device-width : 667px) {
 	}
 	#nav a {
 		/*font-size: 26px;*/
-		font-weight: 400;
+		font-weight: 600;
 	}
 }
 @media (max-width: 800px) {
