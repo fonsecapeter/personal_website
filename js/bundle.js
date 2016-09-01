@@ -28102,7 +28102,7 @@
 	        React.createElement(
 	          "p",
 	          null,
-	          "Ruby chess is a command line game built for 2 players."
+	          "Ruby chess is a command line game built for 0, 1, or 2 players."
 	        ),
 	        React.createElement("br", null),
 	        React.createElement(
