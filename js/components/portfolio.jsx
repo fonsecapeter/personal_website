@@ -34,6 +34,7 @@ const Portfolio = React.createClass({
           <p><span className="date">2016</span> &nbsp; <a href="http://memory.ucsf.edu/" target="blank">UCSF Memory and Aging Center</a></p>
           <p className="code">Python GTK Bash SQLite<br /><br /></p>
           <img src="https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png" width="526px"/>
+          <br/><br/>
           <p>Jarvs is an Ubuntu app that I built to help manage research dictations by scraping data out of file-names.
           This app is still in development, but has the minimum functionality necessary and is currently in use.</p>
           <br/>

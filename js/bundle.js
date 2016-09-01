@@ -27959,6 +27959,8 @@
 	          React.createElement("br", null)
 	        ),
 	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png", width: "526px" }),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        React.createElement(
 	          "p",
 	          null,
