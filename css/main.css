@@ -240,7 +240,6 @@ ul {
 	width: 100%;
 }
 
-
 .code-list {
 	margin-top: 10px;
 }
@@ -350,7 +349,7 @@ ul {
 
 #elevator_pitch {
 	clear:both;
-	margin-bottom: 60px;
+	margin-bottom: 25px;
 }
 
 #map {
