@@ -238,6 +238,7 @@ ul {
 .row {
 	float: left;
 	width: 100%;
+	white-space: nowrap;
 }
 
 .code-list {
@@ -259,16 +260,19 @@ ul {
 
 .experience-bullets {
 	padding-left: 20px;
+	white-space: normal;
 }
 
 .experience-left {
 	display: inline-block;
 	padding-right: 20px;
 	vertical-align: top;
+	white-space: normal;
 }
 
 .experience-right {
 	display: inline-block;
+	white-space: normal;
 }
 
 .full_width {

@@ -27772,44 +27772,69 @@
 	        ),
 	        React.createElement('p', null),
 	        React.createElement(
-	          'ul',
-	          { style: { marginTop: '10px' } },
+	          'div',
+	          { className: 'row' },
 	          React.createElement(
-	            'li',
-	            null,
-	            React.createElement(
-	              'a',
-	              { href: 'http://www.neurology.org/content/86/16_Supplement/P5.191' },
-	              'Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks'
-	            ),
-	            ' ',
-	            React.createElement(
-	              'em',
-	              null,
-	              '(',
-	              React.createElement(
-	                Link,
-	                { to: 'poster' },
-	                'poster'
-	              ),
-	              ': AAN 2016)'
-	            )
+	            'div',
+	            { className: 'experience-left' },
+	            React.createElement('img', { src: 'icons/poster.png', className: 'icon' })
 	          ),
-	          React.createElement('br', null),
 	          React.createElement(
-	            'li',
-	            null,
-	            'PP2A-Rts1: Master Regulator of Nutrient-Modulated Cell Size Control in ',
+	            'div',
+	            { className: 'experience-right' },
 	            React.createElement(
-	              'em',
+	              'p',
 	              null,
-	              'S. cerevisiae'
-	            ),
-	            ' ',
+	              React.createElement(
+	                'a',
+	                { href: 'http://www.neurology.org/content/86/16_Supplement/P5.191' },
+	                'Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks'
+	              ),
+	              ' ',
+	              React.createElement(
+	                'em',
+	                null,
+	                '(',
+	                React.createElement(
+	                  Link,
+	                  { to: 'poster' },
+	                  'poster'
+	                ),
+	                ': AAN 2016)'
+	              )
+	            )
+	          )
+	        ),
+	        React.createElement('br', null),
+	        React.createElement('br', null),
+	        React.createElement('br', null),
+	        React.createElement('br', null),
+	        React.createElement(
+	          'div',
+	          { className: 'row' },
+	          React.createElement(
+	            'div',
+	            { className: 'experience-left' },
+	            React.createElement('img', { src: 'icons/presentation.png', className: 'icon' })
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: 'experience-right' },
 	            React.createElement(
-	              'em',
+	              'p',
 	              null,
-	              '(presentation: Kellogg Lab Undergraduate Researchers Talks 2014)'
+	              'PP2A-Rts1: Master Regulator of Nutrient-Modulated Cell Size Control in ',
+	              React.createElement(
+	                'em',
+	                null,
+	                'S. cerevisiae'
+	              ),
+	              ' ',
+	              React.createElement(
+	                'em',
+	                null,
+	                '(presentation: Kellogg Lab Undergraduate Researchers Talks 2014)'
+	              )
 	            )
 	          )
 	        )
