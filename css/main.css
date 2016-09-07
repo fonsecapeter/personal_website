@@ -397,7 +397,7 @@ and (max-device-width : 667px) {
 	}
 }
 @media (max-width: 800px) {
-	#left-column, #right-column {
+	#left-column, #right-column, #main-content {
 		width: 100%;
 	  float: none;
 		margin: auto;

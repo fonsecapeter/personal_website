@@ -40,6 +40,7 @@ const About = React.createClass({
               <li>HTML / CSS</li>
             </ul>
           </div>
+          <br /><br />
         </div>
       </div>
     );

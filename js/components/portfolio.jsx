@@ -75,6 +75,7 @@ const Portfolio = React.createClass({
             <li>Unit and integration tested with RSpec</li>
           </ul>
         </div>
+        <br /><br />
       </div>
     );
   }

@@ -142,7 +142,8 @@ const Home = React.createClass({
               <img src="icons/poster.png" className="icon"></img>
             </div>
             <div className="experience-right">
-              <p><a href="http://www.neurology.org/content/86/16_Supplement/P5.191">Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks</a> <em>(<Link to="poster">poster</Link>: AAN 2016)</em></p>
+              <p><a href="http://www.neurology.org/content/86/16_Supplement/P5.191">Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks</a></p>
+              <p><Link to="poster">poster</Link>: AAN 2016</p>
             </div>
           </div>
           <br /><br />
@@ -153,17 +154,15 @@ const Home = React.createClass({
               <img src="icons/presentation.png" className="icon"></img>
             </div>
             <div className="experience-right">
-              <p>PP2A-Rts1: Master Regulator of Nutrient-Modulated Cell Size Control in <em>S. cerevisiae</em> <em>(presentation: Kellogg Lab Undergraduate Researchers Talks 2014)</em></p>
+              <p>PP2A-Rts1: Master Regulator of Nutrient-Modulated Cell Size Control in <em>S. cerevisiae</em></p>
+              <p>presentation: Kellogg Lab Undergraduate Researchers Talks 2014</p>
             </div>
           </div>
 
           {/* ul style={{marginTop:'10px'}}> */}
             {/*<li><a href="http://www.neurology.org/content/86/16_Supplement/P5.191">Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks</a> <em>(<a href="poster2016.html">poster</a>: AAN 2016)</em></li>*/}
-            {/* <li><a href="http://www.neurology.org/content/86/16_Supplement/P5.191">Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks</a> <em>(<Link to="poster">poster</Link>: AAN 2016)</em></li>
-            <br />
-            <li>PP2A-Rts1: Master Regulator of Nutrient-Modulated Cell Size Control in <em>S. cerevisiae</em> <em>(presentation: Kellogg Lab Undergraduate Researchers Talks 2014)</em></li>
-          </ul> */}
         </div>
+        <br /><br />
       </div>
     );
   }

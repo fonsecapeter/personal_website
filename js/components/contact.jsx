@@ -52,6 +52,7 @@ const Contact = React.createClass ({
         <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap">
         </script>
+        <br /><br />
       </div>
     );
   }
