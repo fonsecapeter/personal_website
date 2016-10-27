@@ -27385,6 +27385,44 @@
 	            React.createElement(
 	              'div',
 	              { className: 'experience-left' },
+	              React.createElement('img', { src: 'icons/dna.png', className: 'icon' })
+	            ),
+	            React.createElement(
+	              'div',
+	              { className: 'experience-right' },
+	              React.createElement(
+	                'h1',
+	                null,
+	                'Software Engineer'
+	              ),
+	              React.createElement(
+	                'p',
+	                null,
+	                React.createElement(
+	                  'span',
+	                  { className: 'date' },
+	                  '2016-Present'
+	                ),
+	                '   ',
+	                React.createElement(
+	                  'a',
+	                  { href: 'https://www.23andme.com/', target: 'blank' },
+	                  '23andMe'
+	                )
+	              )
+	            ),
+	            React.createElement('br', null)
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'experience-entry' },
+	          React.createElement(
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	              'div',
+	              { className: 'experience-left' },
 	              React.createElement('img', { src: 'icons/brain.png', className: 'icon' })
 	            ),
 	            React.createElement(

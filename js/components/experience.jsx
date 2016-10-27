@@ -16,6 +16,19 @@ const Home = React.createClass({
           <div className="experience-entry">
             <div className="row">
               <div className="experience-left">
+                <img src="icons/dna.png" className="icon"></img>
+              </div>
+              <div className="experience-right">
+                <h1>Software Engineer</h1>
+                <p><span className="date">2016-Present</span> &nbsp; <a href="https://www.23andme.com/" target="blank">23andMe</a></p>
+              </div>
+              <br />
+            </div>
+          </div>
+
+          <div className="experience-entry">
+            <div className="row">
+              <div className="experience-left">
                 <img src="icons/brain.png" className="icon"></img>
               </div>
               <div className="experience-right">
