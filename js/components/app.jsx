@@ -10,27 +10,32 @@ const App = React.createClass({
     let path = this.props.location.pathname;
 
     let aboutClass = "header";
+    let navClass = "nav-experience"
     let experienceClass = "header";
     let portfolioClass = "header";
     let contactClass = "header";
 
-    if ( path === "/" || path === "/about" ) {
+    if ( path === "/about" ) {
       aboutClass += " active";
-    } else if ( path === "/experience" ) {
+      navClass = "nav-about";
+    } else if ( path === "/" || path === "/experience" ) {
       experienceClass += " active";
+      navClass = "nav-experience";
     } else if ( path === "/portfolio" ) {
       portfolioClass += " active";
+      navClass = "nav-portfolio";
     } else if ( path === "/contact" ) {
       contactClass += " active";
+      navClass = "nav-contact";
     }
 
     return (
       <div>
         <div id="header">
-          <div id="nav">
+          <div id="nav" className={ navClass }>
             {/* <div className="stripe2"></div>
             <div className="stripe1"></div> */}
-            <Link className={ aboutClass } to="/">About</Link> &nbsp;
+            <Link className={ aboutClass } to="about">About</Link> &nbsp;
             <Link className={ experienceClass } to="experience">Experience</Link> &nbsp;
             <Link className={ portfolioClass } to="portfolio">Portfolio</Link> &nbsp;
             <Link className={ contactClass } to="contact">Contact</Link>

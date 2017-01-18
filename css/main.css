@@ -55,7 +55,6 @@ body {
 
 #nav {
 	font-size:16px;
-	background: #4b689b;
 	text-align:center;
 	font-weight:300;
 	letter-spacing: 1px;
@@ -65,6 +64,22 @@ body {
 	/*padding:0 0 10px 0;*/
 	position: fixed;
 	z-index: 10;
+}
+
+.nav-about {
+    background: #565d8f;
+}
+
+.nav-experience {
+    background: #4b689b;
+}
+
+.nav-portfolio {
+    background: #3f74a6;
+}
+
+.nav-contact {
+    background: #4b879b;
 }
 
 #header {
@@ -121,6 +136,11 @@ body {
 	cursor: pointer;
 }
 
+.screenshot {
+    display: block;
+    margin: auto;
+}
+
 .poster-modal {
 	width: 100%;
 	padding: 0;
@@ -147,7 +167,7 @@ h1 {
 	color:#1a1a1a;
 
 	margin:0 0 10px;
-	padding-bottom:10px;
+	padding-bottom:8px;
 	font-size:19px;
 	border-bottom:1px solid #c0c6cc;
 }
@@ -174,7 +194,7 @@ h3 {
 h4 {
 	color:#1a1a1a;
 
-	margin-bottom:20px;
+	margin-bottom:40px;
 	letter-spacing: 1px;
 	font-size:32px;
 	font-weight:400;
@@ -347,8 +367,10 @@ ul {
 }
 
 #contact {
+/*
 	margin-top: 40px;
 	margin-left:168px;
+*/
 }
 
 #elevator_pitch {
@@ -358,6 +380,7 @@ ul {
 
 #map {
 	border-radius: 4px;
+    margin: auto;
 }
 
 @media only screen
@@ -377,15 +400,17 @@ and (max-device-width : 667px) {
 		width: 90%;
 		margin: 0;
 	}
+/*
 	#contact {
 		margin: auto;
 		margin-top: 40px;
 		padding-left: 60px;
-		padding-right: 4px;
+        padding-right: 4px;
 	}
 	#map {
 		margin: auto;
 	}
+*/
 	.sidebar {
 		margin: auto;
 	}
@@ -407,6 +432,7 @@ and (max-device-width : 667px) {
 		width: 90%;
 		margin: 0;
 	}
+/*
 	#contact {
 		margin: auto;
 		margin-top: 40px;
@@ -416,6 +442,7 @@ and (max-device-width : 667px) {
 	#map {
 		margin: auto;
 	}
+*/
 	.sidebar {
 		margin: auto;
 	}

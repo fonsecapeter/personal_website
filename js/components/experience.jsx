@@ -10,7 +10,7 @@ const Home = React.createClass({
         <br />
         <div id="work_experience">
           {/* <h4><a href="resume/PeterFonsecaResume.pdf" target="blank"><img src="icons/pdf.png" className="icon"></img></a> &nbsp; Work Experience</h4> */}
-          <h4><a className="code v-super" href="resume/PeterFonsecaResume.pdf" target="blank">[PDF]</a> &nbsp; Work Experience</h4>
+          <h4>Work Experience &nbsp; <a className="code v-super" href="resume/PeterFonsecaResume.pdf" target="blank">[PDF]</a></h4>
         </div>
         <div>
           <div className="experience-entry">

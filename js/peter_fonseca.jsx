@@ -13,7 +13,6 @@ const IndexRoute = ReactRouter.IndexRoute;
 const hashHistory = ReactRouter.hashHistory;
 //Components
 const App = require('./components/app');
-const Home = require('./components/home');
 const About = require('./components/about');
 const Experience = require('./components/experience');
 const Portfolio = require('./components/portfolio');
@@ -24,7 +23,8 @@ const Poster = require('./components/poster');
 const appRouter = (
   <Router history={ hashHistory }>
     <Route path="/" component={ App } >
-      <IndexRoute component={ About } />
+      <IndexRoute component={ Experience } />
+      <Route path="/about" component={ About } />
       <Route path="/experience" component={ Experience } />
       <Route path="/portfolio" component={ Portfolio } />
       <Route path="/design" component={ Design } />

@@ -60,7 +60,6 @@
 	var hashHistory = ReactRouter.hashHistory;
 	//Components
 	var App = __webpack_require__(234);
-	var Home = __webpack_require__(236);
 	var About = __webpack_require__(237);
 	var Experience = __webpack_require__(238);
 	var Portfolio = __webpack_require__(239);
@@ -74,7 +73,8 @@
 	  React.createElement(
 	    Route,
 	    { path: "/", component: App },
-	    React.createElement(IndexRoute, { component: About }),
+	    React.createElement(IndexRoute, { component: Experience }),
+	    React.createElement(Route, { path: "/about", component: About }),
 	    React.createElement(Route, { path: "/experience", component: Experience }),
 	    React.createElement(Route, { path: "/portfolio", component: Portfolio }),
 	    React.createElement(Route, { path: "/design", component: Design }),
@@ -26691,18 +26691,23 @@
 	    var path = this.props.location.pathname;
 	
 	    var aboutClass = "header";
+	    var navClass = "nav-experience";
 	    var experienceClass = "header";
 	    var portfolioClass = "header";
 	    var contactClass = "header";
 	
-	    if (path === "/" || path === "/about") {
+	    if (path === "/about") {
 	      aboutClass += " active";
-	    } else if (path === "/experience") {
+	      navClass = "nav-about";
+	    } else if (path === "/" || path === "/experience") {
 	      experienceClass += " active";
+	      navClass = "nav-experience";
 	    } else if (path === "/portfolio") {
 	      portfolioClass += " active";
+	      navClass = "nav-portfolio";
 	    } else if (path === "/contact") {
 	      contactClass += " active";
+	      navClass = "nav-contact";
 	    }
 	
 	    return React.createElement(
@@ -26713,10 +26718,10 @@
 	        { id: 'header' },
 	        React.createElement(
 	          'div',
-	          { id: 'nav' },
+	          { id: 'nav', className: navClass },
 	          React.createElement(
 	            Link,
-	            { className: aboutClass, to: '/' },
+	            { className: aboutClass, to: 'about' },
 	            'About'
 	          ),
 	          '  ',
@@ -26863,378 +26868,7 @@
 	module.exports = SideBar;
 
 /***/ },
-/* 236 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	var React = __webpack_require__(1);
-	var Link = __webpack_require__(172).Link;
-	
-	var Home = React.createClass({
-	  displayName: 'Home',
-	  render: function render() {
-	    return React.createElement(
-	      'div',
-	      null,
-	      React.createElement(
-	        'div',
-	        { id: 'elevator_pitch' },
-	        React.createElement('br', null),
-	        React.createElement('img', { src: 'icons/lab.png', className: 'partial_width partial_width_centered' }),
-	        React.createElement(
-	          'h2',
-	          null,
-	          'From Science to Tech'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'As a Clinical Research Coordinator in the field of dementia, I was positioned between administrative tasks, technology concepts, and health care. While learning how to use Bash and MatLab for MRI image processing/analysis, I discoverd that the same principles could apply to the rest of my work. I continued to learn Python and SQL to automate as much of our study\'s procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.',
-	          React.createElement('br', null),
-	          React.createElement('br', null),
-	          'I grew into a role of improving our procedures and data with technology and am most proud of the management system I developed for our research visist summaries (',
-	          React.createElement(
-	            'a',
-	            { href: 'https://github.com/fonsecapeter/jarvs' },
-	            'Jarvs'
-	          ),
-	          ').',
-	          React.createElement('br', null),
-	          React.createElement('br', null),
-	          'While working on these projects, I realized that my greatest services to the study came through programming. Not only was I making my co-workers lives easier, I was helping our research participants recieve better care. I enjoyed this work more than my other responsibilities and decided that I wanted to do it every day. My goal is to continue learning how I can leverage technology to help others.',
-	          React.createElement('br', null),
-	          React.createElement('br', null)
-	        )
-	      ),
-	      React.createElement(
-	        'div',
-	        null,
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Languages I Work With:'
-	        ),
-	        React.createElement('img', { src: 'icons/code-logos.png', className: 'partial_width' })
-	      ),
-	      React.createElement(
-	        'div',
-	        { id: 'work_experience' },
-	        React.createElement(
-	          'h4',
-	          null,
-	          React.createElement('img', { src: 'icons/pdf.png', className: 'icon' }),
-	          '    Work Experience'
-	        )
-	      ),
-	      React.createElement(
-	        'div',
-	        null,
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Clinical Research Coordinator'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement(
-	            'em',
-	            null,
-	            '2014 - present'
-	          ),
-	          '   UCSF Memory and Aging Center'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'Primary Study: Frontotemporal Dementia: Genes, Images and Emotions',
-	          React.createElement('br', null),
-	          React.createElement('br', null)
-	        ),
-	        React.createElement(
-	          'ul',
-	          null,
-	          React.createElement(
-	            'li',
-	            null,
-	            'Expanded scope of data requests and presentations using scientific Python, initiating new policies to improve data quality and reduce errors'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Accelerated dictation approval bottleneck by building ',
-	            React.createElement(
-	              'a',
-	              { href: 'https://launchpad.net/jarvs', target: 'blank' },
-	              'Jarvs'
-	            )
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Automated administrative tasks and improved scalability of recruitment'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Coordinated a team to compile a $5M competitive grant renewal application'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Managed metrics, IRB approval, team meetings, and external presentations'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Conducted cognitive tests and ran MRIs'
-	          )
-	        ),
-	        React.createElement('br', null),
-	        React.createElement('br', null),
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Undergraduate Researcher'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement(
-	            'em',
-	            null,
-	            '2013 - 2014'
-	          ),
-	          '   UCSC Kellogg Lab'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'Primary Focus: Cell Size Control',
-	          React.createElement('br', null),
-	          React.createElement('br', null)
-	        ),
-	        React.createElement(
-	          'ul',
-	          null,
-	          React.createElement(
-	            'li',
-	            null,
-	            'Conducted research on enzymatic pathways involving nutrient-mediated cell size control in ',
-	            React.createElement(
-	              'em',
-	              null,
-	              'S. cerevesiase'
-	            )
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Discredited a hypothesized back-regulation of PP2A-Rts1 by Pkh1/2'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Formally presented results'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Worked with PCR, Timecourse, and Western Blot protocols'
-	          )
-	        ),
-	        React.createElement('br', null),
-	        React.createElement('br', null),
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Volunteer Lab Assistant'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement(
-	            'em',
-	            null,
-	            '2012 - 2013 Summers'
-	          ),
-	          '   Novato Medical Center'
-	        ),
-	        React.createElement('br', null),
-	        React.createElement(
-	          'ul',
-	          null,
-	          React.createElement(
-	            'li',
-	            null,
-	            'Managed medical records and appointments'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Directed incoming patients, calls, and mail'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Sterilized medical equipment'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Conducted urinalysis and RST\'s'
-	          )
-	        ),
-	        React.createElement('br', null),
-	        React.createElement('br', null),
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Technician'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement(
-	            'em',
-	            null,
-	            '2010 - 2012 Summers'
-	          ),
-	          '   Vintage 47 Amplifiers'
-	        ),
-	        React.createElement('br', null),
-	        React.createElement(
-	          'ul',
-	          null,
-	          React.createElement(
-	            'li',
-	            null,
-	            'Doubled fabrication rate of amplifiers from schematics'
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'Designed logos and components with Adobe Illustrator to grow the brand'
-	          )
-	        )
-	      ),
-	      React.createElement(
-	        'div',
-	        null,
-	        React.createElement(
-	          'h4',
-	          null,
-	          'Education'
-	        )
-	      ),
-	      React.createElement(
-	        'div',
-	        null,
-	        React.createElement(
-	          'h1',
-	          null,
-	          React.createElement(
-	            'a',
-	            { href: 'https://www.appacademy.io/', target: 'blank' },
-	            'App Academy'
-	          )
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement(
-	            'em',
-	            null,
-	            'May - July 2016'
-	          ),
-	          '   San Francisco'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'Industry-focused programming course'
-	        ),
-	        React.createElement('br', null),
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Bachelor of Science in Biology'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          React.createElement(
-	            'em',
-	            null,
-	            '2010 - 2014'
-	          ),
-	          '   University of California, Santa Cruz'
-	        ),
-	        React.createElement(
-	          'p',
-	          null,
-	          'Minor in Chemistry'
-	        )
-	      ),
-	      React.createElement(
-	        'div',
-	        null,
-	        React.createElement(
-	          'h4',
-	          null,
-	          'Posters/Presentations'
-	        ),
-	        React.createElement('p', null),
-	        React.createElement(
-	          'ul',
-	          { style: { marginTop: '10px' } },
-	          React.createElement(
-	            'li',
-	            null,
-	            React.createElement(
-	              'a',
-	              { href: 'http://www.neurology.org/content/86/16_Supplement/P5.191' },
-	              'Dissociations in Socioemotional Test Performance Predict Neurodegeneration in Intrinsic Connectivity Networks'
-	            ),
-	            ' ',
-	            React.createElement(
-	              'em',
-	              null,
-	              '(',
-	              React.createElement(
-	                Link,
-	                { to: 'poster' },
-	                'poster'
-	              ),
-	              ': AAN 2016)'
-	            )
-	          ),
-	          React.createElement(
-	            'li',
-	            null,
-	            'PP2A-Rts1: Master Regulator of Nutrient-Modulated Cell Size Control in ',
-	            React.createElement(
-	              'em',
-	              null,
-	              'S. cerevisiae'
-	            ),
-	            ' ',
-	            React.createElement(
-	              'em',
-	              null,
-	              '(presentation: Kellogg Lab Undergraduate Researchers Talks 2014)'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	module.exports = Home;
-
-/***/ },
+/* 236 */,
 /* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27255,12 +26889,16 @@
 	        React.createElement(
 	          'div',
 	          null,
-	          React.createElement('br', null)
+	          React.createElement('br', null),
+	          React.createElement(
+	            'h4',
+	            null,
+	            'About Me'
+	          )
 	        ),
 	        React.createElement(
 	          'div',
 	          { id: 'elevator_pitch' },
-	          React.createElement('br', null),
 	          React.createElement(
 	            'h2',
 	            null,
@@ -27272,7 +26910,7 @@
 	            'While working in clinical research, my time was split between administrative tasks, technology concepts, science, and health care. While learning how to use Bash and MatLab for MRI image processing/analysis, I discoverd that the same principles could apply to the rest of my work. I continued to learn Python and SQL to automate as much of the study\'s procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.',
 	            React.createElement('br', null),
 	            React.createElement('br', null),
-	            'I grew into a role of improving our procedures and data with technology and am most proud of the management system I developed for our research visist summaries (',
+	            'I grew into a role of improving our procedures and data with technology and am most proud of the management system I developed for our research visit summaries (',
 	            React.createElement(
 	              'a',
 	              { href: 'https://github.com/fonsecapeter/jarvs' },
@@ -27365,12 +27003,12 @@
 	        React.createElement(
 	          'h4',
 	          null,
+	          'Work Experience   ',
 	          React.createElement(
 	            'a',
 	            { className: 'code v-super', href: 'resume/PeterFonsecaResume.pdf', target: 'blank' },
 	            '[PDF]'
-	          ),
-	          '   Work Experience'
+	          )
 	        )
 	      ),
 	      React.createElement(
@@ -27911,7 +27549,6 @@
 	      React.createElement(
 	        "div",
 	        null,
-	        React.createElement("br", null),
 	        React.createElement(
 	          "h1",
 	          null,
@@ -27950,7 +27587,7 @@
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
-	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/Glia/master/docs/screenshots/glia-question-detail.png", width: "526px" }),
+	        React.createElement("img", { className: "screenshot", src: "https://raw.githubusercontent.com/fonsecapeter/Glia/master/docs/screenshots/glia-question-detail.png", width: "526px" }),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
 	        React.createElement(
@@ -28022,7 +27659,7 @@
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
-	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png", width: "526px" }),
+	        React.createElement("img", { className: "screenshot", src: "https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png", width: "526px" }),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
 	        React.createElement(
@@ -28099,7 +27736,7 @@
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
-	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/color-shift/master/docs/color-shift-screenshot.png", width: "526px" }),
+	        React.createElement("img", { className: "screenshot", src: "https://raw.githubusercontent.com/fonsecapeter/color-shift/master/docs/color-shift-screenshot.png", width: "526px" }),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
 	        React.createElement(
@@ -28160,7 +27797,7 @@
 	          React.createElement("br", null),
 	          React.createElement("br", null)
 	        ),
-	        React.createElement("img", { src: "https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif" }),
+	        React.createElement("img", { className: "screenshot", src: "https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif" }),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
 	        React.createElement(
@@ -28270,12 +27907,17 @@
 	    return React.createElement(
 	      'div',
 	      { id: 'contact' },
-	      React.createElement('br', null),
 	      React.createElement(
-	        'h1',
+	        'div',
 	        null,
-	        'Contact Me'
+	        React.createElement('br', null),
+	        React.createElement(
+	          'h4',
+	          null,
+	          'Contact Me'
+	        )
 	      ),
+	      React.createElement('h1', null),
 	      React.createElement(
 	        'p',
 	        null,
@@ -28304,6 +27946,7 @@
 	        null,
 	        'San Francisco, CA 94109'
 	      ),
+	      React.createElement('br', null),
 	      React.createElement('br', null),
 	      React.createElement('div', { id: 'map', style: { overflow: "hidden", height: "360px", width: "426px" } }),
 	      React.createElement('script', { async: true, defer: true,
