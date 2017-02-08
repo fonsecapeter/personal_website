@@ -60,12 +60,12 @@
 	var hashHistory = ReactRouter.hashHistory;
 	//Components
 	var App = __webpack_require__(234);
-	var About = __webpack_require__(237);
-	var Experience = __webpack_require__(238);
-	var Portfolio = __webpack_require__(239);
-	var Design = __webpack_require__(240);
-	var Contact = __webpack_require__(241);
-	var Poster = __webpack_require__(242);
+	var About = __webpack_require__(236);
+	var Experience = __webpack_require__(237);
+	var Portfolio = __webpack_require__(238);
+	var Design = __webpack_require__(239);
+	var Contact = __webpack_require__(240);
+	var Poster = __webpack_require__(241);
 	
 	var appRouter = React.createElement(
 	  Router,
@@ -26868,8 +26868,7 @@
 	module.exports = SideBar;
 
 /***/ },
-/* 236 */,
-/* 237 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26938,22 +26937,22 @@
 	            React.createElement(
 	              'li',
 	              null,
-	              'JavaScript ( React, Jasmine, Flux, Node )'
+	              'Python (Django)'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
-	              'Ruby ( Rails, Rspec )'
+	              'JavaScript (React, Jasmine, Flux, Node)'
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              'Ruby (Rails, Rspec)'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
 	              'SQL'
-	            ),
-	            React.createElement(
-	              'li',
-	              null,
-	              'Python'
 	            ),
 	            React.createElement(
 	              'li',
@@ -26982,7 +26981,7 @@
 	module.exports = About;
 
 /***/ },
-/* 238 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27523,7 +27522,7 @@
 	module.exports = Home;
 
 /***/ },
-/* 239 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27830,7 +27829,7 @@
 	module.exports = Portfolio;
 
 /***/ },
-/* 240 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27861,7 +27860,7 @@
 	module.exports = Design;
 
 /***/ },
-/* 241 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27960,13 +27959,13 @@
 	module.exports = Contact;
 
 /***/ },
-/* 242 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	var React = __webpack_require__(1);
-	var Boron = __webpack_require__(243);
+	var Boron = __webpack_require__(242);
 	
 	var Poster = React.createClass({
 	  displayName: 'Poster',
@@ -28044,26 +28043,26 @@
 	module.exports = Poster;
 
 /***/ },
-/* 243 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = {
-	    DropModal: __webpack_require__(244),
-	    WaveModal: __webpack_require__(253),
-	    FlyModal: __webpack_require__(254),
-	    FadeModal: __webpack_require__(255),
-	    ScaleModal: __webpack_require__(256),
-	    OutlineModal: __webpack_require__(257),
+	    DropModal: __webpack_require__(243),
+	    WaveModal: __webpack_require__(252),
+	    FlyModal: __webpack_require__(253),
+	    FadeModal: __webpack_require__(254),
+	    ScaleModal: __webpack_require__(255),
+	    OutlineModal: __webpack_require__(256),
 	}
 
 
 /***/ },
-/* 244 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(245);
-	var insertKeyframesRule = __webpack_require__(250);
-	var appendVendorPrefix = __webpack_require__(247);
+	var modalFactory = __webpack_require__(244);
+	var insertKeyframesRule = __webpack_require__(249);
+	var appendVendorPrefix = __webpack_require__(246);
 	
 	var animation = {
 	    show: {
@@ -28197,12 +28196,12 @@
 
 
 /***/ },
-/* 245 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
-	var transitionEvents = __webpack_require__(246);
-	var appendVendorPrefix = __webpack_require__(247);
+	var transitionEvents = __webpack_require__(245);
+	var appendVendorPrefix = __webpack_require__(246);
 	
 	module.exports = function(animation){
 	
@@ -28381,7 +28380,7 @@
 
 
 /***/ },
-/* 246 */
+/* 245 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28482,12 +28481,12 @@
 
 
 /***/ },
-/* 247 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var getVendorPropertyName = __webpack_require__(248);
+	var getVendorPropertyName = __webpack_require__(247);
 	
 	module.exports = function(target, sources) {
 	  var to = Object(target);
@@ -28518,12 +28517,12 @@
 
 
 /***/ },
-/* 248 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var builtinStyle = __webpack_require__(249);
+	var builtinStyle = __webpack_require__(248);
 	var prefixes = ['Moz', 'Webkit', 'O', 'ms'];
 	var domVendorPrefix;
 	
@@ -28561,7 +28560,7 @@
 
 
 /***/ },
-/* 249 */
+/* 248 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28570,13 +28569,13 @@
 
 
 /***/ },
-/* 250 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var insertRule = __webpack_require__(251);
-	var vendorPrefix = __webpack_require__(252)();
+	var insertRule = __webpack_require__(250);
+	var vendorPrefix = __webpack_require__(251)();
 	var index = 0;
 	
 	module.exports = function(keyframes) {
@@ -28606,7 +28605,7 @@
 
 
 /***/ },
-/* 251 */
+/* 250 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28631,7 +28630,7 @@
 
 
 /***/ },
-/* 252 */
+/* 251 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28650,12 +28649,12 @@
 
 
 /***/ },
-/* 253 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(245);
-	var insertKeyframesRule = __webpack_require__(250);
-	var appendVendorPrefix = __webpack_require__(247);
+	var modalFactory = __webpack_require__(244);
+	var insertKeyframesRule = __webpack_require__(249);
+	var appendVendorPrefix = __webpack_require__(246);
 	
 	var animation = {
 	    show: {
@@ -28898,12 +28897,12 @@
 
 
 /***/ },
-/* 254 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(245);
-	var insertKeyframesRule = __webpack_require__(250);
-	var appendVendorPrefix = __webpack_require__(247);
+	var modalFactory = __webpack_require__(244);
+	var insertKeyframesRule = __webpack_require__(249);
+	var appendVendorPrefix = __webpack_require__(246);
 	
 	var animation = {
 	    show: {
@@ -29018,12 +29017,12 @@
 
 
 /***/ },
-/* 255 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(245);
-	var insertKeyframesRule = __webpack_require__(250);
-	var appendVendorPrefix = __webpack_require__(247);
+	var modalFactory = __webpack_require__(244);
+	var insertKeyframesRule = __webpack_require__(249);
+	var appendVendorPrefix = __webpack_require__(246);
 	
 	var animation = {
 	    show: {
@@ -29121,12 +29120,12 @@
 
 
 /***/ },
-/* 256 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(245);
-	var insertKeyframesRule = __webpack_require__(250);
-	var appendVendorPrefix = __webpack_require__(247);
+	var modalFactory = __webpack_require__(244);
+	var insertKeyframesRule = __webpack_require__(249);
+	var appendVendorPrefix = __webpack_require__(246);
 	
 	var animation = {
 	    show: {
@@ -29227,13 +29226,13 @@
 
 
 /***/ },
-/* 257 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
-	var modalFactory = __webpack_require__(245);
-	var insertKeyframesRule = __webpack_require__(250);
-	var appendVendorPrefix = __webpack_require__(247);
+	var modalFactory = __webpack_require__(244);
+	var insertKeyframesRule = __webpack_require__(249);
+	var appendVendorPrefix = __webpack_require__(246);
 	
 	var animation = {
 	    show: {

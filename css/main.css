@@ -2,6 +2,14 @@
 	font-family: Reef;
 	src url(Reef.otf)
 }
+@font-face {
+	font-family: Neha Mono;
+	src url(neha_mono_regular.otf)
+}
+@font-face {
+	font-family: Neha Mono Comfortable;
+	src url(neha_mono_regular_comfortable.otf)
+}
 
 html, body, a, header, nav, p, div, span, img {
 	-webkit-transition: all 250ms ease-out;
@@ -238,7 +246,7 @@ ul {
 }
 
 .date {
-	font-family: 'Source Code Pro', 'monospace';
+	font-family: 'Neha Mono Comfortable', 'Source Code Pro', 'monospace';
 	color: #999fac;
 	font-size: 14px;
 }
@@ -262,11 +270,13 @@ ul {
 }
 
 .code-list {
+	font-family: 'Neha Mono', 'Source Code Pro', 'monospace';
+	font-size: 14px;
 	margin-top: 10px;
 }
 
 .code {
-	font-family: "Source Code Pro", monospace;
+	font-family: 'Neha Mono', 'Source Code Pro', monospace;
 	font-size: 13px;
 	text-decoration: none;
 	color: #999fac;
