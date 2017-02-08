@@ -26956,7 +26956,7 @@
 	              React.createElement(
 	                'div',
 	                { className: 'code-icon' },
-	                React.createElement('img', { src: 'icons/code/jS.png', className: 'code-icon-image' })
+	                React.createElement('img', { src: 'icons/code/js.png', className: 'code-icon-image' })
 	              ),
 	              'JavaScript (',
 	              React.createElement(
