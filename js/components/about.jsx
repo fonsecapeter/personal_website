@@ -29,15 +29,50 @@ const About = React.createClass({
           <div>
             <h1>Languages I Work With:</h1>
             {/* <img src="icons/code-logos.png" className="partial_width"></img> */}
-            <ul className="code-list">
-              <li>Python (<a href="https://www.djangoproject.com/" target="_blank">Django</a>)</li>
-              <li>JavaScript (<a href="https://facebook.github.io/react/" target="_blank">React</a>, <a href="https://jasmine.github.io/" target="_blank">Jasmine</a>, <a href="https://facebook.github.io/flux/" target="_blank">Flux</a>, <a href="https://nodejs.org/en/" target="_blank">Node</a>)</li>
-              <li>Ruby (<a href="http://rubyonrails.org/" target="_blank">Rails</a>, <a href="http://rspec.info/" target="_blank">Rspec</a>)</li>
-              <li>SQL</li>
-              <li>Bash</li>
-              <li>Matlab</li>
-              <li>HTML / CSS</li>
-            </ul>
+            <div className="code-list">
+              <div className="code-list-item">
+                <div className="code-icon">
+                  <img src="icons/code/python.png" className="code-icon-image" />
+                </div>
+                Python (<a href="https://www.djangoproject.com/" target="_blank">Django</a>)
+              </div>
+              <div className="code-list-item">
+                <div className="code-icon">
+                  <img src="icons/code/js.png" className="code-icon-image" />
+                </div>
+                JavaScript (<a href="https://facebook.github.io/react/" target="_blank">React</a>,&nbsp;<a href="https://jasmine.github.io/" target="_blank">Jasmine</a>,&nbsp;<a href="https://facebook.github.io/flux/" target="_blank">Flux</a>,&nbsp;<a href="https://nodejs.org/en/" target="_blank">Node</a>)
+              </div>
+              <div className="code-list-item">
+                <div className="code-icon">
+                  <img src="icons/code/ruby.png" className="code-icon-image" />
+                </div>
+                Ruby (<a href="http://rubyonrails.org/" target="_blank">Rails</a>,&nbsp;<a href="http://rspec.info/" target="_blank">Rspec</a>)
+              </div>
+              <div className="code-list-item">
+                <div className="code-icon">
+                  <img src="icons/code/sql.png" className="code-icon-image" />
+                </div>
+                SQL
+              </div>
+              <div className="code-list-item">
+                <div className="code-icon">
+                  <img src="icons/code/bash.png" className="code-icon-image" />
+                </div>
+                Bash
+              </div>
+              <div className="code-list-item">
+                <div className="code-icon">
+                  <img src="icons/code/matlab.png" className="code-icon-image" />
+                </div>
+                Matlab
+              </div>
+              <div className="code-list-item">
+                <div className="code-icon">
+                  <img src="icons/code/html.png" className="code-icon-image" />
+                </div>
+                HTML / CSS
+              </div>
+            </div>
           </div>
           <br /><br />
         </div>

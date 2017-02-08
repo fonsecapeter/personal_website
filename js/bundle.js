@@ -26932,11 +26932,16 @@
 	            'Languages I Work With:'
 	          ),
 	          React.createElement(
-	            'ul',
+	            'div',
 	            { className: 'code-list' },
 	            React.createElement(
-	              'li',
-	              null,
+	              'div',
+	              { className: 'code-list-item' },
+	              React.createElement(
+	                'div',
+	                { className: 'code-icon' },
+	                React.createElement('img', { src: 'icons/code/python.png', className: 'code-icon-image' })
+	              ),
 	              'Python (',
 	              React.createElement(
 	                'a',
@@ -26946,27 +26951,32 @@
 	              ')'
 	            ),
 	            React.createElement(
-	              'li',
-	              null,
+	              'div',
+	              { className: 'code-list-item' },
+	              React.createElement(
+	                'div',
+	                { className: 'code-icon' },
+	                React.createElement('img', { src: 'icons/code/jS.png', className: 'code-icon-image' })
+	              ),
 	              'JavaScript (',
 	              React.createElement(
 	                'a',
 	                { href: 'https://facebook.github.io/react/', target: '_blank' },
 	                'React'
 	              ),
-	              ', ',
+	              ', ',
 	              React.createElement(
 	                'a',
 	                { href: 'https://jasmine.github.io/', target: '_blank' },
 	                'Jasmine'
 	              ),
-	              ', ',
+	              ', ',
 	              React.createElement(
 	                'a',
 	                { href: 'https://facebook.github.io/flux/', target: '_blank' },
 	                'Flux'
 	              ),
-	              ', ',
+	              ', ',
 	              React.createElement(
 	                'a',
 	                { href: 'https://nodejs.org/en/', target: '_blank' },
@@ -26975,15 +26985,20 @@
 	              ')'
 	            ),
 	            React.createElement(
-	              'li',
-	              null,
+	              'div',
+	              { className: 'code-list-item' },
+	              React.createElement(
+	                'div',
+	                { className: 'code-icon' },
+	                React.createElement('img', { src: 'icons/code/ruby.png', className: 'code-icon-image' })
+	              ),
 	              'Ruby (',
 	              React.createElement(
 	                'a',
 	                { href: 'http://rubyonrails.org/', target: '_blank' },
 	                'Rails'
 	              ),
-	              ', ',
+	              ', ',
 	              React.createElement(
 	                'a',
 	                { href: 'http://rspec.info/', target: '_blank' },
@@ -26992,23 +27007,43 @@
 	              ')'
 	            ),
 	            React.createElement(
-	              'li',
-	              null,
+	              'div',
+	              { className: 'code-list-item' },
+	              React.createElement(
+	                'div',
+	                { className: 'code-icon' },
+	                React.createElement('img', { src: 'icons/code/sql.png', className: 'code-icon-image' })
+	              ),
 	              'SQL'
 	            ),
 	            React.createElement(
-	              'li',
-	              null,
+	              'div',
+	              { className: 'code-list-item' },
+	              React.createElement(
+	                'div',
+	                { className: 'code-icon' },
+	                React.createElement('img', { src: 'icons/code/bash.png', className: 'code-icon-image' })
+	              ),
 	              'Bash'
 	            ),
 	            React.createElement(
-	              'li',
-	              null,
+	              'div',
+	              { className: 'code-list-item' },
+	              React.createElement(
+	                'div',
+	                { className: 'code-icon' },
+	                React.createElement('img', { src: 'icons/code/matlab.png', className: 'code-icon-image' })
+	              ),
 	              'Matlab'
 	            ),
 	            React.createElement(
-	              'li',
-	              null,
+	              'div',
+	              { className: 'code-list-item' },
+	              React.createElement(
+	                'div',
+	                { className: 'code-icon' },
+	                React.createElement('img', { src: 'icons/code/html.png', className: 'code-icon-image' })
+	              ),
 	              'HTML / CSS'
 	            )
 	          )
