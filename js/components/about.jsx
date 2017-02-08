@@ -30,9 +30,9 @@ const About = React.createClass({
             <h1>Languages I Work With:</h1>
             {/* <img src="icons/code-logos.png" className="partial_width"></img> */}
             <ul className="code-list">
-              <li>Python (Django)</li>
-              <li>JavaScript (React, Jasmine, Flux, Node)</li>
-              <li>Ruby (Rails, Rspec)</li>
+              <li>Python (<a href="https://www.djangoproject.com/" target="_blank">Django</a>)</li>
+              <li>JavaScript (<a href="https://facebook.github.io/react/" target="_blank">React</a>, <a href="https://jasmine.github.io/" target="_blank">Jasmine</a>, <a href="https://facebook.github.io/flux/" target="_blank">Flux</a>, <a href="https://nodejs.org/en/" target="_blank">Node</a>)</li>
+              <li>Ruby (<a href="http://rubyonrails.org/" target="_blank">Rails</a>, <a href="http://rspec.info/" target="_blank">Rspec</a>)</li>
               <li>SQL</li>
               <li>Bash</li>
               <li>Matlab</li>

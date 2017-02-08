@@ -26937,17 +26937,59 @@
 	            React.createElement(
 	              'li',
 	              null,
-	              'Python (Django)'
+	              'Python (',
+	              React.createElement(
+	                'a',
+	                { href: 'https://www.djangoproject.com/', target: '_blank' },
+	                'Django'
+	              ),
+	              ')'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
-	              'JavaScript (React, Jasmine, Flux, Node)'
+	              'JavaScript (',
+	              React.createElement(
+	                'a',
+	                { href: 'https://facebook.github.io/react/', target: '_blank' },
+	                'React'
+	              ),
+	              ', ',
+	              React.createElement(
+	                'a',
+	                { href: 'https://jasmine.github.io/', target: '_blank' },
+	                'Jasmine'
+	              ),
+	              ', ',
+	              React.createElement(
+	                'a',
+	                { href: 'https://facebook.github.io/flux/', target: '_blank' },
+	                'Flux'
+	              ),
+	              ', ',
+	              React.createElement(
+	                'a',
+	                { href: 'https://nodejs.org/en/', target: '_blank' },
+	                'Node'
+	              ),
+	              ')'
 	            ),
 	            React.createElement(
 	              'li',
 	              null,
-	              'Ruby (Rails, Rspec)'
+	              'Ruby (',
+	              React.createElement(
+	                'a',
+	                { href: 'http://rubyonrails.org/', target: '_blank' },
+	                'Rails'
+	              ),
+	              ', ',
+	              React.createElement(
+	                'a',
+	                { href: 'http://rspec.info/', target: '_blank' },
+	                'Rspec'
+	              ),
+	              ')'
 	            ),
 	            React.createElement(
 	              'li',

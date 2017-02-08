@@ -1,21 +1,21 @@
 @font-face {
-	font-family: Reef;
-	src url(Reef.otf)
+	font-family: 'Reef';
+	src: url('../fonts/reef.otf') format('opentype');
 }
 @font-face {
-	font-family: Neha Mono;
-	src url(neha_mono_regular.otf)
+	font-family: 'Neha Mono';
+	src: url('../fonts/neha_mono_regular.otf') format('opentype');
 }
 @font-face {
-	font-family: Neha Mono Comfortable;
-	src url(neha_mono_regular_comfortable.otf)
+	font-family: 'Neha Mono Comfortable';
+	src: url('../fonts/neha_mono_regular_comfortable.otf') format('opentype');
 }
 
 html, body, a, header, nav, p, div, span, img {
-	-webkit-transition: all 250ms ease-out;
-  -moz-transition: all 250ms ease-out;
-  -o-transition: all 250ms ease-out;
-  transition: all 250ms ease-out;
+	-webkit-transition: background, color 250ms ease-out;
+  -moz-transition: background, color 250ms ease-out;
+  -o-transition: background, color 250ms ease-out;
+  transition: background, color 250ms ease-out;
 }
 
 /* nav click animation */
@@ -159,7 +159,7 @@ body {
 
 a {
 	color: #5e8cba;
-	text-decoration: underline;;
+	text-decoration: none;
 }
 
 a:hover {
@@ -276,7 +276,7 @@ ul {
 }
 
 .code {
-	font-family: 'Neha Mono', 'Source Code Pro', monospace;
+	font-family: 'Neha Mono', 'Source Code Pro', 'monospace';
 	font-size: 13px;
 	text-decoration: none;
 	color: #999fac;
@@ -376,7 +376,10 @@ ul {
 	margin-right:26px;
 }
 
-#contact {
+#contact a, #contact p {
+	font-family: 'Neha Mono', 'Source Code Pro', 'monospace';
+	line-height: 1.5;
+	font-size: 14px;
 /*
 	margin-top: 40px;
 	margin-left:168px;
