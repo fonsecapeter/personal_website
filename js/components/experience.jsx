@@ -2,9 +2,74 @@
 
 const React = require('react');
 const Link = require('react-router').Link;
+const ExperienceItem = require('./experience_item');
 
-const Home = React.createClass({
+const Experience = React.createClass({
   render () {
+    const experiences = [
+      {
+        title: "Software Engineer",
+        icon: "icons/experience/dna.png",
+        date: "2016-Present",
+        link: "https://www.23andme.com/",
+        org: "23andMe",
+        bullets: []
+      },
+      {
+        title: "Clinical Research Coordinator",
+        icon: "icons/experience/brain.png",
+        date: "2014-2016",
+        link: "http://memory.ucsf.edu/",
+        org: "UCSF Memory and Aging Center",
+        primary: "Primary Study: Frontotemporal Dementia: Genes, Images and Emotions",
+        bullets: [
+          "Accelerated dictation approval bottleneck by building <a href=\"https://launchpad.net/jarvs\" target=\"_blank\">Jarvs</a>",
+          "Automated administrative tasks and improved scalability of recruitment",
+          "Coordinated a team to compile a $5M competitive grant renewal application",
+          "Managed metrics, IRB approval, team meetings, and external presentations",
+          "Conducted cognitive tests and ran MRIs"
+        ]
+      },
+      {
+        title: "Undergraduate Researcher",
+        icon: "icons/experience/microscope.png",
+        date: "2013-2014",
+        link: "http://www.kellogglab.com/",
+        org: "UCSC Kellogg Lab",
+        primary: "Primary Focus: Cell Size Control",
+        bullets: [
+          "Conducted research on enzymatic pathways involving nutrient-mediated cell size control in <em>S. cerevesiase</em>",
+          "Discredited a hypothesized back-regulation of PP2A-Rts1 by Pkh1/2",
+          "Formally presented results",
+          "Worked with PCR, Timecourse, and Western Blot protocols"
+        ]
+      },
+      {
+        title: "Volunteer Lab Assistant",
+        icon: "icons/experience/stethoscope.png",
+        date: "2012-2013 Summers",
+        link: "http://doctor.webmd.com/practice/novato-medical-center-3fd2a3c8-4703-e211-a42b-001f29e3eb44-overview",
+        org: "Novato Medical Center",
+        bullets: [
+          "Managed medical records and appointments",
+          "Directed incoming patients, calls, and mail",
+          "Sterilized medical equipment",
+          "Conducted urinalysis and RST's"
+        ]
+      },
+      {
+        title: "Technician",
+        icon: "icons/experience/tube.png",
+        date: "2010-2012 Summers",
+        link: "http://www.vintage47amps.com/",
+        org: "Vintage 47 Amplifiers",
+        bullets: [
+          "Doubled fabrication rate of amplifiers from schematics",
+          "Designed logos and components with Adobe Illustrator to grow the brand"
+        ]
+      }
+    ]
+
     return (
       <div>
         <br />
@@ -13,107 +78,14 @@ const Home = React.createClass({
           <h4>Work Experience &nbsp; <a className="code v-super" href="resume/PeterFonsecaResume.pdf" target="blank">[PDF]</a></h4>
         </div>
         <div>
-          <div className="experience-entry">
-            <div className="row">
-              <div className="experience-left">
-                <img src="icons/dna.png" className="icon"></img>
-              </div>
-              <div className="experience-right">
-                <h1>Software Engineer</h1>
-                <p><span className="date">2016-Present</span> &nbsp; <a href="https://www.23andme.com/" target="blank">23andMe</a></p>
-              </div>
-              <br />
-            </div>
-          </div>
-
-          <div className="experience-entry">
-            <div className="row">
-              <div className="experience-left">
-                <img src="icons/brain.png" className="icon"></img>
-              </div>
-              <div className="experience-right">
-                <h1>Clinical Research Coordinator</h1>
-                <p><span className="date">2014-2016</span> &nbsp; <a href="http://memory.ucsf.edu/" target="blank">UCSF Memory and Aging Center</a></p>
-                <p>Primary Study: Frontotemporal Dementia: Genes, Images and Emotions<br /><br /></p>
-              </div>
-              <br />
-            </div>
-            <div className="row">
-              <ul className="experience-bullets">
-                <li>Expanded scope of data requests and presentations using scientific Python, initiating new policies to improve data quality and reduce errors</li>
-                <li>Accelerated dictation approval bottleneck by building <a href="https://launchpad.net/jarvs" target="blank">Jarvs</a></li>
-                <li>Automated administrative tasks and improved scalability of recruitment</li>
-                <li>Coordinated a team to compile a $5M competitive grant renewal application</li>
-                <li>Managed metrics, IRB approval, team meetings, and external presentations</li>
-                <li>Conducted cognitive tests and ran MRIs</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="experience-entry">
-            <div className="row">
-              <div className="experience-left">
-                <img src="icons/microscope.png" className="icon"></img>
-              </div>
-              <div className="experience-right">
-                <h1>Undergraduate Researcher</h1>
-                <p><span className="date">2013-2014</span> &nbsp; <a href="http://www.kellogglab.com/" target="blank">UCSC Kellogg Lab</a></p>
-                <p>Primary Focus: Cell Size Control<br /><br /></p>
-              </div>
-              <br />
-            </div>
-            <div className="row">
-              <ul className="experience-bullets">
-                <li>Conducted research on enzymatic pathways involving nutrient-mediated cell size control in <em>S. cerevesiase</em></li>
-                <li>Discredited a hypothesized back-regulation of PP2A-Rts1 by Pkh1/2</li>
-                <li>Formally presented results</li>
-                <li>Worked with PCR, Timecourse, and Western Blot protocols</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="experience-entry">
-            <div className="row">
-              <div className="experience-left">
-                <img src="icons/stethoscope.png" className="icon"></img>
-              </div>
-              <div className="experience-right">
-                <h1>Volunteer Lab Assistant</h1>
-                <p><span className="date">2012-2013 Summers</span> &nbsp; <a href="http://doctor.webmd.com/practice/novato-medical-center-3fd2a3c8-4703-e211-a42b-001f29e3eb44-overview" target="blank">Novato Medical Center</a></p>
-              </div>
-              <br /><br />
-            </div>
-            <div className="row">
-              <ul className="experience-bullets">
-                <li>Managed medical records and appointments</li>
-                <li>Directed incoming patients, calls, and mail</li>
-                <li>Sterilized medical equipment</li>
-                <li>Conducted urinalysis and RST's</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="experience-entry">
-            <div className="row">
-              <div className="experience-left">
-                <img src="icons/tube.png" className="icon"></img>
-              </div>
-              <div className="experience-right">
-                <h1>Technician</h1>
-                <p><span className="date">2010-2012 Summers</span> &nbsp; <a href="http://www.vintage47amps.com/" target="blank">Vintage 47 Amplifiers</a></p>
-              </div>
-              <br /><br />
-            </div>
-            <div className="row">
-              <ul className="experience-bullets">
-                <li>Doubled fabrication rate of amplifiers from schematics</li>
-                <li>Designed logos and components with Adobe Illustrator to grow the brand</li>
-              </ul>
-              <br /><br />
-            </div>
-          </div>
+          {
+            experiences.map( (experienceItem, idx) => {
+              return (
+                <ExperienceItem experience={ experienceItem } key={ idx } />
+              )
+            })
+          }
         </div>
-
         <div>
           <h4>Education</h4>
         </div>
@@ -181,4 +153,4 @@ const Home = React.createClass({
   }
 });
 
-module.exports = Home;
+module.exports = Experience;

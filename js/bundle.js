@@ -62,10 +62,10 @@
 	var App = __webpack_require__(234);
 	var About = __webpack_require__(236);
 	var Experience = __webpack_require__(237);
-	var Portfolio = __webpack_require__(238);
-	var Design = __webpack_require__(239);
-	var Contact = __webpack_require__(240);
-	var Poster = __webpack_require__(241);
+	var Portfolio = __webpack_require__(239);
+	var Design = __webpack_require__(240);
+	var Contact = __webpack_require__(241);
+	var Poster = __webpack_require__(242);
 	
 	var appRouter = React.createElement(
 	  Router,
@@ -27052,10 +27052,50 @@
 	
 	var React = __webpack_require__(1);
 	var Link = __webpack_require__(172).Link;
+	var ExperienceItem = __webpack_require__(238);
 	
-	var Home = React.createClass({
-	  displayName: 'Home',
+	var Experience = React.createClass({
+	  displayName: 'Experience',
 	  render: function render() {
+	    var experiences = [{
+	      title: "Software Engineer",
+	      icon: "icons/experience/dna.png",
+	      date: "2016-Present",
+	      link: "https://www.23andme.com/",
+	      org: "23andMe",
+	      bullets: []
+	    }, {
+	      title: "Clinical Research Coordinator",
+	      icon: "icons/experience/brain.png",
+	      date: "2014-2016",
+	      link: "http://memory.ucsf.edu/",
+	      org: "UCSF Memory and Aging Center",
+	      primary: "Primary Study: Frontotemporal Dementia: Genes, Images and Emotions",
+	      bullets: ["Accelerated dictation approval bottleneck by building <a href=\"https://launchpad.net/jarvs\" target=\"_blank\">Jarvs</a>", "Automated administrative tasks and improved scalability of recruitment", "Coordinated a team to compile a $5M competitive grant renewal application", "Managed metrics, IRB approval, team meetings, and external presentations", "Conducted cognitive tests and ran MRIs"]
+	    }, {
+	      title: "Undergraduate Researcher",
+	      icon: "icons/experience/microscope.png",
+	      date: "2013-2014",
+	      link: "http://www.kellogglab.com/",
+	      org: "UCSC Kellogg Lab",
+	      primary: "Primary Focus: Cell Size Control",
+	      bullets: ["Conducted research on enzymatic pathways involving nutrient-mediated cell size control in <em>S. cerevesiase</em>", "Discredited a hypothesized back-regulation of PP2A-Rts1 by Pkh1/2", "Formally presented results", "Worked with PCR, Timecourse, and Western Blot protocols"]
+	    }, {
+	      title: "Volunteer Lab Assistant",
+	      icon: "icons/experience/stethoscope.png",
+	      date: "2012-2013 Summers",
+	      link: "http://doctor.webmd.com/practice/novato-medical-center-3fd2a3c8-4703-e211-a42b-001f29e3eb44-overview",
+	      org: "Novato Medical Center",
+	      bullets: ["Managed medical records and appointments", "Directed incoming patients, calls, and mail", "Sterilized medical equipment", "Conducted urinalysis and RST's"]
+	    }, {
+	      title: "Technician",
+	      icon: "icons/experience/tube.png",
+	      date: "2010-2012 Summers",
+	      link: "http://www.vintage47amps.com/",
+	      org: "Vintage 47 Amplifiers",
+	      bullets: ["Doubled fabrication rate of amplifiers from schematics", "Designed logos and components with Adobe Illustrator to grow the brand"]
+	    }];
+	
 	    return React.createElement(
 	      'div',
 	      null,
@@ -27077,336 +27117,9 @@
 	      React.createElement(
 	        'div',
 	        null,
-	        React.createElement(
-	          'div',
-	          { className: 'experience-entry' },
-	          React.createElement(
-	            'div',
-	            { className: 'row' },
-	            React.createElement(
-	              'div',
-	              { className: 'experience-left' },
-	              React.createElement('img', { src: 'icons/dna.png', className: 'icon' })
-	            ),
-	            React.createElement(
-	              'div',
-	              { className: 'experience-right' },
-	              React.createElement(
-	                'h1',
-	                null,
-	                'Software Engineer'
-	              ),
-	              React.createElement(
-	                'p',
-	                null,
-	                React.createElement(
-	                  'span',
-	                  { className: 'date' },
-	                  '2016-Present'
-	                ),
-	                '   ',
-	                React.createElement(
-	                  'a',
-	                  { href: 'https://www.23andme.com/', target: 'blank' },
-	                  '23andMe'
-	                )
-	              )
-	            ),
-	            React.createElement('br', null)
-	          )
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'experience-entry' },
-	          React.createElement(
-	            'div',
-	            { className: 'row' },
-	            React.createElement(
-	              'div',
-	              { className: 'experience-left' },
-	              React.createElement('img', { src: 'icons/brain.png', className: 'icon' })
-	            ),
-	            React.createElement(
-	              'div',
-	              { className: 'experience-right' },
-	              React.createElement(
-	                'h1',
-	                null,
-	                'Clinical Research Coordinator'
-	              ),
-	              React.createElement(
-	                'p',
-	                null,
-	                React.createElement(
-	                  'span',
-	                  { className: 'date' },
-	                  '2014-2016'
-	                ),
-	                '   ',
-	                React.createElement(
-	                  'a',
-	                  { href: 'http://memory.ucsf.edu/', target: 'blank' },
-	                  'UCSF Memory and Aging Center'
-	                )
-	              ),
-	              React.createElement(
-	                'p',
-	                null,
-	                'Primary Study: Frontotemporal Dementia: Genes, Images and Emotions',
-	                React.createElement('br', null),
-	                React.createElement('br', null)
-	              )
-	            ),
-	            React.createElement('br', null)
-	          ),
-	          React.createElement(
-	            'div',
-	            { className: 'row' },
-	            React.createElement(
-	              'ul',
-	              { className: 'experience-bullets' },
-	              React.createElement(
-	                'li',
-	                null,
-	                'Expanded scope of data requests and presentations using scientific Python, initiating new policies to improve data quality and reduce errors'
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Accelerated dictation approval bottleneck by building ',
-	                React.createElement(
-	                  'a',
-	                  { href: 'https://launchpad.net/jarvs', target: 'blank' },
-	                  'Jarvs'
-	                )
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Automated administrative tasks and improved scalability of recruitment'
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Coordinated a team to compile a $5M competitive grant renewal application'
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Managed metrics, IRB approval, team meetings, and external presentations'
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Conducted cognitive tests and ran MRIs'
-	              )
-	            )
-	          )
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'experience-entry' },
-	          React.createElement(
-	            'div',
-	            { className: 'row' },
-	            React.createElement(
-	              'div',
-	              { className: 'experience-left' },
-	              React.createElement('img', { src: 'icons/microscope.png', className: 'icon' })
-	            ),
-	            React.createElement(
-	              'div',
-	              { className: 'experience-right' },
-	              React.createElement(
-	                'h1',
-	                null,
-	                'Undergraduate Researcher'
-	              ),
-	              React.createElement(
-	                'p',
-	                null,
-	                React.createElement(
-	                  'span',
-	                  { className: 'date' },
-	                  '2013-2014'
-	                ),
-	                '   ',
-	                React.createElement(
-	                  'a',
-	                  { href: 'http://www.kellogglab.com/', target: 'blank' },
-	                  'UCSC Kellogg Lab'
-	                )
-	              ),
-	              React.createElement(
-	                'p',
-	                null,
-	                'Primary Focus: Cell Size Control',
-	                React.createElement('br', null),
-	                React.createElement('br', null)
-	              )
-	            ),
-	            React.createElement('br', null)
-	          ),
-	          React.createElement(
-	            'div',
-	            { className: 'row' },
-	            React.createElement(
-	              'ul',
-	              { className: 'experience-bullets' },
-	              React.createElement(
-	                'li',
-	                null,
-	                'Conducted research on enzymatic pathways involving nutrient-mediated cell size control in ',
-	                React.createElement(
-	                  'em',
-	                  null,
-	                  'S. cerevesiase'
-	                )
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Discredited a hypothesized back-regulation of PP2A-Rts1 by Pkh1/2'
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Formally presented results'
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Worked with PCR, Timecourse, and Western Blot protocols'
-	              )
-	            )
-	          )
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'experience-entry' },
-	          React.createElement(
-	            'div',
-	            { className: 'row' },
-	            React.createElement(
-	              'div',
-	              { className: 'experience-left' },
-	              React.createElement('img', { src: 'icons/stethoscope.png', className: 'icon' })
-	            ),
-	            React.createElement(
-	              'div',
-	              { className: 'experience-right' },
-	              React.createElement(
-	                'h1',
-	                null,
-	                'Volunteer Lab Assistant'
-	              ),
-	              React.createElement(
-	                'p',
-	                null,
-	                React.createElement(
-	                  'span',
-	                  { className: 'date' },
-	                  '2012-2013 Summers'
-	                ),
-	                '   ',
-	                React.createElement(
-	                  'a',
-	                  { href: 'http://doctor.webmd.com/practice/novato-medical-center-3fd2a3c8-4703-e211-a42b-001f29e3eb44-overview', target: 'blank' },
-	                  'Novato Medical Center'
-	                )
-	              )
-	            ),
-	            React.createElement('br', null),
-	            React.createElement('br', null)
-	          ),
-	          React.createElement(
-	            'div',
-	            { className: 'row' },
-	            React.createElement(
-	              'ul',
-	              { className: 'experience-bullets' },
-	              React.createElement(
-	                'li',
-	                null,
-	                'Managed medical records and appointments'
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Directed incoming patients, calls, and mail'
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Sterilized medical equipment'
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Conducted urinalysis and RST\'s'
-	              )
-	            )
-	          )
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'experience-entry' },
-	          React.createElement(
-	            'div',
-	            { className: 'row' },
-	            React.createElement(
-	              'div',
-	              { className: 'experience-left' },
-	              React.createElement('img', { src: 'icons/tube.png', className: 'icon' })
-	            ),
-	            React.createElement(
-	              'div',
-	              { className: 'experience-right' },
-	              React.createElement(
-	                'h1',
-	                null,
-	                'Technician'
-	              ),
-	              React.createElement(
-	                'p',
-	                null,
-	                React.createElement(
-	                  'span',
-	                  { className: 'date' },
-	                  '2010-2012 Summers'
-	                ),
-	                '   ',
-	                React.createElement(
-	                  'a',
-	                  { href: 'http://www.vintage47amps.com/', target: 'blank' },
-	                  'Vintage 47 Amplifiers'
-	                )
-	              )
-	            ),
-	            React.createElement('br', null),
-	            React.createElement('br', null)
-	          ),
-	          React.createElement(
-	            'div',
-	            { className: 'row' },
-	            React.createElement(
-	              'ul',
-	              { className: 'experience-bullets' },
-	              React.createElement(
-	                'li',
-	                null,
-	                'Doubled fabrication rate of amplifiers from schematics'
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                'Designed logos and components with Adobe Illustrator to grow the brand'
-	              )
-	            ),
-	            React.createElement('br', null),
-	            React.createElement('br', null)
-	          )
-	        )
+	        experiences.map(function (experienceItem, idx) {
+	          return React.createElement(ExperienceItem, { experience: experienceItem, key: idx });
+	        })
 	      ),
 	      React.createElement(
 	        'div',
@@ -27583,10 +27296,122 @@
 	  }
 	});
 	
-	module.exports = Home;
+	module.exports = Experience;
 
 /***/ },
 /* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	var React = __webpack_require__(1);
+	var Link = __webpack_require__(172).Link;
+	
+	var ExperienceItem = React.createClass({
+	    displayName: 'ExperienceItem',
+	    getInitialState: function getInitialState() {
+	        return {
+	            aboutDropClass: 'arrow drop-down',
+	            experienceBulletExpandClass: 'hidden'
+	        };
+	    },
+	    expand: function expand() {
+	        this.setState({
+	            aboutDropClass: 'arrow pull-up',
+	            experienceBulletExpandClass: 'experience-bullets'
+	        });
+	    },
+	    hide: function hide() {
+	        this.setState({
+	            aboutDropClass: 'arrow drop-down',
+	            experienceBulletExpandClass: 'hidden'
+	        });
+	    },
+	    toggleDrop: function toggleDrop() {
+	        if (this.props.experience.bullets.length > 0) {
+	            if (this.state.aboutDropClass === 'arrow drop-down') {
+	                this.expand();
+	            } else {
+	                this.hide();
+	            }
+	        }
+	    },
+	    render: function render() {
+	        var dropArrow = null;
+	        var breaks = [React.createElement('br', { key: '1' })];
+	        if (this.props.experience.bullets.length > 0) {
+	            breaks.push(React.createElement('br', { key: '2' }));
+	            dropArrow = React.createElement('img', { className: this.state.aboutDropClass, src: 'icons/arrow.svg' });
+	        }
+	
+	        var primary = null;
+	        if (this.props.experience.primary) {
+	            primary = React.createElement(
+	                'p',
+	                null,
+	                this.props.experience.primary
+	            );
+	        }
+	
+	        return React.createElement(
+	            'div',
+	            { className: 'experience-entry' },
+	            React.createElement(
+	                'div',
+	                { className: 'row' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'experience-left' },
+	                    React.createElement('img', { src: this.props.experience.icon, className: 'icon' })
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'experience-right' },
+	                    React.createElement(
+	                        'h1',
+	                        { onClick: this.toggleDrop },
+	                        this.props.experience.title,
+	                        ' ',
+	                        dropArrow
+	                    ),
+	                    React.createElement(
+	                        'p',
+	                        null,
+	                        React.createElement(
+	                            'span',
+	                            { className: 'date' },
+	                            this.props.experience.date
+	                        ),
+	                        '   ',
+	                        React.createElement(
+	                            'a',
+	                            { href: this.props.experience.link, target: 'blank' },
+	                            this.props.experience.org
+	                        )
+	                    ),
+	                    primary
+	                )
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'row' },
+	                React.createElement(
+	                    'ul',
+	                    { className: this.state.experienceBulletExpandClass },
+	                    breaks,
+	                    this.props.experience.bullets.map(function (bullet, idx) {
+	                        return React.createElement('li', { key: idx, dangerouslySetInnerHTML: { __html: bullet } });
+	                    })
+	                )
+	            )
+	        );
+	    }
+	});
+	
+	module.exports = ExperienceItem;
+
+/***/ },
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27893,7 +27718,7 @@
 	module.exports = Portfolio;
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27924,7 +27749,7 @@
 	module.exports = Design;
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28023,13 +27848,13 @@
 	module.exports = Contact;
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	var React = __webpack_require__(1);
-	var Boron = __webpack_require__(242);
+	var Boron = __webpack_require__(243);
 	
 	var Poster = React.createClass({
 	  displayName: 'Poster',
@@ -28107,26 +27932,26 @@
 	module.exports = Poster;
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = {
-	    DropModal: __webpack_require__(243),
-	    WaveModal: __webpack_require__(252),
-	    FlyModal: __webpack_require__(253),
-	    FadeModal: __webpack_require__(254),
-	    ScaleModal: __webpack_require__(255),
-	    OutlineModal: __webpack_require__(256),
+	    DropModal: __webpack_require__(244),
+	    WaveModal: __webpack_require__(253),
+	    FlyModal: __webpack_require__(254),
+	    FadeModal: __webpack_require__(255),
+	    ScaleModal: __webpack_require__(256),
+	    OutlineModal: __webpack_require__(257),
 	}
 
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(244);
-	var insertKeyframesRule = __webpack_require__(249);
-	var appendVendorPrefix = __webpack_require__(246);
+	var modalFactory = __webpack_require__(245);
+	var insertKeyframesRule = __webpack_require__(250);
+	var appendVendorPrefix = __webpack_require__(247);
 	
 	var animation = {
 	    show: {
@@ -28260,12 +28085,12 @@
 
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
-	var transitionEvents = __webpack_require__(245);
-	var appendVendorPrefix = __webpack_require__(246);
+	var transitionEvents = __webpack_require__(246);
+	var appendVendorPrefix = __webpack_require__(247);
 	
 	module.exports = function(animation){
 	
@@ -28444,7 +28269,7 @@
 
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28545,12 +28370,12 @@
 
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var getVendorPropertyName = __webpack_require__(247);
+	var getVendorPropertyName = __webpack_require__(248);
 	
 	module.exports = function(target, sources) {
 	  var to = Object(target);
@@ -28581,12 +28406,12 @@
 
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var builtinStyle = __webpack_require__(248);
+	var builtinStyle = __webpack_require__(249);
 	var prefixes = ['Moz', 'Webkit', 'O', 'ms'];
 	var domVendorPrefix;
 	
@@ -28624,7 +28449,7 @@
 
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28633,13 +28458,13 @@
 
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var insertRule = __webpack_require__(250);
-	var vendorPrefix = __webpack_require__(251)();
+	var insertRule = __webpack_require__(251);
+	var vendorPrefix = __webpack_require__(252)();
 	var index = 0;
 	
 	module.exports = function(keyframes) {
@@ -28669,7 +28494,7 @@
 
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28694,7 +28519,7 @@
 
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28713,12 +28538,12 @@
 
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(244);
-	var insertKeyframesRule = __webpack_require__(249);
-	var appendVendorPrefix = __webpack_require__(246);
+	var modalFactory = __webpack_require__(245);
+	var insertKeyframesRule = __webpack_require__(250);
+	var appendVendorPrefix = __webpack_require__(247);
 	
 	var animation = {
 	    show: {
@@ -28961,12 +28786,12 @@
 
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(244);
-	var insertKeyframesRule = __webpack_require__(249);
-	var appendVendorPrefix = __webpack_require__(246);
+	var modalFactory = __webpack_require__(245);
+	var insertKeyframesRule = __webpack_require__(250);
+	var appendVendorPrefix = __webpack_require__(247);
 	
 	var animation = {
 	    show: {
@@ -29081,12 +28906,12 @@
 
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(244);
-	var insertKeyframesRule = __webpack_require__(249);
-	var appendVendorPrefix = __webpack_require__(246);
+	var modalFactory = __webpack_require__(245);
+	var insertKeyframesRule = __webpack_require__(250);
+	var appendVendorPrefix = __webpack_require__(247);
 	
 	var animation = {
 	    show: {
@@ -29184,12 +29009,12 @@
 
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var modalFactory = __webpack_require__(244);
-	var insertKeyframesRule = __webpack_require__(249);
-	var appendVendorPrefix = __webpack_require__(246);
+	var modalFactory = __webpack_require__(245);
+	var insertKeyframesRule = __webpack_require__(250);
+	var appendVendorPrefix = __webpack_require__(247);
 	
 	var animation = {
 	    show: {
@@ -29290,13 +29115,13 @@
 
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(1);
-	var modalFactory = __webpack_require__(244);
-	var insertKeyframesRule = __webpack_require__(249);
-	var appendVendorPrefix = __webpack_require__(246);
+	var modalFactory = __webpack_require__(245);
+	var insertKeyframesRule = __webpack_require__(250);
+	var appendVendorPrefix = __webpack_require__(247);
 	
 	var animation = {
 	    show: {
