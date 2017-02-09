@@ -26779,43 +26779,6 @@
 	
 	var SideBar = React.createClass({
 	  displayName: "SideBar",
-	  getInitialState: function getInitialState() {
-	    return {
-	      gitIcon: "icons/GitHub-Mark-32px.png",
-	      linkedIcon: "icons/In-2C-28px.png",
-	      fbIcon: "icons/FB-f-Logo__blue_29.png"
-	    };
-	  },
-	  hoverGit: function hoverGit() {
-	    this.setState({
-	      gitIcon: "icons/GitHub-Mark-32px_hover.png"
-	    });
-	  },
-	  revertGit: function revertGit() {
-	    this.setState({
-	      gitIcon: "icons/GitHub-Mark-32px.png"
-	    });
-	  },
-	  hoverLinked: function hoverLinked() {
-	    this.setState({
-	      linkedIcon: "icons/In-2C-28px_hover.png"
-	    });
-	  },
-	  revertLinked: function revertLinked() {
-	    this.setState({
-	      linkedIcon: "icons/In-2C-28px.png"
-	    });
-	  },
-	  hoverFb: function hoverFb() {
-	    this.setState({
-	      fbIcon: "icons/FB-f-Logo__blue_29_hover.png"
-	    });
-	  },
-	  revertFb: function revertFb() {
-	    this.setState({
-	      fbIcon: "icons/FB-f-Logo__blue_29.png"
-	    });
-	  },
 	  render: function render() {
 	    return React.createElement(
 	      "div",
@@ -26845,19 +26808,17 @@
 	          React.createElement(
 	            "a",
 	            { href: "http://github.com/fonsecapeter", target: "_blank" },
-	            React.createElement("img", { className: "social-git", src: this.state.gitIcon, size: "18px" })
+	            React.createElement("img", { className: "social-git", src: "icons/social/github_64px.png", height: "32px" })
 	          ),
-	          "    ",
 	          React.createElement(
 	            "a",
 	            { href: "https://www.linkedin.com/in/peter-fonseca-727576121", target: "_blank" },
-	            React.createElement("img", { className: "social", src: this.state.linkedIcon })
+	            React.createElement("img", { className: "social", src: "icons/social/linkedin_64px.png", height: "32px" })
 	          ),
-	          "  ",
 	          React.createElement(
 	            "a",
 	            { href: "https://www.facebook.com/peter.fonseca.35", target: "_blank" },
-	            React.createElement("img", { className: "social", src: this.state.fbIcon, size: "21px" })
+	            React.createElement("img", { className: "social", src: "icons/social/facebook_64px.png", height: "32px" })
 	          )
 	        )
 	      )

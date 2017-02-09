@@ -12,10 +12,10 @@
 }
 
 html, body, a, header, nav, p, div, span, img {
-	-webkit-transition: background, color, transform 250ms ease-out;
-	-moz-transition: background, color, transform 250ms ease-out;
-	-o-transition: background, color, transform 250ms ease-out;
-	transition: background, color, transform 250ms ease-out;
+	-webkit-transition: background, color, transform, filter 250ms ease-out;
+	-moz-transition: background, color, transform, filter 250ms ease-out;
+	-o-transition: background, color, transform, filter 250ms ease-out;
+	transition: background, color, transform, filter 250ms ease-out;
 }
 
 /* nav click animation */
@@ -373,22 +373,32 @@ ul {
 }
 
 .social {
+	margin: 0 6px;
 	-webkit-filter: grayscale(30%);
+	-moz-filter: grayscale(30%);
+	-o-filter: grayscale(30%);
 	filter: grayscale(30%);
 }
 
 .social:hover {
 	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
 
 .social-git {
+	margin: 0 6px;
 	-webkit-filter: contrast(80%);
+	-moz-filter: contrast(80%);
+	-o-filter: contrast(80%);
 	filter: contrast(80%);
 }
 
 .social-git:hover {
 	-webkit-filter: contrast(25%);
+	-moz-filter: contrast(25%);
+	-o-filter: contrast(25%);
 	filter: contrast(25%);
 }
 
