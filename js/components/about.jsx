@@ -45,10 +45,10 @@ const About = React.createClass({
           {/* <br /> */}
           <div id="elevator_pitch">
             {/* <img src="icons/lab.png" className="partial_width partial_width_centered"></img> */}
-            <h2>
+            <h2 onClick={ this.toggleDrop }>
               From Science to Tech
               &nbsp;
-              <img className={ this.state.aboutDropClass } onClick={ this.toggleDrop } src='icons/arrow.svg'></img>
+              <img className={ this.state.aboutDropClass } src='icons/arrow.svg'></img>
             </h2>
             <p className={ this.state.aboutExpandClass }>
               While working in clinical research, my time was split between administrative tasks, technology concepts, science, and health care. While learning how to use Bash and MatLab for MRI image processing/analysis, I discoverd that the same principles could apply to the rest of my work. I continued to learn Python and SQL to automate as much of the study's procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.

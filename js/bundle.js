@@ -26886,9 +26886,9 @@
 	          { id: 'elevator_pitch' },
 	          React.createElement(
 	            'h2',
-	            null,
+	            { onClick: this.toggleDrop },
 	            'From Science to Tech  ',
-	            React.createElement('img', { className: this.state.aboutDropClass, onClick: this.toggleDrop, src: 'icons/arrow.svg' })
+	            React.createElement('img', { className: this.state.aboutDropClass, src: 'icons/arrow.svg' })
 	          ),
 	          React.createElement(
 	            'p',
