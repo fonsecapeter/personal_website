@@ -12,10 +12,10 @@
 }
 
 html, body, a, header, nav, p, div, span, img {
-	-webkit-transition: background, color, transform, filter 250ms ease-out;
-	-moz-transition: background, color, transform, filter 250ms ease-out;
-	-o-transition: background, color, transform, filter 250ms ease-out;
-	transition: background, color, transform, filter 250ms ease-out;
+	-webkit-transition: background, color, transform 250ms ease-out;
+	-moz-transition: background, color, transform 250ms ease-out;
+	-o-transition: background, color, transform 250ms ease-out;
+	transition: background, color, transform 250ms ease-out;
 }
 
 /* nav click animation */
@@ -373,6 +373,11 @@ ul {
 }
 
 .social {
+	-webkit-transition: filter 250ms ease-out;
+	-moz-transition: filter 250ms ease-out;
+	-o-transition: filter 250ms ease-out;
+	transition: filter 250ms ease-out;
+
 	margin: 0 6px;
 	-webkit-filter: grayscale(30%);
 	-moz-filter: grayscale(30%);
@@ -388,6 +393,11 @@ ul {
 }
 
 .social-git {
+	-webkit-transition: filter 250ms ease-out;
+	-moz-transition: filter 250ms ease-out;
+	-o-transition: filter 250ms ease-out;
+	transition: filter 250ms ease-out;
+
 	margin: 0 6px;
 	-webkit-filter: contrast(80%);
 	-moz-filter: contrast(80%);
