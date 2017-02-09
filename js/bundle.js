@@ -73,7 +73,7 @@
 	  React.createElement(
 	    Route,
 	    { path: "/", component: App },
-	    React.createElement(IndexRoute, { component: Experience }),
+	    React.createElement(IndexRoute, { component: About }),
 	    React.createElement(Route, { path: "/about", component: About }),
 	    React.createElement(Route, { path: "/experience", component: Experience }),
 	    React.createElement(Route, { path: "/portfolio", component: Portfolio }),
@@ -26696,10 +26696,10 @@
 	    var portfolioClass = "header";
 	    var contactClass = "header";
 	
-	    if (path === "/about") {
+	    if (path === "/" || path === "/about") {
 	      aboutClass += " active";
 	      navClass = "nav-about";
-	    } else if (path === "/" || path === "/experience") {
+	    } else if (path === "/experience") {
 	      experienceClass += " active";
 	      navClass = "nav-experience";
 	    } else if (path === "/portfolio") {
@@ -26878,6 +26878,31 @@
 	
 	var About = React.createClass({
 	  displayName: 'About',
+	  getInitialState: function getInitialState() {
+	    return {
+	      aboutDropClass: 'arrow drop-down',
+	      aboutExpandClass: 'hidden'
+	    };
+	  },
+	  expand: function expand() {
+	    this.setState({
+	      aboutDropClass: 'arrow pull-up',
+	      aboutExpandClass: ''
+	    });
+	  },
+	  hide: function hide() {
+	    this.setState({
+	      aboutDropClass: 'arrow drop-down',
+	      aboutExpandClass: 'hidden'
+	    });
+	  },
+	  toggleDrop: function toggleDrop() {
+	    if (this.state.aboutDropClass === 'arrow drop-down') {
+	      this.expand();
+	    } else {
+	      this.hide();
+	    }
+	  },
 	  render: function render() {
 	    return React.createElement(
 	      'div',
@@ -26901,11 +26926,12 @@
 	          React.createElement(
 	            'h2',
 	            null,
-	            'From Science to Tech'
+	            'From Science to Tech  ',
+	            React.createElement('img', { className: this.state.aboutDropClass, onClick: this.toggleDrop, src: 'icons/arrow.svg' })
 	          ),
 	          React.createElement(
 	            'p',
-	            null,
+	            { className: this.state.aboutExpandClass },
 	            'While working in clinical research, my time was split between administrative tasks, technology concepts, science, and health care. While learning how to use Bash and MatLab for MRI image processing/analysis, I discoverd that the same principles could apply to the rest of my work. I continued to learn Python and SQL to automate as much of the study\'s procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.',
 	            React.createElement('br', null),
 	            React.createElement('br', null),

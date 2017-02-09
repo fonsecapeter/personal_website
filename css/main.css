@@ -12,10 +12,10 @@
 }
 
 html, body, a, header, nav, p, div, span, img {
-	-webkit-transition: background, color 250ms ease-out;
-  -moz-transition: background, color 250ms ease-out;
-  -o-transition: background, color 250ms ease-out;
-  transition: background, color 250ms ease-out;
+	-webkit-transition: background, color, transform 250ms ease-out;
+	-moz-transition: background, color, transform 250ms ease-out;
+	-o-transition: background, color, transform 250ms ease-out;
+	transition: background, color, transform 250ms ease-out;
 }
 
 /* nav click animation */
@@ -300,6 +300,31 @@ ul {
 .code-icon-image {
     max-width: 100%;
     max-height: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+.arrow {
+	cursor: pointer;
+	display: inline-block;
+	height: 6px;
+	margin-bottom: 3px;
+}
+
+.drop-down {
+	-webkit-transform: rotate(90deg);
+	-moz=transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.pull-up {
+	-webkit-transform: rotate(-90deg);
+	-moz=transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
 }
 
 .experience-entry {

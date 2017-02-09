@@ -23,7 +23,7 @@ const Poster = require('./components/poster');
 const appRouter = (
   <Router history={ hashHistory }>
     <Route path="/" component={ App } >
-      <IndexRoute component={ Experience } />
+      <IndexRoute component={ About } />
       <Route path="/about" component={ About } />
       <Route path="/experience" component={ Experience } />
       <Route path="/portfolio" component={ Portfolio } />

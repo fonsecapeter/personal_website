@@ -15,10 +15,10 @@ const App = React.createClass({
     let portfolioClass = "header";
     let contactClass = "header";
 
-    if ( path === "/about" ) {
+    if ( path === "/" || path === "/about" ) {
       aboutClass += " active";
       navClass = "nav-about";
-    } else if ( path === "/" || path === "/experience" ) {
+    } else if ( path === "/experience" ) {
       experienceClass += " active";
       navClass = "nav-experience";
     } else if ( path === "/portfolio" ) {
