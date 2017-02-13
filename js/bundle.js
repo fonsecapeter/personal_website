@@ -27401,7 +27401,8 @@
 	                    breaks,
 	                    this.props.experience.bullets.map(function (bullet, idx) {
 	                        return React.createElement('li', { key: idx, dangerouslySetInnerHTML: { __html: bullet } });
-	                    })
+	                    }),
+	                    React.createElement('br', null)
 	                )
 	            )
 	        );

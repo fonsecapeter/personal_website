@@ -74,6 +74,7 @@ const ExperienceItem = React.createClass({
                                 );
                             })
                         }
+                        <br />
                     </ul>
                 </div>
             </div>
