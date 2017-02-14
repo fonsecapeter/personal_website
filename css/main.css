@@ -3,12 +3,12 @@
 	src: url('../fonts/reef.otf') format('opentype');
 }
 @font-face {
-	font-family: 'Neha Mono';
-	src: url('../fonts/neha_mono_regular.otf') format('opentype');
+	font-family: 'Peter Mono';
+	src: url('../fonts/peter_mono_regular.otf') format('opentype');
 }
 @font-face {
-	font-family: 'Neha Mono Comfortable';
-	src: url('../fonts/neha_mono_regular_comfortable.otf') format('opentype');
+	font-family: 'Peter Mono Comfortable';
+	src: url('../fonts/peter_mono_comfortable.otf') format('opentype');
 }
 
 html, body, a, header, nav, p, div, span, img {
@@ -246,7 +246,7 @@ ul {
 }
 
 .date {
-	font-family: 'Neha Mono Comfortable', 'Source Code Pro', 'monospace';
+	font-family: 'Peter Mono Comfortable', 'Source Code Pro', 'monospace';
 	color: #999fac;
 	font-size: 14px;
 }
@@ -270,14 +270,14 @@ ul {
 }
 
 .code {
-	font-family: 'Neha Mono', 'Source Code Pro', 'monospace';
+	font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
 	font-size: 13px;
 	text-decoration: none;
 	color: #999fac;
 }
 
 .code-list {
-	font-family: 'Neha Mono', 'Source Code Pro', 'monospace';
+	font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
 	font-size: 14px;
 	margin-top: 10px;
 	list-style: none;
@@ -443,7 +443,7 @@ ul {
 }
 
 #contact a, #contact p {
-	font-family: 'Neha Mono', 'Source Code Pro', 'monospace';
+	font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
 	line-height: 1.5;
 	font-size: 14px;
 /*
