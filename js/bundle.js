@@ -27340,7 +27340,7 @@
 	        var dropArrow = null;
 	        var breaks = [React.createElement('br', { key: '1' })];
 	        if (this.props.experience.bullets.length > 0) {
-	            breaks.push(React.createElement('br', { key: '2' }));
+	            // breaks.push(<br key="2" />);
 	            dropArrow = React.createElement('img', { className: this.state.aboutDropClass, src: 'icons/arrow.svg' });
 	        }
 	
@@ -27389,20 +27389,20 @@
 	                            this.props.experience.org
 	                        )
 	                    ),
-	                    primary
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'row' },
-	                React.createElement(
-	                    'ul',
-	                    { className: this.state.experienceBulletExpandClass },
-	                    breaks,
-	                    this.props.experience.bullets.map(function (bullet, idx) {
-	                        return React.createElement('li', { key: idx, dangerouslySetInnerHTML: { __html: bullet } });
-	                    }),
-	                    React.createElement('br', null)
+	                    primary,
+	                    React.createElement(
+	                        'div',
+	                        null,
+	                        React.createElement(
+	                            'ul',
+	                            { className: this.state.experienceBulletExpandClass },
+	                            breaks,
+	                            this.props.experience.bullets.map(function (bullet, idx) {
+	                                return React.createElement('li', { key: idx, dangerouslySetInnerHTML: { __html: bullet } });
+	                            }),
+	                            React.createElement('br', null)
+	                        )
+	                    )
 	                )
 	            )
 	        );
@@ -27764,7 +27764,7 @@
 	    var geocoder = new google.maps.Geocoder();
 	    var mapDiv = document.getElementById('map');
 	    var map = new google.maps.Map(mapDiv, {
-	      center: { lat: 37.790290, lng: -122.423979 },
+	      center: { lat: 37.7789680, lng: -122.424572 },
 	      zoom: 12,
 	      styles: [{ "featureType": "all", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "all", "stylers": [{ "visibility": "off" }, { "color": "#efebe2" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.attraction", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.business", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.government", "elementType": "all", "stylers": [{ "color": "#dfdcd5" }] }, { "featureType": "poi.medical", "elementType": "all", "stylers": [{ "color": "#dfdcd5" }] }, { "featureType": "poi.park", "elementType": "all", "stylers": [{ "color": "#bad294" }] }, { "featureType": "poi.place_of_worship", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.school", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.sports_complex", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "road.local", "elementType": "geometry.fill", "stylers": [{ "color": "#fbfbfb" }] }, { "featureType": "road.local", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#a5d7e0" }] }]
 	    });

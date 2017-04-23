@@ -39,7 +39,7 @@ const ExperienceItem = React.createClass({
         let dropArrow = null;
         let breaks = [<br key="1" />];
         if (this.props.experience.bullets.length > 0) {
-            breaks.push(<br key="2" />);
+            // breaks.push(<br key="2" />);
             dropArrow = <img className={ this.state.aboutDropClass } src='icons/arrow.svg'></img>;
         }
 
@@ -52,30 +52,30 @@ const ExperienceItem = React.createClass({
             <div className="experience-entry">
                 <div className="row">
                     <div className="experience-left">
-                    <img src={ this.props.experience.icon } className="icon"></img>
-                </div>
-                <div className="experience-right">
-                    <h1 onClick={ this.toggleDrop }>
-                        { this.props.experience.title }
-                        &nbsp;
-                        { dropArrow }
-                    </h1>
-                    <p><span className="date">{ this.props.experience.date }</span> &nbsp; <a href={ this.props.experience.link } target="blank">{ this.props.experience.org }</a></p>
-                    { primary }
-                </div>
-                </div>
-                <div className="row">
-                    <ul className={ this.state.experienceBulletExpandClass }>
-                        { breaks }
-                        {
-                            this.props.experience.bullets.map( (bullet, idx) => {
-                                return (
-                                    <li key={ idx } dangerouslySetInnerHTML={{__html: bullet}}></li>
-                                );
-                            })
-                        }
-                        <br />
-                    </ul>
+                        <img src={ this.props.experience.icon } className="icon"></img>
+                    </div>
+                    <div className="experience-right">
+                        <h1 onClick={ this.toggleDrop }>
+                            { this.props.experience.title }
+                            &nbsp;
+                            { dropArrow }
+                        </h1>
+                        <p><span className="date">{ this.props.experience.date }</span> &nbsp; <a href={ this.props.experience.link } target="blank">{ this.props.experience.org }</a></p>
+                        { primary }
+                        <div>
+                            <ul className={ this.state.experienceBulletExpandClass }>
+                                { breaks }
+                                {
+                                    this.props.experience.bullets.map( (bullet, idx) => {
+                                        return (
+                                            <li key={ idx } dangerouslySetInnerHTML={{__html: bullet}}></li>
+                                        );
+                                    })
+                                }
+                                <br />
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
