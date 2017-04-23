@@ -27764,7 +27764,7 @@
 	    var geocoder = new google.maps.Geocoder();
 	    var mapDiv = document.getElementById('map');
 	    var map = new google.maps.Map(mapDiv, {
-	      center: { lat: 37.7789680, lng: -122.424572 },
+	      center: { lat: 37.790290, lng: -122.423979 },
 	      zoom: 12,
 	      styles: [{ "featureType": "all", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "all", "stylers": [{ "visibility": "off" }, { "color": "#efebe2" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.attraction", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.business", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.government", "elementType": "all", "stylers": [{ "color": "#dfdcd5" }] }, { "featureType": "poi.medical", "elementType": "all", "stylers": [{ "color": "#dfdcd5" }] }, { "featureType": "poi.park", "elementType": "all", "stylers": [{ "color": "#bad294" }] }, { "featureType": "poi.place_of_worship", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.school", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "poi.sports_complex", "elementType": "all", "stylers": [{ "color": "#efebe2" }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "road.arterial", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "road.arterial", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "road.local", "elementType": "geometry.fill", "stylers": [{ "color": "#fbfbfb" }] }, { "featureType": "road.local", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#a5d7e0" }] }]
 	    });
@@ -27779,7 +27779,7 @@
 	    };
 	
 	    geocoder.geocode({
-	      'address': '1817 California St, San Francisco, CA 94109'
+	      'address': 'Franklin St & California St, San Francisco, CA 94109'
 	    }, function (results) {
 	      var marker = new google.maps.Marker({
 	        position: results[0].geometry.location,
@@ -27819,21 +27819,7 @@
 	      React.createElement(
 	        'p',
 	        null,
-	        React.createElement(
-	          'a',
-	          { className: 'contact', href: 'tel:17078892431' },
-	          '(707) 889-2431'
-	        )
-	      ),
-	      React.createElement(
-	        'p',
-	        null,
-	        '1817 California St'
-	      ),
-	      React.createElement(
-	        'p',
-	        null,
-	        'San Francisco, CA 94109'
+	        'San Francisco, CA'
 	      ),
 	      React.createElement('br', null),
 	      React.createElement('br', null),

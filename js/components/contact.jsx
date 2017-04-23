@@ -23,7 +23,7 @@ const Contact = React.createClass ({
     };
 
     geocoder.geocode({
-      'address': '1817 California St, San Francisco, CA 94109'
+      'address': 'Franklin St & California St, San Francisco, CA 94109'
     }, (results) => {
       let marker = new google.maps.Marker({
         position: results[0].geometry.location,
@@ -47,9 +47,7 @@ const Contact = React.createClass ({
         </div>
         <h1></h1>
         <p><a className="contact" href="mailto:peter.nfonseca@gmail.com">peter.nfonseca@gmail.com</a></p>
-        <p><a className="contact" href="tel:17078892431">(707) 889-2431</a></p>
-        <p>1817 California St</p>
-        <p>San Francisco, CA 94109</p>
+       <p>San Francisco, CA</p>
         <br/><br />
         <div id="map" style={{overflow:"hidden", height:"360px", width:"426px"}}></div>
         <script async defer
