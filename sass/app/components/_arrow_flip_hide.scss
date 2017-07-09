@@ -1,0 +1,18 @@
+.hidden {
+  display: none;
+}
+
+.arrow {
+  cursor: pointer;
+  display: inline-block;
+  height: 6px;
+  margin-bottom: 3px;
+}
+
+.drop-down {
+  transform: rotate(90deg);
+}
+
+.pull-up {
+  transform: rotate(-90deg);
+}

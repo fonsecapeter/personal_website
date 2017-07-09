@@ -40,16 +40,20 @@ const Contact = React.createClass ({
 
   render () {
     return (
-      <div id="contact">
-        <div>
+      <div>
+        <div className="contact-info">
+          <div>
             <br />
             <h4>Contact Me</h4>
+          </div>
+          <h1></h1>
+          <p>
+            <a href="mailto:peter.nfonseca@gmail.com">peter.nfonseca@gmail.com</a>
+          </p>
+          <p>San Francisco, CA</p>
         </div>
-        <h1></h1>
-        <p><a className="contact" href="mailto:peter.nfonseca@gmail.com">peter.nfonseca@gmail.com</a></p>
-       <p>San Francisco, CA</p>
         <br/><br />
-        <div id="map" style={{overflow:"hidden", height:"360px", width:"426px"}}></div>
+        <div id="map" className="contact-map" style={{overflow:"hidden", height:"360px", width:"426px"}}></div>
         <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap">
         </script>

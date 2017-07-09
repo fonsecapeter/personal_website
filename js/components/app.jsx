@@ -9,45 +9,44 @@ const App = React.createClass({
   render () {
     let path = this.props.location.pathname;
 
-    let aboutClass = "header";
+    let aboutClass = "";
     let navClass = "nav-experience"
-    let experienceClass = "header";
-    let portfolioClass = "header";
-    let contactClass = "header";
+    let experienceClass = "";
+    let portfolioClass = "";
+    let contactClass = "";
 
+    let activeClass = "nav-active";
     if ( path === "/" || path === "/about" ) {
-      aboutClass += " active";
+      aboutClass = activeClass;
       navClass = "nav-about";
     } else if ( path === "/experience" ) {
-      experienceClass += " active";
+      experienceClass = activeClass;
       navClass = "nav-experience";
     } else if ( path === "/portfolio" ) {
-      portfolioClass += " active";
+      portfolioClass = activeClass;
       navClass = "nav-portfolio";
     } else if ( path === "/contact" ) {
-      contactClass += " active";
+      contactClass = activeClass;
       navClass = "nav-contact";
     }
 
     return (
       <div>
-        <div id="header">
-          <div id="nav" className={ navClass }>
-            {/* <div className="stripe2"></div>
-            <div className="stripe1"></div> */}
+        <header>
+          <nav id="nav" className={ navClass }>
             <Link className={ aboutClass } to="about">About</Link> &nbsp;
             <Link className={ experienceClass } to="experience">Experience</Link> &nbsp;
             <Link className={ portfolioClass } to="portfolio">Portfolio</Link> &nbsp;
             <Link className={ contactClass } to="contact">Contact</Link>
-          </div>
-          <div id="bg"></div>
-        </div>
-        <div id="wrapper">
-          <div id="main-content">
-            <div id="left-column">
+          </nav>
+          <div className="nav-underlay"></div>
+        </header>
+        <div className="main-wrapper">
+          <div className="main-content">
+            <div className="left-column">
               { this.props.children }
             </div>
-            <div id="right-column">
+            <div className="right-column">
               <SideBar />
             </div>
           </div>

@@ -1,0 +1,52 @@
+.experience {
+  &-pdf-tip {
+    font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
+    font-size: 13px;
+    text-decoration: none;
+    color: $mid-gray;
+    display: inline-block;
+    height: 100%;
+    vertical-align: super;
+  }
+
+  &-item {
+    &-work {
+      overflow: auto;
+      zoom: 1;
+      margin-bottom: 60px;
+    }
+
+    &-content {
+      float: left;
+      width: 100%;
+      white-space: nowrap;
+    }
+
+    &-left {
+      display: inline-block;
+      padding-right: 20px;
+      vertical-align: top;
+      white-space: normal;
+    }
+
+    &-right {
+      display: inline-block;
+      white-space: normal;
+    }
+
+    &-icon {
+      width: 50px;
+    }
+
+    &-date {
+      font-family: 'Peter Mono Comfortable', 'monospace';
+      color: $mid-gray;
+      font-size: 14px;
+    }
+
+    &-bullets {
+      padding-left: 0;
+      white-space: normal;
+    }
+  }
+}

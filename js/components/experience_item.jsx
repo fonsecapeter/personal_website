@@ -14,7 +14,7 @@ const ExperienceItem = React.createClass({
     expand () {
         this.setState({
             aboutDropClass: 'arrow pull-up',
-            experienceBulletExpandClass: 'experience-bullets'
+            experienceBulletExpandClass: 'experience-item-bullets'
         })
     },
 
@@ -40,7 +40,7 @@ const ExperienceItem = React.createClass({
         let breaks = [<br key="1" />];
         if (this.props.experience.bullets.length > 0) {
             // breaks.push(<br key="2" />);
-            dropArrow = <img className={ this.state.aboutDropClass } src='icons/arrow.svg'></img>;
+            dropArrow = <img className={ this.state.aboutDropClass } src='public/img/icons/arrow.svg'></img>;
         }
 
         let primary = null;
@@ -49,18 +49,24 @@ const ExperienceItem = React.createClass({
         }
 
         return(
-            <div className="experience-entry">
-                <div className="row">
-                    <div className="experience-left">
-                        <img src={ this.props.experience.icon } className="icon"></img>
+            <div className="experience-item-work">
+                <div className="experience-item-content">
+                    <div className="experience-item-left">
+                        <img src={ this.props.experience.icon } className="experience-item-icon"></img>
                     </div>
-                    <div className="experience-right">
+                    <div className="experience-item-right">
                         <h1 onClick={ this.toggleDrop }>
                             { this.props.experience.title }
                             &nbsp;
                             { dropArrow }
                         </h1>
-                        <p><span className="date">{ this.props.experience.date }</span> &nbsp; <a href={ this.props.experience.link } target="blank">{ this.props.experience.org }</a></p>
+                        <p>
+                          <span className="experience-item-date">
+                            { this.props.experience.date }
+                          </span>
+                          &nbsp;
+                          <a href={ this.props.experience.link } target="blank">{ this.props.experience.org }</a>
+                        </p>
                         { primary }
                         <div>
                             <ul className={ this.state.experienceBulletExpandClass }>

@@ -1,25 +1,44 @@
-var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
-  context: __dirname,
-  entry: path.join(__dirname, 'js', 'peter_fonseca.jsx'),
+  entry: ['./js/peter_fonseca.jsx', './sass/main.scss'],
   output: {
-    path: path.join(__dirname, 'js'),
-    filename: "bundle.js"
+    filename: "./public/js/bundle.js"
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          use: 'css-loader?importLoaders=1'
+        }),
+      },
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+      },
+      {
+        test: /\.otf$/,
+        loader: 'url-loader?limit=100000'
       }
     ]
   },
   devtool: 'source-maps',
   resolve: {
-    extensions: ["", ".js", ".jsx" ]
-  }
+    extensions: [".js", ".jsx" ]
+  },
+  plugins: [
+    new ExtractTextPlugin({
+      filename: 'public/css/bundle.css',
+      allChunks: true
+    })
+  ]
 };

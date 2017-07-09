@@ -1,0 +1,77 @@
+/* Global Styling */
+html, body, a, header, nav, p, div, span, img {
+  transition: background, color, transform 250ms ease-out;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: $black;
+  background: $white;
+
+  padding: 0;
+  margin: 0;
+  min-width: 454px;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $green;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: $dark-black;
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  font-size: 19px;
+  border-bottom: 1px solid $light-gray;
+}
+
+h2 {
+  color: $dark_black;
+  margin: 20px 0 10px;
+  padding-bottom: 10px;
+  font-size: 19px;
+  border-bottom: 1px solid $light-gray;
+}
+
+h3 {
+  color: $dark_black;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  font-size: 19px;
+  font-weight: 600;
+  border-bottom: 1px solid $light-gray;
+}
+
+h4 {
+  color: $dark_black;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+img {
+  border-radius: 4px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0 0 0 20px;
+  margin: 0 0 0 17px;
+}
