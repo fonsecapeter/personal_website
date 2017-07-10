@@ -1,5 +1,7 @@
 .portfolio {
   &-item {
+    margin-bottom: 80px;
+
     &-link {
       font-size:16px;
     }
@@ -19,7 +21,11 @@
 
     &-screenshot {
       display: block;
-      margin: auto;
+      margin: 40px auto;
+    }
+
+    &-bullets {
+      margin-top: 20px;
     }
   }
 }

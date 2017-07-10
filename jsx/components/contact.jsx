@@ -41,11 +41,11 @@ const Contact = React.createClass ({
   render () {
     return (
       <div>
+        <div>
+          <br />
+          <h4>Contact Me</h4>
+        </div>
         <div className="contact-info">
-          <div>
-            <br />
-            <h4>Contact Me</h4>
-          </div>
           <h1></h1>
           <p>
             <a href="mailto:peter.nfonseca@gmail.com">peter.nfonseca@gmail.com</a>

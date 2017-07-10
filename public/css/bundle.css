@@ -224,55 +224,49 @@ nav {
   height: 100%;
   vertical-align: super; }
 
-.experience-item-work {
+.experience-item {
   overflow: auto;
-  zoom: 1;
   margin-bottom: 60px; }
+  .experience-item-content {
+    float: left;
+    width: 100%; }
+  .experience-item-left {
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: top;
+    width: 50px; }
+  .experience-item-right {
+    display: inline-block;
+    width: calc(100% - 70px); }
+  .experience-item-icon {
+    width: 50px; }
+  .experience-item-date {
+    font-family: 'Peter Mono Comfortable', 'monospace';
+    color: #999fac;
+    font-size: 14px; }
+  .experience-item-bullets {
+    padding-left: 0;
+    padding-top: 16px;
+    white-space: normal; }
 
-.experience-item-content {
-  float: left;
-  width: 100%;
-  white-space: nowrap; }
-
-.experience-item-left {
-  display: inline-block;
-  padding-right: 20px;
-  vertical-align: top;
-  white-space: normal; }
-
-.experience-item-right {
-  display: inline-block;
-  white-space: normal; }
-
-.experience-item-icon {
-  width: 50px; }
-
-.experience-item-date {
-  font-family: 'Peter Mono Comfortable', 'monospace';
-  color: #999fac;
-  font-size: 14px; }
-
-.experience-item-bullets {
-  padding-left: 0;
-  white-space: normal; }
-
-.portfolio-item-link {
-  font-size: 16px; }
-
-.portfolio-item-date {
-  font-family: 'Peter Mono Comfortable', 'monospace';
-  color: #999fac;
-  font-size: 14px; }
-
-.portfolio-item-keywords {
-  font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
-  font-size: 13px;
-  text-decoration: none;
-  color: #999fac; }
-
-.portfolio-item-screenshot {
-  display: block;
-  margin: auto; }
+.portfolio-item {
+  margin-bottom: 80px; }
+  .portfolio-item-link {
+    font-size: 16px; }
+  .portfolio-item-date {
+    font-family: 'Peter Mono Comfortable', 'monospace';
+    color: #999fac;
+    font-size: 14px; }
+  .portfolio-item-keywords {
+    font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
+    font-size: 13px;
+    text-decoration: none;
+    color: #999fac; }
+  .portfolio-item-screenshot {
+    display: block;
+    margin: 40px auto; }
+  .portfolio-item-bullets {
+    margin-top: 20px; }
 
 .poster {
   width: 100%;

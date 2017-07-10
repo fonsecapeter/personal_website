@@ -37,9 +37,7 @@ const ExperienceItem = React.createClass({
 
     render () {
         let dropArrow = null;
-        let breaks = [<br key="1" />];
         if (this.props.experience.bullets.length > 0) {
-            // breaks.push(<br key="2" />);
             dropArrow = <img className={ this.state.aboutDropClass } src='public/img/icons/arrow.svg'></img>;
         }
 
@@ -49,7 +47,7 @@ const ExperienceItem = React.createClass({
         }
 
         return(
-            <div className="experience-item-work">
+            <div className="experience-item">
                 <div className="experience-item-content">
                     <div className="experience-item-left">
                         <img src={ this.props.experience.icon } className="experience-item-icon"></img>
@@ -70,7 +68,6 @@ const ExperienceItem = React.createClass({
                         { primary }
                         <div>
                             <ul className={ this.state.experienceBulletExpandClass }>
-                                { breaks }
                                 {
                                     this.props.experience.bullets.map( (bullet, idx) => {
                                         return (
@@ -78,7 +75,6 @@ const ExperienceItem = React.createClass({
                                         );
                                     })
                                 }
-                                <br />
                             </ul>
                         </div>
                     </div>

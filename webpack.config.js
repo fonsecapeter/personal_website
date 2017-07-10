@@ -1,7 +1,7 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: ['./js/peter_fonseca.jsx', './sass/main.scss'],
+  entry: ['./jsx/peter_fonseca.jsx', './sass/main.scss'],
   output: {
     filename: "./public/js/bundle.js"
   },

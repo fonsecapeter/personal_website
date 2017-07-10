@@ -15,6 +15,7 @@ const Experience = React.createClass({
         org: "23andMe",
         bullets: []
       },
+
       {
         title: "Clinical Research Coordinator",
         icon: "public/img/icons/experience/brain.png",
@@ -30,6 +31,7 @@ const Experience = React.createClass({
           "Conducted cognitive tests and ran MRIs"
         ]
       },
+
       {
         title: "Undergraduate Researcher",
         icon: "public/img/icons/experience/microscope.png",
@@ -44,6 +46,7 @@ const Experience = React.createClass({
           "Worked with PCR, Timecourse, and Western Blot protocols"
         ]
       },
+
       {
         title: "Volunteer Lab Assistant",
         icon: "public/img/icons/experience/stethoscope.png",
@@ -57,6 +60,7 @@ const Experience = React.createClass({
           "Conducted urinalysis and RST's"
         ]
       },
+
       {
         title: "Technician",
         icon: "public/img/icons/experience/tube.png",
@@ -68,7 +72,29 @@ const Experience = React.createClass({
           "Designed logos and components with Adobe Illustrator to grow the brand"
         ]
       }
-    ]
+    ];
+
+    const education = [
+      {
+        title: "App Academy",
+        icon: "public/img/icons/aa.png",
+        date: "May-July 2016",
+        link: "https://www.appacademy.io/",
+        org: "a/A San Francisco",
+        primary: "Industry-focused programming course",
+        bullets: []
+      },
+
+      {
+        title: "Bachelor of Science in Biology",
+        icon: "public/img/icons/ucsc.png",
+        date: "2010-2014",
+        link: "https://www.ucsc.edu/",
+        org: "University of California, Santa Cruz",
+        primary: "Minor in Chemistry",
+        bullets: []
+      }
+    ];
 
     return (
       <div className="experience">
@@ -89,43 +115,18 @@ const Experience = React.createClass({
           <h4>Education</h4>
         </div>
         <div>
-          <div>
-            <div className="experience-item-content">
-              <div className="experience-item-left">
-                <img src="public/img/icons/aa.png" className="experience-item-icon"></img>
-              </div>
-              <div className="experience-item-right">
-                <h1><a href="https://www.appacademy.io/" target="blank" >App Academy</a></h1>
-                <p><span className="experience-item-date">May-July 2016</span> &nbsp; San Francisco</p>
-                <p>Industry-focused programming course</p>
-              </div>
-            </div>
-          </div>
-          <br /><br />
-          <br /><br />
-          <br /><br />
-
-          <div>
-            <div className="experience-item-content">
-              <div className="experience-item-left">
-                <img src="public/img/icons/ucsc.png" className="experience-item-icon"></img>
-              </div>
-              <div className="experience-item-right">
-                <h1>Bachelor of Science in Biology</h1>
-                <p><span className="experience-item-date">2010-2014</span> &nbsp; University of California, Santa Cruz</p>
-                <p>Minor in Chemistry</p>
-              </div>
-            </div>
-          </div>
+          {
+            education.map( (experienceItem, idx) => {
+              return (
+                <ExperienceItem experience={ experienceItem } key={ idx } />
+              )
+            })
+          }
         </div>
-        <br /><br />
-        <br /><br />
-        <br /><br />
-
         <div>
           <h4>Posters/Presentations</h4>
           <p></p>
-          <div>
+          <div className="experience-item">
             <div className="experience-item-content">
               <div className="experience-item-left">
                 <img src="public/img/icons/poster.png" className="experience-item-icon"></img>
@@ -140,10 +141,8 @@ const Experience = React.createClass({
               </div>
             </div>
           </div>
-          <br /><br />
-          <br /><br />
 
-          <div>
+          <div className="experience-item">
             <div className="experience-item-content">
               <div className="experience-item-left">
                 <img src="public/img/icons/presentation.png" className="experience-item-icon"></img>
@@ -156,7 +155,6 @@ const Experience = React.createClass({
           </div>
 
         </div>
-        <br /><br />
       </div>
     );
   }
