@@ -1,0 +1,41 @@
+.side-bar {
+  padding: 10px 25px;
+  text-align: center;
+
+  &-headshot {
+    &-image {
+      border-radius: 160px;
+    }
+  }
+
+  &-content {
+    width: 218px;
+    margin: 0 auto;
+    padding: 10px;
+
+    &-social {
+      transition: filter 250ms ease-out;
+      margin: 0 6px;
+      filter: grayscale(30%);
+
+      &::hover {
+        filter: grayscale(100%);
+      }
+
+      &-git {
+        transition: filter 250ms ease-out;
+
+        margin: 0 6px;
+        filter: contrast(80%);
+
+        &::hover {
+          filter: contrast(25%);
+        }
+      }
+    }
+  }
+
+  @media (min-width: $responsive-width) {
+    position: fixed;
+  }
+}

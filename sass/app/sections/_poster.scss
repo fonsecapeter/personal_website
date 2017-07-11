@@ -1,0 +1,12 @@
+.poster {
+  width: 100%;
+  padding: 20px;
+  border-radius: 24px;
+  cursor: pointer;
+
+  &-modal {
+    width: 100%;
+    padding: 0;
+    border-radius: 4px;
+  }
+}
