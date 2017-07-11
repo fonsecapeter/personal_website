@@ -1,0 +1,31 @@
+.portfolio {
+  &-item {
+    margin-bottom: 80px;
+
+    &-link {
+      font-size:16px;
+    }
+
+    &-date {
+      font-family: 'Peter Mono Comfortable', 'monospace';
+      color: $mid-gray;
+      font-size: 14px;
+    }
+
+    &-keywords {
+      font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
+      font-size: 13px;
+      text-decoration: none;
+      color: $mid-gray;
+    }
+
+    &-screenshot {
+      display: block;
+      margin: 40px auto;
+    }
+
+    &-bullets {
+      margin-top: 20px;
+    }
+  }
+}

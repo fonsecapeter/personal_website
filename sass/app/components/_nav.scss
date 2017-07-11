@@ -1,0 +1,62 @@
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: 'Dosis', sans-serif;
+  font-size:20px;
+  text-align:center;
+  font-weight:300;
+  letter-spacing: 1px;
+  width:100%;
+  padding:10px 20px 10px 0;
+  position: fixed;
+  z-index: 10;
+
+  & > a {
+    margin:0 15px 0 15px;
+    font-weight:400;
+    color: $white;
+    text-decoration: none;
+
+    &::hover {
+      color: $moss-gray;
+    }
+  }
+
+
+  @media (min-width: $responsive-width) {
+    & > a {
+      font-size: 16px;
+    }
+  }
+}
+
+.nav {
+  &-about {
+    background: $nav-about;
+  }
+
+  &-experience {
+    background: $nav-experience;
+  }
+
+  &-portfolio {
+    background: $nav-portfolio;
+  }
+
+  &-contact {
+    background: $nav-contact;
+  }
+
+  &-underlay {
+    height:36px;
+  }
+
+  &-active {
+    color: $moss-gray;
+    cursor: default;
+  }
+}

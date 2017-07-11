@@ -1,0 +1,33 @@
+.about {
+  &-elevator-pitch {
+    clear:both;
+    margin-bottom: 25px;
+  }
+
+  &-code-list {
+    font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
+    font-size: 14px;
+    margin-top: 10px;
+    list-style: none;
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      &-icon {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 8px 4px 20px;
+
+        &-image {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
