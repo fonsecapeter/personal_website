@@ -181,6 +181,9 @@ nav {
         filter: contrast(80%); }
         .side-bar-content-social-git::hover {
           filter: contrast(25%); }
+  @media (min-width: 900px) {
+    .side-bar {
+      position: fixed; } }
 
 .about-elevator-pitch {
   clear: both;

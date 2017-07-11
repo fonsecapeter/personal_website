@@ -34,4 +34,8 @@
       }
     }
   }
+
+  @media (min-width: $responsive-width) {
+    position: fixed;
+  }
 }
