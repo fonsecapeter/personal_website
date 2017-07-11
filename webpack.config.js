@@ -16,14 +16,8 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract({
-          use: 'css-loader?importLoaders=1'
-        }),
-      },
-      {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+        loader: ExtractTextPlugin.extract({use: ['css-loader', 'sass-loader']})
       },
       {
         test: /\.otf$/,
@@ -33,7 +27,7 @@ module.exports = {
   },
   devtool: 'source-maps',
   resolve: {
-    extensions: [".js", ".jsx" ]
+    extensions: ['.js', '.jsx' ]
   },
   plugins: [
     new ExtractTextPlugin({
