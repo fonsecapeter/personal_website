@@ -1,5 +1,6 @@
 .portfolio {
   &-item {
+    @include card;
     margin-bottom: 80px;
 
     &-link {
