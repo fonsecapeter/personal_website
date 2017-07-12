@@ -236,7 +236,6 @@ nav {
   border-radius: 3px;
   padding: 20px; }
   .contact-info {
-    font-family: 'Peter Mono', 'monospace';
     line-height: 1.5;
     font-size: 14px; }
   .contact-map {
@@ -312,8 +311,8 @@ nav {
 
 .poster {
   width: 100%;
-  padding: 20px;
-  border-radius: 24px;
+  border-radius: 4px;
+  margin-top: 40px;
   cursor: pointer; }
   .poster-modal {
     width: 100%;
