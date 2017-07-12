@@ -15,14 +15,13 @@
 
   &-code-list {
     @include card;
-    font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
-    font-size: 14px;
     margin-top: 10px;
     list-style: none;
 
     &-item {
       display: flex;
       align-items: center;
+      font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
 
       &-icon {
         width: 30px;
