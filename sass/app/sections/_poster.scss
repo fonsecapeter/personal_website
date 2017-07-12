@@ -1,4 +1,5 @@
 .poster {
+  @include shadow-hover;
   width: 100%;
   border-radius: 4px;
   margin-top: 40px;
