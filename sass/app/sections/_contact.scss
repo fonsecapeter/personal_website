@@ -1,4 +1,6 @@
 .contact {
+  @include card;
+
   &-info {
     font-family: 'Peter Mono', 'monospace';
     line-height: 1.5;
@@ -6,6 +8,7 @@
   }
 
   &-map {
+    @include shadow;
     border-radius: 4px;
     margin: auto;
   }

@@ -1,18 +1,27 @@
 .about {
   &-elevator-pitch {
+    @include card;
     clear:both;
     margin-bottom: 25px;
+
+    &-title {
+      cursor: pointer;
+    }
+
+    &-paragraph {
+      margin-bottom: 16px;
+    }
   }
 
   &-code-list {
-    font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
-    font-size: 14px;
+    @include card;
     margin-top: 10px;
     list-style: none;
 
     &-item {
       display: flex;
       align-items: center;
+      font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
 
       &-icon {
         width: 30px;

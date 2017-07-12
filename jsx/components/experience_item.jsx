@@ -53,7 +53,7 @@ const ExperienceItem = React.createClass({
                         <img src={ this.props.experience.icon } className="experience-item-icon"></img>
                     </div>
                     <div className="experience-item-right">
-                        <h1 onClick={ this.toggleDrop }>
+                        <h1 className="experience-item-title" onClick={ this.toggleDrop }>
                             { this.props.experience.title }
                             &nbsp;
                             { dropArrow }

@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         test: /\.otf$/,
-        loader: 'url-loader?limit=100000'
+        loader: 'file-loader?name=[path][name].[ext]'
       }
     ]
   },

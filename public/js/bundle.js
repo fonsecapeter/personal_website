@@ -14163,42 +14163,48 @@ var About = React.createClass({
           'div',
           { className: 'about-elevator-pitch' },
           React.createElement(
-            'h2',
-            { onClick: this.toggleDrop },
+            'h1',
+            { className: 'about-elevator-pitch-title', onClick: this.toggleDrop },
             'From Science to Tech \xA0',
             React.createElement('img', { className: this.state.aboutDropClass, src: 'public/img/icons/arrow.svg' })
           ),
           React.createElement(
-            'p',
+            'div',
             { className: this.state.aboutExpandClass },
-            'While working in clinical research, my time was split between administrative tasks, technology concepts, science, and health care. While learning how to use Bash and MatLab for MRI image processing/analysis, I discoverd that the same principles could apply to the rest of my work. I continued to learn Python and SQL to automate as much of the study\'s procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.',
-            React.createElement('br', null),
-            React.createElement('br', null),
-            'I grew into a role of improving our procedures and data with technology and am most proud of the management system I developed for our research visit summaries (',
             React.createElement(
-              'a',
-              { href: 'https://github.com/fonsecapeter/jarvs' },
-              'Jarvs'
+              'p',
+              { className: 'about-elevator-pitch-paragraph' },
+              'While working in clinical research, my time was split between administrative tasks, technology concepts, science, and health care. While learning how to use Bash and MatLab for MRI image processing/analysis, I discoverd that the same principles could apply to the rest of my work. I continued to learn Python and SQL to automate as much of the study\'s procedures as possible, freeing up enough of my time to take on new responsibilites when the senior team leader resigned.'
             ),
-            '). While working on these projects, I realized that my greatest services to the study came through programming. Not only was I making my co-workers lives easier, I was helping our research participants recieve better care.',
-            React.createElement('br', null),
-            React.createElement('br', null),
-            'I also enjoyed this work more than my other responsibilities. It kept me working early in the morning and late at night, and I couldn\'t help myself from finishing a new project. I decided that I wanted to do it every day and my goal is to continue learning how I can leverage technology to help others.',
-            React.createElement('br', null),
-            React.createElement('br', null)
+            React.createElement(
+              'p',
+              { className: 'about-elevator-pitch-paragraph' },
+              'I grew into a role of improving our procedures and data with technology and am most proud of the management system I developed for our research visit summaries (',
+              React.createElement(
+                'a',
+                { href: 'https://github.com/fonsecapeter/jarvs' },
+                'Jarvs'
+              ),
+              '). While working on these projects, I realized that my greatest services to the study came through programming. Not only was I making my co-workers lives easier, I was helping our research participants recieve better care.'
+            ),
+            React.createElement(
+              'p',
+              { className: 'about-elevator-pitch-paragraph' },
+              'I also enjoyed this work more than my other responsibilities. It kept me working early in the morning and late at night, and I couldn\'t help myself from finishing a new project. I decided that I wanted to do it every day and my goal is to continue learning how I can leverage technology to help others.'
+            )
           )
         ),
         React.createElement(
           'div',
-          null,
+          { className: 'about-code-list' },
           React.createElement(
             'h1',
             null,
-            'Languages I Work With:'
+            'Languages I Work With'
           ),
           React.createElement(
             'div',
-            { className: 'about-code-list' },
+            null,
             React.createElement(
               'div',
               { className: 'about-code-list-item' },
@@ -14479,30 +14485,33 @@ var Contact = React.createClass({
       ),
       React.createElement(
         'div',
-        { className: 'contact-info' },
-        React.createElement('h1', null),
+        { className: 'contact' },
         React.createElement(
-          'p',
-          null,
+          'div',
+          { className: 'contact-info' },
           React.createElement(
-            'a',
-            { href: 'mailto:peter.nfonseca@gmail.com' },
-            'peter.nfonseca@gmail.com'
+            'p',
+            null,
+            React.createElement(
+              'a',
+              { href: 'mailto:peter.nfonseca@gmail.com' },
+              'peter.nfonseca@gmail.com'
+            )
+          ),
+          React.createElement(
+            'p',
+            null,
+            'San Francisco, CA'
           )
         ),
-        React.createElement(
-          'p',
-          null,
-          'San Francisco, CA'
-        )
-      ),
-      React.createElement('br', null),
-      React.createElement('br', null),
-      React.createElement('div', { id: 'map', className: 'contact-map', style: { overflow: "hidden", height: "360px", width: "426px" } }),
-      React.createElement('script', { async: true, defer: true,
-        src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap' }),
-      React.createElement('br', null),
-      React.createElement('br', null)
+        React.createElement('br', null),
+        React.createElement('br', null),
+        React.createElement('div', { id: 'map', className: 'contact-map', style: { overflow: "hidden", height: "360px", width: "426px" } }),
+        React.createElement('script', { async: true, defer: true,
+          src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap' }),
+        React.createElement('br', null),
+        React.createElement('br', null)
+      )
     );
   }
 });
@@ -14775,7 +14784,7 @@ var ExperienceItem = React.createClass({
                     { className: 'experience-item-right' },
                     React.createElement(
                         'h1',
-                        { onClick: this.toggleDrop },
+                        { className: 'experience-item-title', onClick: this.toggleDrop },
                         this.props.experience.title,
                         '\xA0',
                         dropArrow
