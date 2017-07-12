@@ -20,7 +20,7 @@
 .left-column {
   padding: 20px; }
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   .main-wrapper {
     width: 900px; }
   .left-column {
@@ -138,7 +138,7 @@ nav {
     text-decoration: none; }
     nav > a::hover {
       color: #b3c7bc; }
-  @media (min-width: 900px) {
+  @media only screen and (min-width: 900px) {
     nav > a {
       font-size: 16px; } }
 
@@ -187,7 +187,7 @@ nav {
         filter: contrast(80%); }
         .side-bar-content-social-git::hover {
           filter: contrast(25%); }
-  @media (min-width: 900px) {
+  @media only screen and (min-width: 900px) {
     .side-bar {
       position: fixed;
       padding: 20px; } }
