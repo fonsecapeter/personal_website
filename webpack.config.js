@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         test: /\.otf$/,
-        loader: 'file-loader?name=[path][name].[ext]'
+        loader: 'url-loader?name=public/fonts/[name].[ext]',
       }
     ]
   },
