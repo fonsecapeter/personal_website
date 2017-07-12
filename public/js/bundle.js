@@ -14485,30 +14485,33 @@ var Contact = React.createClass({
       ),
       React.createElement(
         'div',
-        { className: 'contact-info' },
-        React.createElement('h1', null),
+        { className: 'contact' },
         React.createElement(
-          'p',
-          null,
+          'div',
+          { className: 'contact-info' },
           React.createElement(
-            'a',
-            { href: 'mailto:peter.nfonseca@gmail.com' },
-            'peter.nfonseca@gmail.com'
+            'p',
+            null,
+            React.createElement(
+              'a',
+              { href: 'mailto:peter.nfonseca@gmail.com' },
+              'peter.nfonseca@gmail.com'
+            )
+          ),
+          React.createElement(
+            'p',
+            null,
+            'San Francisco, CA'
           )
         ),
-        React.createElement(
-          'p',
-          null,
-          'San Francisco, CA'
-        )
-      ),
-      React.createElement('br', null),
-      React.createElement('br', null),
-      React.createElement('div', { id: 'map', className: 'contact-map', style: { overflow: "hidden", height: "360px", width: "426px" } }),
-      React.createElement('script', { async: true, defer: true,
-        src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap' }),
-      React.createElement('br', null),
-      React.createElement('br', null)
+        React.createElement('br', null),
+        React.createElement('br', null),
+        React.createElement('div', { id: 'map', className: 'contact-map', style: { overflow: "hidden", height: "360px", width: "426px" } }),
+        React.createElement('script', { async: true, defer: true,
+          src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap' }),
+        React.createElement('br', null),
+        React.createElement('br', null)
+      )
     );
   }
 });
