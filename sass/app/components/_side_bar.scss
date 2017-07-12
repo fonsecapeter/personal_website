@@ -1,5 +1,6 @@
 .side-bar {
-  padding: 10px 25px;
+  @include card;
+  padding: 40px 20px;
   text-align: center;
 
   &-headshot {
@@ -37,5 +38,6 @@
 
   @media (min-width: $responsive-width) {
     position: fixed;
+    padding: 20px
   }
 }

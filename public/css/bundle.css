@@ -162,7 +162,12 @@ nav {
   cursor: default; }
 
 .side-bar {
-  padding: 10px 25px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 20px;
+  padding: 40px 20px;
   text-align: center; }
   .side-bar-headshot-image {
     border-radius: 160px; }
@@ -184,13 +189,28 @@ nav {
           filter: contrast(25%); }
   @media (min-width: 900px) {
     .side-bar {
-      position: fixed; } }
+      position: fixed;
+      padding: 20px; } }
 
 .about-elevator-pitch {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 20px;
   clear: both;
   margin-bottom: 25px; }
+  .about-elevator-pitch-title {
+    cursor: pointer; }
+  .about-elevator-pitch-paragraph {
+    margin-bottom: 16px; }
 
 .about-code-list {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 20px;
   font-family: 'Peter Mono', 'Source Code Pro', 'monospace';
   font-size: 14px;
   margin-top: 10px;
@@ -229,15 +249,13 @@ nav {
   vertical-align: super; }
 
 .experience-item {
-  overflow: auto;
-  margin-bottom: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   background: #ffffff;
-  padding: 20px;
   border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-  .experience-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.08); }
+  padding: 20px;
+  overflow: auto;
+  margin-bottom: 60px; }
   .experience-item-content {
     float: left;
     width: 100%; }
@@ -251,6 +269,8 @@ nav {
     width: calc(100% - 70px); }
   .experience-item-icon {
     width: 50px; }
+  .experience-item-title {
+    cursor: pointer; }
   .experience-item-date {
     font-family: 'Peter Mono Comfortable', 'monospace';
     color: #999fac;
