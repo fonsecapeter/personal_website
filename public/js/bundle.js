@@ -14838,6 +14838,44 @@ var Portfolio = React.createClass({
   displayName: 'Portfolio',
   render: function render() {
     var projects = [{
+      name: 'Color Shift',
+      links: [{
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/color-shift'
+      }, {
+        text: 'live',
+        url: 'http://peterfonseca.gq/color-shift'
+      }],
+      date: '2016',
+      org: {
+        name: 'App Academy',
+        url: 'https://www.appacademy.io/'
+      },
+      keywords: 'JavasScript',
+      icon: {
+        src: 'https://raw.githubusercontent.com/fonsecapeter/color-shift/master/docs/color-shift-screenshot.png'
+      },
+      description: 'Color Shift is a JavaScript canvas game that makes learning about a neurologic concept fun.',
+      bullets: ['Simulated collision and drag physics with vector computations', 'Modified DOM with game state logic for start/end gating']
+    }, {
+      name: 'Ruby Chess',
+      links: [{
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/ruby_chess'
+      }],
+      date: '2016',
+      org: {
+        name: 'App Academy',
+        url: 'https://www.appacademy.io/'
+      },
+      keywords: 'Ruby',
+      icon: {
+        src: 'https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif',
+        small: true
+      },
+      description: 'Ruby chess is a command line game built for 0, 1, or 2 players.',
+      bullets: ['Computer player that will intelligently pick moves', 'Unit and integration tested with RSpec']
+    }, {
       name: 'Glia',
       links: [{
         text: 'github',
@@ -14853,8 +14891,7 @@ var Portfolio = React.createClass({
       },
       keywords: 'Ruby Rails JavaScript React',
       icon: {
-        src: 'https://raw.githubusercontent.com/fonsecapeter/Glia/master/docs/screenshots/glia-question-detail.png',
-        width: '526px'
+        src: 'https://raw.githubusercontent.com/fonsecapeter/Glia/master/docs/screenshots/glia-question-detail.png'
       },
       description: 'Glia is an online support group for caregivers of dementia patients. I built Glia with a React-Flux front end and a Rails-PostgreSQL back end.',
       bullets: ['Minimized data requests with nested Flux resources to reduce load time', 'Leveraged 3rd party libraries to offer modern text-formatting experience, complete with drag-and-drop image uploading', 'Incorporated responsive design for mobile users']
@@ -14874,50 +14911,10 @@ var Portfolio = React.createClass({
       },
       keywords: 'Python GTK Bash SQLite',
       icon: {
-        src: 'https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png',
-        width: '526px'
+        src: 'https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png'
       },
       description: 'Jarvs is an Ubuntu app that I built to help manage research dictations by scraping data out of file-names. This app is still in development, but has the minimum functionality necessary and is currently in use.',
       bullets: ['Distributed via Ubuntu PPA to increase accessibility for non-technical users', 'Delegated intensive file computations to Bash, optimizing for small cloud instances', 'Capable of sending weekly emails only to those who have work to do using crontab', 'Can visualize data with matplotlib']
-    }, {
-      name: 'Color Shift',
-      links: [{
-        text: 'github',
-        url: 'https://github.com/fonsecapeter/color-shift'
-      }, {
-        text: 'live',
-        url: 'http://peterfonseca.gq/color-shift'
-      }],
-      date: '2016',
-      org: {
-        name: 'App Academy',
-        url: 'https://www.appacademy.io/'
-      },
-      keywords: 'JavasScript',
-      icon: {
-        src: 'https://raw.githubusercontent.com/fonsecapeter/color-shift/master/docs/color-shift-screenshot.png',
-        width: '526px'
-      },
-      description: 'Color Shift is a JavaScript canvas game that makes learning about a neurologic concept fun.',
-      bullets: ['Simulated collision and drag physics with vector computations', 'Modified DOM with game state logic for start/end gating']
-    }, {
-      name: 'Ruby Chess',
-      links: [{
-        text: 'github',
-        url: 'https://github.com/fonsecapeter/ruby_chess'
-      }],
-      date: '2016',
-      org: {
-        name: 'App Academy',
-        url: 'https://www.appacademy.io/'
-      },
-      keywords: 'Ruby',
-      icon: {
-        src: 'https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif',
-        width: '240px'
-      },
-      description: 'Ruby chess is a command line game built for 0, 1, or 2 players.',
-      bullets: ['Computer player that will intelligently pick moves', 'Unit and integration tested with RSpec']
     }];
 
     return React.createElement(
@@ -14960,25 +14957,25 @@ var PortfolioItem = React.createClass({
   displayName: 'PortfolioItem',
   getInitialState: function getInitialState() {
     return {
-      portfolioDropClass: 'arrow drop-down',
-      portfolioDescriptionExpandClass: 'hidden'
+      arrowClass: 'arrow drop-down',
+      expandClass: 'hidden'
     };
   },
   expand: function expand() {
     this.setState({
-      portfolioDropClass: 'arrow pull-up',
-      portfolioDescriptiontExpandClass: 'portfolio-item-bullets'
+      arrowClass: 'arrow pull-up',
+      expandClass: 'portfolio-item-bullets'
     });
   },
   hide: function hide() {
     this.setState({
-      portfolioDropClass: 'arrow drop-down',
-      portfolioDescriptionExpandClass: 'hidden'
+      arrowClass: 'arrow drop-down',
+      expandClass: 'hidden'
     });
   },
   toggleDrop: function toggleDrop() {
     if (this.props.portfolio.description) {
-      if (this.state.portfolioDropClass === 'arrow drop-down') {
+      if (this.state.arrowClass === 'arrow drop-down') {
         this.expand();
       } else {
         this.hide();
@@ -14994,22 +14991,33 @@ var PortfolioItem = React.createClass({
         null,
         React.createElement(
           'a',
-          { href: this.props.portfolio.links[0].url, className: linkClass },
+          {
+            href: this.props.portfolio.links[0].url,
+            className: linkClass,
+            targeit: 'blank' },
           this.props.portfolio.links[0].text
         ),
-        ' \xB7 ',
+        '\xA0\xB7\xA0',
         React.createElement(
           'a',
-          { href: this.props.portfolio.links[1].url, className: linkClass },
+          {
+            href: this.props.portfolio.links[1].url,
+            className: linkClass,
+            target: 'blank' },
           this.props.portfolio.links[1].text
         )
       );
     } else {
       links = React.createElement(
         'a',
-        { href: this.props.portfolio.links[0].url },
+        { href: this.props.portfolio.links[0].url, className: linkClass, target: 'blank' },
         this.props.portfolio.links[0].text
       );
+    }
+
+    var iconImageClass = 'portfolio-item-icon-image';
+    if (this.props.portfolio.icon.small) {
+      iconImageClass += ' portfolio-item-icon-image-small';
     }
 
     return React.createElement(
@@ -15017,50 +15025,62 @@ var PortfolioItem = React.createClass({
       { className: 'portfolio-item' },
       React.createElement(
         'div',
+        { className: 'portfolio-item-icon' },
+        React.createElement('img', {
+          className: iconImageClass,
+          src: this.props.portfolio.icon.src })
+      ),
+      React.createElement(
+        'div',
         { className: 'portfolio-item-content' },
         React.createElement(
           'h1',
-          null,
+          { className: 'portfolio-item-title', onClick: this.toggleDrop },
           this.props.portfolio.name,
           ' \xB7 ',
-          links
+          links,
+          '\xA0',
+          React.createElement('img', { className: this.state.arrowClass, src: 'public/img/icons/arrow.svg' })
         ),
         React.createElement(
           'div',
-          null,
+          { className: this.state.expandClass },
           React.createElement(
-            'span',
-            { className: 'portfolio-item-date' },
-            this.props.portfolio.date
-          ),
-          ' \xA0',
-          React.createElement(
-            'a',
-            { href: this.props.portfolio.org.link, target: 'blank' },
-            this.props.portfolio.org.name
+            'div',
+            null,
+            React.createElement(
+              'span',
+              { className: 'portfolio-item-date' },
+              this.props.portfolio.date
+            ),
+            ' \xA0',
+            React.createElement(
+              'a',
+              { href: this.props.portfolio.org.link, target: 'blank' },
+              this.props.portfolio.org.name
+            ),
+            React.createElement(
+              'p',
+              { className: 'portfolio-item-keywords' },
+              this.props.portfolio.keywords
+            )
           ),
           React.createElement(
             'p',
-            { className: 'portfolio-item-keywords' },
-            this.props.portfolio.keywords
+            null,
+            this.props.portfolio.description
+          ),
+          React.createElement(
+            'ul',
+            { className: 'portfolio-item-bullets' },
+            this.props.portfolio.bullets.map(function (bullet, idx) {
+              return React.createElement(
+                'li',
+                { key: idx },
+                bullet
+              );
+            })
           )
-        ),
-        React.createElement('img', { src: this.props.portfolio.icon.src, className: 'portfolio-item-icon' }),
-        React.createElement(
-          'p',
-          null,
-          this.props.portfolio.description
-        ),
-        React.createElement(
-          'ul',
-          { className: 'portfolio-item-bullets' },
-          this.props.portfolio.bullets.map(function (bullet, idx) {
-            return React.createElement(
-              'li',
-              { key: idx },
-              bullet
-            );
-          })
         )
       )
     );
