@@ -52,12 +52,12 @@ const PortfolioItem = React.createClass({
       <div className="portfolio-item">
         <div className="portfolio-item-content">
           <h1>{ this.props.portfolio.name } · { links }</h1>
-          <p>
+          <div>
             <span className="portfolio-item-date">{ this.props.portfolio.date }</span> &nbsp;
             <a href={ this.props.portfolio.org.link } target="blank">{ this.props.portfolio.org.name }</a>
             <p className="portfolio-item-keywords">{ this.props.portfolio.keywords }</p>
-          </p>
-          <img src={ this.props.portfolio.icon.src } className="portfolio-item-screenshot" width={this.props.portfolio.icon.width}></img>
+          </div>
+          <img src={ this.props.portfolio.icon.src } className="portfolio-item-icon"></img>
           <p>{ this.props.portfolio.description }</p>
           <ul className="portfolio-item-bullets">
             {
