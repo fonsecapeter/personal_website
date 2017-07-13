@@ -10,5 +10,13 @@
     @include shadow;
     border-radius: 4px;
     margin: auto;
+    min-width: 100%;
+  }
+
+  @media only screen and (min-width: $responsive-width) {
+    &-map {
+      // height: 360px;
+      min-width: 426px;
+    }
   }
 }

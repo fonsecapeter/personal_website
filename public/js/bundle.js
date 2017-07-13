@@ -14506,7 +14506,7 @@ var Contact = React.createClass({
         ),
         React.createElement('br', null),
         React.createElement('br', null),
-        React.createElement('div', { id: 'map', className: 'contact-map', style: { overflow: "hidden", height: "360px", width: "426px" } }),
+        React.createElement('div', { id: 'map', className: 'contact-map', style: { overflow: "hidden", minHeight: "360px", minWidth: "42px" } }),
         React.createElement('script', { async: true, defer: true,
           src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBnDvU2SC_NgC7XymGmvT03_oNPIl1SsC4&callback=initMap' }),
         React.createElement('br', null),
@@ -15026,7 +15026,7 @@ var PortfolioItem = React.createClass({
           links
         ),
         React.createElement(
-          'p',
+          'div',
           null,
           React.createElement(
             'span',
@@ -15045,7 +15045,7 @@ var PortfolioItem = React.createClass({
             this.props.portfolio.keywords
           )
         ),
-        React.createElement('img', { src: this.props.portfolio.icon.src, className: 'portfolio-item-screenshot', width: this.props.portfolio.icon.width }),
+        React.createElement('img', { src: this.props.portfolio.icon.src, className: 'portfolio-item-icon' }),
         React.createElement(
           'p',
           null,
