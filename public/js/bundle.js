@@ -14838,6 +14838,44 @@ var Portfolio = React.createClass({
   displayName: 'Portfolio',
   render: function render() {
     var projects = [{
+      name: 'Color Shift',
+      links: [{
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/color-shift'
+      }, {
+        text: 'live',
+        url: 'http://peterfonseca.gq/color-shift'
+      }],
+      date: '2016',
+      org: {
+        name: 'App Academy',
+        url: 'https://www.appacademy.io/'
+      },
+      keywords: 'JavasScript',
+      icon: {
+        src: 'https://raw.githubusercontent.com/fonsecapeter/color-shift/master/docs/color-shift-screenshot.png'
+      },
+      description: 'Color Shift is a JavaScript canvas game that makes learning about a neurologic concept fun.',
+      bullets: ['Simulated collision and drag physics with vector computations', 'Modified DOM with game state logic for start/end gating']
+    }, {
+      name: 'Ruby Chess',
+      links: [{
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/ruby_chess'
+      }],
+      date: '2016',
+      org: {
+        name: 'App Academy',
+        url: 'https://www.appacademy.io/'
+      },
+      keywords: 'Ruby',
+      icon: {
+        src: 'https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif',
+        small: true
+      },
+      description: 'Ruby chess is a command line game built for 0, 1, or 2 players.',
+      bullets: ['Computer player that will intelligently pick moves', 'Unit and integration tested with RSpec']
+    }, {
       name: 'Glia',
       links: [{
         text: 'github',
@@ -14877,44 +14915,6 @@ var Portfolio = React.createClass({
       },
       description: 'Jarvs is an Ubuntu app that I built to help manage research dictations by scraping data out of file-names. This app is still in development, but has the minimum functionality necessary and is currently in use.',
       bullets: ['Distributed via Ubuntu PPA to increase accessibility for non-technical users', 'Delegated intensive file computations to Bash, optimizing for small cloud instances', 'Capable of sending weekly emails only to those who have work to do using crontab', 'Can visualize data with matplotlib']
-    }, {
-      name: 'Color Shift',
-      links: [{
-        text: 'github',
-        url: 'https://github.com/fonsecapeter/color-shift'
-      }, {
-        text: 'live',
-        url: 'http://peterfonseca.gq/color-shift'
-      }],
-      date: '2016',
-      org: {
-        name: 'App Academy',
-        url: 'https://www.appacademy.io/'
-      },
-      keywords: 'JavasScript',
-      icon: {
-        src: 'https://raw.githubusercontent.com/fonsecapeter/color-shift/master/docs/color-shift-screenshot.png'
-      },
-      description: 'Color Shift is a JavaScript canvas game that makes learning about a neurologic concept fun.',
-      bullets: ['Simulated collision and drag physics with vector computations', 'Modified DOM with game state logic for start/end gating']
-    }, {
-      name: 'Ruby Chess',
-      links: [{
-        text: 'github',
-        url: 'https://github.com/fonsecapeter/ruby_chess'
-      }],
-      date: '2016',
-      org: {
-        name: 'App Academy',
-        url: 'https://www.appacademy.io/'
-      },
-      keywords: 'Ruby',
-      icon: {
-        src: 'https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif',
-        small: true
-      },
-      description: 'Ruby chess is a command line game built for 0, 1, or 2 players.',
-      bullets: ['Computer player that will intelligently pick moves', 'Unit and integration tested with RSpec']
     }];
 
     return React.createElement(
@@ -14991,20 +14991,26 @@ var PortfolioItem = React.createClass({
         null,
         React.createElement(
           'a',
-          { href: this.props.portfolio.links[0].url, className: linkClass },
+          {
+            href: this.props.portfolio.links[0].url,
+            className: linkClass,
+            targeit: 'blank' },
           this.props.portfolio.links[0].text
         ),
-        ' \xB7 ',
+        '\xA0\xB7\xA0',
         React.createElement(
           'a',
-          { href: this.props.portfolio.links[1].url, className: linkClass },
+          {
+            href: this.props.portfolio.links[1].url,
+            className: linkClass,
+            target: 'blank' },
           this.props.portfolio.links[1].text
         )
       );
     } else {
       links = React.createElement(
         'a',
-        { href: this.props.portfolio.links[0].url },
+        { href: this.props.portfolio.links[0].url, className: linkClass, target: 'blank' },
         this.props.portfolio.links[0].text
       );
     }
@@ -15020,7 +15026,8 @@ var PortfolioItem = React.createClass({
       React.createElement(
         'div',
         { className: 'portfolio-item-icon' },
-        React.createElement('img', { className: iconImageClass,
+        React.createElement('img', {
+          className: iconImageClass,
           src: this.props.portfolio.icon.src })
       ),
       React.createElement(

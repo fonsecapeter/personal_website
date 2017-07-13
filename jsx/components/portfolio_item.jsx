@@ -41,11 +41,23 @@ const PortfolioItem = React.createClass({
     if (this.props.portfolio.links.length === 2) {
       links = (
         <span>
-          <a href={ this.props.portfolio.links[0].url } className={ linkClass }>{ this.props.portfolio.links[0].text }</a> · <a href={ this.props.portfolio.links[1].url } className={ linkClass }>{ this.props.portfolio.links[1].text }</a>
+          <a
+            href={ this.props.portfolio.links[0].url }
+            className={ linkClass }
+            targeit="blank">
+            { this.props.portfolio.links[0].text }
+          </a>
+          &nbsp;·&nbsp;
+          <a
+            href={ this.props.portfolio.links[1].url }
+            className={ linkClass }
+            target="blank">
+            { this.props.portfolio.links[1].text }
+          </a>
         </span>
       );
     } else {
-      links = <a href={ this.props.portfolio.links[0].url }>{ this.props.portfolio.links[0].text }</a>;
+      links = <a href={ this.props.portfolio.links[0].url } className={ linkClass } target="blank">{ this.props.portfolio.links[0].text }</a>;
     }
 
     let iconImageClass = 'portfolio-item-icon-image';
@@ -56,8 +68,9 @@ const PortfolioItem = React.createClass({
     return (
       <div className="portfolio-item">
         <div className="portfolio-item-icon">
-          <img className={ iconImageClass }
-               src={ this.props.portfolio.icon.src }>
+          <img
+            className={ iconImageClass }
+            src={ this.props.portfolio.icon.src }>
           </img>
         </div>
         <div className="portfolio-item-content">
