@@ -1,7 +1,30 @@
 .portfolio {
   &-item {
-    @include card;
+    @include shadow;
     margin-bottom: 80px;
+
+    &-icon {
+      @include card-top;
+      &-image {
+        @include card-top;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+
+        &-small {
+          border-radius: 23px 23px 23px 23px;
+          padding: 20px;
+        }
+      }
+    }
+
+    &-content {
+      @include card-bottom;
+    }
+
+    &-title {
+      cursor: pointer;
+    }
 
     &-link {
       font-size:16px;
@@ -21,20 +44,8 @@
       color: $mid-gray;
     }
 
-    &-icon {
-      display: block;
-      margin: 40px auto;
-      max-width: 100%;
-    }
-
     &-bullets {
       margin-top: 20px;
-    }
-
-    @media only screen and (min-width: $responsive-width) {
-      &-icon {
-        max-width: 526px;
-      }
     }
   }
 }
