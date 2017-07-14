@@ -14059,8 +14059,6 @@ module.exports = getIteratorFn;
 "use strict";
 
 
-"use strict";
-
 //React
 
 var React = __webpack_require__(6);
@@ -14084,13 +14082,13 @@ var appRouter = React.createElement(
   { history: hashHistory },
   React.createElement(
     Route,
-    { path: "/", component: App },
+    { path: '/', component: App },
     React.createElement(IndexRoute, { component: About }),
-    React.createElement(Route, { path: "/about", component: About }),
-    React.createElement(Route, { path: "/experience", component: Experience }),
-    React.createElement(Route, { path: "/portfolio", component: Portfolio }),
-    React.createElement(Route, { path: "/contact", component: Contact }),
-    React.createElement(Route, { path: "/poster", component: Poster })
+    React.createElement(Route, { path: '/about', component: About }),
+    React.createElement(Route, { path: '/experience', component: Experience }),
+    React.createElement(Route, { path: '/portfolio', component: Portfolio }),
+    React.createElement(Route, { path: '/contact', component: Contact }),
+    React.createElement(Route, { path: '/poster', component: Poster })
   )
 );
 
