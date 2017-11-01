@@ -1,15 +1,18 @@
 .contact {
-  @include card;
 
   &-info {
+    @include card-top;
+    padding: 20px;
     line-height: 1.5;
     font-size: 14px;
   }
 
   &-map {
+    @include card-bottom-no-pad;
     @include shadow;
-    border-radius: 4px;
+    border-radius: 0 0 3px 3px;
     margin: auto;
+    margin-bottom: 25px;
     min-width: 100%;
   }
 

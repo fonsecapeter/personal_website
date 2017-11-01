@@ -1,3 +1,12 @@
-.DS_Store
-*.swp
 node_modules
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+*.log
+
+tags
+*~
+*.swp
+*.swo
