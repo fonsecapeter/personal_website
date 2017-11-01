@@ -1,7 +1,7 @@
 .portfolio {
   &-item {
     @include shadow;
-    margin-bottom: 80px;
+    margin-bottom: 25px;
 
     &-icon {
       @include card-top;

@@ -24,7 +24,7 @@ const Experience = React.createClass({
         org: "UCSF Memory and Aging Center",
         primary: "Primary Study: Frontotemporal Dementia: Genes, Images and Emotions",
         bullets: [
-          "Accelerated dictation approval bottleneck by building <a href=\"https://launchpad.net/jarvs\" target=\"_blank\">Jarvs</a>",
+          "Accelerated dictation approval bottleneck by automating reminders and metrics",
           "Automated administrative tasks and improved scalability of recruitment",
           "Coordinated a team to compile a $5M competitive grant renewal application",
           "Managed metrics, IRB approval, team meetings, and external presentations",

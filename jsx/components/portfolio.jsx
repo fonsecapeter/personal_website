@@ -88,36 +88,6 @@ const Portfolio = React.createClass({
           'Incorporated responsive design for mobile users'
         ]
       },
-
-      {
-        name: 'Jarvs',
-        links: [
-          {
-            text: 'github',
-            url: 'https://github.com/fonsecapeter/jarvs'
-          },
-          {
-            text: 'ppa',
-            url: 'https://launchpad.net/jarvs'
-          }
-        ],
-        date: '2016',
-        org: {
-          name: 'UCSF Memory and Aging Center',
-          url: 'http://memory.ucsf.edu/'
-        },
-        keywords: 'Python GTK Bash SQLite',
-        icon: {
-          src: 'https://raw.githubusercontent.com/fonsecapeter/jarvs/master/app/design/jarvs_vis.png'
-        },
-        description: 'Jarvs is an Ubuntu app that I built to help manage research dictations by scraping data out of file-names. This app is still in development, but has the minimum functionality necessary and is currently in use.',
-        bullets: [
-          'Distributed via Ubuntu PPA to increase accessibility for non-technical users',
-          'Delegated intensive file computations to Bash, optimizing for small cloud instances',
-          'Capable of sending weekly emails only to those who have work to do using crontab',
-          'Can visualize data with matplotlib'
-        ]
-      }
     ];
 
     return (
