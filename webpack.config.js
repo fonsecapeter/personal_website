@@ -48,12 +48,12 @@ module.exports = {
         }),
       },
       {
-        test: /\.(svg|png|jpg|gif|eot|otf|ttf|woff|woff2)$/,
+        test: /\.otf$/,
         loader: 'file-loader',
         query: {
-          name: '[path][name].[ext]',
+          name: '../fonts/[name].[ext]',
           emitFile: false,
-        }
+        },
       },
     ],
   },
