@@ -43,7 +43,7 @@ const Contact = React.createClass ({
       <div>
         <div>
           <br />
-          <h4>Contact Me</h4>
+          <h2>Contact Me</h2>
         </div>
         <div className="contact">
           <div className="contact-info">

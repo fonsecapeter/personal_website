@@ -36,7 +36,12 @@
     }
 
     &-title {
+      margin-bottom: 10px;
       cursor: pointer;
+    }
+
+    &-title-no-pointer {
+      margin-bottom: 10px;
     }
 
     &-date {
