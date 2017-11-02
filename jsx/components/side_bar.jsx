@@ -10,9 +10,10 @@ const SideBar = React.createClass ({
           <img className="side-bar-headshot-image" src="public/img/icons/headshot.jpg" width="160" />
         </div>
   			<div className="side-bar-content">
-  				<p>Peter Fonseca</p>
-  				<p>Software Engineer</p>
-  				<h3></h3>
+                <div className="side-bar-content-name">
+  				  <p>Peter Fonseca</p>
+  				  <p>Software Engineer</p>
+  				</div>
   				<div>
   					<a href="http://github.com/fonsecapeter" target="_blank">
               <img className="side-bar-content-social-git" src="public/img/icons/social/github_64px.png" height="32px" />

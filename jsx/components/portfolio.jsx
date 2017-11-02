@@ -94,7 +94,7 @@ const Portfolio = React.createClass({
       <div>
         <div>
           <br />
-          <h4>Coding Projects</h4>
+          <h2>Coding Projects</h2>
         </div>
         <div>
           {

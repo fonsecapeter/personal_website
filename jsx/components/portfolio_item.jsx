@@ -14,7 +14,7 @@ const PortfolioItem = React.createClass({
   expand () {
     this.setState({
       arrowClass: 'arrow pull-up',
-      expandClass: 'portfolio-item-bullets'
+      expandClass: 'portfolio-item-description'
     })
   },
 
@@ -74,11 +74,11 @@ const PortfolioItem = React.createClass({
           </img>
         </div>
         <div className="portfolio-item-content">
-          <h1 className="portfolio-item-title" onClick={ this.toggleDrop }>
+          <h3 className="portfolio-item-title" onClick={ this.toggleDrop }>
             { this.props.portfolio.name } · { links }
             &nbsp;
             <img className={ this.state.arrowClass } src='public/img/icons/arrow.svg'></img>
-          </h1>
+          </h3>
           <div className={ this.state.expandClass }>
             <div>
               <span className="portfolio-item-date">{ this.props.portfolio.date }</span> &nbsp;

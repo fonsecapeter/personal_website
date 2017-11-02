@@ -29,37 +29,18 @@ div {
   padding: 0;
 }
 
-h1 {
-  color: $dark-black;
-  margin: 0 0 10px;
-  padding-bottom: 8px;
-  font-size: 19px;
-  border-bottom: 1px solid $light-gray;
-}
-
 h2 {
-  color: $dark_black;
-  margin: 20px 0 10px;
-  padding-bottom: 10px;
-  font-size: 19px;
-  border-bottom: 1px solid $light-gray;
-}
-
-h3 {
-  color: $dark_black;
-  margin: 10px 0;
-  padding-bottom: 10px;
-  font-size: 19px;
-  font-weight: 600;
-  border-bottom: 1px solid $light-gray;
-}
-
-h4 {
   color: $dark_black;
   margin-bottom: 40px;
   letter-spacing: 1px;
   font-size: 32px;
   font-weight: 400;
+}
+
+h3 {
+  color: $dark-black;
+  margin: 0;
+  font-size: 19px;
 }
 
 img {

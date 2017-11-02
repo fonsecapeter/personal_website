@@ -100,7 +100,7 @@ const Experience = React.createClass({
       <div className="experience">
         <div>
           <br />
-          <h4>Work Experience &nbsp; <a className="experience-pdf-tip" href="resume/PeterFonsecaResume.pdf" target="blank">[PDF]</a></h4>
+          <h2>Work Experience &nbsp; <a className="experience-pdf-tip" href="resume/PeterFonsecaResume.pdf" target="blank">[PDF]</a></h2>
         </div>
         <div>
           {
@@ -112,7 +112,7 @@ const Experience = React.createClass({
           }
         </div>
         <div>
-          <h4>Education</h4>
+          <h2>Education</h2>
         </div>
         <div>
           {
@@ -124,7 +124,7 @@ const Experience = React.createClass({
           }
         </div>
         <div>
-          <h4>Posters/Presentations</h4>
+          <h2>Posters/Presentations</h2>
           <p></p>
           <div className="experience-item">
             <div className="experience-item-content">

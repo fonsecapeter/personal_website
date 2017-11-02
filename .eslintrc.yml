@@ -1,16 +1,11 @@
 env:
   browser: true
   es6: true
-globals:
-  $: true
-  TTAM: true
-  Tipped: true
-  _: true
 extends: 'eslint:recommended'
 rules:
   indent:
     - error
-    - 4
+    - 2
   linebreak-style:
     - error
     - unix
