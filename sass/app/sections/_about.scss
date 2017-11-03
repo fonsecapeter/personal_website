@@ -1,4 +1,8 @@
 .about {
+  &-title {
+    color: $nav-about;
+  }
+
   &-elevator-pitch {
     @include card;
     clear:both;
@@ -28,6 +32,10 @@
       display: flex;
       align-items: center;
       font-family: 'Peter Mono', 'Dosis', 'monospace';
+
+      &-name {
+        margin-right: 6px;
+      }
 
       &-icon {
         width: 30px;

@@ -1,31 +1,28 @@
-"use strict";
-
 const React = require('react');
-const Link = require('react-router').Link;
 
 const PortfolioItem = React.createClass({
-  getInitialState () {
+  getInitialState() {
     return ({
       arrowClass: 'arrow drop-down',
-      expandClass: 'hidden'
-    })
+      expandClass: 'hidden',
+    });
   },
 
-  expand () {
+  expand() {
     this.setState({
       arrowClass: 'arrow pull-up',
-      expandClass: 'portfolio-item-description'
-    })
+      expandClass: 'portfolio-item-description',
+    });
   },
 
-  hide () {
+  hide() {
     this.setState({
       arrowClass: 'arrow drop-down',
-      expandClass: 'hidden'
-    })
+      expandClass: 'hidden',
+    });
   },
 
-  toggleDrop () {
+  toggleDrop() {
     if (this.props.portfolio.description) {
       if (this.state.arrowClass === 'arrow drop-down') {
         this.expand();
@@ -35,29 +32,39 @@ const PortfolioItem = React.createClass({
     }
   },
 
-  render () {
+  render() {
     const linkClass = 'portfolio-item-link';
     let links = null;
     if (this.props.portfolio.links.length === 2) {
       links = (
         <span>
           <a
-            href={ this.props.portfolio.links[0].url }
-            className={ linkClass }
-            targeit="blank">
-            { this.props.portfolio.links[0].text }
+            href={this.props.portfolio.links[0].url}
+            className={linkClass}
+            target="blank"
+          >
+            {this.props.portfolio.links[0].text}
           </a>
-          &nbsp;·&nbsp;
+          <span className="portfolio-item-dot">·</span>
           <a
-            href={ this.props.portfolio.links[1].url }
-            className={ linkClass }
-            target="blank">
-            { this.props.portfolio.links[1].text }
+            href={this.props.portfolio.links[1].url}
+            className={linkClass}
+            target="blank"
+          >
+            {this.props.portfolio.links[1].text}
           </a>
         </span>
       );
     } else {
-      links = <a href={ this.props.portfolio.links[0].url } className={ linkClass } target="blank">{ this.props.portfolio.links[0].text }</a>;
+      links = (
+        <a
+          href={this.props.portfolio.links[0].url}
+          className={linkClass}
+          target="blank"
+        >
+          {this.props.portfolio.links[0].text}
+        </a>
+      );
     }
 
     let iconImageClass = 'portfolio-item-icon-image';
@@ -69,28 +76,40 @@ const PortfolioItem = React.createClass({
       <div className="portfolio-item">
         <div className="portfolio-item-icon">
           <img
-            className={ iconImageClass }
-            src={ this.props.portfolio.icon.src }>
-          </img>
+            className={iconImageClass}
+            src={this.props.portfolio.icon.src}
+            alt="portfolio icon"
+          />
         </div>
         <div className="portfolio-item-content">
-          <h3 className="portfolio-item-title" onClick={ this.toggleDrop }>
-            { this.props.portfolio.name } · { links }
-            &nbsp;
-            <img className={ this.state.arrowClass } src='public/img/icons/arrow.svg'></img>
+          <h3 className="portfolio-item-title" onClick={this.toggleDrop}>
+            { this.props.portfolio.name }
+            <span className="portfolio-item-dot">·</span>
+            { links }
+            <img
+              className={this.state.arrowClass}
+              src="public/img/icons/arrow.svg"
+              alt="V"
+            />
           </h3>
-          <div className={ this.state.expandClass }>
+          <div className={this.state.expandClass}>
             <div>
-              <span className="portfolio-item-date">{ this.props.portfolio.date }</span> &nbsp;
-              <a href={ this.props.portfolio.org.link } target="blank">{ this.props.portfolio.org.name }</a>
-              <p className="portfolio-item-keywords">{ this.props.portfolio.keywords }</p>
+              <span className="portfolio-item-date">{this.props.portfolio.date}</span>
+              <a
+                className="portfolio-item-org"
+                href={this.props.portfolio.org.link}
+                target="blank"
+              >
+                {this.props.portfolio.org.name}
+              </a>
+              <p className="portfolio-item-keywords">{this.props.portfolio.keywords}</p>
             </div>
-            <p>{ this.props.portfolio.description }</p>
+            <p>{this.props.portfolio.description}</p>
             <ul className="portfolio-item-bullets">
               {
-                this.props.portfolio.bullets.map( (bullet, idx) => {
+                this.props.portfolio.bullets.map((bullet, idx) => {
                   return (
-                    <li key={ idx }>{ bullet }</li>
+                    <li key={idx}>{bullet}</li>
                   );
                 })
               }
@@ -98,8 +117,8 @@ const PortfolioItem = React.createClass({
           </div>
         </div>
       </div>
-    )
-  }
+    );
+  },
 });
 
 module.exports = PortfolioItem;

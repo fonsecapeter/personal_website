@@ -1,4 +1,8 @@
 .experience {
+  &-title {
+    color: $nav-experience;
+  }
+
   &-pdf-tip {
     font-family: 'Peter Mono', 'Dosis', 'monospace';
     font-size: 13px;
@@ -7,6 +11,7 @@
     display: inline-block;
     height: 100%;
     vertical-align: super;
+    margin-left: 6px;
   }
 
   &-item {
@@ -48,6 +53,16 @@
       font-family: 'Peter Mono', 'Dosis', 'monospace';
       color: $mid-gray;
       font-size: 14px;
+    }
+
+    &-dot {
+      font-size: 19px;
+      font-weight: 700;
+      margin: 0 6px;
+    }
+
+    &-org {
+      margin-left: 0;
     }
 
     &-bullets {

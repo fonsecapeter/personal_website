@@ -59,15 +59,14 @@ const ExperienceItem = React.createClass({
           <div className="experience-item-right">
             <h3 className={ titleClassName } onClick={ this.toggleDrop }>
               { this.props.experience.title }
-              &nbsp;
               { dropArrow }
             </h3>
             <p>
               <span className="experience-item-date">
-              { this.props.experience.date }
+                { this.props.experience.date }
               </span>
-              &nbsp;
-              <a href={ this.props.experience.link } target="blank">{ this.props.experience.org }</a>
+              <span className="experience-item-dot">·</span>
+              <a className="experience-item-org" href={ this.props.experience.link } target="blank">{ this.props.experience.org }</a>
             </p>
             { primary }
             <div>
