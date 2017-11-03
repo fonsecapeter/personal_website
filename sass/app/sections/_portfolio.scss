@@ -1,4 +1,8 @@
 .portfolio {
+  &-title {
+    color: $nav-portfolio;
+  }
+
   &-item {
     @include shadow;
     margin-bottom: 25px;
@@ -24,6 +28,14 @@
 
     &-title {
       cursor: pointer;
+    }
+
+    &-dot {
+      margin: 0 6px;
+    }
+
+    &-org {
+      margin-left: 6px;
     }
 
     &-link {

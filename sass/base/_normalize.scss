@@ -29,12 +29,21 @@ div {
   padding: 0;
 }
 
-h2 {
+h1 {
   color: $dark_black;
   margin-bottom: 40px;
   letter-spacing: 1px;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 700;
+}
+
+h2 {
+  color: $dark_black;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 h3 {

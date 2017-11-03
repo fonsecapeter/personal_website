@@ -5,12 +5,14 @@ $dark-black: #1a1a1a;
 $hecka-light-gray: #f6f6f6;
 $light-gray: #c0c6cc;
 $mid-gray: #999fac;
-$moss-gray: #b3c7bc;
+$dark-gray: #5e5e65;
 
-$blue: #5e8cba;
-$green: #75bdab;
+$camel: #f4e6c2;
+$blue: #4788b7;
+$bright-blue: #4c9cc1;
+$green: #4c9c7b;
 
-$nav-about: #565d8f;
-$nav-experience: #4b689b;
-$nav-portfolio: #3f74a6;
-$nav-contact: #4b879b;
+$nav-about: $blue;
+$nav-experience: $green;
+$nav-portfolio: $dark-gray;
+$nav-contact: $bright-blue;

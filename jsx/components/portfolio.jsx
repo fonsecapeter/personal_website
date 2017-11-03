@@ -92,10 +92,7 @@ const Portfolio = React.createClass({
 
     return (
       <div>
-        <div>
-          <br />
-          <h2>Coding Projects</h2>
-        </div>
+        <h1 className="portfolio-title">Coding Projects</h1>
         <div>
           {
             projects.map( (portfolioItem, idx) => {

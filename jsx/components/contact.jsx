@@ -38,13 +38,10 @@ const Contact = React.createClass ({
     this.initMap();
   },
 
-  render () {
+  render() {
     return (
       <div>
-        <div>
-          <br />
-          <h2>Contact Me</h2>
-        </div>
+        <h1 className="contact-title">Contact Me</h1>
         <div className="contact">
           <div className="contact-info">
             <p>

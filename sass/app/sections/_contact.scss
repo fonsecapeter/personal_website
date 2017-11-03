@@ -1,4 +1,7 @@
 .contact {
+  &-title {
+    color: $nav-contact;
+  }
 
   &-info {
     @include card-top;
