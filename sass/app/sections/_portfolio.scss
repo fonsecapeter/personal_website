@@ -3,9 +3,32 @@
     color: $nav-portfolio;
   }
 
+  &-list {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  &-column {
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  }
+
   &-item {
     @include shadow;
-    margin-bottom: 25px;
+    width: 280px;
+    margin: 0 10px 20px 10px;
+    float: left;
 
     &-icon {
       @include card-top;
@@ -13,7 +36,7 @@
         @include card-top;
         display: block;
         margin: auto;
-        max-width: 100%;
+        width: 100%;
 
         &-small {
           border-radius: 23px 23px 23px 23px;
@@ -62,6 +85,27 @@
 
     &-bullets {
       margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width: $responsive-width) {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-column {
+      max-width: 100%;
+      float: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-item {
+      float: none;
+      margin-bottom: 25px;
     }
   }
 }
