@@ -51,7 +51,7 @@ const Portfolio = React.createClass({
         keywords: 'Ruby',
         icon: {
           src: 'https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif',
-          small: true
+          small: false,
         },
         description: 'Ruby chess is a command line game built for 0, 1, or 2 players.',
         bullets: [
@@ -93,14 +93,29 @@ const Portfolio = React.createClass({
     return (
       <div>
         <h1 className="portfolio-title">Coding Projects</h1>
-        <div>
-          {
-            projects.map( (portfolioItem, idx) => {
-              return (
-                <PortfolioItem portfolio={ portfolioItem } key={ idx } />
-              )
-            })
-          }
+        <div className="portfolio-list">
+          <div className="portfolio-column">
+            {
+              projects.map( (portfolioItem, idx) => {
+                if (idx % 2 === 0) {
+                  return (
+                    <PortfolioItem portfolio={ portfolioItem } key={ idx } />
+                  )
+                }
+              })
+            }
+          </div>
+          <div className="portfolio-column">
+            {
+              projects.map( (portfolioItem, idx) => {
+                if (idx % 2 !== 0) {
+                  return (
+                    <PortfolioItem portfolio={ portfolioItem } key={ idx } />
+                  )
+                }
+              })
+            }
+          </div>
         </div>
       </div>
     );
