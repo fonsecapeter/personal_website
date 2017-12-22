@@ -47,7 +47,7 @@ const Contact = React.createClass ({
             <p>
               <a href="mailto:peter.nfonseca@gmail.com">peter.nfonseca@gmail.com</a>
             </p>
-            <p>San Francisco, CA</p>
+            <p className="contact-info-city">San Francisco, CA</p>
           </div>
           <div id="map" className="contact-map" style={{overflow:"hidden", minHeight:"360px", minWidth:"42px"}}></div>
           <script async defer

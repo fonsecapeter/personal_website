@@ -7,7 +7,7 @@ const SideBar = React.createClass ({
     return (
       <div className="side-bar">
         <div id="side-bar-headshot">
-          <img className="side-bar-headshot-image" src="public/img/icons/headshot.jpg" width="160" />
+          <img className="side-bar-headshot-image" src="public/img/icons/me.jpg" width="160" />
         </div>
   			<div className="side-bar-content">
                 <div className="side-bar-content-name">
