@@ -56,6 +56,7 @@ const Experience = React.createClass({
           'Directed incoming patients, calls, and mail',
           'Sterilized medical equipment',
           'Conducted urinalysis and RST\'s',
+          'Fixed the typewriter',
         ],
       },
 
