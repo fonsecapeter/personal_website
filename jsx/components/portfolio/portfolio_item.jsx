@@ -3,28 +3,28 @@ const React = require('react');
 const PortfolioItem = React.createClass({
   getInitialState() {
     return ({
-      arrowClass: 'arrow drop-down',
+      hidden: true,
       expandClass: 'hidden',
     });
   },
 
   expand() {
     this.setState({
-      arrowClass: 'arrow pull-up',
-      expandClass: 'portfolio-item-description',
+      hidden: false,
+      expandClass: '',
     });
   },
 
   hide() {
     this.setState({
-      arrowClass: 'arrow drop-down',
+      hidden: true,
       expandClass: 'hidden',
     });
   },
 
   toggleDrop() {
     if (this.props.portfolio.description) {
-      if (this.state.arrowClass === 'arrow drop-down') {
+      if (this.state.hidden) {
         this.expand();
       } else {
         this.hide();
@@ -73,7 +73,7 @@ const PortfolioItem = React.createClass({
     }
 
     return (
-      <div className="portfolio-item">
+      <div className="portfolio-item" onClick={this.toggleDrop}>
         <div className="portfolio-item-icon">
           <img
             className={iconImageClass}
@@ -82,17 +82,12 @@ const PortfolioItem = React.createClass({
           />
         </div>
         <div className="portfolio-item-content">
-          <h3 className="portfolio-item-title" onClick={this.toggleDrop}>
+          <h3 className="portfolio-item-title">
             { this.props.portfolio.name }
             <span className="portfolio-item-dot">·</span>
             { links }
-            <img
-              className={this.state.arrowClass}
-              src="public/img/icons/arrow.svg"
-              alt="V"
-            />
           </h3>
-          <div className={this.state.expandClass}>
+          <div className={'portfolio-item-description ' + this.state.expandClass}>
             <div>
               <span className="portfolio-item-date">{this.props.portfolio.date}</span>
               <a

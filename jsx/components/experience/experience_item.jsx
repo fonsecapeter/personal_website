@@ -6,28 +6,28 @@ const Link = require('react-router').Link;
 const ExperienceItem = React.createClass({
   getInitialState () {
     return ({
-      aboutDropClass: 'arrow drop-down',
+      hidden: true,
       experienceBulletExpandClass: 'hidden'
     })
   },
 
   expand () {
     this.setState({
-      aboutDropClass: 'arrow pull-up',
+      hidden: false,
       experienceBulletExpandClass: 'experience-item-bullets'
     })
   },
 
   hide () {
     this.setState({
-      aboutDropClass: 'arrow drop-down',
+      hidden: true,
       experienceBulletExpandClass: 'hidden'
     })
   },
 
   toggleDrop () {
     if (this.props.experience.bullets.length > 0) {
-      if (this.state.aboutDropClass === 'arrow drop-down') {
+      if (this.state.hidden) {
         this.expand();
       } else {
         this.hide();
@@ -36,30 +36,27 @@ const ExperienceItem = React.createClass({
   },
 
   render () {
-    let dropArrow = null;
-    let titleClassName
-    if (this.props.experience.bullets.length > 0) {
-      dropArrow = <img className={ this.state.aboutDropClass } src='public/img/icons/arrow.svg'></img>;
-      titleClassName = 'experience-item-title';
-    } else {
-      titleClassName = 'experience-item-title-no-pointer';
-    }
-
     let primary = null;
     if (this.props.experience.primary) {
       primary = <p>{ this.props.experience.primary }</p>;
     }
 
+    let action = null;
+    let experienceItemClassName = 'experience-item';
+    if (this.props.experience.bullets.length > 0) {
+      action = this.toggleDrop;
+      experienceItemClassName += '-interactive';
+    }
+
     return (
-      <div className="experience-item">
+      <div className={ experienceItemClassName } onClick={ action }>
         <div className="experience-item-content">
           <div className="experience-item-left">
             <img src={ this.props.experience.icon } className="experience-item-icon"></img>
           </div>
           <div className="experience-item-right">
-            <h3 className={ titleClassName } onClick={ this.toggleDrop }>
+            <h3 className='experience-item-title'>
               { this.props.experience.title }
-              { dropArrow }
             </h3>
             <p>
               <span className="experience-item-date">

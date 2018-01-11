@@ -12,26 +12,28 @@
   }
 
   &-column {
-    max-width: 300px;
-    margin: 0;
-    padding: 0;
     float: left;
+    margin: 0;
+    max-width: 300px;
+    padding: 0;
+
     &:after {
-      content: "";
-      display: table;
       clear: both;
+      content: '';
+      display: table;
     }
 
   }
 
   &-item {
-    @include shadow;
-    width: 280px;
-    margin: 0 10px 20px 10px;
+    @include shadow-interactive;
     float: left;
+    margin: 0 10px 20px;
+    width: 280px;
 
     &-icon {
       @include card-top;
+
       &-image {
         @include card-top;
         display: block;
@@ -39,7 +41,7 @@
         width: 100%;
 
         &-small {
-          border-radius: 23px 23px 23px 23px;
+          border-radius: 23px;
           padding: 20px;
         }
       }
@@ -62,7 +64,7 @@
     }
 
     &-link {
-      font-size:16px;
+      font-size: 16px;
     }
 
     &-description {
@@ -70,17 +72,16 @@
     }
 
     &-date {
-      font-family: 'Peter Mono', 'Dosis', 'monospace';
       color: $mid-gray;
+      font-family: 'Peter Mono', 'Dosis', 'monospace';
       font-size: 14px;
     }
 
     &-keywords {
+      color: $mid-gray;
       font-family: 'Peter Mono', 'Dosis', 'monospace';
-
       font-size: 13px;
       text-decoration: none;
-      color: $mid-gray;
     }
 
     &-bullets {
@@ -96,11 +97,11 @@
     }
 
     &-column {
-      max-width: 100%;
-      float: none;
+      align-items: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      float: none;
+      max-width: 100%;
     }
 
     &-item {

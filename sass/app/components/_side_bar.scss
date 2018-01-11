@@ -20,22 +20,20 @@
     }
 
     &-social {
-      transition: filter 250ms ease-out;
+      @include shadow-interactive;
       margin: 0 6px;
-      filter: grayscale(30%);
 
       &:hover {
-        filter: grayscale(100%);
+        transform: scale(1.05);
       }
 
       &-git {
-        transition: filter 250ms ease-out;
-
+        @include shadow-interactive;
+        border-radius: 50%;
         margin: 0 6px;
-        filter: contrast(80%);
 
         &:hover {
-          filter: contrast(25%);
+          transform: scale(1.05);
         }
       }
     }

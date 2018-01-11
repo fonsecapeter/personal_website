@@ -1,18 +1,13 @@
-/* Global Styling */
-html, body, a, header, nav, p, div, span, img {
-  transition: background, color, transform 250ms ease-out;
-}
-
+// Global Styling
 body {
-  font-family: 'Dosis', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: $black;
   background: $hecka-light-gray;
-
-  padding: 0;
+  color: $black;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   margin: 0;
   min-width: 454px;
+  padding: 0;
 }
 
 a {
@@ -30,24 +25,24 @@ div {
 }
 
 h1 {
-  color: $dark_black;
-  margin-bottom: 40px;
+  color: $dark-black;
   font-size: 32px;
   font-weight: 600;
+  margin-bottom: 40px;
 }
 
 h2 {
-  color: $dark_black;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  color: $dark-black;
   font-size: 32px;
   font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 60px;
 }
 
 h3 {
   color: $dark-black;
-  margin: 0;
   font-size: 19px;
+  margin: 0;
 }
 
 img {
@@ -55,11 +50,11 @@ img {
 }
 
 p {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 ul {
-  padding: 0 0 0 20px;
   margin: 0 0 0 17px;
+  padding: 0 0 0 20px;
 }
