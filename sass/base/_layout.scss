@@ -1,6 +1,6 @@
 .main-wrapper {
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
 }
 
 .main-content, .left-column, .right-column {
@@ -17,14 +17,30 @@
   }
 
   .left-column {
-    width: 600px;
     float: left;
+    width: 600px;
   }
 
   .right-column {
-    width: 250px;
     float: right;
-    text-align: center;
     margin-top: 40px;
+    text-align: center;
+    width: 250px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.not-linky {
+  color: $black;
+
+  &:hover {
+    color: $black;
+  }
+
+  &:active {
+    color: $black;
   }
 }

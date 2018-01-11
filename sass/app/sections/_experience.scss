@@ -14,7 +14,11 @@
     margin-left: 6px;
   }
 
-  &-item {
+  &-item-interactive {
+    @include shadow-interactive;
+  }
+
+  &-item, &-item-interactive {
     @include card;
     overflow: auto;
     margin-bottom: 25px;
@@ -42,7 +46,6 @@
 
     &-title {
       margin-bottom: 10px;
-      cursor: pointer;
     }
 
     &-title-no-pointer {

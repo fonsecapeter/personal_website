@@ -11,10 +11,10 @@ const IndexRoute = ReactRouter.IndexRoute;
 const hashHistory = ReactRouter.hashHistory;
 //Components
 const App = require('./components/app');
-const About = require('./components/about');
-const Experience = require('./components/experience');
-const Portfolio = require('./components/portfolio');
-const Contact = require('./components/contact');
+const About = require('./components/about/about');
+const Experience = require('./components/experience/experience');
+const Portfolio = require('./components/portfolio/portfolio');
+const Contact = require('./components/contact/contact');
 const Poster = require('./components/poster');
 
 const appRouter = (

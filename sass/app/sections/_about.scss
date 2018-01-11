@@ -5,6 +5,7 @@
 
   &-elevator-pitch {
     @include card;
+    @include shadow-interactive;
     clear:both;
     margin-bottom: 25px;
 
