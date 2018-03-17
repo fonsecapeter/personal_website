@@ -90,13 +90,15 @@ const PortfolioItem = React.createClass({
           <div className={'portfolio-item-description ' + this.state.expandClass}>
             <div>
               <span className="portfolio-item-date">{this.props.portfolio.date}</span>
-              <a
-                className="portfolio-item-org"
-                href={this.props.portfolio.org.link}
-                target="blank"
-              >
-                {this.props.portfolio.org.name}
-              </a>
+              { this.props.portfolio.org ? (
+                <a
+                  className="portfolio-item-org"
+                  href={this.props.portfolio.org.link}
+                  target="blank"
+                >
+                  {this.props.portfolio.org.name}
+                </a>
+              ) : null }
               <p className="portfolio-item-keywords">{this.props.portfolio.keywords}</p>
             </div>
             <p>{this.props.portfolio.description}</p>

@@ -1,5 +1,5 @@
 `npm install`
 
-`webpack --watch`
+`npx webpack --watch`
 
 `open index.html`
