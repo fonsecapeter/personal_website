@@ -1,5 +1,55 @@
 module.exports = {
-  codeProjects: [
+  projects: [
+    {
+      name: 'Brass Mono',
+      links: [
+        {
+          text: 'download',
+          url: 'https://github.com/fonsecapeter/brass_mono/releases/latest/'
+        },
+        {
+          text: 'github',
+          url: 'https://github.com/fonsecapeter/brass_mono'
+        },
+      ],
+      date: '2017',
+      keywords: 'Inkscape Fontforge',
+      icon: {
+        src: 'https://github.com/fonsecapeter/brass_mono/blob/master/media/brass_mono.png?raw=true'
+      },
+      description: 'Retro monospaced font inspired by 70\'s design.',
+      bullets: [
+        'Automated build process',
+        'Cozy, regular, and comfortable spacing',
+      ]
+    },
+
+    {
+      name: 'Shellectric Colors',
+      links: [
+        {
+          text: 'atom',
+          url: 'https://atom.io/themes/shellectric-syntax'
+        },
+        {
+          text: 'github',
+          url: 'https://github.com/fonsecapeter/shellectric-color-scheme'
+        },
+      ],
+      date: '2017',
+      keywords: 'Colors',
+      icon: {
+        src: 'https://raw.githubusercontent.com/fonsecapeter/shellectric-syntax/master/media/shellectric-jsx.png'
+      },
+      description: 'Easy on the eyes, retro colors inspired by 70\'s design.',
+      bullets: [
+        'Atom theme',
+        'Several terminal themes',
+        'Vim integration',
+        'Slack theme',
+      ]
+    },
+
     {
       name: 'Color Shift',
       links: [
@@ -24,6 +74,33 @@ module.exports = {
       description: 'JavaScript canvas game that makes learning about neurology fun.',
       bullets: [
         'Hand-made collision and drag physics',
+      ]
+    },
+
+
+    {
+      name: 'Peter Notes',
+      links: [
+        {
+          text: 'github',
+          url: 'https://github.com/fonsecapeter/peter-notes'
+        },
+        {
+          text: 'gem',
+          url: 'https://rubygems.org/gems/peter-notes'
+        }
+      ],
+      date: '2017',
+      keywords: 'Ruby',
+      icon: {
+        src: 'https://github.com/fonsecapeter/peter-notes/raw/master/media/peter-notes_384.png'
+      },
+      description: 'Terminal-based notes manager.',
+      bullets: [
+        'Use any text editor',
+        'Can manage existing notes',
+        'Zero things to learn',
+        'Easy to hook into your favorite cloud',
       ]
     },
 

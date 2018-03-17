@@ -9,11 +9,11 @@ const Portfolio = React.createClass({
 
     return (
       <div>
-        <h1 className="portfolio-title">Coding Projects</h1>
+        <h1 className="portfolio-title">Personal Projects</h1>
         <div className="portfolio-list">
           <div className="portfolio-column">
             {
-              content.codeProjects.map( (portfolioItem, idx) => {
+              content.projects.map( (portfolioItem, idx) => {
                 if (idx % 2 === 0) {
                   return (
                     <PortfolioItem portfolio={ portfolioItem } key={ idx } />
@@ -24,7 +24,7 @@ const Portfolio = React.createClass({
           </div>
           <div className="portfolio-column">
             {
-              content.codeProjects.map( (portfolioItem, idx) => {
+              content.projects.map( (portfolioItem, idx) => {
                 if (idx % 2 !== 0) {
                   return (
                     <PortfolioItem portfolio={ portfolioItem } key={ idx } />
