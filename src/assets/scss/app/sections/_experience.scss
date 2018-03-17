@@ -1,0 +1,78 @@
+.experience {
+  &-title {
+    color: $nav-experience;
+  }
+
+  &-pdf-tip {
+    color: $mid-gray;
+    display: inline-block;
+    font-family: 'Peter Mono', 'Dosis', 'monospace';
+    font-size: 13px;
+    height: 100%;
+    margin-left: 6px;
+    text-decoration: none;
+    vertical-align: super;
+  }
+
+  &-item-interactive {
+    @include shadow-interactive;
+  }
+
+  &-item,
+  &-item-interactive {
+    @include card;
+    margin-bottom: 25px;
+    overflow: auto;
+
+    &-content {
+      float: left;
+      width: 100%;
+    }
+
+    &-left {
+      display: inline-block;
+      padding-right: 20px;
+      vertical-align: top;
+      width: 50px;
+    }
+
+    &-right {
+      display: inline-block;
+      width: calc(100% - 70px);
+    }
+
+    &-icon {
+      width: 50px;
+    }
+
+    &-title {
+      margin-bottom: 10px;
+    }
+
+    &-title-no-pointer {
+      margin-bottom: 10px;
+    }
+
+    &-date {
+      color: $mid-gray;
+      font-family: 'Peter Mono', 'Dosis', 'monospace';
+      font-size: 14px;
+    }
+
+    &-dot {
+      font-size: 19px;
+      font-weight: 700;
+      margin: 0 6px;
+    }
+
+    &-org {
+      margin-left: 0;
+    }
+
+    &-bullets {
+      padding-left: 0;
+      padding-top: 16px;
+      white-space: normal;
+    }
+  }
+}

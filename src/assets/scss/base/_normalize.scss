@@ -1,0 +1,60 @@
+// Global Styling
+body {
+  background: $hecka-light-gray;
+  color: $black;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  min-width: 454px;
+  padding: 0;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: $dark-black;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: $dark-black;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+h3 {
+  color: $dark-black;
+  font-size: 19px;
+  margin: 0;
+}
+
+img {
+  border-radius: 4px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0 0 0 17px;
+  padding: 0 0 0 20px;
+}

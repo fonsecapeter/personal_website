@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Build and start the production server
+set -e -o pipefail
+
+npm run start-prod
