@@ -1,0 +1,112 @@
+.portfolio {
+  &-title {
+    color: $nav-portfolio;
+  }
+
+  &-list {
+    &::after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+
+  &-column {
+    float: left;
+    margin: 0;
+    max-width: 300px;
+    padding: 0;
+
+    &::after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+
+  &-item {
+    @include shadow-interactive;
+    float: left;
+    margin: 0 10px 20px;
+    width: 280px;
+
+    &-icon {
+      @include card-top;
+
+      &-image {
+        @include card-top;
+        display: block;
+        margin: auto;
+        width: 100%;
+
+        &-small {
+          border-radius: 23px;
+          padding: 20px;
+        }
+      }
+    }
+
+    &-content {
+      @include card-bottom;
+    }
+
+    &-title {
+      cursor: pointer;
+    }
+
+    &-dot {
+      margin: 0 6px;
+    }
+
+    &-org {
+      margin-left: 6px;
+    }
+
+    &-link {
+      font-size: 16px;
+    }
+
+    &-description {
+      padding-top: 25px;
+    }
+
+    &-date {
+      color: $mid-gray;
+      font-family: 'Peter Mono', 'Dosis', 'monospace';
+      font-size: 14px;
+    }
+
+    &-keywords {
+      color: $mid-gray;
+      font-family: 'Peter Mono', 'Dosis', 'monospace';
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    &-bullets {
+      margin-top: 10px;
+      padding: 0 0 0 8px;
+    }
+  }
+
+  @media only screen and (max-width: $responsive-width) {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-column {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      float: none;
+      max-width: 100%;
+    }
+
+    &-item {
+      float: none;
+      margin-bottom: 25px;
+    }
+  }
+}

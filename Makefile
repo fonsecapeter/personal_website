@@ -16,8 +16,8 @@ lint:
 	@npm run -s lint_js
 
 clean-assets:
-	@rm -rf public/js/*.js*
-	@rm -rf public/css/*.css*
+	@rm -rf dist/js/*.js*
+	@rm -rf dist/css/*.css*
 
 clean: clean-assets
 	@rm -rf node_modules
