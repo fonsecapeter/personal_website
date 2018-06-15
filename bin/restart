@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Start the dev server
+# Restart the dev server
 set -e -o pipefail
 
 # npm run start
-docker-compose up --detach --remove-orphans
+docker-compose restart
 echo "Check your logs with $(tput setaf 2)bin/logs$(tput sgr0)"

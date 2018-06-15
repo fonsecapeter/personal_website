@@ -44,10 +44,11 @@ module.exports = {
       },
       {
         test: /\.(otf)$/i,
-        loaders: [
-          'file-loader?hash=sha512&digest=hex&name=fonts/[hash].[ext]',
-          'image-webpack-loader?bypassOnDebug&optipng.optimizationLevel=7&gifsicle.interlaced=false',
-        ],
+        loaders: ['file-loader?hash=sha512&digest=hex&name=fonts/[hash].[ext]'],
+      },
+      {
+        test: /\.(pdf)$/i,
+        loaders: ['file-loader?hash=sha512&digest=hex&name=resume/[hash].[ext]'],
       },
     ],
   },

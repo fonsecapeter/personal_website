@@ -4,6 +4,7 @@ import experiences from '../../content/experiences';
 
 const posterIcon = require('../../assets/img/icons/poster.png');
 const presentationIcon = require('../../assets/img/icons/presentation.png');
+const resumePDF = require('../../assets/resume/PeterFonsecaResume.pdf');
 
 class Experience extends React.Component<any, any> {
   public render() {
@@ -11,11 +12,7 @@ class Experience extends React.Component<any, any> {
       <div className="experience">
         <h1 className="experience-title">
           Work Experience
-          <a
-            className="experience-pdf-tip"
-            href="dist/resume/PeterFonsecaResume.pdf"
-            target="blank"
-          >
+          <a className="experience-pdf-tip" href={resumePDF} target="blank">
             [PDF]
           </a>
         </h1>
