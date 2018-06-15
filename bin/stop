@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Pump the breaks
+set -e -o pipefail
+
+# npm run build
+docker-compose down

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Console output
+set -e -o pipefail
+
+# npm run build
+docker-compose logs --follow

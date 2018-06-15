@@ -1,0 +1,57 @@
+.about {
+  &-title {
+    color: $nav-about;
+  }
+
+  &-elevator-pitch {
+    @include card;
+    @include shadow-interactive;
+    clear: both;
+    margin-bottom: 25px;
+
+    &-title {
+      cursor: pointer;
+    }
+
+    &-paragraph {
+      margin-bottom: 0;
+      padding-top: 8px;
+    }
+  }
+
+  &-code-list {
+    @include card;
+    list-style: none;
+    margin-bottom: 25px;
+    margin-top: 10px;
+
+    &-title {
+      margin-bottom: 10px;
+    }
+
+    &-item {
+      align-items: center;
+      display: flex;
+      font-family: 'Peter Mono', 'Dosis', 'monospace';
+
+      &-name {
+        margin-right: 6px;
+      }
+
+      &-icon {
+        align-items: center;
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        padding: 4px 8px 4px 20px;
+        width: 30px;
+
+        &-image {
+          border-radius: 0;
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
