@@ -45,6 +45,7 @@
     "html-webpack-loader": "0.0.5",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^4.3.0",
+    "newrelic": "^4.2.0",
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
     "react": "^16.4.0",
