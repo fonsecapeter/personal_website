@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Pump the breaks
+# Pump the breaks 🛑
 set -e -o pipefail
 
 # npm run build

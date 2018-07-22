@@ -6,9 +6,13 @@ const commonConfig = require('./common');
 
 module.exports = merge(commonConfig, {
   mode: 'production',
-  entry: './index.tsx',
+  entry: {
+    app: './index.tsx',
+    vendor: ['react', 'react-dom', 'react-router-dom'],
+  },
   output: {
-    filename: 'js/bundle.[hash].min.js',
+    filename: 'js/[name].[hash].bundle.min.js',
+    chunkFilename: 'js/[name].[hash].bundle.min.js',
     path: resolve(__dirname, '../../dist'),
     publicPath: '/',
   },

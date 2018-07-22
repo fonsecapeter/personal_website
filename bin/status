@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Check container health
+# Check container health 🌡
 set -e -o pipefail
 
 docker-compose ps

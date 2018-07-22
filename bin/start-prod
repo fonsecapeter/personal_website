@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build and start the production server
+# Build and start the production server (Run in container)
 set -e -o pipefail
 
 npm run start-prod

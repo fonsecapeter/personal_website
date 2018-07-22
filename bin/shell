@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run bash in container
+# Run bash in container 🐢
 set -e -o pipefail
 
 docker-compose run --rm web bash

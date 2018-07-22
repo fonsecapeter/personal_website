@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Start the dev server
+# Start the dev server 🎬
 set -e -o pipefail
 
 # npm run start

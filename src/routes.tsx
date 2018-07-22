@@ -11,19 +11,19 @@ const baseLoadableConfig = {
 };
 
 const About = Loadable({
-  loader: () => import(/* webpackChunkName: "about"*/ './components/about/index'),
+  loader: () => import('./components/about/index' /* webpackChunkName: "about"*/),
   ...baseLoadableConfig,
 });
 const Experience = Loadable({
-  loader: () => import(/* webpackChunkName: "experience"*/ './components/experience/index'),
+  loader: () => import('./components/experience/index' /* webpackChunkName: "experience"*/),
   ...baseLoadableConfig,
 });
 const Portfolio = Loadable({
-  loader: () => import(/* webpackChunkName: "portfolio"*/ './components/portfolio/index'),
+  loader: () => import('./components/portfolio/index' /* webpackChunkName: "portfolio"*/),
   ...baseLoadableConfig,
 });
 const Contact = Loadable({
-  loader: () => import(/* webpackChunkName: "contact"*/ './components/contact/index'),
+  loader: () => import('./components/contact/index' /* webpackChunkName: "contact"*/),
   ...baseLoadableConfig,
 });
 

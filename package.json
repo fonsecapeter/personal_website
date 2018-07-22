@@ -5,7 +5,8 @@
   "main": "peter_fonseca.jsx",
   "scripts": {
     "build": "npm run clean-dist && webpack-cli -p --config=config/webpack/prod.js",
-    "clean-dist": "rm -rfd dist",
+    "build-with-stats": "npm run clean-dist && webpack-cli -p --config=config/webpack/prod.js --profile --json > dist/raw_stats.json",
+    "clean-dist": "rm -rfd dist/*",
     "start": "npm run start-dev",
     "start-dev": "webpack-dev-server --config=config/webpack/dev.js",
     "start-prod": "npm run build && node express.js",
@@ -63,6 +64,7 @@
     "typescript": "^2.9.1",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.11.1",
+    "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.0.7",
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2"
