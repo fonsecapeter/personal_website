@@ -17,6 +17,11 @@ module.exports = merge(commonConfig, {
     path: resolve(__dirname, '../../dist'),
     publicPath: '/',
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
   devtool: 'source-map',
   plugins: [new CompressionPlugin()],
 });
