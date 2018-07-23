@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": false,
-    "allowSyntheticDefaultImports": true,
-    "module": "commonjs",
     "target": "es5",
+    "sourceMap": false,
+    "inlineSourceMap": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "jsx": "react",
-    "lib": ["es5", "es6", "dom"]
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es6", "dom"]
   },
-  "include": ["./src/**/*"]
-}
+  "types": ["node"]

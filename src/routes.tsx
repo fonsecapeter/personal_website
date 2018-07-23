@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import * as Loadable from 'react-loadable';
+import Loadable from 'react-loadable';
 
 import Loading from './components/common/loading';
 
@@ -11,19 +11,31 @@ const baseLoadableConfig = {
 };
 
 const About = Loadable({
-  loader: () => import('./components/about/index' /* webpackChunkName: "about"*/),
+  loader: () =>
+    import('./components/about/index' /* webpackChunkName: "about"*/).then(
+      object => object.default,
+    ),
   ...baseLoadableConfig,
 });
 const Experience = Loadable({
-  loader: () => import('./components/experience/index' /* webpackChunkName: "experience"*/),
+  loader: () =>
+    import('./components/experience/index' /* webpackChunkName: "experience"*/).then(
+      object => object.default,
+    ),
   ...baseLoadableConfig,
 });
 const Portfolio = Loadable({
-  loader: () => import('./components/portfolio/index' /* webpackChunkName: "portfolio"*/),
+  loader: () =>
+    import('./components/portfolio/index' /* webpackChunkName: "portfolio"*/).then(
+      object => object.default,
+    ),
   ...baseLoadableConfig,
 });
 const Contact = Loadable({
-  loader: () => import('./components/contact/index' /* webpackChunkName: "contact"*/),
+  loader: () =>
+    import('./components/contact/index' /* webpackChunkName: "contact"*/).then(
+      object => object.default,
+    ),
   ...baseLoadableConfig,
 });
 

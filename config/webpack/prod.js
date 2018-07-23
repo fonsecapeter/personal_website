@@ -9,7 +9,6 @@ module.exports = merge(commonConfig, {
   mode: 'production',
   entry: {
     app: './index.tsx',
-    vendor: ['react', 'react-dom', 'react-router-dom'],
   },
   output: {
     filename: 'js/[name].[hash].bundle.min.js',
@@ -18,8 +17,18 @@ module.exports = merge(commonConfig, {
     publicPath: '/',
   },
   optimization: {
+    runtimeChunk: {
+      name: 'manifest',
+    },
     splitChunks: {
-      chunks: 'all',
+      cacheGroups: {
+        vendor: {
+          name: 'vendor',
+          chunks: 'all',
+          priority: -20,
+          test: /node_modules/,
+        },
+      },
     },
   },
   devtool: 'source-map',
