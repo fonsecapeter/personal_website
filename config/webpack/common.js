@@ -39,15 +39,15 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg|ico)$/i,
+        test: /\.(jpe?g|png|gif|svg|ico)$/i, // images
         loaders: ['file-loader?hash=sha512&digest=hex&name=img/[hash].[ext]'],
       },
       {
-        test: /\.(otf)$/i,
+        test: /\.(otf)$/i, // fonts
         loaders: ['file-loader?hash=sha512&digest=hex&name=fonts/[hash].[ext]'],
       },
       {
-        test: /\.(pdf)$/i,
+        test: /\.(pdf)$/i, // resume
         loaders: ['file-loader?hash=sha512&digest=hex&name=resume/[hash].[ext]'],
       },
     ],
@@ -56,6 +56,7 @@ module.exports = {
     new CheckerPlugin(),
     new SassLintPlugin(),
     new HtmlWebpackPlugin({
+      // manage html imports in webpack
       template: 'index.html.ejs',
       favicon: 'assets/img/favicon.ico',
     }),

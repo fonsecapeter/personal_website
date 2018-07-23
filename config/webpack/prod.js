@@ -18,11 +18,13 @@ module.exports = merge(commonConfig, {
   },
   optimization: {
     runtimeChunk: {
+      // use manifest for component splitting
       name: 'manifest',
     },
     splitChunks: {
       cacheGroups: {
         vendor: {
+          // split out node modules
           name: 'vendor',
           chunks: 'all',
           priority: -20,
