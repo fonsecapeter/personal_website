@@ -12,15 +12,29 @@
   }
 
   &-column {
-    float: left;
-    margin: 0;
-    max-width: 300px;
-    padding: 0;
+    // float: left;
+    // margin: 0;
+    // max-width: 300px;
+    // padding: 0;
+    //
+    // &::after {
+    //   clear: both;
+    //   content: '';
+    //   display: table;
+    // }
+    display: none;
 
-    &::after {
-      clear: both;
-      content: '';
-      display: table;
+    &-desktop {
+      float: left;
+      margin: 0;
+      max-width: 300px;
+      padding: 0;
+
+      &::after {
+        clear: both;
+        content: '';
+        display: table;
+      }
     }
   }
 
@@ -100,8 +114,13 @@
       align-items: center;
       display: flex;
       flex-direction: column;
-      float: none;
+      margin: 0;
       max-width: 100%;
+      padding: 0;
+
+      &-desktop {
+        display: none;
+      }
     }
 
     &-item {

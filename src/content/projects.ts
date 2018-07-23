@@ -43,6 +43,23 @@ export default [
   },
 
   {
+    name: 'This Website',
+    links: [
+      {
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/fonsecapeter.github.io',
+      },
+    ],
+    date: '2016',
+    keywords: 'JavaScript',
+    icon: {
+      src: require('../assets/img/icons/workspace.png'),
+    },
+    description: 'Personal, static website.',
+    bullets: ['React', 'Code Splitting', 'TypeScript', 'Sass', 'Docker', 'Continuous Deployment'],
+  },
+
+  {
     name: 'Color Shift',
     links: [
       {

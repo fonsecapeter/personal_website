@@ -10,12 +10,17 @@ class Portfolio extends React.Component<any, any> {
         <div className="portfolio-list">
           <div className="portfolio-column">
             {projects.map((portfolioItem, idx) => {
+              return <PortfolioItem portfolio={portfolioItem} key={idx} />;
+            })}
+          </div>
+          <div className="portfolio-column-desktop">
+            {projects.map((portfolioItem, idx) => {
               if (idx % 2 === 0) {
                 return <PortfolioItem portfolio={portfolioItem} key={idx} />;
               }
             })}
           </div>
-          <div className="portfolio-column">
+          <div className="portfolio-column-desktop">
             {projects.map((portfolioItem, idx) => {
               if (idx % 2 !== 0) {
                 return <PortfolioItem portfolio={portfolioItem} key={idx} />;

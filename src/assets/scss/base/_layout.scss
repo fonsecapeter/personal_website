@@ -13,6 +13,22 @@
   padding: 25px;
 }
 
+.hidden {
+  display: none;
+}
+
+.not-linky {
+  color: $black;
+
+  &:hover {
+    color: $black;
+  }
+
+  &:active {
+    color: $black;
+  }
+}
+
 @media only screen and (min-width: $responsive-width) {
   .main-wrapper {
     width: 900px;
@@ -28,21 +44,5 @@
     margin-top: 40px;
     text-align: center;
     width: 250px;
-  }
-}
-
-.hidden {
-  display: none;
-}
-
-.not-linky {
-  color: $black;
-
-  &:hover {
-    color: $black;
-  }
-
-  &:active {
-    color: $black;
   }
 }
