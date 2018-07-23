@@ -7,6 +7,7 @@ import App from './components/app';
 import Routes from './routes';
 
 import './assets/scss/main.scss';
+import './assets/img/favicon.ico';
 
 const rootEl = document.getElementById('root');
 

@@ -39,7 +39,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|ico)$/i,
         loaders: ['file-loader?hash=sha512&digest=hex&name=img/[hash].[ext]'],
       },
       {
@@ -55,7 +55,10 @@ module.exports = {
   plugins: [
     new CheckerPlugin(),
     new SassLintPlugin(),
-    new HtmlWebpackPlugin({ template: 'index.html.ejs' }),
+    new HtmlWebpackPlugin({
+      template: 'index.html.ejs',
+      favicon: 'assets/img/favicon.ico',
+    }),
   ],
   performance: {
     hints: false,

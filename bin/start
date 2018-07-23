@@ -4,4 +4,5 @@ set -e -o pipefail
 
 # npm run start
 docker-compose up --detach --remove-orphans
+bin/status
 echo "Check your logs with $(tput setaf 2)bin/logs$(tput sgr0)"
