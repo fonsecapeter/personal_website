@@ -7,7 +7,7 @@ header {
 nav {
   box-shadow: 0 3px 2px $shadow-color;
   font-family: 'Dosis', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
   padding: 10px 20px 10px 0;
@@ -42,14 +42,14 @@ nav {
   &-link {
     color: $white;
     font-weight: 400;
-    margin: 0 20px;
+    margin: 0 10px;
     text-decoration: none;
 
     &-active {
       color: $camel;
       cursor: default;
       font-weight: 400;
-      margin: 0 20px;
+      margin: 0 10px;
       text-decoration: none;
 
       &:hover {
@@ -65,7 +65,7 @@ nav {
   @media only screen and (min-width: $responsive-width) {
     &-link,
     &-link-active {
-      font-size: 16px;
+      margin: 0 20px;
     }
   }
 }
