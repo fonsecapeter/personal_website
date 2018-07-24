@@ -14,7 +14,7 @@ export default [
     date: '2017',
     keywords: 'Inkscape Fontforge',
     icon: {
-      src: 'https://github.com/fonsecapeter/brass_mono/blob/master/media/brass_mono.png?raw=true',
+      src: require('../assets/img/icons/portfolio/brass_mono.png'),
     },
     description: "Retro monospaced font inspired by 70's design.",
     bullets: ['Automated build process', 'Cozy, regular, and comfortable spacing'],
@@ -35,8 +35,7 @@ export default [
     date: '2017',
     keywords: 'Colors',
     icon: {
-      src:
-        'https://raw.githubusercontent.com/fonsecapeter/shellectric-syntax/master/media/shellectric-jsx.png',
+      src: require('../assets/img/icons/portfolio/shellectric-jsx.png'),
     },
     description: "Easy on the eyes, retro colors inspired by 70's design.",
     bullets: ['Atom theme', 'Several terminal themes', 'Vim integration', 'Slack theme'],
@@ -78,8 +77,7 @@ export default [
     },
     keywords: 'JavasScript',
     icon: {
-      src:
-        'https://raw.githubusercontent.com/fonsecapeter/color-shift/master/docs/color-shift-screenshot.png',
+      src: require('../assets/img/icons/portfolio/color-shift-screenshot.png'),
     },
     description: 'JavaScript canvas game that makes learning about neurology fun.',
     bullets: ['Hand-made collision and drag physics'],
@@ -100,7 +98,7 @@ export default [
     date: '2017',
     keywords: 'Ruby',
     icon: {
-      src: 'https://github.com/fonsecapeter/peter-notes/raw/master/media/peter-notes_384.png',
+      src: require('../assets/img/icons/portfolio/peter-notes.png'),
     },
     description: 'Terminal-based notes manager.',
     bullets: [
@@ -126,8 +124,7 @@ export default [
     },
     keywords: 'Ruby',
     icon: {
-      src:
-        'https://raw.githubusercontent.com/fonsecapeter/ruby_chess/master/media/pawn_promotion.gif',
+      src: require('../assets/img/icons/portfolio/ruby_pawn_promotion.gif'),
       small: false,
     },
     description: 'Command-line chess.',
@@ -153,8 +150,7 @@ export default [
     },
     keywords: 'Ruby Rails JavaScript React',
     icon: {
-      src:
-        'https://raw.githubusercontent.com/fonsecapeter/Glia/master/docs/screenshots/glia-question-detail.png',
+      src: require('../assets/img/icons/portfolio/glia-question-detail.png'),
     },
     description: 'Online support group for caregivers of dementia patients.',
     bullets: [

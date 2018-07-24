@@ -21,6 +21,7 @@
   &-item,
   &-item-interactive {
     @include card;
+    display: block;
     margin-bottom: 25px;
     overflow: auto;
 

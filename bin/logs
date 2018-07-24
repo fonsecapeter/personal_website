@@ -2,5 +2,5 @@
 # Console output 📓
 set -e -o pipefail
 
-# npm run build
+echo "Stop folloing output with $(tput setaf 2)^C$(tput sgr0)"
 docker-compose logs --follow

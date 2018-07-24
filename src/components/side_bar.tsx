@@ -1,8 +1,8 @@
 import * as React from 'react';
 const me = require('../assets/img/icons/me.jpg');
-const gitHub = require('../assets/img/icons/social/github_64px.png');
-const linkedIn = require('../assets/img/icons/social/linkedin_64px.png');
-const faceBook = require('../assets/img/icons/social/facebook_64px.png');
+const gitHub = require('../assets/img/icons/social/github.svg');
+const linkedIn = require('../assets/img/icons/social/linkedin.svg');
+const behance = require('../assets/img/icons/social/behance.svg');
 
 class SideBar extends React.Component<any, any> {
   public render() {
@@ -18,13 +18,13 @@ class SideBar extends React.Component<any, any> {
           </div>
           <div>
             <a href="http://github.com/fonsecapeter" target="_blank">
-              <img className="side-bar-content-social-git" src={gitHub} height="32px" />
+              <img className="side-bar-content-social" src={gitHub} height="32px" />
             </a>
             <a href="https://www.linkedin.com/in/peter-fonseca-727576121" target="_blank">
               <img className="side-bar-content-social" src={linkedIn} height="32px" />
             </a>
-            <a href="https://www.facebook.com/peter.fonseca.35" target="_blank">
-              <img className="side-bar-content-social" src={faceBook} height="32px" />
+            <a href="https://www.behance.net/peterfonseca" target="_blank">
+              <img className="side-bar-content-social" src={behance} height="32px" />
             </a>
           </div>
         </div>

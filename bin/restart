@@ -4,4 +4,4 @@ set -e -o pipefail
 
 # npm run start
 docker-compose restart
-echo "Check your logs with $(tput setaf 2)bin/logs$(tput sgr0)"
+bin/logs

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import ExperienceItem from './experience_item';
 import experiences from '../../content/experiences';
 
@@ -38,8 +39,10 @@ class Experience extends React.Component<any, any> {
               </div>
               <div className="experience-item-right">
                 <p>
-                  Dissociations in Socioemotional Test Performance Predict Neurodegeneration in
-                  Intrinsic Connectivity Networks
+                  <a href="http://n.neurology.org/content/86/16_Supplement/P5.191" target="_blank">
+                    Dissociations in Socioemotional Test Performance Predict Neurodegeneration in
+                    Intrinsic Connectivity Networks
+                  </a>
                 </p>
                 <p>
                   <span className="experience-item-date">2016</span>
