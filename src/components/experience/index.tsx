@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import ExperienceItem from './experience_item';
 import experiences from '../../content/experiences';
 
+import '../../assets/scss/experience.scss';
+
 const posterIcon = require('../../assets/img/icons/poster.png');
 const presentationIcon = require('../../assets/img/icons/presentation.png');
 const resumePDF = require('../../assets/resume/PeterFonsecaResume.pdf');

@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import '../../assets/scss/portfolio.scss';
+
 class PortfolioItem extends React.Component<any, any> {
   state = {
     hidden: true,

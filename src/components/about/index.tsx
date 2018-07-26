@@ -2,6 +2,8 @@ import * as React from 'react';
 import CodeListItem from './code_list_item';
 import languages from '../../content/languages';
 
+import '../../assets/scss/about.scss';
+
 class About extends React.Component<any, any> {
   state = {
     hidden: false,
