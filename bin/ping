@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Ping the production server (Run in cron)
+set -e -o pipefail
+
+curl 'http://www.peterfonseca.gq/_status'

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Put it in the clouds (run in TravisCI)
+# Put it in the clouds (Run in TravisCI)
 set -eu -o pipefail
 
 HEROKU_CONTAINER_REGISTRY="registry.heroku.com/${HEROKU_APP_NAME}/web"

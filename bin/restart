@@ -2,6 +2,5 @@
 # Restart the dev server ♻️
 set -e -o pipefail
 
-# npm run start
 docker-compose restart
 bin/logs

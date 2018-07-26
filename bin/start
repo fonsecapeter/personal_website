@@ -2,7 +2,6 @@
 # Start the dev server 🎬
 set -e -o pipefail
 
-# npm run start
 docker-compose up --detach --remove-orphans
 bin/status
 bin/logs
