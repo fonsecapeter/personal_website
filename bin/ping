@@ -1,5 +1,26 @@
 #!/usr/bin/env bash
 # Ping the production server (Run in cron)
+# 45 * * * * abs/path/to/bin/ping
 set -e -o pipefail
 
-curl 'http://www.peterfonseca.gq/_status'
+function is_successful?() {
+  [[ "${1}" = 'Status: OK' ]]
+}
+
+function email_peter() {
+  printf "${2}\nPinged on $(date '+%A, %x at %I:%M %p')" \
+    | mail \
+      -s "${1}" \
+      'peter.nfonseca@gmail.com'
+}
+
+function main() {
+  response=$(curl 'http://www.peterfonseca.gq/_status')
+  if is_successful? "${response}"; then
+    email_peter 'peterfonseca.gq is up' "${response}"
+  else
+    email_peter 'peterfonseca.gq is down' "${response}"
+  fi
+}
+
+main
