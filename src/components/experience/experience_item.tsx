@@ -2,8 +2,8 @@ import * as React from 'react';
 
 class ExperienceItem extends React.Component<any, any> {
   state = {
-    hidden: true,
-    experienceBulletExpandClass: 'hidden',
+    hidden: false,
+    experienceBulletExpandClass: '',
   };
 
   constructor(props) {
