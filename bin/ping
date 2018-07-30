@@ -3,23 +3,40 @@
 # 45 * * * * abs/path/to/bin/ping
 set -e -o pipefail
 
+function now() {
+  echo $(date '+%A, %x at %I:%M %p')
+}
+
 function is_successful?() {
   [[ "${1}" = 'Status: OK' ]]
 }
 
 function email_peter() {
-  printf "${2}\nPinged on $(date '+%A, %x at %I:%M %p')" \
+  # Email peter the ping status
+  # arg: 1 (string) - subject
+  # arg: 2 (string) - message
+  # arg: 3 (string) - start time of ping
+  printf "${2}\nPinged on ${3}" \
     | mail \
       -s "${1}" \
       'peter.nfonseca@gmail.com'
 }
 
 function main() {
-  response=$(curl 'http://www.peterfonseca.gq/_status')
+  local -r started=$(now)
+  local -r response=$( \
+    curl 'http://www.peterfonseca.gq/_status' \
+      || printf 'Waking it up' \
+  )
   if is_successful? "${response}"; then
-    email_peter 'peterfonseca.gq is up' "${response}"
+    email_peter \
+      'peterfonseca.gq is up' \
+      "${response}" \
+      "${started}"
   else
-    email_peter 'peterfonseca.gq is down' "${response}"
+    email_peter 'peterfonseca.gq is down' \
+      "${response}" \
+      "${started}"
   fi
 }
 
