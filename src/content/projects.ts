@@ -46,7 +46,7 @@ export default [
     links: [
       {
         text: 'github',
-        url: 'https://github.com/fonsecapeter/fonsecapeter.github.io',
+        url: 'https://github.com/fonsecapeter/personal_website',
       },
     ],
     date: '2016',
