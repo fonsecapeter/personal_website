@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { render } from 'react-dom';
+import React from 'react';
+import { render } from '@hot-loader/react-dom';
 import { AppContainer } from 'react-hot-loader';
 import { HashRouter } from 'react-router-dom';
 
-import App from './components/app';
-import Routes from './routes';
+import { App } from './components/app';
+import { Routes } from './routes';
 
 import './assets/scss/base.scss';
 import './assets/img/favicon.ico';

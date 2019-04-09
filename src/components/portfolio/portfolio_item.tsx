@@ -1,37 +1,52 @@
-import * as React from 'react';
-
+import React, { Component } from 'react';
+// eslint-disable-next-line no-unused-vars
+import { Project } from '../../content/projects';
 import '../../assets/scss/portfolio.scss';
 
-class PortfolioItem extends React.Component<any, any> {
-  state = {
-    hidden: true,
-    expandClass: 'hidden',
-  };
+interface PortfolioProps {
+  project: Project
+}
 
-  constructor(props) {
-    super(props);
+const initialState = {
+  hidden: true,
+  expandClass: 'hidden',
+};
+type State = Readonly<typeof initialState>;
+
+const expandItem = () => ({
+  hidden: false,
+  expandClass: '',
+});
+
+const hideItem = () => ({
+  hidden: true,
+  expandClass: 'hidden',
+});
+
+export class PortfolioItem extends Component<PortfolioProps, State> {
+  readonly state: State = initialState
+
+  constructor({ project }) {
+    super({ project });
     this.expand = this.expand.bind(this);
     this.hide = this.hide.bind(this);
     this.toggleDrop = this.toggleDrop.bind(this);
   }
 
-  expand() {
-    this.setState({
-      hidden: false,
-      expandClass: '',
-    });
+  private expand() {
+    this.setState(expandItem);
   }
 
-  hide() {
-    this.setState({
-      hidden: true,
-      expandClass: 'hidden',
-    });
+  private hide() {
+    this.setState(hideItem);
   }
 
-  toggleDrop() {
-    if (this.props.portfolio.description) {
-      if (this.state.hidden) {
+  private toggleDrop() {
+    const { project } = this.props;
+    const { hidden } = this.state;
+
+    if (project.description) {
+      if (hidden) {
         this.expand();
       } else {
         this.hide();
@@ -40,30 +55,32 @@ class PortfolioItem extends React.Component<any, any> {
   }
 
   public render() {
+    const { project } = this.props;
+    const { expandClass } = this.state;
     const linkClass = 'portfolio-item-link';
     let links = null;
-    if (this.props.portfolio.links.length === 2) {
+    if (project.links.length === 2) {
       links = (
         <span>
-          <a href={this.props.portfolio.links[0].url} className={linkClass} target="blank">
-            {this.props.portfolio.links[0].text}
+          <a href={project.links[0].url} className={linkClass} target="blank">
+            {project.links[0].text}
           </a>
           <span className="portfolio-item-dot">·</span>
-          <a href={this.props.portfolio.links[1].url} className={linkClass} target="blank">
-            {this.props.portfolio.links[1].text}
+          <a href={project.links[1].url} className={linkClass} target="blank">
+            {project.links[1].text}
           </a>
         </span>
       );
     } else {
       links = (
-        <a href={this.props.portfolio.links[0].url} className={linkClass} target="blank">
-          {this.props.portfolio.links[0].text}
+        <a href={project.links[0].url} className={linkClass} target="blank">
+          {project.links[0].text}
         </a>
       );
     }
 
     let iconImageClass = 'portfolio-item-icon-image';
-    if (this.props.portfolio.icon.small) {
+    if (project.icon.small) {
       iconImageClass += ' portfolio-item-icon-image-small';
     }
 
@@ -72,33 +89,33 @@ class PortfolioItem extends React.Component<any, any> {
         <div className="portfolio-item-icon">
           <img
             className={iconImageClass}
-            src={this.props.portfolio.icon.src}
+            src={project.icon.src}
             alt="portfolio icon"
           />
         </div>
         <div className="portfolio-item-content">
           <h3 className="portfolio-item-title">
-            {this.props.portfolio.name}
+            {project.name}
             <span className="portfolio-item-dot">·</span>
             {links}
           </h3>
-          <div className={`portfolio-item-description ${this.state.expandClass}`}>
+          <div className={`portfolio-item-description ${expandClass}`}>
             <div>
-              <span className="portfolio-item-date">{this.props.portfolio.date}</span>
-              {this.props.portfolio.org ? (
+              <span className="portfolio-item-date">{project.date}</span>
+              {project.org ? (
                 <a
                   className="portfolio-item-org"
-                  href={this.props.portfolio.org.link}
+                  href={project.org.link}
                   target="blank"
                 >
-                  {this.props.portfolio.org.name}
+                  {project.org.name}
                 </a>
               ) : null}
-              <p className="portfolio-item-keywords">{this.props.portfolio.keywords}</p>
+              <p className="portfolio-item-keywords">{project.keywords}</p>
             </div>
-            <p>{this.props.portfolio.description}</p>
+            <p>{project.description}</p>
             <ul className="portfolio-item-bullets">
-              {this.props.portfolio.bullets.map((bullet, idx) => <li key={idx}>{bullet}</li>)}
+              {project.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}
             </ul>
           </div>
         </div>
@@ -106,5 +123,3 @@ class PortfolioItem extends React.Component<any, any> {
     );
   }
 }
-
-export default PortfolioItem;

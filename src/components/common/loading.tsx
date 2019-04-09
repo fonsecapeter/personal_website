@@ -1,18 +1,15 @@
-import * as React from 'react';
+import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { LoadingComponentProps } from 'react-loadable';
 
-class Loading extends React.Component<LoadingComponentProps> {
-  render() {
-    if (this.props.error) {
-      return (
-        <div>
-          Error! <button onClick={this.props.retry}>Retry</button>
-        </div>
-      );
-    } else {
-      return <div>Loading...</div>;
-    }
+export const Loading: React.SFC<LoadingComponentProps> = ({ error, retry }) => {
+  if (error) {
+    return (
+      <div>
+        Error!
+        <button onClick={retry} type="button">Retry</button>
+      </div>
+    );
   }
-}
-
-export default Loading;
+  return <div>Loading...</div>;
+};

@@ -1,13 +1,19 @@
-import * as React from 'react';
+import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import { Experience } from '../../content/experiences';
 
-class ExperienceItem extends React.Component<any, any> {
+interface ExperienceProps {
+  experience: Experience,
+}
+
+export class ExperienceItem extends React.Component<ExperienceProps> {
   state = {
     hidden: false,
     experienceBulletExpandClass: '',
   };
 
-  constructor(props) {
-    super(props);
+  constructor({ experience }) {
+    super({ experience });
     this.expand = this.expand.bind(this);
     this.hide = this.hide.bind(this);
     this.toggleDrop = this.toggleDrop.bind(this);
@@ -28,8 +34,10 @@ class ExperienceItem extends React.Component<any, any> {
   }
 
   toggleDrop() {
-    if (this.props.experience.bullets.length > 0) {
-      if (this.state.hidden) {
+    const { experience } = this.props;
+    const { hidden } = this.state;
+    if (experience.bullets.length > 0) {
+      if (hidden) {
         this.expand();
       } else {
         this.hide();
@@ -38,14 +46,16 @@ class ExperienceItem extends React.Component<any, any> {
   }
 
   public render() {
+    const { experience } = this.props;
+    const { experienceBulletExpandClass } = this.state;
     let primary = null;
-    if (this.props.experience.primary) {
-      primary = <p>{this.props.experience.primary}</p>;
+    if (experience.primary) {
+      primary = <p>{experience.primary}</p>;
     }
 
     let action = null;
     let experienceItemClassName = 'experience-item';
-    if (this.props.experience.bullets.length > 0) {
+    if (experience.bullets.length > 0) {
       action = this.toggleDrop;
       experienceItemClassName += '-interactive';
     }
@@ -54,22 +64,39 @@ class ExperienceItem extends React.Component<any, any> {
       <div className={experienceItemClassName} onClick={action}>
         <div className="experience-item-content">
           <div className="experience-item-left">
-            <img src={this.props.experience.icon} className="experience-item-icon" />
+            <img
+              src={experience.icon}
+              className="experience-item-icon"
+              alt="icon"
+            />
           </div>
           <div className="experience-item-right">
-            <h3 className="experience-item-title">{this.props.experience.title}</h3>
+            <h3 className="experience-item-title">
+              {experience.title}
+            </h3>
             <p>
-              <span className="experience-item-date">{this.props.experience.date}</span>
+              <span className="experience-item-date">
+                {experience.date}
+              </span>
               <span className="experience-item-dot">·</span>
-              <a className="experience-item-org" href={this.props.experience.link} target="blank">
-                {this.props.experience.org}
+              <a
+                className="experience-item-org"
+                href={experience.link}
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                {experience.org}
               </a>
             </p>
             {primary}
             <div>
-              <ul className={this.state.experienceBulletExpandClass}>
-                {this.props.experience.bullets.map((bullet, idx) => (
-                  <li key={idx} dangerouslySetInnerHTML={{ __html: bullet }} />
+              <ul className={experienceBulletExpandClass}>
+                {experience.bullets.map(bullet => (
+                  <li
+                    key={bullet}
+                    // eslint-disable-next-line react/no-danger
+                    dangerouslySetInnerHTML={{ __html: bullet }}
+                  />
                 ))}
               </ul>
             </div>
@@ -79,5 +106,3 @@ class ExperienceItem extends React.Component<any, any> {
     );
   }
 }
-
-export default ExperienceItem;

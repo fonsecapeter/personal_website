@@ -1,4 +1,15 @@
-export default [
+interface Framework {
+  name: string,
+  link: string,
+}
+
+export interface Language {
+  name: string,
+  frameworks: Array<Framework>
+  icon: string,
+}
+
+export const LANGUAGES = [
   {
     name: 'Python',
     icon: require('../assets/img/icons/code/python.png'),

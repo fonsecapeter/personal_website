@@ -1,4 +1,14 @@
-export default {
+export interface Experience {
+  title: string,
+  icon: string,
+  date: string,
+  link: string,
+  org: string,
+  bullets: Array<string>,
+  primary?: string,
+}
+
+export const EXPERIENCES = {
   workExperiences: [
     {
       title: 'Software Engineer',
@@ -21,7 +31,7 @@ export default {
         'Automated administrative tasks and improved scalability of recruitment',
         'Coordinated a team to compile a $5M competitive grant renewal application',
         'Managed metrics, IRB approval, team meetings, and external presentations',
-        'Conducted cognitive tests and ran MRIs',
+        'Administered MRIs and cognitive / psychometric tests',
       ],
     },
 
@@ -57,15 +67,14 @@ export default {
     },
 
     {
-      title: 'Technician',
+      title: 'Technician / Designer',
       icon: require('../assets/img/icons/experience/tube.png'),
       date: '2010-2012 Summers',
       link: 'http://www.vintage47amps.com/',
       org: 'Vintage 47 Amplifiers',
       bullets: [
-        'Doubled fabrication rate of amplifiers from schematics',
-        'Designed logos and components with Adobe Illustrator to grow the brand',
-        'Hand-made complete vacuum-tube amplifiers',
+        'Hand-made complete vacuum-tube guitar amplifiers from schematics',
+        'Designed logos and components with Adobe Illustrator to establish the brand',
       ],
     },
   ],

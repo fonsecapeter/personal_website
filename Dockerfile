@@ -1,11 +1,9 @@
-FROM node:8.11.3
-
-ENV NPM_CONFIG_LOGLEVEL warn
+FROM node:8.15.1
 
 COPY . /app
 WORKDIR /app
 
-RUN npm install --loglevel=warn
+RUN npm install
 
 RUN chown -R node /app
 USER node

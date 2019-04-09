@@ -1,4 +1,56 @@
-export default [
+interface Org {
+  name: string,
+  url: string,
+  link?: string,
+}
+
+interface ProjectIcon {
+  src: string,
+  small?: boolean,
+}
+
+interface ProjectLink {
+  text: string,
+  url: string,
+}
+
+export interface Project {
+  name: string,
+  links: Array<ProjectLink>,
+  date: string,
+  keywords: string,
+  icon: ProjectIcon,
+  description: string,
+  bullets: Array<string>,
+  org?: Org,
+}
+
+export const PROJECTS = [
+  {
+    name: 'API Buddy',
+    links: [
+      {
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/api-buddy',
+      },
+      {
+        text: 'pypi',
+        url: 'https://pypi.org/project/api-buddy',
+      },
+    ],
+    date: '2019',
+    keywords: 'Python',
+    icon: {
+      src: require('../assets/img/icons/portfolio/api-buddy.gif'),
+    },
+    description: 'CLI tool for exploring APIs',
+    bullets: [
+      'Intuitive interface',
+      'OAuth2 authentication',
+      'Killer formatting',
+    ],
+  },
+
   {
     name: 'Brass Mono',
     links: [
@@ -16,8 +68,13 @@ export default [
     icon: {
       src: require('../assets/img/icons/portfolio/brass_mono.png'),
     },
-    description: "Retro monospaced font inspired by 70's design.",
-    bullets: ['Automated build process', 'Cozy, regular, and comfortable spacing'],
+    description: 'Retro monospaced font inspired by 70\'s design.',
+    bullets: [
+      'Docker',
+      'Automated regular / bold / italic build',
+      'Almost Google Fonts compliant',
+      'Rad design',
+    ],
   },
 
   {
@@ -37,8 +94,14 @@ export default [
     icon: {
       src: require('../assets/img/icons/portfolio/shellectric-jsx.png'),
     },
-    description: "Easy on the eyes, retro colors inspired by 70's design.",
-    bullets: ['Atom theme', 'Several terminal themes', 'Vim integration', 'Slack theme'],
+    description: 'Easy on the eyes, retro colors inspired by 70\'s design.',
+    bullets: [
+      'Atom theme',
+      'Several terminal themes',
+      'Vim integration',
+      'Slack theme',
+      'Chrome theme',
+    ],
   },
 
   {
@@ -55,7 +118,14 @@ export default [
       src: require('../assets/img/icons/workspace.png'),
     },
     description: 'Personal, static website.',
-    bullets: ['React', 'Code Splitting', 'TypeScript', 'Sass', 'Docker', 'Continuous Deployment'],
+    bullets: [
+      'React',
+      'Code Splitting',
+      'TypeScript',
+      'Sass',
+      'Docker',
+      'Continuous Deployment',
+    ],
   },
 
   {
@@ -80,7 +150,9 @@ export default [
       src: require('../assets/img/icons/portfolio/color-shift-screenshot.png'),
     },
     description: 'JavaScript canvas game that makes learning about neurology fun.',
-    bullets: ['Hand-made collision and drag physics'],
+    bullets: [
+      'Artisinal, hand-made physics logic',
+    ],
   },
 
   {
@@ -102,10 +174,10 @@ export default [
     },
     description: 'Terminal-based notes manager.',
     bullets: [
-      'Use any text editor',
+      'Works with any text editor',
       'Can manage existing notes',
       'Zero things to learn',
-      'Easy to hook into your favorite cloud',
+      'Easy to hook into the cloud',
     ],
   },
 
@@ -128,7 +200,9 @@ export default [
       small: false,
     },
     description: 'Command-line chess.',
-    bullets: ['Computer player', 'Unit and integration tests'],
+    bullets: [
+      'Computer player that tries to win',
+    ],
   },
 
   {
