@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import { Loading } from './components/common/loading';
@@ -34,16 +34,12 @@ const LoadableContact = Loadable({
   ...baseLoadableConfig,
 });
 
-const prefetchComponents = () => {
-  LoadableAbout.preload();
-  LoadableExperience.preload();
-  LoadablePortfolio.preload();
-  LoadableContact.preload();
-};
-
-export class Routes extends React.Component {
+export class Routes extends Component {
   public componentDidMount() {
-    prefetchComponents();
+    LoadableAbout.preload();
+    LoadableExperience.preload();
+    LoadablePortfolio.preload();
+    LoadableContact.preload();
   }
 
   public render = () => (

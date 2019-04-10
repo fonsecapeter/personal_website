@@ -1,14 +1,14 @@
-import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import React, { FunctionalComponent } from 'react';
 import { ExperienceItem } from './experience_item';
 import { EXPERIENCES } from '../../content/experiences';
-
 import '../../assets/scss/experience.scss';
 
 const posterIcon = require('../../assets/img/icons/poster.png');
 const presentationIcon = require('../../assets/img/icons/presentation.png');
 const resumePDF = require('../../assets/resume/PeterFonsecaResume.pdf');
 
-export const Experience: React.SFC = () => (
+export const Experience: FunctionalComponent = () => (
   <div className="experience">
     <h1 className="experience-title">
       Work Experience

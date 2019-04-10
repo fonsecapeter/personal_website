@@ -1,44 +1,47 @@
-import React, { Component } from 'react';
+// eslint-disable-next-line no-unused-vars
+import React, { Component, KeyboardEvent } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { Project } from '../../content/projects';
-import '../../assets/scss/portfolio.scss';
 
 interface PortfolioProps {
-  project: Project
+  project: Project,
+  tabIndex: number,
+}
+interface PortfolioState {
+  hidden: boolean,
+  expandClass: string,
 }
 
-const initialState = {
+const initialState: PortfolioState = {
   hidden: true,
   expandClass: 'hidden',
 };
-type State = Readonly<typeof initialState>;
-
-const expandItem = () => ({
+const expandState: PortfolioState = {
   hidden: false,
   expandClass: '',
-});
-
-const hideItem = () => ({
+};
+const hideState: PortfolioState = {
   hidden: true,
   expandClass: 'hidden',
-});
+};
 
-export class PortfolioItem extends Component<PortfolioProps, State> {
-  readonly state: State = initialState
+export class PortfolioItem extends Component<PortfolioProps, PortfolioState> {
+  readonly state = initialState
 
-  constructor({ project }) {
-    super({ project });
+  constructor(props: PortfolioProps) {
+    super(props);
     this.expand = this.expand.bind(this);
     this.hide = this.hide.bind(this);
     this.toggleDrop = this.toggleDrop.bind(this);
+    this.toggleDropOnEnter = this.toggleDropOnEnter.bind(this);
   }
 
   private expand() {
-    this.setState(expandItem);
+    this.setState(expandState);
   }
 
   private hide() {
-    this.setState(hideItem);
+    this.setState(hideState);
   }
 
   private toggleDrop() {
@@ -54,8 +57,17 @@ export class PortfolioItem extends Component<PortfolioProps, State> {
     }
   }
 
+  private toggleDropOnEnter(event: KeyboardEvent) {
+    const code = event.keyCode || event.charCode;
+    if (code === 13) {
+      event.preventDefault();
+      event.stopPropagation();
+      this.toggleDrop();
+    }
+  }
+
   public render() {
-    const { project } = this.props;
+    const { project, tabIndex } = this.props;
     const { expandClass } = this.state;
     const linkClass = 'portfolio-item-link';
     let links = null;
@@ -85,7 +97,13 @@ export class PortfolioItem extends Component<PortfolioProps, State> {
     }
 
     return (
-      <div className="portfolio-item" onClick={this.toggleDrop}>
+      <div
+        className="portfolio-item"
+        onClick={this.toggleDrop}
+        onKeyDown={this.toggleDropOnEnter}
+        role="button"
+        tabIndex={tabIndex}
+      >
         <div className="portfolio-item-icon">
           <img
             className={iconImageClass}

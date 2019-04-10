@@ -1,39 +1,49 @@
-import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import React, { Component, KeyboardEvent } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { Experience } from '../../content/experiences';
 
 interface ExperienceProps {
   experience: Experience,
 }
+interface ExperienceState {
+  hidden: boolean,
+  expandClass: string,
+}
 
-export class ExperienceItem extends React.Component<ExperienceProps> {
-  state = {
-    hidden: false,
-    experienceBulletExpandClass: '',
-  };
+const initialState: ExperienceState = {
+  hidden: false,
+  expandClass: '',
+};
+const expandState: ExperienceState = {
+  hidden: false,
+  expandClass: 'experience-item-bullets',
+};
+const hideState: ExperienceState = {
+  hidden: true,
+  expandClass: 'hidden',
+};
 
-  constructor({ experience }) {
-    super({ experience });
+export class ExperienceItem extends Component<ExperienceProps, ExperienceState> {
+  readonly state = initialState
+
+  constructor(props: ExperienceProps) {
+    super(props);
     this.expand = this.expand.bind(this);
     this.hide = this.hide.bind(this);
     this.toggleDrop = this.toggleDrop.bind(this);
+    this.toggleDropOnEnter = this.toggleDropOnEnter.bind(this);
   }
 
-  expand() {
-    this.setState({
-      hidden: false,
-      experienceBulletExpandClass: 'experience-item-bullets',
-    });
+  private expand() {
+    this.setState(expandState);
   }
 
-  hide() {
-    this.setState({
-      hidden: true,
-      experienceBulletExpandClass: 'hidden',
-    });
+  private hide() {
+    this.setState(hideState);
   }
 
-  toggleDrop() {
+  private toggleDrop() {
     const { experience } = this.props;
     const { hidden } = this.state;
     if (experience.bullets.length > 0) {
@@ -45,23 +55,42 @@ export class ExperienceItem extends React.Component<ExperienceProps> {
     }
   }
 
+  private toggleDropOnEnter(event: KeyboardEvent) {
+    const code = event.keyCode || event.charCode;
+    if (code === 13) {
+      event.preventDefault();
+      event.stopPropagation();
+      this.toggleDrop();
+    }
+  }
+
   public render() {
     const { experience } = this.props;
-    const { experienceBulletExpandClass } = this.state;
+    const { expandClass } = this.state;
     let primary = null;
     if (experience.primary) {
       primary = <p>{experience.primary}</p>;
     }
 
     let action = null;
+    let actionOnEnter = null;
     let experienceItemClassName = 'experience-item';
+    let tabIndex = -1;
     if (experience.bullets.length > 0) {
       action = this.toggleDrop;
+      actionOnEnter = this.toggleDropOnEnter;
       experienceItemClassName += '-interactive';
+      tabIndex = 0;
     }
 
     return (
-      <div className={experienceItemClassName} onClick={action}>
+      <div
+        className={experienceItemClassName}
+        onClick={action}
+        onKeyDown={actionOnEnter}
+        role="button"
+        tabIndex={tabIndex}
+      >
         <div className="experience-item-content">
           <div className="experience-item-left">
             <img
@@ -90,7 +119,7 @@ export class ExperienceItem extends React.Component<ExperienceProps> {
             </p>
             {primary}
             <div>
-              <ul className={experienceBulletExpandClass}>
+              <ul className={expandClass}>
                 {experience.bullets.map(bullet => (
                   <li
                     key={bullet}

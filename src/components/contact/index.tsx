@@ -1,8 +1,8 @@
-import React from 'react';
-
+// eslint-disable-next-line no-unused-vars
+import React, { FunctionalComponent } from 'react';
 import '../../assets/scss/contact.scss';
 
-export const Contact: React.SFC = () => (
+export const Contact: FunctionalComponent = () => (
   <div>
     <h1 className="contact-title">Contact Me</h1>
     <div className="contact-info">
