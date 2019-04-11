@@ -1,6 +1,6 @@
 # My Personal Website
 
-[![Build Status](https://travis-ci.org/fonsecapeter/fonsecapeter.github.io.svg?branch=master)](https://travis-ci.org/fonsecapeter/fonsecapeter.github.io.svg)
+[![Build Status](https://travis-ci.org/fonsecapeter/personal_website.svg?branch=master)](https://travis-ci.org/fonsecapeter/personal_website.svg)
 
 Check it out at [www.peterfonseca.gq](http://www.peterfonseca.gq)
 
