@@ -1,4 +1,4 @@
-FROM node:8.15.1
+FROM --platform=linux/amd64 node:8.15.1
 
 COPY . /app
 WORKDIR /app
