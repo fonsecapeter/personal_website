@@ -8,4 +8,4 @@ RUN npm install
 RUN chown -R node /app
 USER node
 
-CMD ["npm", "run", "start-prod"]
+CMD ["bin/start-prod"]

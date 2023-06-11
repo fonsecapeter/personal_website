@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# NOTE: This has since been replaced by https://kaffeine.herokuapp.com/
+
 # Ping the production server (Run in cron)
 # 45 * * * * abs/path/to/bin/ping
 set -e -o pipefail
@@ -25,16 +27,16 @@ function email_peter() {
 function main() {
   local -r started=$(now)
   local -r response=$( \
-    curl 'http://www.peterfonseca.gq/_status' \
+    curl 'http://www.peternfonseca.com/_status' \
       || printf 'Waking it up' \
   )
   if is_successful? "${response}"; then
     email_peter \
-      'peterfonseca.gq is up' \
+      'peternfonseca.com is up' \
       "${response}" \
       "${started}"
   else
-    email_peter 'peterfonseca.gq is down' \
+    email_peter 'peternfonseca.com is down' \
       "${response}" \
       "${started}"
   fi
