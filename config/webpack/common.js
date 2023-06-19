@@ -49,6 +49,10 @@ module.exports = {
         loaders: ['file-loader?hash=sha512&digest=hex&name=fonts/[hash].[ext]'],
       },
       {
+        test: /\.(ttf)$/i, // fonts
+        loaders: ['file-loader?hash=sha512&digest=hex&name=fonts/[hash].[ext]'],
+      },
+      {
         test: /\.(pdf)$/i, // resume
         loaders: ['file-loader?hash=sha512&digest=hex&name=resume/[hash].[ext]'],
       },

@@ -6,7 +6,6 @@
   &-pdf-tip {
     color: $mid-gray;
     display: inline-block;
-    font-family: 'Peter Mono', 'Dosis', 'monospace';
     font-size: 13px;
     height: 100%;
     margin-left: 6px;
@@ -56,8 +55,6 @@
 
     &-date {
       color: $mid-gray;
-      font-family: 'Peter Mono', 'Dosis', 'monospace';
-      font-size: 14px;
     }
 
     &-dot {
