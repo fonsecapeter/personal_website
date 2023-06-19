@@ -12,3 +12,5 @@ tags
 *~
 *.swp
 *.swo
+
+.secrets

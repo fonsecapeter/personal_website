@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Put it in the clouds (Run in TravisCI)
+# Ship it (Run in TravisCI)
 set -eu -o pipefail
 
 HEROKU_CONTAINER_REGISTRY="registry.heroku.com/${HEROKU_APP_NAME}/web"
@@ -13,7 +13,7 @@ docker build --tag \
   "${HEROKU_CONTAINER_REGISTRY}" \
   .
 
-if [ $TRAVIS_BRANCH == "main" ] && [ $TRAVIS_PULL_REQUEST = "false" ]; then
+if [ $TRAVIS_BRANCH == "main" ] && [ $TRAVIS_PULL_REQUEST == "false" ]; then
   docker push "${HEROKU_CONTAINER_REGISTRY}"
   # Trigger release
   IMAGE_ID=$(docker inspect "${HEROKU_CONTAINER_REGISTRY}" --format={{.Id}})
