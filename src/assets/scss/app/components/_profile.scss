@@ -1,4 +1,4 @@
-.side-bar {
+.profile {
   padding: 40px 20px;
   text-align: center;
 
@@ -36,10 +36,5 @@
         }
       }
     }
-  }
-
-  @media only screen and (min-width: $responsive-width) {
-    padding: 20px;
-    position: fixed;
   }
 }

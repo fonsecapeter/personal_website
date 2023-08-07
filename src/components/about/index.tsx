@@ -6,7 +6,7 @@ import '../../assets/scss/about.scss';
 
 export const About: FunctionalComponent = () => (
   <div className="about">
-    <h1 className="about-title">About Me</h1>
+    <h1 className="page-title">About Me</h1>
     <div className="about-elevator-pitch">
       <h3>From Science to Tech</h3>
       <p className="about-elevator-pitch-paragraph">

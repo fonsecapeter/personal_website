@@ -1,8 +1,4 @@
 .contact {
-  &-title {
-    color: $nav-contact;
-  }
-
   &-info {
     @include card;
     font-size: 14px;

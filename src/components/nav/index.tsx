@@ -97,20 +97,17 @@ export class Nav extends Component<NavProps, NavState> {
       },
     ];
     return (
-      <div>
-        <nav id="nav" className={`nav-${selected}`}>
-          {links.map((link, idx) => (
-            <NavLink
-              name={link.name}
-              active={link.active}
-              onClick={link.select}
-              key={link.name}
-              tabIndex={idx}
-            />
-          ))}
-        </nav>
-        <div className="nav-underlay" />
-      </div>
+      <nav id="nav" className={`nav nav-${selected}`}>
+        {links.map((link, idx) => (
+          <NavLink
+            name={link.name}
+            active={link.active}
+            onClick={link.select}
+            key={link.name}
+            tabIndex={idx}
+          />
+        ))}
+      </nav>
     );
   }
 }

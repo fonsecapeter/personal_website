@@ -6,7 +6,7 @@ import '../../assets/scss/portfolio.scss';
 
 export const Portfolio: FunctionalComponent = () => (
   <div>
-    <h1 className="portfolio-title">Personal Projects</h1>
+    <h1 className="page-title">Personal Projects</h1>
     <div className="portfolio-list">
       <div className="portfolio-column">
         {PROJECTS.map(project => (

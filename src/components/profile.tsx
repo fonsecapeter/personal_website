@@ -6,18 +6,18 @@ const gitHub = require('../assets/img/icons/social/github.svg');
 const linkedIn = require('../assets/img/icons/social/linkedin.svg');
 const behance = require('../assets/img/icons/social/behance.svg');
 
-export const SideBar: FunctionalComponent = () => (
-  <div className="side-bar">
-    <div id="side-bar-headshot">
+export const Profile: FunctionalComponent = () => (
+  <div className="profile">
+    <div id="profile-headshot">
       <img
-        className="side-bar-headshot-image"
+        className="profile-headshot-image"
         src={me}
         width="160"
         alt="Peter's Face"
       />
     </div>
-    <div className="side-bar-content">
-      <div className="side-bar-content-name">
+    <div className="profile-content">
+      <div className="profile-content-name">
         <p>Peter Fonseca</p>
         <p>Software Engineer</p>
       </div>
@@ -28,7 +28,7 @@ export const SideBar: FunctionalComponent = () => (
           rel="noopener noreferrer"
         >
           <img
-            className="side-bar-content-social"
+            className="profile-content-social"
             src={gitHub}
             height="32px"
             alt="GitHub"
@@ -40,7 +40,7 @@ export const SideBar: FunctionalComponent = () => (
           rel="noopener noreferrer"
         >
           <img
-            className="side-bar-content-social"
+            className="profile-content-social"
             src={linkedIn}
             height="32px"
             alt="LinkedIn"
@@ -52,7 +52,7 @@ export const SideBar: FunctionalComponent = () => (
           rel="noopener noreferrer"
         >
           <img
-            className="side-bar-content-social"
+            className="profile-content-social"
             src={behance}
             height="32px"
             alt="Behance"
