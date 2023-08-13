@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React, { FunctionalComponent } from 'react';
 
-const me = require('../assets/img/me.jpg');
-const gitHub = require('../assets/img/icons/social/github.svg');
-const linkedIn = require('../assets/img/icons/social/linkedin.svg');
-const behance = require('../assets/img/icons/social/behance.svg');
+const me = require('../../assets/img/me.jpg');
+const gitHub = require('../../assets/img/icons/social/github.svg');
+const linkedIn = require('../../assets/img/icons/social/linkedin.svg');
+const behance = require('../../assets/img/icons/social/behance.svg');
 
 export const Profile: FunctionalComponent = () => (
   <div className="profile">

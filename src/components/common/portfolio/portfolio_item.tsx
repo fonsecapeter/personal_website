@@ -1,34 +1,34 @@
 // eslint-disable-next-line no-unused-vars
 import React, { Component, KeyboardEvent } from 'react';
 // eslint-disable-next-line no-unused-vars
-import { Project } from '../../content/projects';
+import { Project } from '../../../content/portfolio/projects';
 
-interface PortfolioProps {
+interface DigitalWorkProps {
   project: Project,
   tabIndex: number,
 }
-interface PortfolioState {
+interface DigitalWorkState {
   hidden: boolean,
   expandClass: string,
 }
 
-const initialState: PortfolioState = {
+const initialState: DigitalWorkState = {
   hidden: true,
   expandClass: 'hidden',
 };
-const expandState: PortfolioState = {
+const expandState: DigitalWorkState = {
   hidden: false,
   expandClass: '',
 };
-const hideState: PortfolioState = {
+const hideState: DigitalWorkState = {
   hidden: true,
   expandClass: 'hidden',
 };
 
-export class PortfolioItem extends Component<PortfolioProps, PortfolioState> {
+export class PortfolioItem extends Component<DigitalWorkProps, DigitalWorkState> {
   readonly state = initialState
 
-  constructor(props: PortfolioProps) {
+  constructor(props: DigitalWorkProps) {
     super(props);
     this.expand = this.expand.bind(this);
     this.hide = this.hide.bind(this);

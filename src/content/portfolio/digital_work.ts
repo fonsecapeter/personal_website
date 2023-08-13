@@ -1,31 +1,7 @@
-interface Org {
-  name: string,
-  url: string,
-  link?: string,
-}
+// eslint-disable-next-line no-unused-vars
+import { Project } from './projects';
 
-interface ProjectIcon {
-  src: string,
-  small?: boolean,
-}
-
-interface ProjectLink {
-  text: string,
-  url: string,
-}
-
-export interface Project {
-  name: string,
-  links: Array<ProjectLink>,
-  date: string,
-  keywords: string,
-  icon: ProjectIcon,
-  description: string,
-  bullets: Array<string>,
-  org?: Org,
-}
-
-export const PROJECTS = [
+export const DIGITAL_PROJECTS: Array<Project> = [
   {
     name: 'API Buddy',
     links: [
@@ -41,7 +17,7 @@ export const PROJECTS = [
     date: '2019',
     keywords: 'Python',
     icon: {
-      src: require('../assets/img/icons/portfolio/api-buddy.gif'),
+      src: require('../../assets/img/icons/portfolio/api-buddy.gif'),
     },
     description: 'CLI tool for exploring APIs',
     bullets: [
@@ -66,7 +42,7 @@ export const PROJECTS = [
     date: '2017',
     keywords: 'Inkscape Fontforge',
     icon: {
-      src: require('../assets/img/icons/portfolio/brass_mono.png'),
+      src: require('../../assets/img/icons/portfolio/brass_mono.png'),
     },
     description: 'Retro monospaced font inspired by 70\'s design.',
     bullets: [
@@ -92,7 +68,7 @@ export const PROJECTS = [
     date: '2017',
     keywords: 'Colors',
     icon: {
-      src: require('../assets/img/icons/portfolio/shellectric-jsx.png'),
+      src: require('../../assets/img/icons/portfolio/shellectric-jsx.png'),
     },
     description: 'Easy on the eyes, retro colors inspired by 70\'s design.',
     bullets: [
@@ -115,7 +91,7 @@ export const PROJECTS = [
     date: '2016',
     keywords: 'JavaScript',
     icon: {
-      src: require('../assets/img/icons/workspace.png'),
+      src: require('../../assets/img/icons/workspace.png'),
     },
     description: 'Personal, static website.',
     bullets: [
@@ -147,7 +123,7 @@ export const PROJECTS = [
     },
     keywords: 'JavasScript',
     icon: {
-      src: require('../assets/img/icons/portfolio/color-shift-screenshot.png'),
+      src: require('../../assets/img/icons/portfolio/color-shift-screenshot.png'),
     },
     description: 'JavaScript canvas game that makes learning about neurology fun.',
     bullets: [
@@ -170,7 +146,7 @@ export const PROJECTS = [
     date: '2017',
     keywords: 'Ruby',
     icon: {
-      src: require('../assets/img/icons/portfolio/peter-notes.png'),
+      src: require('../../assets/img/icons/portfolio/peter-notes.png'),
     },
     description: 'Terminal-based notes manager.',
     bullets: [
@@ -196,7 +172,7 @@ export const PROJECTS = [
     },
     keywords: 'Ruby',
     icon: {
-      src: require('../assets/img/icons/portfolio/ruby_pawn_promotion.gif'),
+      src: require('../../assets/img/icons/portfolio/ruby_pawn_promotion.gif'),
       small: false,
     },
     description: 'Command-line chess.',
@@ -224,7 +200,7 @@ export const PROJECTS = [
     },
     keywords: 'Ruby Rails JavaScript React',
     icon: {
-      src: require('../assets/img/icons/portfolio/glia-question-detail.png'),
+      src: require('../../assets/img/icons/portfolio/glia-question-detail.png'),
     },
     description: 'Online support group for caregivers of dementia patients.',
     bullets: [

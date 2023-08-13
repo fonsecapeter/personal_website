@@ -1,15 +1,21 @@
 // eslint-disable-next-line no-unused-vars
 import React, { FunctionalComponent } from 'react';
 import { PortfolioItem } from './portfolio_item';
-import { PROJECTS } from '../../content/projects';
-import '../../assets/scss/portfolio.scss';
+// eslint-disable-next-line no-unused-vars
+import { Project } from '../../../content/portfolio/projects';
+import '../../../assets/scss/portfolio.scss';
 
-export const Portfolio: FunctionalComponent = () => (
+interface PortfolioProps {
+  title: String,
+  projects: Array<Project>
+}
+
+export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects }) => (
   <div>
-    <h1 className="page-title">Personal Projects</h1>
+    <h1 className="page-title">{ title }</h1>
     <div className="portfolio-list">
       <div className="portfolio-column">
-        {PROJECTS.map(project => (
+        {projects.map(project => (
           <PortfolioItem
             project={project}
             tabIndex={0}
@@ -18,7 +24,7 @@ export const Portfolio: FunctionalComponent = () => (
         ))}
       </div>
       <div className="portfolio-column-desktop">
-        {PROJECTS.map((project, idx) => {
+        {projects.map((project, idx) => {
           if (idx % 2 === 0) {
             return (
               <PortfolioItem
@@ -32,7 +38,7 @@ export const Portfolio: FunctionalComponent = () => (
         })}
       </div>
       <div className="portfolio-column-desktop">
-        {PROJECTS.map((project, idx) => {
+        {projects.map((project, idx) => {
           if (idx % 2 !== 0) {
             return (
               <PortfolioItem
