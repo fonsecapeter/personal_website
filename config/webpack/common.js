@@ -16,12 +16,12 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: ['babel-loader', 'source-map-loader', 'eslint-loader'],
+        use: ['babel-loader', 'source-map-loader', { loader: 'eslint-loader', options: { fix: true } }],
         exclude: /node_modules/,
       },
       {
         test: /\.tsx?$/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader', { loader: 'eslint-loader', options: { fix: true } }],
       },
       {
         test: /\.css$/,

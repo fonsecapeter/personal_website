@@ -8,16 +8,20 @@ interface NavState {
 
 const ABOUT = 'about';
 const EXPERIENCE = 'experience';
-const PORTFOLIO = 'portfolio';
-const CONTACT = 'contact';
+const DIGITAL_WORK = 'digital-work';
+const PHYSICAL_WORK = 'physical-work';
+const FILM = 'film';
+const PHOTOGRAPHY = 'photography';
 
 const initialState: NavState = {
   selected: ABOUT,
 };
 const aboutState: NavState = { selected: ABOUT };
 const experienceState: NavState = { selected: EXPERIENCE };
-const portfolioState: NavState = { selected: PORTFOLIO };
-const contactState: NavState = { selected: CONTACT };
+const digitalWorkState: NavState = { selected: DIGITAL_WORK };
+const physicalWorkState: NavState = { selected: PHYSICAL_WORK };
+const filmState: NavState = { selected: FILM };
+const photographyState: NavState = { selected: PHOTOGRAPHY };
 const scrollToTop = () => window.scrollTo(0, 0);
 
 export class Nav extends Component<NavProps, NavState> {
@@ -27,8 +31,10 @@ export class Nav extends Component<NavProps, NavState> {
     super(props);
     this.selectAbout = this.selectAbout.bind(this);
     this.selectExperience = this.selectExperience.bind(this);
-    this.selectPortfolio = this.selectPortfolio.bind(this);
-    this.selectContact = this.selectContact.bind(this);
+    this.selectDigitalWork = this.selectDigitalWork.bind(this);
+    this.selectPhysicalWork = this.selectPhysicalWork.bind(this);
+    this.selectFilm = this.selectFilm.bind(this);
+    this.selectPhotography = this.selectPhotography.bind(this);
   }
 
   public componentDidMount() {
@@ -41,11 +47,17 @@ export class Nav extends Component<NavProps, NavState> {
       case EXPERIENCE:
         this.selectExperience();
         break;
-      case PORTFOLIO:
-        this.selectPortfolio();
+      case DIGITAL_WORK:
+        this.selectDigitalWork();
         break;
-      case CONTACT:
-        this.selectContact();
+      case PHYSICAL_WORK:
+        this.selectPhysicalWork();
+        break;
+      case FILM:
+        this.selectFilm();
+        break;
+      case PHOTOGRAPHY:
+        this.selectPhysicalWork();
         break;
       default:
         this.selectAbout();
@@ -62,14 +74,24 @@ export class Nav extends Component<NavProps, NavState> {
     this.setState(experienceState);
   }
 
-  private selectPortfolio() {
+  private selectDigitalWork() {
     scrollToTop();
-    this.setState(portfolioState);
+    this.setState(digitalWorkState);
   }
 
-  private selectContact() {
+  private selectPhysicalWork() {
     scrollToTop();
-    this.setState(contactState);
+    this.setState(physicalWorkState);
+  }
+
+  private selectFilm() {
+    scrollToTop();
+    this.setState(filmState);
+  }
+
+  private selectPhotography() {
+    scrollToTop();
+    this.setState(photographyState);
   }
 
   public render() {
@@ -81,36 +103,43 @@ export class Nav extends Component<NavProps, NavState> {
         active: selected === ABOUT,
       },
       {
+        name: 'Digital Work',
+        select: this.selectDigitalWork,
+        active: selected === DIGITAL_WORK,
+      },
+      // {
+      //   name: 'Physical Work',
+      //   select: this.selectPhysicalWork,
+      //   active: selected === PHYSICAL_WORK,
+      // },
+      // {
+      //   name: FILM,
+      //   select: this.selectFilm,
+      //   active: selected === FILM,
+      // },
+      // {
+      //   name: PHOTOGRAPHY,
+      //   select: this.selectPhotography,
+      //   active: selected === PHOTOGRAPHY,
+      // },
+      {
         name: EXPERIENCE,
         select: this.selectExperience,
         active: selected === EXPERIENCE,
       },
-      {
-        name: PORTFOLIO,
-        select: this.selectPortfolio,
-        active: selected === PORTFOLIO,
-      },
-      {
-        name: CONTACT,
-        select: this.selectContact,
-        active: selected === CONTACT,
-      },
     ];
     return (
-      <div>
-        <nav id="nav" className={`nav-${selected}`}>
-          {links.map((link, idx) => (
-            <NavLink
-              name={link.name}
-              active={link.active}
-              onClick={link.select}
-              key={link.name}
-              tabIndex={idx}
-            />
-          ))}
-        </nav>
-        <div className="nav-underlay" />
-      </div>
+      <nav id="nav" className={`nav nav-${selected}`}>
+        {links.map((link, idx) => (
+          <NavLink
+            name={link.name}
+            active={link.active}
+            onClick={link.select}
+            key={link.name}
+            tabIndex={idx}
+          />
+        ))}
+      </nav>
     );
   }
 }

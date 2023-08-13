@@ -1,7 +1,4 @@
 .portfolio {
-  &-title {
-    color: $nav-portfolio;
-  }
 
   &-list {
     &::after {
@@ -12,16 +9,6 @@
   }
 
   &-column {
-    // float: left;
-    // margin: 0;
-    // max-width: 300px;
-    // padding: 0;
-    //
-    // &::after {
-    //   clear: both;
-    //   content: '';
-    //   display: table;
-    // }
     display: none;
 
     &-desktop {
@@ -123,6 +110,7 @@
     &-item {
       float: none;
       margin-bottom: 25px;
+      width: 100%;
     }
   }
 }

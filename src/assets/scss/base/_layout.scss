@@ -1,48 +1,39 @@
 .main-wrapper {
-  margin: 0 auto;
-  width: 100%;
-}
-
-.main-content,
-.left-column,
-.right-column {
-  margin: 0 auto;
+  margin: 40px auto;
+  max-width: 1000px;
+  min-width: 280px;
 }
 
 .left-column {
-  padding: 25px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: $left-column-width;
+}
+
+.right-column {
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .hidden {
   display: none;
 }
 
-.not-linky {
-  color: $black;
-
-  &:hover {
-    color: $black;
-  }
-
-  &:active {
-    color: $black;
-  }
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
 @media only screen and (min-width: $responsive-width) {
-  .main-wrapper {
-    width: 900px;
-  }
-
   .left-column {
-    float: left;
-    width: 600px;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    text-align: start;
   }
 
   .right-column {
-    float: right;
-    margin-top: 40px;
-    text-align: center;
-    width: 250px;
+    margin-left: $left-column-width;
   }
 }

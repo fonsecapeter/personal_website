@@ -21,15 +21,27 @@ const LoadableExperience = Loadable({
   ),
   ...baseLoadableConfig,
 });
-const LoadablePortfolio = Loadable({
+const LoadableDigitalWork = Loadable({
   loader: () => import(
-    './components/portfolio/index' // webpackChunkName: "portfolio"
+    './components/digital_work/index' // webpackChunkName: "digitalWork"
   ),
   ...baseLoadableConfig,
 });
-const LoadableContact = Loadable({
+const LoadablePhysicalWork = Loadable({
   loader: () => import(
-    './components/contact/index' // webpackChunkName: "contact"
+    './components/physical_work/index' // webpackChunkName: "physicalWork"
+  ),
+  ...baseLoadableConfig,
+});
+const LoadableFilm = Loadable({
+  loader: () => import(
+    './components/film/index' // webpackChunkName: "film"
+  ),
+  ...baseLoadableConfig,
+});
+const LoadablePhotography = Loadable({
+  loader: () => import(
+    './components/photography/index' // webpackChunkName: "photography"
   ),
   ...baseLoadableConfig,
 });
@@ -38,8 +50,10 @@ export class Routes extends Component {
   public componentDidMount() {
     LoadableAbout.preload();
     LoadableExperience.preload();
-    LoadablePortfolio.preload();
-    LoadableContact.preload();
+    LoadableDigitalWork.preload();
+    LoadablePhysicalWork.preload();
+    LoadableFilm.preload();
+    LoadablePhotography.preload();
   }
 
   public render = () => (
@@ -47,8 +61,10 @@ export class Routes extends Component {
       <Route exact path="/" component={LoadableAbout} />
       <Route path="/about" component={LoadableAbout} />
       <Route path="/experience" component={LoadableExperience} />
-      <Route path="/portfolio" component={LoadablePortfolio} />
-      <Route path="/contact" component={LoadableContact} />
+      <Route path="/digital-work" component={LoadableDigitalWork} />
+      <Route path="/physical-work" component={LoadablePhysicalWork} />
+      <Route path="/film" component={LoadableFilm} />
+      <Route path="/photography" component={LoadablePhotography} />
     </Switch>
   )
 }

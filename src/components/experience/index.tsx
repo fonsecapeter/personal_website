@@ -10,7 +10,7 @@ const resumePDF = require('../../assets/resume/PeterFonsecaResume.pdf');
 
 export const Experience: FunctionalComponent = () => (
   <div className="experience">
-    <h1 className="experience-title">
+    <h1 className="page-title">
       Work Experience
       <a className="experience-pdf-tip" href={resumePDF} target="blank">
         [PDF]
@@ -25,7 +25,7 @@ export const Experience: FunctionalComponent = () => (
       ))}
     </div>
     <div>
-      <h2 className="experience-title">Education</h2>
+      <h2 className="page-title">Education</h2>
     </div>
     <div>
       {EXPERIENCES.education.map(experienceItem => (
@@ -36,7 +36,7 @@ export const Experience: FunctionalComponent = () => (
       ))}
     </div>
     <div>
-      <h2 className="experience-title">Posters/Presentations</h2>
+      <h2 className="page-title">Posters/Presentations</h2>
       <div className="experience-item-interactive">
         <div className="experience-item-content">
           <div className="experience-item-left">

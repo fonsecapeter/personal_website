@@ -2,11 +2,13 @@
 import React, { FunctionalComponent } from 'react';
 import { CodeListItem } from './code_list_item';
 import { LANGUAGES } from '../../content/languages';
+import { Profile } from './profile';
 import '../../assets/scss/about.scss';
 
 export const About: FunctionalComponent = () => (
   <div className="about">
-    <h1 className="about-title">About Me</h1>
+    <Profile />
+    <h1 className="page-title">About Me</h1>
     <div className="about-elevator-pitch">
       <h3>From Science to Tech</h3>
       <p className="about-elevator-pitch-paragraph">
