@@ -9,7 +9,11 @@ interface AppProps {
 export const App: FunctionalComponent<AppProps> = ({ children }) => (
   <div className="main-wrapper">
     <div className="left-column">
-      <div className="logo">P. Fonseca</div>
+      <img
+        src={require('../assets/img/logo.png')}
+        className="logo"
+        alt="P. Fonseca"
+      />
       <Nav />
     </div>
     <div className="right-column">{children}</div>

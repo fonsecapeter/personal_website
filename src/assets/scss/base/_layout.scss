@@ -12,7 +12,7 @@
 
 .right-column {
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 25px 40px 0;
 }
 
 .hidden {
@@ -22,7 +22,8 @@
 .logo {
   display: block;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 20px 0;
+  width: 180px;
 }
 
 @media only screen and (min-width: $responsive-width) {
