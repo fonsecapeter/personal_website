@@ -15,6 +15,7 @@ interface ProjectLink {
 }
 
 export interface Project {
+  id: string,
   name: string,
   links: Array<ProjectLink>,
   date: string,

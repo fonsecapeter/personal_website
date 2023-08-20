@@ -53,6 +53,36 @@
 
     &-title {
       cursor: pointer;
+      text-align: center;
+    }
+  }
+
+  &-detail {
+    float: left;
+    margin: 0 10px 20px;
+
+    &-icon {
+      // @include card-top;
+
+      &-image {
+        // @include card-top;
+        display: block;
+        margin: auto;
+        width: 100%;
+
+        &-small {
+          border-radius: 23px;
+          padding: 20px;
+        }
+      }
+    }
+
+    &-title {
+      margin-bottom: 20px;
+    }
+
+    &-info {
+      padding-top: 10px;
     }
 
     &-dot {
@@ -68,7 +98,7 @@
     }
 
     &-description {
-      padding-top: 25px;
+      padding-top: 10px;
     }
 
     &-date {

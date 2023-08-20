@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import { Loading } from './components/common/loading';
+import { NotFound } from './components/common/not_found';
 
 const baseLoadableConfig = {
   loading: Loading,
@@ -45,6 +46,12 @@ const LoadablePhotography = Loadable({
   ),
   ...baseLoadableConfig,
 });
+const LoadablePortfolioItem = Loadable({
+  loader: () => import(
+    './components/common/portfolio/detail' // webpackChunkName: "porfolioDetail"
+  ),
+  ...baseLoadableConfig,
+});
 
 export class Routes extends Component {
   public componentDidMount() {
@@ -54,6 +61,7 @@ export class Routes extends Component {
     LoadablePhysicalWork.preload();
     LoadableFilm.preload();
     LoadablePhotography.preload();
+    LoadablePortfolioItem.preload();
   }
 
   public render = () => (
@@ -65,6 +73,8 @@ export class Routes extends Component {
       <Route path="/physical-work" component={LoadablePhysicalWork} />
       <Route path="/film" component={LoadableFilm} />
       <Route path="/photography" component={LoadablePhotography} />
+      <Route path="/project/:projectKey" component={LoadablePortfolioItem} />
+      <Route path="*" exact component={NotFound} />
     </Switch>
   )
 }

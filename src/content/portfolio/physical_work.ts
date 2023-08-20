@@ -3,6 +3,7 @@ import { Project } from './projects';
 
 export const PHYSICAL_PROJECTS: Array<Project> = [
   {
+    id: 'todo',
     name: 'TODO',
     links: [
       {

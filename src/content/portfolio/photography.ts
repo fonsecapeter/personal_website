@@ -3,6 +3,7 @@ import { Project } from './projects';
 
 export const PHOTOGRAPHY: Array<Project> = [
   {
+    id: 'todo',
     name: 'TODO',
     links: [
       {

@@ -3,6 +3,7 @@ import { Project } from './projects';
 
 export const DIGITAL_PROJECTS: Array<Project> = [
   {
+    id: 'api-buddy',
     name: 'API Buddy',
     links: [
       {
@@ -28,6 +29,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
   },
 
   {
+    id: 'brass-mono',
     name: 'Brass Mono',
     links: [
       {
@@ -54,6 +56,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
   },
 
   {
+    id: 'shellectric-colors',
     name: 'Shellectric Colors',
     links: [
       {
@@ -81,6 +84,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
   },
 
   {
+    id: 'this-website',
     name: 'This Website',
     links: [
       {
@@ -105,6 +109,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
   },
 
   {
+    id: 'color-shift',
     name: 'Color Shift',
     links: [
       {
@@ -132,6 +137,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
   },
 
   {
+    id: 'peter-notes',
     name: 'Peter Notes',
     links: [
       {
@@ -158,6 +164,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
   },
 
   {
+    id: 'ruby-chess',
     name: 'Ruby Chess',
     links: [
       {
@@ -182,6 +189,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
   },
 
   {
+    id: 'glia',
     name: 'Glia',
     links: [
       {

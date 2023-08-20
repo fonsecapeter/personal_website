@@ -4,6 +4,7 @@ module.exports = {
     browser: true,
   },
   extends: 'airbnb-typescript',
+  parser: "@typescript-eslint/parser",
   plugins: [
     '@typescript-eslint',
     'promise',
