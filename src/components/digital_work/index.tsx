@@ -4,9 +4,10 @@ import { Portfolio } from '../common/portfolio';
 import { DIGITAL_PROJECTS } from '../../content/portfolio/digital_work';
 import '../../assets/scss/portfolio.scss';
 
-
 export const DigitalWork: FunctionalComponent = () => (
-  <Portfolio title="Digital Work" projects={DIGITAL_PROJECTS} />
+  <div>
+    <Portfolio title="Digital Work" projects={DIGITAL_PROJECTS} />
+  </div>
 );
 
 export default DigitalWork; // for dynamic import

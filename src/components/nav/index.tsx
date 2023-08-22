@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { NavLink } from './nav_link';
 
-interface NavProps {}
+interface NavProps {
+  cleared: boolean,
+  unClearNav: Function,
+}
 interface NavState {
   selected: string,
 }
@@ -65,37 +68,65 @@ export class Nav extends Component<NavProps, NavState> {
   }
 
   private selectAbout() {
+    const { cleared, unClearNav } = this.props;
     scrollToTop();
+    if (cleared) {
+      unClearNav();
+    }
     this.setState(aboutState);
   }
 
   private selectExperience() {
+    const { cleared, unClearNav } = this.props;
     scrollToTop();
+    if (cleared) {
+      unClearNav();
+    }
     this.setState(experienceState);
   }
 
   private selectDigitalWork() {
+    const { cleared, unClearNav } = this.props;
     scrollToTop();
+    if (cleared) {
+      unClearNav();
+    }
     this.setState(digitalWorkState);
   }
 
   private selectPhysicalWork() {
+    const { cleared, unClearNav } = this.props;
     scrollToTop();
+    if (cleared) {
+      unClearNav();
+    }
     this.setState(physicalWorkState);
   }
 
   private selectFilm() {
+    const { cleared, unClearNav } = this.props;
     scrollToTop();
+    if (cleared) {
+      unClearNav();
+    }
     this.setState(filmState);
   }
 
   private selectPhotography() {
+    const { cleared, unClearNav } = this.props;
     scrollToTop();
+    if (cleared) {
+      unClearNav();
+    }
     this.setState(photographyState);
   }
 
   public render() {
-    const { selected } = this.state;
+    let { selected } = this.state;
+    const { cleared } = this.props;
+    if (cleared) {
+      selected = null;
+    }
     const links = [
       {
         name: ABOUT,

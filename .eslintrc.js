@@ -17,5 +17,6 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     'react/require-default-props': 'off',
     'react/prop-types': 'off',
+    'react/prefer-stateless-function': 'warn',
   }
 };

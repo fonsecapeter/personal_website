@@ -7,7 +7,7 @@ import '../../../assets/scss/portfolio.scss';
 
 interface PortfolioProps {
   title: String,
-  projects: Array<Project>
+  projects: Array<Project>,
 }
 
 export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects }) => (

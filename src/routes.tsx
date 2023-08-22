@@ -53,7 +53,11 @@ const LoadablePortfolioItem = Loadable({
   ...baseLoadableConfig,
 });
 
-export class Routes extends Component {
+interface RouteProps {
+  clearNav: Function
+}
+
+export class Routes extends Component<RoutesProps> {
   public componentDidMount() {
     LoadableAbout.preload();
     LoadableExperience.preload();
@@ -64,17 +68,23 @@ export class Routes extends Component {
     LoadablePortfolioItem.preload();
   }
 
-  public render = () => (
-    <Switch>
-      <Route exact path="/" component={LoadableAbout} />
-      <Route path="/about" component={LoadableAbout} />
-      <Route path="/experience" component={LoadableExperience} />
-      <Route path="/digital-work" component={LoadableDigitalWork} />
-      <Route path="/physical-work" component={LoadablePhysicalWork} />
-      <Route path="/film" component={LoadableFilm} />
-      <Route path="/photography" component={LoadablePhotography} />
-      <Route path="/project/:projectKey" component={LoadablePortfolioItem} />
-      <Route path="*" exact component={NotFound} />
-    </Switch>
-  )
+  public render = () => {
+    const { clearNav, navCleared } = this.props;
+    return (
+      <Switch>
+        <Route exact path="/" component={LoadableAbout} />
+        <Route path="/about" component={LoadableAbout} />
+        <Route path="/experience" component={LoadableExperience} />
+        <Route path="/digital-work" component={LoadableDigitalWork} />
+        <Route path="/physical-work" component={LoadablePhysicalWork} />
+        <Route path="/film" component={LoadableFilm} />
+        <Route path="/photography" component={LoadablePhotography} />
+        <Route
+          path="/project/:projectKey"
+          component={() => (<LoadablePortfolioItem clearNav={clearNav} navCleared={navCleared} />)}
+        />
+        <Route path="*" exact component={NotFound} />
+      </Switch>
+    );
+  }
 }
