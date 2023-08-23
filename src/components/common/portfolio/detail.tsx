@@ -7,22 +7,14 @@ import { NotFound } from '../not_found';
 const notFoundMsg = "I haven't made that project.... yet";
 
 interface PortfolioDetailProps {
-  clearNav: Function,
-  navCleared: boolean,
   match: object,
+  history: object,
 }
 
 export class PortfolioDetail extends Component<PortfolioDetailProps> {
   constructor(props: PortfolioDetailProps) {
     super(props);
     this.goBack = this.goBack.bind(this);
-  }
-
-  public componentDidMount() {
-    const { clearNav, navCleared } = this.props;
-    if (!navCleared) {
-      clearNav();
-    }
   }
 
   private goBack(category: string) {

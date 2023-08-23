@@ -65,6 +65,7 @@
       @include shadow-interactive;
       background-color: $black;
       border: 0;
+      border-radius: 4px;
       color: $white;
       margin-top: 20px;
 
@@ -153,6 +154,10 @@
       float: none;
       margin-bottom: 25px;
       width: 100%;
+    }
+
+    &-detail {
+      float: none;
     }
   }
 }
