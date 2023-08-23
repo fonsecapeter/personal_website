@@ -6,7 +6,7 @@ import '../../assets/scss/portfolio.scss';
 
 
 export const PhysicalWork: FunctionalComponent = () => (
-  <Portfolio title="Physical Work" projects={PHYSICAL_PROJECTS} />
+  <Portfolio title="Physical Work" projects={PHYSICAL_PROJECTS} category="physical-work" />
 );
 
 export default PhysicalWork; // for dynamic import

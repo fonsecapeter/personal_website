@@ -13,11 +13,23 @@ interface PortfolioDetailProps {
 }
 
 export class PortfolioDetail extends Component<PortfolioDetailProps> {
+  constructor(props: PortfolioDetailProps) {
+    super(props);
+    this.goBack = this.goBack.bind(this);
+  }
+
   public componentDidMount() {
     const { clearNav, navCleared } = this.props;
     if (!navCleared) {
       clearNav();
     }
+  }
+
+  private goBack(category: string) {
+    const { history } = this.props;
+    return () => {
+      history.push(`/${category}`);
+    };
   }
 
   public render() {
@@ -95,6 +107,13 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
             <ul className="portfolio-detail-bullets">
               {project.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}
             </ul>
+            <button
+              className="portfolio-detail-back-button"
+              type="button"
+              onClick={this.goBack(category)}
+            >
+              ← BACK
+            </button>
           </div>
         </div>
       </div>

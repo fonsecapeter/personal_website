@@ -6,7 +6,7 @@ import '../../assets/scss/portfolio.scss';
 
 export const DigitalWork: FunctionalComponent = () => (
   <div>
-    <Portfolio title="Digital Work" projects={DIGITAL_PROJECTS} />
+    <Portfolio title="Digital Work" projects={DIGITAL_PROJECTS} category="digital-work" />
   </div>
 );
 

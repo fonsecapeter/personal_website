@@ -4,8 +4,8 @@ import { PHOTOGRAPHY } from './photography';
 import { PHYSICAL_PROJECTS } from './physical_work';
 
 export const ALL_PROJECTS = {
-  digital: DIGITAL_PROJECTS,
+  'digital-work': DIGITAL_PROJECTS,
   film: FILM,
   photography: PHOTOGRAPHY,
-  physical: PHYSICAL_PROJECTS,
+  'physical-work': PHYSICAL_PROJECTS,
 };

@@ -22,12 +22,10 @@ export class App extends Component<AppProps, AppState> {
   }
 
   private clearNav() {
-    console.log('CLEARING NAV!');
     this.setState(clearedNavState);
   }
 
   private unClearNav() {
-    console.log('UNCLEARING NAV!');
     this.setState(initialState);
   }
 

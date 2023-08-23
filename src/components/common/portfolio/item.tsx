@@ -6,9 +6,10 @@ import { Project } from '../../../content/portfolio/projects';
 
 interface DigitalWorkProps {
   project: Project,
+  category: string,
 }
 
-export const PortfolioItem: FunctionaComponent<DigitalWorkProps> = ({ project }) => {
+export const PortfolioItem: FunctionaComponent<DigitalWorkProps> = ({ project, category }) => {
   let iconImageClass = 'portfolio-item-icon-image';
   if (project.icon.small) {
     iconImageClass += ' portfolio-item-icon-image-small';
@@ -16,7 +17,7 @@ export const PortfolioItem: FunctionaComponent<DigitalWorkProps> = ({ project })
 
   return (
     <Link
-      to={`/project/digital.${project.id}`}
+      to={`/project/${category}.${project.id}`}
       className="portfolio-item"
     >
       <div className="portfolio-item-icon">

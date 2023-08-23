@@ -8,9 +8,10 @@ import '../../../assets/scss/portfolio.scss';
 interface PortfolioProps {
   title: String,
   projects: Array<Project>,
+  category: string,
 }
 
-export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects }) => (
+export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects, category }) => (
   <div>
     <h1 className="page-title">{ title }</h1>
     <div className="portfolio-list">
@@ -19,6 +20,7 @@ export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects
           <PortfolioItem
             project={project}
             key={project.name}
+            category={category}
           />
         ))}
       </div>
@@ -29,6 +31,7 @@ export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects
               <PortfolioItem
                 project={project}
                 key={project.name}
+                category={category}
               />
             );
           }
@@ -42,6 +45,7 @@ export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects
               <PortfolioItem
                 project={project}
                 key={project.name}
+                category={category}
               />
             );
           }

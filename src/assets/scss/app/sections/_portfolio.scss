@@ -61,6 +61,18 @@
     float: left;
     margin: 0 10px 20px;
 
+    &-back-button {
+      @include shadow-interactive;
+      background-color: $black;
+      border: 0;
+      color: $white;
+      margin-top: 20px;
+
+      &:focus {
+        color: $camel;
+      }
+    }
+
     &-icon {
       // @include card-top;
 

@@ -6,7 +6,7 @@ import '../../assets/scss/portfolio.scss';
 
 
 export const Photograpgy: FunctionalComponent = () => (
-  <Portfolio title="Photography" projects={PHOTOGRAPHY} />
+  <Portfolio title="Photography" projects={PHOTOGRAPHY} category="photography" />
 );
 
 export default Photograpgy; // for dynamic import
