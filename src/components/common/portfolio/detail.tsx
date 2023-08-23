@@ -58,16 +58,19 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
       );
     }
 
-    let iconImageClass = 'portfolio-detail-icon-image';
+    let iconImageClass = 'portfolio-detail-image-img';
     if (project.icon.small) {
-      iconImageClass += ' portfolio-detail-icon-image-small';
+      iconImageClass += ' portfolio-detail-image-img-small';
     }
 
     return (
       <div
         className="portfolio-detail"
       >
-        <div className="portfolio-detail-icon">
+        <h1 className="portfolio-detail-title">
+          {project.name}
+        </h1>
+        <div className="portfolio-detail-image">
           <img
             className={iconImageClass}
             src={project.icon.src}
@@ -75,9 +78,6 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
           />
         </div>
         <div>
-          <h1 className="portfolio-detail-title">
-            {project.name}
-          </h1>
           <div>
             <div>
               {links}

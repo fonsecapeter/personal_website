@@ -74,11 +74,10 @@
       }
     }
 
-    &-icon {
-      // @include card-top;
+    &-image {
+      margin-bottom: 20px;
 
-      &-image {
-        // @include card-top;
+      &-img {
         display: block;
         margin: auto;
         width: 100%;
