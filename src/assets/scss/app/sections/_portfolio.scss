@@ -53,6 +53,49 @@
 
     &-title {
       cursor: pointer;
+      text-align: center;
+    }
+  }
+
+  &-detail {
+    float: left;
+    margin: 0 10px 20px;
+
+    &-back-button {
+      @include shadow-interactive;
+      background-color: $black;
+      border: 0;
+      border-radius: 4px;
+      color: $white;
+      margin-top: 20px;
+
+      &:focus {
+        color: $camel;
+      }
+    }
+
+    &-icon {
+      // @include card-top;
+
+      &-image {
+        // @include card-top;
+        display: block;
+        margin: auto;
+        width: 100%;
+
+        &-small {
+          border-radius: 23px;
+          padding: 20px;
+        }
+      }
+    }
+
+    &-title {
+      margin-bottom: 20px;
+    }
+
+    &-info {
+      padding-top: 10px;
     }
 
     &-dot {
@@ -68,7 +111,7 @@
     }
 
     &-description {
-      padding-top: 25px;
+      padding-top: 10px;
     }
 
     &-date {
@@ -111,6 +154,10 @@
       float: none;
       margin-bottom: 25px;
       width: 100%;
+    }
+
+    &-detail {
+      float: none;
     }
   }
 }

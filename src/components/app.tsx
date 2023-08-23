@@ -1,12 +1,12 @@
 // eslint-disable-next-line no-unused-vars
-import React, { Component, FunctionalComponent } from 'react';
+import React, { Component, FunctionaComponent } from 'react';
 import { Nav } from './nav/index';
 
 interface AppProps {
   children: Array<Component>
 }
 
-export const App: FunctionalComponent<AppProps> = ({ children }) => (
+export const App: FunctionaComponent<AppProps> = ({ children }) => (
   <div className="main-wrapper">
     <div className="left-column">
       <img

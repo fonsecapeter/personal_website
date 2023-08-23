@@ -9,7 +9,7 @@ interface NavLinkProps {
 }
 
 
-const slugify = (words: string) => (
+const slugify = (words: string): string => (
   words
     .toLowerCase()
     .trim()
@@ -19,7 +19,7 @@ const slugify = (words: string) => (
 );
 
 
-const capitalize = (word: string) => (
+const capitalize = (word: string): string => (
   word.charAt(0).toUpperCase() + word.slice(1)
 );
 
@@ -35,7 +35,7 @@ export const NavLink: FunctionalComponent<NavLinkProps> = ({ name, active, onCli
   return (
     <Link
       className="nav-link"
-      to={slugify(name)}
+      to={`/${slugify(name)}`}
       onClick={onClick}
     >
       {text}

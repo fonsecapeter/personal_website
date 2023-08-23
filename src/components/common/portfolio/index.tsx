@@ -1,16 +1,17 @@
 // eslint-disable-next-line no-unused-vars
 import React, { FunctionalComponent } from 'react';
-import { PortfolioItem } from './portfolio_item';
+import { PortfolioItem } from './item';
 // eslint-disable-next-line no-unused-vars
 import { Project } from '../../../content/portfolio/projects';
 import '../../../assets/scss/portfolio.scss';
 
 interface PortfolioProps {
   title: String,
-  projects: Array<Project>
+  projects: Array<Project>,
+  category: string,
 }
 
-export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects }) => (
+export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects, category }) => (
   <div>
     <h1 className="page-title">{ title }</h1>
     <div className="portfolio-list">
@@ -18,8 +19,8 @@ export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects
         {projects.map(project => (
           <PortfolioItem
             project={project}
-            tabIndex={0}
             key={project.name}
+            category={category}
           />
         ))}
       </div>
@@ -29,8 +30,8 @@ export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects
             return (
               <PortfolioItem
                 project={project}
-                tabIndex={-1}
                 key={project.name}
+                category={category}
               />
             );
           }
@@ -43,8 +44,8 @@ export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects
             return (
               <PortfolioItem
                 project={project}
-                tabIndex={-1}
                 key={project.name}
+                category={category}
               />
             );
           }

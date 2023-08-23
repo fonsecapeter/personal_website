@@ -2,7 +2,8 @@ severity: error
 
 rules:
   nesting-depth:
-    enabled: false
+    - 1
+    - max-depth: 5
 
 linters:
 

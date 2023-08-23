@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import { NavLink } from './nav_link';
 
-interface NavProps {}
 interface NavState {
   selected: string,
 }
@@ -22,13 +22,17 @@ const digitalWorkState: NavState = { selected: DIGITAL_WORK };
 const physicalWorkState: NavState = { selected: PHYSICAL_WORK };
 const filmState: NavState = { selected: FILM };
 const photographyState: NavState = { selected: PHOTOGRAPHY };
+const clearedState: NavState = { selected: null };
 const scrollToTop = () => window.scrollTo(0, 0);
 
-export class Nav extends Component<NavProps, NavState> {
+class NavBase extends Component<{}, NavState> {
   readonly state = initialState
 
-  constructor(props: NavProps) {
+  unlisten = null; // set in componentWillMount
+
+  constructor(props) {
     super(props);
+    this.selectLink = this.selectLink.bind(this);
     this.selectAbout = this.selectAbout.bind(this);
     this.selectExperience = this.selectExperience.bind(this);
     this.selectDigitalWork = this.selectDigitalWork.bind(this);
@@ -37,8 +41,20 @@ export class Nav extends Component<NavProps, NavState> {
     this.selectPhotography = this.selectPhotography.bind(this);
   }
 
-  public componentDidMount() {
-    // Select from url hash fragment, allows direct linking
+  componentWillMount() {
+    const { history } = this.props;
+    this.selectLink();
+    this.unlisten = history.listen(() => {
+      this.selectLink();
+    });
+  }
+
+  componentWillUnmount() {
+    this.unlisten();
+  }
+
+  private selectLink() {
+    // Select from url hash fragment because there is not history location on initial load
     const path = window.location.hash.replace('#/', '');
     switch (path) {
       case ABOUT:
@@ -59,9 +75,16 @@ export class Nav extends Component<NavProps, NavState> {
       case PHOTOGRAPHY:
         this.selectPhysicalWork();
         break;
-      default:
+      case '':
         this.selectAbout();
+        break;
+      default:
+        this.clear();
     }
+  }
+
+  private clear() {
+    this.setState(clearedState);
   }
 
   private selectAbout() {
@@ -143,3 +166,5 @@ export class Nav extends Component<NavProps, NavState> {
     );
   }
 }
+
+export const Nav = withRouter(NavBase);
