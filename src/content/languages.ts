@@ -1,3 +1,11 @@
+import python from '../assets/img/icons/code/python.png';
+import js from '../assets/img/icons/code/js.png';
+import html from '../assets/img/icons/code/html.png';
+import ruby from '../assets/img/icons/code/ruby.png';
+import sql from '../assets/img/icons/code/sql.png';
+import bash from '../assets/img/icons/code/bash.png';
+import matlab from '../assets/img/icons/code/matlab.png';
+
 interface Framework {
   name: string,
   link: string,
@@ -5,14 +13,14 @@ interface Framework {
 
 export interface Language {
   name: string,
-  frameworks: Array<Framework>
+  frameworks: Framework[],
   icon: string,
 }
 
 export const LANGUAGES = [
   {
     name: 'Python',
-    icon: require('../assets/img/icons/code/python.png'),
+    icon: python,
     frameworks: [
       {
         link: 'https://www.djangoproject.com/',
@@ -22,7 +30,7 @@ export const LANGUAGES = [
   },
   {
     name: 'JavaScript',
-    icon: require('../assets/img/icons/code/js.png'),
+    icon: js,
     frameworks: [
       {
         link: 'https://facebook.github.io/react/',
@@ -40,7 +48,7 @@ export const LANGUAGES = [
   },
   {
     name: 'HTML / CSS',
-    icon: require('../assets/img/icons/code/html.png'),
+    icon: html,
     frameworks: [
       {
         name: 'Sass',
@@ -50,7 +58,7 @@ export const LANGUAGES = [
   },
   {
     name: 'Ruby',
-    icon: require('../assets/img/icons/code/ruby.png'),
+    icon: ruby,
     frameworks: [
       {
         link: 'http://rubyonrails.org/',
@@ -64,17 +72,17 @@ export const LANGUAGES = [
   },
   {
     name: 'SQL',
-    icon: require('../assets/img/icons/code/sql.png'),
+    icon: sql,
     frameworks: [],
   },
   {
     name: 'Bash',
-    icon: require('../assets/img/icons/code/bash.png'),
+    icon: bash,
     frameworks: [],
   },
   {
     name: 'MatLab',
-    icon: require('../assets/img/icons/code/matlab.png'),
+    icon: matlab,
     frameworks: [
       {
         name: 'SPM',

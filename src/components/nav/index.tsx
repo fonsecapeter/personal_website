@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { NavLink } from './nav_link';
 
 interface NavState {
   selected: string,
+}
+interface NavLinkSpec {
+  name: string,
+  select: () => void,
+  active: boolean,
 }
 
 const ABOUT = 'about';
@@ -25,12 +30,12 @@ const photographyState: NavState = { selected: PHOTOGRAPHY };
 const clearedState: NavState = { selected: null };
 const scrollToTop = () => window.scrollTo(0, 0);
 
-class NavBase extends Component<{}, NavState> {
-  readonly state = initialState
+class NavBase extends Component<RouteComponentProps, NavState> {
+  readonly state = initialState;
 
   unlisten = null; // set in componentWillMount
 
-  constructor(props) {
+  constructor(props: RouteComponentProps) {
     super(props);
     this.selectLink = this.selectLink.bind(this);
     this.selectAbout = this.selectAbout.bind(this);
@@ -119,7 +124,7 @@ class NavBase extends Component<{}, NavState> {
 
   public render() {
     const { selected } = this.state;
-    const links = [
+    const links: NavLinkSpec[] = [
       {
         name: ABOUT,
         select: this.selectAbout,
@@ -153,13 +158,12 @@ class NavBase extends Component<{}, NavState> {
     ];
     return (
       <nav id="nav" className={`nav nav-${selected}`}>
-        {links.map((link, idx) => (
+        {links.map((link) => (
           <NavLink
             name={link.name}
             active={link.active}
-            onClick={link.select}
+            onClick={() => link.select()}
             key={link.name}
-            tabIndex={idx}
           />
         ))}
       </nav>

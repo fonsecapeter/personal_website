@@ -1,11 +1,11 @@
-// eslint-disable-next-line no-unused-vars
-import React, { FunctionalComponent } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { FunctionComponent } from 'react';
 import { CodeListItem } from './code_list_item';
 import { LANGUAGES } from '../../content/languages';
 import { Profile } from './profile';
 import '../../assets/scss/about.scss';
 
-export const About: FunctionalComponent = () => (
+export const About: FunctionComponent = () => (
   <div className="about">
     <h1 className="page-title">About Me</h1>
     <div className="about-elevator-pitch">

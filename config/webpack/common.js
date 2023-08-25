@@ -1,7 +1,6 @@
 // shared config (dev and prod)
 const webpack = require('webpack');
 const { resolve } = require('path');
-const SassLintPlugin = require('sasslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -59,7 +58,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new SassLintPlugin(),
     new HtmlWebpackPlugin({
       // manage html imports in webpack
       template: 'index.html.ejs',

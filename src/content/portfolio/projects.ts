@@ -17,11 +17,11 @@ interface ProjectLink {
 export interface Project {
   id: string,
   name: string,
-  links: Array<ProjectLink>,
+  links: ProjectLink[],
   date: string,
   keywords: string,
   icon: ProjectIcon,
   description: string,
-  bullets: Array<string>,
+  bullets: string[],
   org?: Org,
 }

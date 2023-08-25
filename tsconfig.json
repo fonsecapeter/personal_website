@@ -7,9 +7,7 @@
     "strict": false,
     "isolatedModules": true,
     "esModuleInterop": true,
-
     "importHelpers": true,
-
     "sourceMap": false,
     "inlineSourceMap": true,
     "module": "esnext",
@@ -23,6 +21,5 @@
       "es2015.promise"
     ]
   },
-  "types": ["node"],
-  "include": ["src"],
+  "include": ["/app/src/**/*"]
 }

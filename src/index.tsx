@@ -4,7 +4,7 @@ import { AppContainer } from 'react-hot-loader';
 import { HashRouter } from 'react-router-dom';
 
 import { App } from './components/app';
-import { Routes } from './routes';
+import { AppRoutes } from './routes';
 
 import './assets/scss/base.scss';
 import './assets/img/favicon.ico';
@@ -15,7 +15,7 @@ render(
   <AppContainer>
     <HashRouter>
       <App>
-        <Routes />
+        <AppRoutes />
       </App>
     </HashRouter>
   </AppContainer>,
@@ -32,7 +32,7 @@ if (module.hot) {
       <AppContainer>
         <HashRouter>
           <NewApp>
-            <Routes />
+            <AppRoutes />
           </NewApp>
         </HashRouter>
       </AppContainer>,

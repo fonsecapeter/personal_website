@@ -1,17 +1,17 @@
-// eslint-disable-next-line no-unused-vars
-import React, { FunctionalComponent } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { FunctionComponent } from 'react';
 import { PortfolioItem } from './item';
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from '../../../content/portfolio/projects';
 import '../../../assets/scss/portfolio.scss';
 
 interface PortfolioProps {
   title: String,
-  projects: Array<Project>,
+  projects: Project[],
   category: string,
 }
 
-export const Portfolio: FunctionalComponent<PortfolioProps> = ({ title, projects, category }) => (
+export const Portfolio: FunctionComponent<PortfolioProps> = ({ title, projects, category }) => (
   <div>
     <h1 className="page-title">{ title }</h1>
     <div className="portfolio-list">

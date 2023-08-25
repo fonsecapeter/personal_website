@@ -1,9 +1,9 @@
-// eslint-disable-next-line no-unused-vars
-import React, { FunctionalComponent } from 'react';
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { FunctionComponent } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { LoadingComponentProps } from 'react-loadable';
 
-export const Loading: React.FunctionalComponent<LoadingComponentProps> = ({ error, retry }) => {
+export const Loading: React.FunctionComponent<LoadingComponentProps> = ({ error, retry }) => {
   if (error) {
     return (
       <div>

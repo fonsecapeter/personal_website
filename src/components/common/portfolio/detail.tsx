@@ -1,15 +1,17 @@
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { ALL_PROJECTS } from '../../../content/portfolio/all';
 import { NotFound } from '../not_found';
 
 const notFoundMsg = "I haven't made that project.... yet";
 
-interface PortfolioDetailProps {
-  match: object,
-  history: object,
+interface MatchParams {
+  projectKey: string;
 }
+
+interface PortfolioDetailProps extends RouteComponentProps<MatchParams> {}
+
 
 export class PortfolioDetail extends Component<PortfolioDetailProps> {
   constructor(props: PortfolioDetailProps) {
@@ -26,7 +28,7 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
 
   public render() {
     const { match } = this.props;
-    const { projectKey } = match.params;
+    const { projectKey } = match.params;  //
     const [category, projectId] = projectKey.split('.');
     if (!(category in ALL_PROJECTS)) {
       return (<NotFound msg={notFoundMsg} />);

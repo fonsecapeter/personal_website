@@ -1,10 +1,18 @@
+import dna from '../assets/img/icons/experience/dna.png';
+import brain from '../assets/img/icons/experience/brain.png';
+import microscope from '../assets/img/icons/experience/microscope.png';
+import stethoscope from '../assets/img/icons/experience/stethoscope.png';
+import tube from '../assets/img/icons/experience/tube.png';
+import aa from '../assets/img/icons/aa.png';
+import ucsc from '../assets/img/icons/ucsc.png';
+
 export interface Experience {
   title: string,
   icon: string,
   date: string,
   link: string,
   org: string,
-  bullets: Array<string>,
+  bullets: string[],
   primary?: string,
 }
 
@@ -12,7 +20,7 @@ export const EXPERIENCES = {
   workExperiences: [
     {
       title: 'Software Engineer',
-      icon: require('../assets/img/icons/experience/dna.png'),
+      icon: dna,
       date: '2016-Present',
       link: 'https://www.23andme.com/',
       org: '23andMe',
@@ -21,7 +29,7 @@ export const EXPERIENCES = {
 
     {
       title: 'Clinical Research Coordinator',
-      icon: require('../assets/img/icons/experience/brain.png'),
+      icon: brain,
       date: '2014-2016',
       link: 'http://memory.ucsf.edu/',
       org: 'UCSF Memory and Aging Center',
@@ -37,7 +45,7 @@ export const EXPERIENCES = {
 
     {
       title: 'Undergraduate Researcher',
-      icon: require('../assets/img/icons/experience/microscope.png'),
+      icon: microscope,
       date: '2013-2014',
       link: 'http://www.kellogglab.com/',
       org: 'UCSC Kellogg Lab',
@@ -52,7 +60,7 @@ export const EXPERIENCES = {
 
     {
       title: 'Volunteer Lab Assistant',
-      icon: require('../assets/img/icons/experience/stethoscope.png'),
+      icon: stethoscope,
       date: '2012-2013 Summers',
       link:
         'http://doctor.webmd.com/practice/novato-medical-center-3fd2a3c8-4703-e211-a42b-001f29e3eb44-overview',
@@ -68,7 +76,7 @@ export const EXPERIENCES = {
 
     {
       title: 'Technician / Designer',
-      icon: require('../assets/img/icons/experience/tube.png'),
+      icon: tube,
       date: '2010-2012 Summers',
       link: 'http://www.vintage47amps.com/',
       org: 'Vintage 47 Amplifiers',
@@ -82,7 +90,7 @@ export const EXPERIENCES = {
   education: [
     {
       title: 'App Academy',
-      icon: require('../assets/img/icons/aa.png'),
+      icon: aa,
       date: 'May-July 2016',
       link: 'https://www.appacademy.io/',
       org: 'a/A San Francisco',
@@ -92,7 +100,7 @@ export const EXPERIENCES = {
 
     {
       title: 'Bachelor of Science in Biology',
-      icon: require('../assets/img/icons/ucsc.png'),
+      icon: ucsc,
       date: '2010-2014',
       link: 'https://www.ucsc.edu/',
       org: 'University of California, Santa Cruz',

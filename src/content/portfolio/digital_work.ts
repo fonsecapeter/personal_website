@@ -1,7 +1,15 @@
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from './projects';
+import apiBuddy from '../../assets/img/icons/portfolio/api-buddy.gif';
+import brassMono from '../../assets/img/icons/portfolio/brass_mono.png';
+import shellectricJsx from '../../assets/img/icons/portfolio/shellectric-jsx.png';
+import workspace from '../../assets/img/icons/workspace.png';
+import colorShiftScreenShot from '../../assets/img/icons/portfolio/color-shift-screenshot.png';
+import peterNotes from '../../assets/img/icons/portfolio/peter-notes.png';
+import rubyPawnPromotion from '../../assets/img/icons/portfolio/ruby_pawn_promotion.gif';
+import gliaQuestionDetail from '../../assets/img/icons/portfolio/glia-question-detail.png';
 
-export const DIGITAL_PROJECTS: Array<Project> = [
+export const DIGITAL_PROJECTS: Project[] = [
   {
     id: 'api-buddy',
     name: 'API Buddy',
@@ -18,7 +26,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
     date: '2019',
     keywords: 'Python',
     icon: {
-      src: require('../../assets/img/icons/portfolio/api-buddy.gif'),
+      src: apiBuddy,
     },
     description: 'CLI tool for exploring APIs',
     bullets: [
@@ -44,7 +52,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
     date: '2017',
     keywords: 'Inkscape Fontforge',
     icon: {
-      src: require('../../assets/img/icons/portfolio/brass_mono.png'),
+      src: brassMono,
     },
     description: 'Retro monospaced font inspired by 70\'s design.',
     bullets: [
@@ -71,7 +79,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
     date: '2017',
     keywords: 'Colors',
     icon: {
-      src: require('../../assets/img/icons/portfolio/shellectric-jsx.png'),
+      src: shellectricJsx,
     },
     description: 'Easy on the eyes, retro colors inspired by 70\'s design.',
     bullets: [
@@ -95,7 +103,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
     date: '2016',
     keywords: 'JavaScript',
     icon: {
-      src: require('../../assets/img/icons/workspace.png'),
+      src: workspace,
     },
     description: 'Personal, static website.',
     bullets: [
@@ -128,7 +136,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
     },
     keywords: 'JavasScript',
     icon: {
-      src: require('../../assets/img/icons/portfolio/color-shift-screenshot.png'),
+      src: colorShiftScreenShot,
     },
     description: 'JavaScript canvas game that makes learning about neurology fun.',
     bullets: [
@@ -152,7 +160,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
     date: '2017',
     keywords: 'Ruby',
     icon: {
-      src: require('../../assets/img/icons/portfolio/peter-notes.png'),
+      src: peterNotes,
     },
     description: 'Terminal-based notes manager.',
     bullets: [
@@ -179,7 +187,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
     },
     keywords: 'Ruby',
     icon: {
-      src: require('../../assets/img/icons/portfolio/ruby_pawn_promotion.gif'),
+      src: rubyPawnPromotion,
       small: false,
     },
     description: 'Command-line chess.',
@@ -208,7 +216,7 @@ export const DIGITAL_PROJECTS: Array<Project> = [
     },
     keywords: 'Ruby Rails JavaScript React',
     icon: {
-      src: require('../../assets/img/icons/portfolio/glia-question-detail.png'),
+      src: gliaQuestionDetail,
     },
     description: 'Online support group for caregivers of dementia patients.',
     bullets: [

@@ -1,13 +1,13 @@
-// eslint-disable-next-line no-unused-vars
-import React, { FunctionalComponent } from 'react';
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { FunctionComponent } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Language } from '../../content/languages';
 
 interface CodeListItemProps {
   language: Language,
 }
 
-export const CodeListItem: FunctionalComponent<CodeListItemProps> = ({ language }) => {
+export const CodeListItem: FunctionComponent<CodeListItemProps> = ({ language }) => {
   let frameworks = [];
   if (language.frameworks.length > 0) {
     frameworks = language.frameworks.map((framework, idx) => (

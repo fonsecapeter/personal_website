@@ -1,6 +1,6 @@
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, { Component, KeyboardEvent } from 'react';
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Experience } from '../../content/experiences';
 
 interface ExperienceProps {
@@ -25,7 +25,7 @@ const hideState: ExperienceState = {
 };
 
 export class ExperienceItem extends Component<ExperienceProps, ExperienceState> {
-  readonly state = initialState
+  readonly state = initialState;
 
   constructor(props: ExperienceProps) {
     super(props);
@@ -123,7 +123,6 @@ export class ExperienceItem extends Component<ExperienceProps, ExperienceState> 
                 {experience.bullets.map(bullet => (
                   <li
                     key={bullet}
-                    // eslint-disable-next-line react/no-danger
                     dangerouslySetInnerHTML={{ __html: bullet }}
                   />
                 ))}

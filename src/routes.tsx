@@ -53,7 +53,7 @@ const LoadablePortfolioItem = Loadable({
   ...baseLoadableConfig,
 });
 
-export class Routes extends Component {
+export class AppRoutes extends Component {
   public componentDidMount() {
     LoadableAbout.preload();
     LoadableExperience.preload();
@@ -66,7 +66,7 @@ export class Routes extends Component {
 
   public render = () => (
     <Switch>
-      <Route exact path="/" component={LoadableAbout} />
+      <Route path="/" exact component={LoadableAbout} />
       <Route path="/about" component={LoadableAbout} />
       <Route path="/experience" component={LoadableExperience} />
       <Route path="/digital-work" component={LoadableDigitalWork} />
@@ -81,5 +81,5 @@ export class Routes extends Component {
       />
       <Route path="*" exact component={NotFound} />
     </Switch>
-  )
+  );
 }
