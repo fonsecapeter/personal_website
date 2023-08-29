@@ -26,7 +26,7 @@ const clearedState: NavState = { selected: null };
 const scrollToTop = () => window.scrollTo(0, 0);
 
 class NavBase extends Component<{}, NavState> {
-  readonly state = initialState
+  readonly state = initialState;
 
   unlisten = null; // set in componentWillMount
 

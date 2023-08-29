@@ -13,5 +13,5 @@ export const NotFound: React.FunctionalComponent<NotFoundProps> = ({ msg }) => (
 );
 
 NotFound.defaultProps = {
-  msg: "This page doesn't exist"
+  msg: "This page doesn't exist",
 };

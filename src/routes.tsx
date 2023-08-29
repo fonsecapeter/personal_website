@@ -81,5 +81,5 @@ export class Routes extends Component {
       />
       <Route path="*" exact component={NotFound} />
     </Switch>
-  )
+  );
 }

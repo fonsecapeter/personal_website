@@ -25,7 +25,7 @@ const hideState: ExperienceState = {
 };
 
 export class ExperienceItem extends Component<ExperienceProps, ExperienceState> {
-  readonly state = initialState
+  readonly state = initialState;
 
   constructor(props: ExperienceProps) {
     super(props);
