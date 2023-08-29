@@ -1,6 +1,7 @@
 # My Personal Website
 
-[![Build Status](https://travis-ci.org/fonsecapeter/personal_website.svg?branch=main)](https://travis-ci.org/fonsecapeter/personal_website.svg)
+[![Build Status, hopefully green...](https://circleci.com/gh/fonsecapeter/personal_website.svg?style=svg)](https://app.circleci.com/pipelines/github/fonsecapeter/personal_website)
+
 
 Check it out at [peternfonseca.com](http://www.peternfonseca.com)
 
