@@ -1,5 +1,5 @@
 // production config
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const { resolve } = require('path');
 const CompressionPlugin = require('compression-webpack-plugin');
 

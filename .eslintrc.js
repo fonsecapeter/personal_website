@@ -5,9 +5,13 @@ module.exports = {
   },
   extends: 'airbnb-typescript',
   parser: "@typescript-eslint/parser",
+  parserOptions: {
+    "project": ["/app/tsconfig.json"]
+  },
   plugins: [
     '@typescript-eslint',
     'promise',
+    'import',
   ],
   rules: {
     'comma-dangle': 'off',
@@ -17,6 +21,5 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     'react/require-default-props': 'off',
     'react/prop-types': 'off',
-    'react/prefer-stateless-function': 'warn',
   }
 };

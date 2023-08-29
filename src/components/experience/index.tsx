@@ -1,14 +1,13 @@
-// eslint-disable-next-line no-unused-vars
-import React, { FunctionalComponent } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { FunctionComponent } from 'react';
 import { ExperienceItem } from './experience_item';
 import { EXPERIENCES } from '../../content/experiences';
 import '../../assets/scss/experience.scss';
+import posterIcon from '../../assets/img/icons/poster.png';
+import presentationIcon from '../../assets/img/icons/presentation.png';
+import resumePDF from '../../assets/resume/PeterFonsecaResume.pdf';
 
-const posterIcon = require('../../assets/img/icons/poster.png');
-const presentationIcon = require('../../assets/img/icons/presentation.png');
-const resumePDF = require('../../assets/resume/PeterFonsecaResume.pdf');
-
-export const Experience: FunctionalComponent = () => (
+export const Experience: FunctionComponent = () => (
   <div className="experience">
     <h1 className="page-title">
       Work Experience

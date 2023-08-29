@@ -1,7 +1,8 @@
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from './projects';
+import changeMe from '../../assets/img/icons/portfolio/brass_mono.png';
 
-export const FILM: Array<Project> = [
+export const FILM: Project[] = [
   {
     id: 'todo',
     name: 'TODO',
@@ -14,7 +15,7 @@ export const FILM: Array<Project> = [
     date: '2023',
     keywords: 'In Progress',
     icon: {
-      src: require('../../assets/img/icons/portfolio/brass_mono.png'),
+      src: changeMe,
     },
     description: 'Add these',
     bullets: [

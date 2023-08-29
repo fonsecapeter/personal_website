@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Just type check for now 🧪
+set -e -o pipefail
+
+docker-compose run --rm web npm run test

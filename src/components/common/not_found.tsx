@@ -1,11 +1,11 @@
-// eslint-disable-next-line no-unused-vars
-import React, { FunctionalComponent } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { FunctionComponent } from 'react';
 
 interface NotFoundProps {
   msg: string
 }
 
-export const NotFound: React.FunctionalComponent<NotFoundProps> = ({ msg }) => (
+export const NotFound: React.FunctionComponent<NotFoundProps> = ({ msg }) => (
   <div>
     <h1>Not Found</h1>
     <p>{msg}</p>

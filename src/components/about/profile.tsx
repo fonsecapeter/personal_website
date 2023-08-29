@@ -1,12 +1,11 @@
-// eslint-disable-next-line no-unused-vars
-import React, { FunctionalComponent } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { FunctionComponent } from 'react';
+import me from '../../assets/img/me.jpg';
+import gitHub from '../../assets/img/icons/social/github.svg';
+import linkedIn from '../../assets/img/icons/social/linkedin.svg';
+import behance from '../../assets/img/icons/social/behance.svg';
 
-const me = require('../../assets/img/me.jpg');
-const gitHub = require('../../assets/img/icons/social/github.svg');
-const linkedIn = require('../../assets/img/icons/social/linkedin.svg');
-const behance = require('../../assets/img/icons/social/behance.svg');
-
-export const Profile: FunctionalComponent = () => (
+export const Profile: FunctionComponent = () => (
   <div className="profile">
     <div id="profile-headshot">
       <img

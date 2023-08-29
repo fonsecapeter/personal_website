@@ -1,16 +1,14 @@
-// eslint-disable-next-line no-unused-vars
-import React, { Component, FunctionaComponent } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { Component, FunctionComponent } from 'react';
+import { RouteProps } from 'react-router';
 import { Nav } from './nav/index';
+import logo from '../assets/img/logo.png';
 
-interface AppProps {
-  children: Array<Component>
-}
-
-export const App: FunctionaComponent<AppProps> = ({ children }) => (
+export const App: FunctionComponent<RouteProps> = ({ children }) => (
   <div className="main-wrapper">
     <div className="left-column">
       <img
-        src={require('../assets/img/logo.png')}
+        src={logo}
         className="logo"
         alt="P. Fonseca"
       />

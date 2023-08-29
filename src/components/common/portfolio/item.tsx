@@ -1,7 +1,7 @@
-// eslint-disable-next-line no-unused-vars
-import React, { FunctionaComponent } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React, { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from '../../../content/portfolio/projects';
 
 interface DigitalWorkProps {
@@ -9,7 +9,7 @@ interface DigitalWorkProps {
   category: string,
 }
 
-export const PortfolioItem: FunctionaComponent<DigitalWorkProps> = ({ project, category }) => {
+export const PortfolioItem: FunctionComponent<DigitalWorkProps> = ({ project, category }) => {
   let iconImageClass = 'portfolio-item-icon-image';
   if (project.icon.small) {
     iconImageClass += ' portfolio-item-icon-image-small';
