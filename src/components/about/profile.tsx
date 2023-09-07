@@ -17,7 +17,7 @@ export const Profile: FunctionComponent = () => (
     </div>
     <div className="profile-content">
       <div className="profile-content-name">
-        <p>Peter Fonseca</p>
+        <h3>Peter Fonseca</h3>
         <p>Software Engineer</p>
       </div>
       <div>

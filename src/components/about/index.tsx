@@ -7,24 +7,24 @@ import '../../assets/scss/about.scss';
 
 export const About: FunctionComponent = () => (
   <div className="about">
-    <h1 className="page-title">About Me</h1>
     <div className="about-elevator-pitch">
-      <h3>From Science to Tech</h3>
+      <Profile />
       <p className="about-elevator-pitch-paragraph">
-        I&#39;m a researcher-turned-software-engineer based in San Francisco. I
-        love all things computer science and biology, and I&#39;m always
-        looking for new ways to help people through technology.
+        I&#39;m an experienced full-stack software engineer based in
+        San Francisco who loves making art.
+      </p>
+      <p className="about-elevator-pitch-paragraph">
+        You can find some of that here.
       </p>
     </div>
     <div className="about-code-list">
-      <h3 className="about-code-list-title">Languages I Work With</h3>
+      <h3 className="about-code-list-title">Languages I Work With Most</h3>
       <div>
         {LANGUAGES.map(languageItem => (
           <CodeListItem language={languageItem} key={languageItem.name} />
         ))}
       </div>
     </div>
-    <Profile />
   </div>
 );
 

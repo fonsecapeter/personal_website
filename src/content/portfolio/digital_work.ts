@@ -1,41 +1,18 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from './projects';
 import apiBuddy from '../../assets/img/icons/portfolio/api-buddy.gif';
+import brain from '../../assets/img/icons/portfolio/brain.png';
 import brassMono from '../../assets/img/icons/portfolio/brass_mono.png';
-import shellectricJsx from '../../assets/img/icons/portfolio/shellectric-jsx.png';
-import workspace from '../../assets/img/icons/workspace.png';
 import colorShiftScreenShot from '../../assets/img/icons/portfolio/color-shift-screenshot.png';
+import gliaQuestionDetail from '../../assets/img/icons/portfolio/glia-question-detail.png';
+import krafftachrome from '../../assets/img/icons/portfolio/krafftachrome.png';
 import peterNotes from '../../assets/img/icons/portfolio/peter-notes.png';
 import rubyPawnPromotion from '../../assets/img/icons/portfolio/ruby_pawn_promotion.gif';
-import gliaQuestionDetail from '../../assets/img/icons/portfolio/glia-question-detail.png';
+import shellectricJsx from '../../assets/img/icons/portfolio/shellectric-jsx.png';
+import thisWebsite from '../../assets/img/icons/portfolio/this-website.png';
+// import workspace from '../../assets/img/icons/workspace.png';
 
 export const DIGITAL_PROJECTS: Project[] = [
-  {
-    id: 'api-buddy',
-    name: 'API Buddy',
-    links: [
-      {
-        text: 'github',
-        url: 'https://github.com/fonsecapeter/api-buddy',
-      },
-      {
-        text: 'pypi',
-        url: 'https://pypi.org/project/api-buddy',
-      },
-    ],
-    date: '2019',
-    keywords: 'Python',
-    icon: {
-      src: apiBuddy,
-    },
-    description: 'CLI tool for exploring APIs',
-    bullets: [
-      'Intuitive interface',
-      'OAuth2 authentication',
-      'Killer formatting',
-    ],
-  },
-
   {
     id: 'brass-mono',
     name: 'Brass Mono',
@@ -50,16 +27,114 @@ export const DIGITAL_PROJECTS: Project[] = [
       },
     ],
     date: '2017',
-    keywords: 'Inkscape Fontforge',
+    keywords: 'open source font',
     icon: {
       src: brassMono,
     },
-    description: 'Retro monospaced font inspired by 70\'s design.',
+    description: 'Retro monospaced font inspired by 70\'s electrical and mechanical design design. It\'s the only font I use on this website and write code in it every day.',
     bullets: [
       'Docker',
       'Automated regular / bold / italic build',
       'Almost Google Fonts compliant',
       'Rad design',
+    ],
+  },
+
+  {
+    id: 'this-website',
+    name: 'This Website',
+    links: [
+      {
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/personal_website',
+      },
+    ],
+    date: '2016',
+    keywords: 'single page web app',
+    icon: {
+      src: thisWebsite,
+    },
+    description: 'You\'re on it right now!',
+    bullets: [
+      'React',
+      'Code Splitting',
+      'TypeScript',
+      'Sass',
+      'Docker',
+      'Continuous Deployment',
+    ],
+  },
+
+  {
+    id: 'neuropy',
+    name: 'Brain MRI Deep Learning',
+    links: [
+      {
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/neuropy',
+      },
+    ],
+    date: '2017',
+    keywords: 'deep learning exploration',
+    icon: {
+      src: brain,
+    },
+    description: 'When I first learned how accessible tensor flow was, I had to see if I could hack together a quick deep learning model trained to diagnose Alzheimer\'s from 3D brain MRI scans. The models themselves are faily simple, but the intersting part is the pipeline I built to feed them data. This involved loading sample MRI scans from public sources (including a single MRI of my own brain) and the steps to normalize and process them so that they could be fed into tensorflow (including quality checks along the way). At the time, I could only find one paper on training models against MRI data so adapted what I learned from UCSF about volumetric studies to internet guides for image recognition models to see if I could replicate something similar. I quickly ran into scaling limitations so decided to try any other public, labelled brain MRI datasets for similar classification studies that I could find. I stopped at the point where I\'d need some sort of research partnership to scale up for more data, but did lay the groundwork for something that could be expanded and tuned.',
+    bullets: [
+      'Leveraged a public datasets',
+      'Complete data pipeline from raw MRI exports',
+      'Voxels',
+    ],
+  },
+
+  {
+    id: 'api-buddy',
+    name: 'API Buddy',
+    links: [
+      {
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/api-buddy',
+      },
+      {
+        text: 'pypi',
+        url: 'https://pypi.org/project/api-buddy',
+      },
+    ],
+    date: '2019',
+    keywords: 'python cli tool',
+    icon: {
+      src: apiBuddy,
+    },
+    description: 'CLI tool for exploring APIs. I Use this all the time at work. Postman is great, but it\'s also complicated and takes too long to set up when I want an answer right away. This has is exactly what I need for working with API\'s, nothing less, nothing more.',
+    bullets: [
+      'Intuitive interface',
+      'Automatic OAuth2 authentication',
+      'Pleasant text-based UI/UX',
+    ],
+  },
+
+  {
+    id: 'krafftachrome',
+    name: 'Krafftachrome',
+    links: [
+      {
+        text: 'vscode',
+        url: 'https://marketplace.visualstudio.com/items?itemName=fonsecapeter.theme-krafftachrome',
+      },
+      {
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/krafftachrome_visual_studio_code',
+      },
+    ],
+    date: '2022',
+    keywords: 'colorscheme',
+    icon: {
+      src: krafftachrome,
+    },
+    description: 'Inspired by the work of Katia and Maurice Krafft, this project aims to capture the strange and beautiful world of 20th century volcanology. All colors were "droppered" directly from photos they took and "re-droppered" as I curated them into a cohesive palette that worked for daily use.',
+    bullets: [
+      'VS Code theme',
+      'iTerm2 theme',
     ],
   },
 
@@ -77,7 +152,7 @@ export const DIGITAL_PROJECTS: Project[] = [
       },
     ],
     date: '2017',
-    keywords: 'Colors',
+    keywords: 'colorscheme',
     icon: {
       src: shellectricJsx,
     },
@@ -88,31 +163,6 @@ export const DIGITAL_PROJECTS: Project[] = [
       'Vim integration',
       'Slack theme',
       'Chrome theme',
-    ],
-  },
-
-  {
-    id: 'this-website',
-    name: 'This Website',
-    links: [
-      {
-        text: 'github',
-        url: 'https://github.com/fonsecapeter/personal_website',
-      },
-    ],
-    date: '2016',
-    keywords: 'JavaScript',
-    icon: {
-      src: workspace,
-    },
-    description: 'Personal, static website.',
-    bullets: [
-      'React',
-      'Code Splitting',
-      'TypeScript',
-      'Sass',
-      'Docker',
-      'Continuous Deployment',
     ],
   },
 
@@ -134,7 +184,7 @@ export const DIGITAL_PROJECTS: Project[] = [
       name: 'App Academy',
       url: 'https://www.appacademy.io/',
     },
-    keywords: 'JavasScript',
+    keywords: 'web game',
     icon: {
       src: colorShiftScreenShot,
     },
@@ -158,7 +208,7 @@ export const DIGITAL_PROJECTS: Project[] = [
       },
     ],
     date: '2017',
-    keywords: 'Ruby',
+    keywords: 'ruby cli tool',
     icon: {
       src: peterNotes,
     },
@@ -185,7 +235,7 @@ export const DIGITAL_PROJECTS: Project[] = [
       name: 'App Academy',
       url: 'https://www.appacademy.io/',
     },
-    keywords: 'Ruby',
+    keywords: 'ruby cli game',
     icon: {
       src: rubyPawnPromotion,
       small: false,
@@ -214,7 +264,7 @@ export const DIGITAL_PROJECTS: Project[] = [
       name: 'App Academy',
       url: 'https://www.appacademy.io',
     },
-    keywords: 'Ruby Rails JavaScript React',
+    keywords: 'crud web app',
     icon: {
       src: gliaQuestionDetail,
     },
