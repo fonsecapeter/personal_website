@@ -136,9 +136,9 @@ class NavBase extends Component<RouteComponentProps, NavState> {
         active: selected === DIGITAL_WORK,
       },
       // {
-      //   name: 'Physical Work',
+      //   name: 'Art',
       //   select: this.selectPhysicalWork,
-      //   active: selected === PHYSICAL_WORK,
+      //   active: selected === PHYSICAL_WORK,  // TODO: Update this to art
       // },
       // {
       //   name: FILM,

@@ -4,7 +4,6 @@ import html from '../assets/img/icons/code/html.png';
 import ruby from '../assets/img/icons/code/ruby.png';
 import sql from '../assets/img/icons/code/sql.png';
 import bash from '../assets/img/icons/code/bash.png';
-import matlab from '../assets/img/icons/code/matlab.png';
 
 interface Framework {
   name: string,
@@ -79,15 +78,5 @@ export const LANGUAGES = [
     name: 'Bash',
     icon: bash,
     frameworks: [],
-  },
-  {
-    name: 'MatLab',
-    icon: matlab,
-    frameworks: [
-      {
-        name: 'SPM',
-        link: 'http://www.fil.ion.ucl.ac.uk/spm/',
-      },
-    ],
   },
 ];
