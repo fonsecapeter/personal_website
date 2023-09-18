@@ -1,11 +1,11 @@
-import { DIGITAL_PROJECTS } from './digital_work';
+import { CODE } from './code';
 import { FILM } from './film';
 import { PHOTOGRAPHY } from './photography';
-import { PHYSICAL_PROJECTS } from './physical_work';
+import { ART } from './art';
 
 export const ALL_PROJECTS = {
-  'digital-work': DIGITAL_PROJECTS,
+  code: CODE,
   film: FILM,
   photography: PHOTOGRAPHY,
-  'physical-work': PHYSICAL_PROJECTS,
+  art: ART,
 };

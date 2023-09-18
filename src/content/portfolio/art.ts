@@ -2,7 +2,7 @@
 import { Project } from './projects';
 import changeMe from '../../assets/img/icons/portfolio/brass_mono.png';
 
-export const PHYSICAL_PROJECTS: Project[] = [
+export const ART: Project[] = [
   {
     id: 'todo',
     name: 'TODO',

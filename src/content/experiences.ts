@@ -19,12 +19,34 @@ export interface Experience {
 export const EXPERIENCES = {
   workExperiences: [
     {
-      title: 'Software Engineer',
+      title: 'Sr. Software Engineer',
       icon: dna,
-      date: '2016-Present',
+      date: '2019-Present',
       link: 'https://www.23andme.com/',
       org: '23andMe',
-      bullets: [],
+      bullets: [
+        'Moved to the health team',
+        'Led a different group of engineers',
+        'Expand our health - focused medical device product and the FDA regulations systems around it',
+        'Contributed to highly sensitive telehealth projects',
+      ],
+    },
+
+    {
+      title: 'Software Engineer',
+      icon: dna,
+      date: '2016-2019',
+      link: 'https://www.23andme.com/',
+      org: '23andMe',
+      bullets: [
+        'Started on the API team, where I ramped on software engineering at a professinoal level',
+        'Developed leadership skills starting with onboarding a team intern',
+        'Moved to our "Eureka" team (experimental core features)',
+        'Hired, onboarded, and led a team of engineers',
+        'Managed and maintained the external-facing API + developer program',
+        'Facilited API working group meetings',
+        'Implemented numerous full-stack engineering projects throughout the codebase',
+      ],
     },
 
     {

@@ -21,6 +21,7 @@ export interface Project {
   date: string,
   keywords: string,
   icon: ProjectIcon,
+  video?: string,
   description: string,
   bullets: string[],
   org?: Org,

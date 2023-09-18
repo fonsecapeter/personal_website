@@ -10,9 +10,12 @@ import peterNotes from '../../assets/img/icons/portfolio/peter-notes.png';
 import rubyPawnPromotion from '../../assets/img/icons/portfolio/ruby_pawn_promotion.gif';
 import shellectricJsx from '../../assets/img/icons/portfolio/shellectric-jsx.png';
 import thisWebsite from '../../assets/img/icons/portfolio/this-website.png';
+import ttamBook from '../../assets/img/icons/portfolio/ttam-book.jpeg';
+import ttamFox from '../../assets/img/icons/portfolio/ttam-fox.png';
+import ttamLark from '../../assets/img/icons/portfolio/ttam-lark.jpeg';
 // import workspace from '../../assets/img/icons/workspace.png';
 
-export const DIGITAL_PROJECTS: Project[] = [
+export const CODE: Project[] = [
   {
     id: 'brass-mono',
     name: 'Brass Mono',
@@ -164,6 +167,60 @@ export const DIGITAL_PROJECTS: Project[] = [
       'Slack theme',
       'Chrome theme',
     ],
+  },
+
+  {
+    id: 'ttam-book',
+    name: '23andMe Ancestry Book',
+    links: [
+      {
+        text: 'blog post',
+        url: 'https://blog.23andme.com/articles/write-your-dna-story',
+      },
+    ],
+    date: '2018',
+    keywords: '23andMe',
+    icon: {
+      src: ttamBook,
+    },
+    description: 'Led a team of engineers to build a physical coffee-table book with personalized ancestry results.',
+    bullets: [],
+  },
+
+  {
+    id: 'ttam-fox',
+    name: '23andMe / MJFF Partnership',
+    links: [
+      {
+        text: 'Fox Insight',
+        url: 'https://foxinsight.michaeljfox.org/',
+      },
+    ],
+    date: '2018',
+    keywords: '23andMe',
+    icon: {
+      src: ttamFox,
+    },
+    description: 'Led the techinical side of an already existing research partnership with the Michael J. Fox foundation. Biggest contribution was a new set of API endpoints that improved performance by > 10 fold compared to the original integration.',
+    bullets: [],
+  },
+
+  {
+    id: 'ttam-lark',
+    name: '23andMe / Lark Partnership',
+    links: [
+      {
+        text: 'blog post',
+        url: 'https://blog.23andme.com/articles/your-digital-health-coach-is-here',
+      },
+    ],
+    date: '2019',
+    keywords: '23andMe',
+    icon: {
+      src: ttamLark,
+    },
+    description: 'Led a team of engineers to build an API integration with a 3rd party mobile app that helps customers manage chronic diseases.',
+    bullets: [],
   },
 
   {

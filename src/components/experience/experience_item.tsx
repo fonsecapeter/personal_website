@@ -11,10 +11,6 @@ interface ExperienceState {
   expandClass: string,
 }
 
-const initialState: ExperienceState = {
-  hidden: false,
-  expandClass: '',
-};
 const expandState: ExperienceState = {
   hidden: false,
   expandClass: 'experience-item-bullets',
@@ -25,7 +21,7 @@ const hideState: ExperienceState = {
 };
 
 export class ExperienceItem extends Component<ExperienceProps, ExperienceState> {
-  readonly state = initialState;
+  readonly state = expandState;
 
   constructor(props: ExperienceProps) {
     super(props);
