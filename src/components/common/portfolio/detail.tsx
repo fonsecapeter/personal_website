@@ -40,29 +40,39 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
 
     const linkClass = 'portfolio-detail-link';
     let links = null;
-    if (project.links.length === 2) {
+    if (project.links.length > 0) {
       links = (
         <span>
           <a href={project.links[0].url} className={linkClass} target="blank">
             {project.links[0].text}
           </a>
-          <span className="portfolio-detail-dot">·</span>
-          <a href={project.links[1].url} className={linkClass} target="blank">
-            {project.links[1].text}
-          </a>
+          {project.links.slice(1).map(projectLink => (
+            <span>
+              <span className="portfolio-detail-dot">·</span>
+              <a href={projectLink.url} className={linkClass} target="blank">
+                {projectLink.text}
+              </a>
+            </span>
+          ))}
         </span>
-      );
-    } else {
-      links = (
-        <a href={project.links[0].url} className={linkClass} target="blank">
-          {project.links[0].text}
-        </a>
       );
     }
 
     let iconImageClass = 'portfolio-detail-image-img';
     if (project.icon.small) {
       iconImageClass += ' portfolio-detail-image-img-small';
+    }
+    let media;
+    if (project.video) {
+      media = <iframe width="560" height="315" src={project.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="1"></iframe>;
+    } else {
+      media = (
+        <img
+          className={iconImageClass}
+          src={project.icon.src}
+          alt="portfolio icon"
+        />
+      );
     }
 
     return (
@@ -73,11 +83,7 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
           {project.name}
         </h1>
         <div className="portfolio-detail-image">
-          <img
-            className={iconImageClass}
-            src={project.icon.src}
-            alt="portfolio icon"
-          />
+          {media}
         </div>
         <div>
           <div>

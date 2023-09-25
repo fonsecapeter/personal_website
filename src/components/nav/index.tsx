@@ -3,7 +3,7 @@ import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { NavLink } from './nav_link';
 
 interface NavState {
-  selected: string,
+  selected: string | null,
 }
 interface NavLinkSpec {
   name: string,
@@ -13,20 +13,16 @@ interface NavLinkSpec {
 
 const ABOUT = 'about';
 const EXPERIENCE = 'experience';
-const DIGITAL_WORK = 'digital-work';
-const PHYSICAL_WORK = 'physical-work';
-const FILM = 'film';
-const PHOTOGRAPHY = 'photography';
+const CODE = 'code';
+const ART = 'art';
 
 const initialState: NavState = {
   selected: ABOUT,
 };
 const aboutState: NavState = { selected: ABOUT };
 const experienceState: NavState = { selected: EXPERIENCE };
-const digitalWorkState: NavState = { selected: DIGITAL_WORK };
-const physicalWorkState: NavState = { selected: PHYSICAL_WORK };
-const filmState: NavState = { selected: FILM };
-const photographyState: NavState = { selected: PHOTOGRAPHY };
+const codeState: NavState = { selected: CODE };
+const artState: NavState = { selected: ART };
 const clearedState: NavState = { selected: null };
 const scrollToTop = () => window.scrollTo(0, 0);
 
@@ -40,10 +36,8 @@ class NavBase extends Component<RouteComponentProps, NavState> {
     this.selectLink = this.selectLink.bind(this);
     this.selectAbout = this.selectAbout.bind(this);
     this.selectExperience = this.selectExperience.bind(this);
-    this.selectDigitalWork = this.selectDigitalWork.bind(this);
-    this.selectPhysicalWork = this.selectPhysicalWork.bind(this);
-    this.selectFilm = this.selectFilm.bind(this);
-    this.selectPhotography = this.selectPhotography.bind(this);
+    this.selectCode = this.selectCode.bind(this);
+    this.selectArt = this.selectArt.bind(this);
   }
 
   componentWillMount() {
@@ -68,17 +62,11 @@ class NavBase extends Component<RouteComponentProps, NavState> {
       case EXPERIENCE:
         this.selectExperience();
         break;
-      case DIGITAL_WORK:
-        this.selectDigitalWork();
+      case CODE:
+        this.selectCode();
         break;
-      case PHYSICAL_WORK:
-        this.selectPhysicalWork();
-        break;
-      case FILM:
-        this.selectFilm();
-        break;
-      case PHOTOGRAPHY:
-        this.selectPhysicalWork();
+      case ART:
+        this.selectArt();
         break;
       case '':
         this.selectAbout();
@@ -102,24 +90,14 @@ class NavBase extends Component<RouteComponentProps, NavState> {
     this.setState(experienceState);
   }
 
-  private selectDigitalWork() {
+  private selectCode() {
     scrollToTop();
-    this.setState(digitalWorkState);
+    this.setState(codeState);
   }
 
-  private selectPhysicalWork() {
+  private selectArt() {
     scrollToTop();
-    this.setState(physicalWorkState);
-  }
-
-  private selectFilm() {
-    scrollToTop();
-    this.setState(filmState);
-  }
-
-  private selectPhotography() {
-    scrollToTop();
-    this.setState(photographyState);
+    this.setState(artState);
   }
 
   public render() {
@@ -131,25 +109,15 @@ class NavBase extends Component<RouteComponentProps, NavState> {
         active: selected === ABOUT,
       },
       {
-        name: 'Digital Work',
-        select: this.selectDigitalWork,
-        active: selected === DIGITAL_WORK,
+        name: CODE,
+        select: this.selectCode,
+        active: selected === CODE,
       },
-      // {
-      //   name: 'Art',
-      //   select: this.selectPhysicalWork,
-      //   active: selected === PHYSICAL_WORK,  // TODO: Update this to art
-      // },
-      // {
-      //   name: FILM,
-      //   select: this.selectFilm,
-      //   active: selected === FILM,
-      // },
-      // {
-      //   name: PHOTOGRAPHY,
-      //   select: this.selectPhotography,
-      //   active: selected === PHOTOGRAPHY,
-      // },
+      {
+        name: ART,
+        select: this.selectArt,
+        active: selected === ART,
+      },
       {
         name: EXPERIENCE,
         select: this.selectExperience,

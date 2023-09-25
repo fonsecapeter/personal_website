@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { Component, FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
 import { RouteProps } from 'react-router';
 import { Nav } from './nav/index';
 import logo from '../assets/img/logo.png';

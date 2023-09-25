@@ -1,18 +1,21 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from './projects';
-import apiBuddy from '../../assets/img/icons/portfolio/api-buddy.gif';
+import apiBuddy from '../../assets/img/icons/portfolio/api_buddy.gif';
 import brain from '../../assets/img/icons/portfolio/brain.png';
 import brassMono from '../../assets/img/icons/portfolio/brass_mono.png';
-import colorShiftScreenShot from '../../assets/img/icons/portfolio/color-shift-screenshot.png';
-import gliaQuestionDetail from '../../assets/img/icons/portfolio/glia-question-detail.png';
+import colorShiftScreenShot from '../../assets/img/icons/portfolio/color_shift_screenshot.png';
+import gliaQuestionDetail from '../../assets/img/icons/portfolio/glia_question_detail.png';
 import krafftachrome from '../../assets/img/icons/portfolio/krafftachrome.png';
-import peterNotes from '../../assets/img/icons/portfolio/peter-notes.png';
+import peterNotes from '../../assets/img/icons/portfolio/peter_notes.png';
 import rubyPawnPromotion from '../../assets/img/icons/portfolio/ruby_pawn_promotion.gif';
-import shellectricJsx from '../../assets/img/icons/portfolio/shellectric-jsx.png';
-import thisWebsite from '../../assets/img/icons/portfolio/this-website.png';
+import shellectricJsx from '../../assets/img/icons/portfolio/shellectric_jsx.png';
+import thisWebsite from '../../assets/img/icons/portfolio/this_website.png';
+import ttamBook from '../../assets/img/icons/portfolio/ttam_book.jpeg';
+import ttamFox from '../../assets/img/icons/portfolio/ttam_fox.png';
+import ttamLark from '../../assets/img/icons/portfolio/ttam_lark.jpeg';
 // import workspace from '../../assets/img/icons/workspace.png';
 
-export const DIGITAL_PROJECTS: Project[] = [
+export const CODE: Project[] = [
   {
     id: 'brass-mono',
     name: 'Brass Mono',
@@ -164,6 +167,60 @@ export const DIGITAL_PROJECTS: Project[] = [
       'Slack theme',
       'Chrome theme',
     ],
+  },
+
+  {
+    id: 'ttam-book',
+    name: '23andMe Book',
+    links: [
+      {
+        text: 'blog post',
+        url: 'https://blog.23andme.com/articles/write-your-dna-story',
+      },
+    ],
+    date: '2018',
+    keywords: '23andMe',
+    icon: {
+      src: ttamBook,
+    },
+    description: 'Led a team of engineers to build a physical coffee-table book with personalized reports from the website printed inside.',
+    bullets: [],
+  },
+
+  {
+    id: 'ttam-fox',
+    name: '23andMe / MJFF Partnership',
+    links: [
+      {
+        text: 'Fox Insight',
+        url: 'https://foxinsight.michaeljfox.org/',
+      },
+    ],
+    date: '2018',
+    keywords: '23andMe',
+    icon: {
+      src: ttamFox,
+    },
+    description: 'Led the techinical side of an already existing research partnership with the Michael J. Fox foundation. Biggest contribution was a new set of API endpoints that improved performance by > 10 fold compared to the original integration.',
+    bullets: [],
+  },
+
+  {
+    id: 'ttam-lark',
+    name: '23andMe / Lark Partnership',
+    links: [
+      {
+        text: 'blog post',
+        url: 'https://blog.23andme.com/articles/your-digital-health-coach-is-here',
+      },
+    ],
+    date: '2019',
+    keywords: '23andMe',
+    icon: {
+      src: ttamLark,
+    },
+    description: 'Led a team of engineers to build an API integration with a 3rd party mobile app that helps customers manage chronic diseases.',
+    bullets: [],
   },
 
   {
