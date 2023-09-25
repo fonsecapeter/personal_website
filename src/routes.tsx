@@ -34,18 +34,6 @@ const LoadableArt = Loadable({
   ),
   ...baseLoadableConfig,
 });
-const LoadableFilm = Loadable({
-  loader: () => import(
-    './components/film/index' // webpackChunkName: "film"
-  ),
-  ...baseLoadableConfig,
-});
-const LoadablePhotography = Loadable({
-  loader: () => import(
-    './components/photography/index' // webpackChunkName: "photography"
-  ),
-  ...baseLoadableConfig,
-});
 const LoadablePortfolioItem = Loadable({
   loader: () => import(
     './components/common/portfolio/detail' // webpackChunkName: "porfolioDetail"
@@ -59,8 +47,6 @@ export class AppRoutes extends Component {
     LoadableExperience.preload();
     LoadableCode.preload();
     LoadableArt.preload();
-    LoadableFilm.preload();
-    LoadablePhotography.preload();
     LoadablePortfolioItem.preload();
   }
 
@@ -71,8 +57,6 @@ export class AppRoutes extends Component {
       <Route path="/experience" component={LoadableExperience} />
       <Route path="/code" component={LoadableCode} />
       <Route path="/art" component={LoadableArt} />
-      <Route path="/film" component={LoadableFilm} />
-      <Route path="/photography" component={LoadablePhotography} />
       <Route
         path="/project/:projectKey"
         component={() => (

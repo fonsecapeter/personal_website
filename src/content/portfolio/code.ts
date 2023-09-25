@@ -1,18 +1,18 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from './projects';
-import apiBuddy from '../../assets/img/icons/portfolio/api-buddy.gif';
+import apiBuddy from '../../assets/img/icons/portfolio/api_buddy.gif';
 import brain from '../../assets/img/icons/portfolio/brain.png';
 import brassMono from '../../assets/img/icons/portfolio/brass_mono.png';
-import colorShiftScreenShot from '../../assets/img/icons/portfolio/color-shift-screenshot.png';
-import gliaQuestionDetail from '../../assets/img/icons/portfolio/glia-question-detail.png';
+import colorShiftScreenShot from '../../assets/img/icons/portfolio/color_shift_screenshot.png';
+import gliaQuestionDetail from '../../assets/img/icons/portfolio/glia_question_detail.png';
 import krafftachrome from '../../assets/img/icons/portfolio/krafftachrome.png';
-import peterNotes from '../../assets/img/icons/portfolio/peter-notes.png';
+import peterNotes from '../../assets/img/icons/portfolio/peter_notes.png';
 import rubyPawnPromotion from '../../assets/img/icons/portfolio/ruby_pawn_promotion.gif';
-import shellectricJsx from '../../assets/img/icons/portfolio/shellectric-jsx.png';
-import thisWebsite from '../../assets/img/icons/portfolio/this-website.png';
-import ttamBook from '../../assets/img/icons/portfolio/ttam-book.jpeg';
-import ttamFox from '../../assets/img/icons/portfolio/ttam-fox.png';
-import ttamLark from '../../assets/img/icons/portfolio/ttam-lark.jpeg';
+import shellectricJsx from '../../assets/img/icons/portfolio/shellectric_jsx.png';
+import thisWebsite from '../../assets/img/icons/portfolio/this_website.png';
+import ttamBook from '../../assets/img/icons/portfolio/ttam_book.jpeg';
+import ttamFox from '../../assets/img/icons/portfolio/ttam_fox.png';
+import ttamLark from '../../assets/img/icons/portfolio/ttam_lark.jpeg';
 // import workspace from '../../assets/img/icons/workspace.png';
 
 export const CODE: Project[] = [
@@ -171,7 +171,7 @@ export const CODE: Project[] = [
 
   {
     id: 'ttam-book',
-    name: '23andMe Ancestry Book',
+    name: '23andMe Book',
     links: [
       {
         text: 'blog post',
@@ -183,7 +183,7 @@ export const CODE: Project[] = [
     icon: {
       src: ttamBook,
     },
-    description: 'Led a team of engineers to build a physical coffee-table book with personalized ancestry results.',
+    description: 'Led a team of engineers to build a physical coffee-table book with personalized reports from the website printed inside.',
     bullets: [],
   },
 

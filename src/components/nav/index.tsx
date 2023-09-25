@@ -15,8 +15,6 @@ const ABOUT = 'about';
 const EXPERIENCE = 'experience';
 const CODE = 'code';
 const ART = 'art';
-const FILM = 'film';
-const PHOTOGRAPHY = 'photography';
 
 const initialState: NavState = {
   selected: ABOUT,
@@ -25,8 +23,6 @@ const aboutState: NavState = { selected: ABOUT };
 const experienceState: NavState = { selected: EXPERIENCE };
 const codeState: NavState = { selected: CODE };
 const artState: NavState = { selected: ART };
-const filmState: NavState = { selected: FILM };
-const photographyState: NavState = { selected: PHOTOGRAPHY };
 const clearedState: NavState = { selected: null };
 const scrollToTop = () => window.scrollTo(0, 0);
 
@@ -42,8 +38,6 @@ class NavBase extends Component<RouteComponentProps, NavState> {
     this.selectExperience = this.selectExperience.bind(this);
     this.selectCode = this.selectCode.bind(this);
     this.selectArt = this.selectArt.bind(this);
-    this.selectFilm = this.selectFilm.bind(this);
-    this.selectPhotography = this.selectPhotography.bind(this);
   }
 
   componentWillMount() {
@@ -72,12 +66,6 @@ class NavBase extends Component<RouteComponentProps, NavState> {
         this.selectCode();
         break;
       case ART:
-        this.selectArt();
-        break;
-      case FILM:
-        this.selectFilm();
-        break;
-      case PHOTOGRAPHY:
         this.selectArt();
         break;
       case '':
@@ -112,16 +100,6 @@ class NavBase extends Component<RouteComponentProps, NavState> {
     this.setState(artState);
   }
 
-  private selectFilm() {
-    scrollToTop();
-    this.setState(filmState);
-  }
-
-  private selectPhotography() {
-    scrollToTop();
-    this.setState(photographyState);
-  }
-
   public render() {
     const { selected } = this.state;
     const links: NavLinkSpec[] = [
@@ -140,16 +118,6 @@ class NavBase extends Component<RouteComponentProps, NavState> {
         select: this.selectArt,
         active: selected === ART,
       },
-      {
-        name: FILM,
-        select: this.selectFilm,
-        active: selected === FILM,
-      },
-      // {
-      //   name: PHOTOGRAPHY,
-      //   select: this.selectPhotography,
-      //   active: selected === PHOTOGRAPHY,
-      // },
       {
         name: EXPERIENCE,
         select: this.selectExperience,
