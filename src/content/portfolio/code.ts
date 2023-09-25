@@ -10,10 +10,9 @@ import peterNotes from '../../assets/img/icons/portfolio/peter_notes.png';
 import rubyPawnPromotion from '../../assets/img/icons/portfolio/ruby_pawn_promotion.gif';
 import shellectricJsx from '../../assets/img/icons/portfolio/shellectric_jsx.png';
 import thisWebsite from '../../assets/img/icons/portfolio/this_website.png';
-import ttamBook from '../../assets/img/icons/portfolio/ttam_book.jpeg';
+import ttamBook from '../../assets/img/icons/portfolio/ttam_book.jpg';
 import ttamFox from '../../assets/img/icons/portfolio/ttam_fox.png';
-import ttamLark from '../../assets/img/icons/portfolio/ttam_lark.jpeg';
-// import workspace from '../../assets/img/icons/workspace.png';
+import ttamLark from '../../assets/img/icons/portfolio/ttam_lark.jpg';
 
 export const CODE: Project[] = [
   {

@@ -64,7 +64,7 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
     }
     let media;
     if (project.video) {
-      media = <iframe width="560" height="315" src={project.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="1"></iframe>;
+      media = <iframe width="560" height="315" src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>;
     } else {
       media = (
         <img
