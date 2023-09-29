@@ -75,19 +75,26 @@
       }
     }
 
-    &-image {
+    &-media {
       margin-bottom: 20px;
 
       &-img {
         display: block;
         margin: auto;
-        width: 100%;
         max-width: 500px;
+        width: 100%;
 
         &-small {
           border-radius: 23px;
           padding: 20px;
         }
+      }
+
+      &-vid {
+        border: none;
+        max-width: 700px;
+        width: 100%;
+        aspect-ratio: 4/3;
       }
     }
 

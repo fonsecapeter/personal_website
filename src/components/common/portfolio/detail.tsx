@@ -58,14 +58,14 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
       );
     }
 
-    let iconImageClass = 'portfolio-detail-image-img';
-    if (project.icon.small) {
-      iconImageClass += ' portfolio-detail-image-img-small';
-    }
     let media;
     if (project.video) {
-      media = <iframe width="560" height="315" src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>;
+      media = <iframe className="portfolio-detail-media-vid" src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>;
     } else {
+      let iconImageClass = 'portfolio-detail-media-img';
+      if (project.icon.small) {
+        iconImageClass += ' portfolio-detail-media-img-small';
+      }
       media = (
         <img
           className={iconImageClass}
@@ -82,7 +82,7 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
         <h1 className="portfolio-detail-title">
           {project.name}
         </h1>
-        <div className="portfolio-detail-image">
+        <div className="portfolio-detail-media">
           {media}
         </div>
         <div>

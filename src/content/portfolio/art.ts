@@ -22,6 +22,7 @@ import congrats from '../../assets/img/icons/portfolio/congrats.jpg';
 import symiIsland from '../../assets/img/icons/portfolio/symi_island.jpg';
 import simiTheDog from '../../assets/img/icons/portfolio/simi_the_dog.jpg';
 import honda from '../../assets/img/icons/portfolio/honda.png';
+import teaBox from '../../assets/img/icons/portfolio/tea_box.jpg';
 import twoZeroEightFive from '../../assets/img/icons/portfolio/2085.png';
 
 // TODO: Check all dates and re-order yt vids as needed
@@ -386,6 +387,22 @@ export const ART: Project[] = [
       src: twoZeroEightFive,
     },
     description: 'My first apartment in SF.',
+    bullets: [],
+  },
+
+  {
+    id: 'tea-box',
+    name: 'Tea Box',
+    links: [{
+      text: 'behance',
+      url: 'https://www.behance.net/gallery/180834495/Tea-Box',
+    }],
+    date: '2013',
+    keywords: 'pine',
+    icon: {
+      src: teaBox,
+    },
+    description: 'Some of my early work.',
     bullets: [],
   },
 ];
