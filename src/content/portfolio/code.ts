@@ -337,7 +337,7 @@ export const CODE: Project[] = [
 
   {
     id: 'jarvs',
-    name: 'JARVS',
+    name: 'Jarvs',
     links: [
       {
         text: 'github',
@@ -357,7 +357,7 @@ export const CODE: Project[] = [
     icon: {
       src: jarvs,
     },
-    description: 'Jarvs is a research visist summary management system, build with large-scale clinical research in mind. I built this to automate part of my job at UCSF while I was teaching myself to write code on the side.',
+    description: 'Jarvs is a research visist summary management system, designed with large-scale clinical research in mind. I built this to automate part of my job at UCSF while I was teaching myself python on the side.',
     bullets: [
       'apt-get installable',
       'GUI Application',
