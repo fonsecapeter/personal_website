@@ -28,7 +28,7 @@ export const EXPERIENCES = {
         'Moved to the health team',
         'Led a different group of engineers',
         'Expand our health - focused medical device product and the FDA regulations systems around it',
-        'Contributed to highly sensitive telehealth projects',
+        'Contributed to highly sensitive projects',
       ],
     },
 

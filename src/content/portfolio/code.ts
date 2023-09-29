@@ -13,6 +13,7 @@ import thisWebsite from '../../assets/img/icons/portfolio/this_website.png';
 import ttamBook from '../../assets/img/icons/portfolio/ttam_book.jpg';
 import ttamFox from '../../assets/img/icons/portfolio/ttam_fox.png';
 import ttamLark from '../../assets/img/icons/portfolio/ttam_lark.jpg';
+import jarvs from '../../assets/img/icons/portfolio/jarvs.png';
 
 export const CODE: Project[] = [
   {
@@ -331,6 +332,39 @@ export const CODE: Project[] = [
       'Responsive design',
       'Rich text editing, complete with drag-and-drop image uploading',
       'Minimized data requests with nested Flux resources to reduce load time',
+    ],
+  },
+
+  {
+    id: 'jarvs',
+    name: 'JARVS',
+    links: [
+      {
+        text: 'github',
+        url: 'https://github.com/fonsecapeter/jarvs',
+      },
+      {
+        text: 'launchpad',
+        url: 'https://launchpad.net/jarvs',
+      },
+    ],
+    date: '2016',
+    org: {
+      name: 'UCSF',
+      url: 'https://memory.ucsf.edu/',
+    },
+    keywords: 'automation',
+    icon: {
+      src: jarvs,
+    },
+    description: 'Jarvs is a research visist summary management system, build with large-scale clinical research in mind. I built this to automate part of my job at UCSF while I was teaching myself to write code on the side.',
+    bullets: [
+      'apt-get installable',
+      'GUI Application',
+      'Rudimentary natural language interface',
+      'Graphs',
+      'Emails',
+      'Cronjobs',
     ],
   },
 ];
