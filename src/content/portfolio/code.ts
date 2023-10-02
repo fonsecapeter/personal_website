@@ -21,12 +21,12 @@ export const CODE: Project[] = [
     name: 'Brass Mono',
     links: [
       {
-        text: 'download',
-        url: 'https://github.com/fonsecapeter/brass_mono/releases/latest/',
-      },
-      {
         text: 'github',
         url: 'https://github.com/fonsecapeter/brass_mono',
+      },
+      {
+        text: 'download',
+        url: 'https://github.com/fonsecapeter/brass_mono/releases/latest/',
       },
     ],
     date: '2017',
@@ -84,6 +84,7 @@ export const CODE: Project[] = [
     },
     description: 'When I first learned how accessible tensor flow was, I had to see if I could hack together a quick deep learning model trained to diagnose Alzheimer\'s from 3D brain MRI scans. The models themselves are faily simple, but the intersting part is the pipeline I built to feed them data. This involved loading sample MRI scans from public sources (including a single MRI of my own brain) and the steps to normalize and process them so that they could be fed into tensorflow (including quality checks along the way). At the time, I could only find one paper on training models against MRI data so adapted what I learned from UCSF about volumetric studies to internet guides for image recognition models to see if I could replicate something similar. I quickly ran into scaling limitations so decided to try any other public, labelled brain MRI datasets for similar classification studies that I could find. I stopped at the point where I\'d need some sort of research partnership to scale up for more data, but did lay the groundwork for something that could be expanded and tuned.',
     bullets: [
+      'Convolutional neural nets',
       'Leveraged a public datasets',
       'Complete data pipeline from raw MRI exports',
       'Voxels',
@@ -121,12 +122,12 @@ export const CODE: Project[] = [
     name: 'Krafftachrome',
     links: [
       {
-        text: 'vscode',
-        url: 'https://marketplace.visualstudio.com/items?itemName=fonsecapeter.theme-krafftachrome',
-      },
-      {
         text: 'github',
         url: 'https://github.com/fonsecapeter/krafftachrome_visual_studio_code',
+      },
+      {
+        text: 'vscode',
+        url: 'https://marketplace.visualstudio.com/items?itemName=fonsecapeter.theme-krafftachrome',
       },
     ],
     date: '2022',
@@ -146,12 +147,12 @@ export const CODE: Project[] = [
     name: 'Shellectric Colors',
     links: [
       {
-        text: 'atom',
-        url: 'https://atom.io/themes/shellectric-syntax',
-      },
-      {
         text: 'github',
         url: 'https://github.com/fonsecapeter/shellectric-color-scheme',
+      },
+      {
+        text: 'atom',
+        url: 'https://atom.io/themes/shellectric-syntax',
       },
     ],
     date: '2017',
@@ -310,10 +311,6 @@ export const CODE: Project[] = [
       {
         text: 'github',
         url: 'https://github.com/fonsecapeter/Glia',
-      },
-      {
-        text: 'live',
-        url: 'https://glia-app.herokuapp.com',
       },
     ],
     date: '2016',

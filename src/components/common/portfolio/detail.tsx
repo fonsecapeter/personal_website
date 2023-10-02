@@ -60,7 +60,8 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
 
     let media;
     if (project.video) {
-      media = <iframe className="portfolio-detail-media-vid" src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>;
+      const aspectRatio = project.aspectRatio || '16-9';
+      media = <iframe className={`portfolio-detail-media-vid-${aspectRatio}`} src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>;
     } else {
       let iconImageClass = 'portfolio-detail-media-img';
       if (project.icon.small) {

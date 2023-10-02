@@ -72,6 +72,7 @@ export const ART: Project[] = [
     video: 'https://www.youtube.com/embed/-qTctYg1rQ0?si=UAhlXcl6lyrTOJH7',
     description: 'A meditation on feeling lost and making art (made in collaboration with Neha).',
     bullets: [],
+    aspectRatio: '4-3',
   },
 
   {
@@ -150,6 +151,7 @@ export const ART: Project[] = [
     video: 'https://www.youtube.com/embed/u5xZQ9aE_Dk?si=xuFDptgIVhGAh_2T',
     description: 'A movie about travelling.',
     bullets: [],
+    aspectRatio: '16-9',
   },
 
   {
@@ -212,6 +214,7 @@ export const ART: Project[] = [
     video: 'https://www.youtube.com/embed/videoseries?si=DSCik6f-aIWz6o-5&amp;list=PLZV4bTgIS1Vff5D7_jfhDFDq5nNgvLYVJ',
     description: 'A challenge between friends that got me to try daily vlogging for 3 days.',
     bullets: [],
+    aspectRatio: '16-9',
   },
 
   {

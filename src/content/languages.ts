@@ -36,12 +36,8 @@ export const LANGUAGES = [
         name: 'React',
       },
       {
-        link: 'http://redux.js.org/',
-        name: 'Redux',
-      },
-      {
-        link: 'https://mochajs.org/',
-        name: 'Mocha',
+        link: 'https://www.typescriptlang.org/',
+        name: 'Typescript',
       },
     ],
   },

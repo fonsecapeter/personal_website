@@ -25,4 +25,5 @@ export interface Project {
   description: string,
   bullets: string[],
   org?: Org,
+  aspectRatio?: string,  // default: '16-9'
 }
