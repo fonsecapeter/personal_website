@@ -24,9 +24,26 @@ import simiTheDog from '../../assets/img/icons/portfolio/simi_the_dog.jpg';
 import honda from '../../assets/img/icons/portfolio/honda.png';
 import teaBox from '../../assets/img/icons/portfolio/tea_box.jpg';
 import twoZeroEightFive from '../../assets/img/icons/portfolio/2085.png';
+import riverCrossing from '../../assets/img/icons/portfolio/river_crossing.jpg';
 
 // TODO: Check all dates and re-order yt vids as needed
 export const ART: Project[] = [
+
+  {
+    id: 'river_crossing',
+    name: 'River Crossing',
+    links: [{
+      text: 'behance',
+      url: 'https://www.behance.net/gallery/181915019/River-Crossing',
+    }],
+    date: '2023',
+    keywords: 'oil pastel',
+    icon: {
+      src: riverCrossing,
+    },
+    description: 'My dad drove us through a river when I was a kid.',
+    bullets: [],
+  },
 
   {
     id: 'table_cloth',
