@@ -13,7 +13,7 @@ Check it out at [peternfonseca.com](http://www.peternfonseca.com)
 - Sass
 - Docker
 - Continuous Deploys
-  - To Heroku Through TravisCI
+  - To Heroku Through CircleCI
 
 ## Development
 
