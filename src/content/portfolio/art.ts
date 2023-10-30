@@ -315,22 +315,6 @@ export const ART: Project[] = [
   },
 
   {
-    id: 'symi-island',
-    name: 'Σύμη',
-    links: [{
-      text: 'behance',
-      url: 'https://www.behance.net/gallery/123962009/_',
-    }],
-    date: '2020',
-    keywords: 'watercolor',
-    icon: {
-      src: symiIsland,
-    },
-    description: 'Named our dog after this place.',
-    bullets: [],
-  },
-
-  {
     id: 'simi-the-dog',
     name: 'Simi',
     links: [{
@@ -343,6 +327,22 @@ export const ART: Project[] = [
       src: simiTheDog,
     },
     description: 'He\'s a good boy (sometimes).',
+    bullets: [],
+  },
+
+  {
+    id: 'symi-island',
+    name: 'Σύμη',
+    links: [{
+      text: 'behance',
+      url: 'https://www.behance.net/gallery/123962009/_',
+    }],
+    date: '2020',
+    keywords: 'watercolor',
+    icon: {
+      src: symiIsland,
+    },
+    description: 'Named our dog after this place.',
     bullets: [],
   },
 
