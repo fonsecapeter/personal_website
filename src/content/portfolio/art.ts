@@ -25,9 +25,27 @@ import honda from '../../assets/img/icons/portfolio/honda.png';
 import teaBox from '../../assets/img/icons/portfolio/tea_box.jpg';
 import twoZeroEightFive from '../../assets/img/icons/portfolio/2085.png';
 import riverCrossing from '../../assets/img/icons/portfolio/river_crossing.jpg';
+import intoTheCity from '../../assets/img/icons/portfolio/into_the_city.jpg';
+// import storyAboutNeha from '../../assets/img/icons/portfolio/story_about_neha.jpg';
 
-// TODO: Check all dates and re-order yt vids as needed
+
 export const ART: Project[] = [
+
+  {
+    id: 'into_the_city',
+    name: 'Into the City',
+    links: [{
+      text: 'behance',
+      url: 'https://www.behance.net/gallery/184696705/Into-the-City',
+    }],
+    date: '2023',
+    keywords: 'watercolor',
+    icon: {
+      src: intoTheCity,
+    },
+    description: 'We ran as fast as we could into that city.',
+    bullets: [],
+  },
 
   {
     id: 'river_crossing',
@@ -186,6 +204,21 @@ export const ART: Project[] = [
     description: 'Makes it easy to know if I can talk or not.',
     bullets: [],
   },
+
+  // {
+  //   id: 'story-about-neha',
+  //   name: 'A Story About Neha',
+  //   links: [],
+  //   date: '2022',
+  //   keywords: 'YouTube',
+  //   icon: {
+  //     src: storyAboutNeha,
+  //   },
+  //   video: 'https://www.youtube.com/embed/reHt-YfhLF0?si=MBIUcfxbqZT0852d',
+  //   description: 'For those who don\'t know.',
+  //   bullets: [],
+  //   aspectRatio: '16-9',
+  // },
 
   {
     id: 'crv-clinometer',
