@@ -6,9 +6,11 @@ import '../../assets/scss/experience.scss';
 import posterIcon from '../../assets/img/icons/poster.png';
 import presentationIcon from '../../assets/img/icons/presentation.png';
 import resumePDF from '../../assets/resume/PeterFonsecaResume.pdf';
+import { SEOTags } from '../common/seo';
 
 export const Experience: FunctionComponent = () => (
   <div className="experience">
+    <SEOTags title="P. Fonseca's experience" />
     <h1 className="page-title">
       Work Experience
       <a className="experience-pdf-tip" href={resumePDF} target="blank">

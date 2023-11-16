@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@hot-loader/react-dom';
 import { AppContainer } from 'react-hot-loader';
 import { HashRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 
 import { App } from './components/app';
 import { AppRoutes } from './routes';
@@ -12,13 +13,15 @@ import './assets/img/favicon.ico';
 const rootEl = document.getElementById('root');
 
 render(
-  <AppContainer>
-    <HashRouter>
-      <App>
-        <AppRoutes />
-      </App>
-    </HashRouter>
-  </AppContainer>,
+  <HelmetProvider>
+    <AppContainer>
+      <HashRouter>
+        <App>
+          <AppRoutes />
+        </App>
+      </HashRouter>
+    </AppContainer>
+  </HelmetProvider>,
   rootEl,
 );
 

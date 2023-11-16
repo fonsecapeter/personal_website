@@ -3,10 +3,12 @@ import React, { FunctionComponent } from 'react';
 import { CodeListItem } from './code_list_item';
 import { LANGUAGES } from '../../content/languages';
 import { Profile } from './profile';
+import { SEOTags } from '../common/seo';
 import '../../assets/scss/about.scss';
 
 export const About: FunctionComponent = () => (
   <div className="about">
+    <SEOTags />
     <div className="about-elevator-pitch">
       <Profile />
       <p className="about-elevator-pitch-paragraph">

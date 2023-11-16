@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { ALL_PROJECTS } from '../../../content/portfolio/all';
 import { NotFound } from '../not_found';
+import { SEOTags } from '../seo';
 
 const notFoundMsg = "I haven't made that project.... yet";
 
@@ -80,6 +81,7 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
       <div
         className="portfolio-detail"
       >
+        <SEOTags title={project.name} description={project.description} image={project.icon.src} />
         <h1 className="portfolio-detail-title">
           {project.name}
         </h1>
