@@ -16,7 +16,7 @@ import stepStool from '../../assets/img/icons/portfolio/step_stool.jpg';
 import headphonesOnStand from '../../assets/img/icons/portfolio/headphones_on_stand.jpg';
 import meuBem from '../../assets/img/icons/portfolio/meu_bem.jpg';
 import jewelryBox from '../../assets/img/icons/portfolio/jewelry_box.jpg';
-import tableCloth from '../../assets/img/icons/portfolio/table_cloth.jpg';
+import tablecloth from '../../assets/img/icons/portfolio/tablecloth.jpg';
 import vapoRub from '../../assets/img/icons/portfolio/vapo_rub.jpg';
 import congrats from '../../assets/img/icons/portfolio/congrats.jpg';
 import symiIsland from '../../assets/img/icons/portfolio/symi_island.jpg';
@@ -64,8 +64,8 @@ export const ART: Project[] = [
   },
 
   {
-    id: 'table_cloth',
-    name: 'Table Cloth',
+    id: 'tablecloth',
+    name: 'Tablecloth',
     links: [{
       text: 'behance',
       url: 'https://www.behance.net/gallery/180754469/Tablecloth',
@@ -73,7 +73,7 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'sharpie',
     icon: {
-      src: tableCloth,
+      src: tablecloth,
     },
     description: 'Saved a few hundred bucks with this one.',
     bullets: [],
