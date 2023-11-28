@@ -1,18 +1,18 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { PortfolioItem } from './item';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from '../../../content/portfolio/projects';
 import '../../../assets/scss/portfolio.scss';
 import { SEOTags } from '../seo';
 
-interface PortfolioProps {
-  title: String,
-  projects: Project[],
-  category: string,
-}
+type PortfolioProps = {
+  readonly title: String,
+  readonly projects: Project[],
+  readonly category: string,
+};
 
-export const Portfolio: FunctionComponent<PortfolioProps> = ({ title, projects, category }) => (
+export const Portfolio = ({ title, projects, category }: PortfolioProps) => (
   <div>
     <SEOTags title={`P. Fonseca\'s ${category}`} />
     <h1 className="page-title">{ title }</h1>

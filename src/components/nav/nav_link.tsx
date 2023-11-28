@@ -1,13 +1,12 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-interface NavLinkProps {
-  name: string,
-  active: boolean,
-  onClick: () => void,
-}
-
+type NavLinkProps = {
+  readonly name: string,
+  readonly active: boolean,
+  readonly onClick: () => void,
+};
 
 const slugify = (words: string): string => (
   words
@@ -23,7 +22,7 @@ const capitalize = (word: string): string => (
   word.charAt(0).toUpperCase() + word.slice(1)
 );
 
-export const NavLink: FunctionComponent<NavLinkProps> = ({ name, active, onClick }) => {
+export const NavLink = ({ name, active, onClick }: NavLinkProps) => {
   const text = capitalize(name);
   if (active) {
     return (

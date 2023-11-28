@@ -1,11 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import me from '../../assets/img/me.jpg';
 import gitHub from '../../assets/img/icons/social/github.svg';
 import linkedIn from '../../assets/img/icons/social/linkedin.svg';
 import behance from '../../assets/img/icons/social/behance.svg';
 
-export const Profile: FunctionComponent = () => (
+export const Profile = () => (
   <div className="profile">
     <div id="profile-headshot">
       <img

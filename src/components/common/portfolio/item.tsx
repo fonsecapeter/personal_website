@@ -1,15 +1,15 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from '../../../content/portfolio/projects';
 
-interface CodeProps {
-  project: Project,
-  category: string,
-}
+type CodeProps = {
+  readonly project: Project,
+  readonly category: string,
+};
 
-export const PortfolioItem: FunctionComponent<CodeProps> = ({ project, category }) => {
+export const PortfolioItem = ({ project, category }: CodeProps) => {
   let iconImageClass = 'portfolio-item-icon-image';
   if (project.icon.small) {
     iconImageClass += ' portfolio-item-icon-image-small';

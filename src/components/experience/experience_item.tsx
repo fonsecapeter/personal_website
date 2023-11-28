@@ -3,13 +3,13 @@ import React, { Component, KeyboardEvent } from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Experience } from '../../content/experiences';
 
-interface ExperienceProps {
-  experience: Experience,
-}
-interface ExperienceState {
+type ExperienceProps = {
+  readonly experience: Experience,
+};
+type ExperienceState = {
   hidden: boolean,
   expandClass: string,
-}
+};
 
 const expandState: ExperienceState = {
   hidden: false,

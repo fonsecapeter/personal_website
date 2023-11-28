@@ -8,11 +8,10 @@ import { SEOTags } from '../seo';
 const notFoundMsg = "I haven't made that project.... yet";
 
 interface MatchParams {
-  projectKey: string;
+  readonly projectKey: string;
 }
 
-interface PortfolioDetailProps extends RouteComponentProps<MatchParams> {}
-
+interface PortfolioDetailProps extends RouteComponentProps<MatchParams> { }
 
 export class PortfolioDetail extends Component<PortfolioDetailProps> {
   constructor(props: PortfolioDetailProps) {
@@ -29,7 +28,7 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
 
   public render() {
     const { match } = this.props;
-    const { projectKey } = match.params;  //
+    const { projectKey } = match.params;
     const [category, projectId] = projectKey.split('.');
     if (!(category in ALL_PROJECTS)) {
       return (<NotFound msg={notFoundMsg} />);

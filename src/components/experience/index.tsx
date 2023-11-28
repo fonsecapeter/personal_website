@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { ExperienceItem } from './experience_item';
 import { EXPERIENCES } from '../../content/experiences';
 import '../../assets/scss/experience.scss';
@@ -8,7 +8,7 @@ import presentationIcon from '../../assets/img/icons/presentation.png';
 import resumePDF from '../../assets/resume/PeterFonsecaResume.pdf';
 import { SEOTags } from '../common/seo';
 
-export const Experience: FunctionComponent = () => (
+export const Experience = () => (
   <div className="experience">
     <SEOTags title="P. Fonseca's experience" />
     <h1 className="page-title">

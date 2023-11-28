@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { NavLink } from './nav_link';
 
-interface NavState {
+type NavState = {
   selected: string | null,
-}
-interface NavLinkSpec {
-  name: string,
-  select: () => void,
-  active: boolean,
-}
+};
+type NavLinkSpec = {
+  readonly name: string,
+  readonly select: () => void,
+  readonly active: boolean,
+};
 
 const ABOUT = 'about';
 const EXPERIENCE = 'experience';

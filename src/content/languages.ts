@@ -5,16 +5,16 @@ import ruby from '../assets/img/icons/code/ruby.png';
 import sql from '../assets/img/icons/code/sql.png';
 import bash from '../assets/img/icons/code/bash.png';
 
-interface Framework {
-  name: string,
-  link: string,
-}
+type Framework = {
+  readonly name: string,
+  readonly link: string,
+};
 
-export interface Language {
-  name: string,
-  frameworks: Framework[],
-  icon: string,
-}
+export type Language = {
+  readonly name: string,
+  readonly frameworks: Framework[],
+  readonly icon: string,
+};
 
 export const LANGUAGES = [
   {

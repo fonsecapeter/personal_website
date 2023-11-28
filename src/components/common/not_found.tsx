@@ -1,19 +1,15 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { SEOTags } from './seo';
 
-interface NotFoundProps {
-  msg: string
-}
+type NotFoundProps = {
+  readonly msg?: string,
+};
 
-export const NotFound: React.FunctionComponent<NotFoundProps> = ({ msg }) => (
+export const NotFound = ({ msg = "This page doesn't exist" }: NotFoundProps) => (
   <div>
     <SEOTags description="a bad link" />
     <h1>Not Found</h1>
     <p>{msg}</p>
   </div>
 );
-
-NotFound.defaultProps = {
-  msg: "This page doesn't exist",
-};

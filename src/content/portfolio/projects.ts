@@ -1,29 +1,29 @@
-interface Org {
-  name: string,
-  url: string,
-  link?: string,
-}
+type Org = {
+  readonly name: string,
+  readonly url: string,
+  readonly link?: string,
+};
 
-interface ProjectIcon {
-  src: string,
-  small?: boolean,
-}
+type ProjectIcon = {
+  readonly src: string,
+  readonly small?: boolean,
+};
 
-interface ProjectLink {
-  text: string,
-  url: string,
-}
+type ProjectLink = {
+  readonly text: string,
+  readonly url: string,
+};
 
-export interface Project {
-  id: string,
-  name: string,
-  links: ProjectLink[],
-  date: string,
-  keywords: string,
-  icon: ProjectIcon,
-  video?: string,
-  description: string,
-  bullets: string[],
-  org?: Org,
-  aspectRatio?: string,  // default: '16-9'
+export type Project = {
+  readonly id: string,
+  readonly name: string,
+  readonly links: ProjectLink[],
+  readonly date: string,
+  readonly keywords: string,
+  readonly icon: ProjectIcon,
+  readonly video?: string,
+  readonly description: string,
+  readonly bullets: string[],
+  readonly org?: Org,
+  readonly aspectRatio?: string,  // default: '16-9'
 }
