@@ -5,10 +5,15 @@ const path = require('path');
 
 const app = express();
 const portNumber = process.env.PORT || 3000;
+const prerenderToken = process.env.PRERENDER_TOKEN || "not_a_real_token";
 const sourceDir = 'dist';
 
 app.use(compression());
 app.use(express.static(sourceDir));
+app.use(
+  // so crawlers can find helmet meta tags
+  require("prerender-node").set("prerenderToken", [prerenderToken])
+);
 
 app.get('/_status', (req, res) => {
   res.send('Status: OK');
