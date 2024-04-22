@@ -155,7 +155,7 @@ export const ART: Project[] = [
     icon: {
       src: sebastopol,
     },
-    description: 'Don\'t generally write poetry, but felt felt compelled to after finding a broken typewriter + going on a weekend trip.',
+    description: 'Not one for writing poetry, but felt like it after fixing a typewriter + going on a weekend trip.',
     bullets: [],
   },
 
