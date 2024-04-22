@@ -1,31 +1,32 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from './projects';
 import artistsInResidence from '../../assets/img/icons/portfolio/artists_in_residence.png';
-import myBrain from '../../assets/img/icons/portfolio/my_brain.jpg';
-import threeCities from '../../assets/img/icons/portfolio/three_cities.jpg';
-import travelStress from '../../assets/img/icons/portfolio/travel_stress.jpg';
-import oneCA from '../../assets/img/icons/portfolio/1_ca.jpg';
-import skateboard from '../../assets/img/icons/portfolio/skateboard.jpg';
-import witchesHut from '../../assets/img/icons/portfolio/witches_hut.jpg';
 import ceramicDeskSet from '../../assets/img/icons/portfolio/ceramic_desk_set.jpg';
+// import congrats from '../../assets/img/icons/portfolio/congrats.jpg';
 import crvClinometer from '../../assets/img/icons/portfolio/crv_clinometer.jpg';
 import desktopStatus from '../../assets/img/icons/portfolio/desktop_status.jpg';
-import sfBay from '../../assets/img/icons/portfolio/sf_bay.jpg';
-import yellowSnake from '../../assets/img/icons/portfolio/yellow_snake.jpg';
-import stepStool from '../../assets/img/icons/portfolio/step_stool.jpg';
 import headphonesOnStand from '../../assets/img/icons/portfolio/headphones_on_stand.jpg';
-import meuBem from '../../assets/img/icons/portfolio/meu_bem.jpg';
-import jewelryBox from '../../assets/img/icons/portfolio/jewelry_box.jpg';
-import tablecloth from '../../assets/img/icons/portfolio/tablecloth.jpg';
-import vapoRub from '../../assets/img/icons/portfolio/vapo_rub.jpg';
-import congrats from '../../assets/img/icons/portfolio/congrats.jpg';
-import symiIsland from '../../assets/img/icons/portfolio/symi_island.jpg';
-import simiTheDog from '../../assets/img/icons/portfolio/simi_the_dog.jpg';
 import honda from '../../assets/img/icons/portfolio/honda.png';
-import teaBox from '../../assets/img/icons/portfolio/tea_box.jpg';
-import twoZeroEightFive from '../../assets/img/icons/portfolio/2085.png';
-import riverCrossing from '../../assets/img/icons/portfolio/river_crossing.jpg';
 import intoTheCity from '../../assets/img/icons/portfolio/into_the_city.jpg';
+import jewelryBox from '../../assets/img/icons/portfolio/jewelry_box.jpg';
+import meuBem from '../../assets/img/icons/portfolio/meu_bem.jpg';
+import myBrain from '../../assets/img/icons/portfolio/my_brain.jpg';
+import oneCA from '../../assets/img/icons/portfolio/1_ca.jpg';
+import riverCrossing from '../../assets/img/icons/portfolio/river_crossing.jpg';
+import sebastopol from '../../assets/img/icons/portfolio/sebastopol.jpg';
+import sfBay from '../../assets/img/icons/portfolio/sf_bay.jpg';
+import simiTheDog from '../../assets/img/icons/portfolio/simi_the_dog.jpg';
+import skateboard from '../../assets/img/icons/portfolio/skateboard.jpg';
+import stepStool from '../../assets/img/icons/portfolio/step_stool.jpg';
+import symiIsland from '../../assets/img/icons/portfolio/symi_island.jpg';
+import tablecloth from '../../assets/img/icons/portfolio/tablecloth.jpg';
+import teaBox from '../../assets/img/icons/portfolio/tea_box.jpg';
+import threeCities from '../../assets/img/icons/portfolio/three_cities.jpg';
+import travelStress from '../../assets/img/icons/portfolio/travel_stress.jpg';
+import twoZeroEightFive from '../../assets/img/icons/portfolio/2085.png';
+import vapoRub from '../../assets/img/icons/portfolio/vapo_rub.jpg';
+import witchesHut from '../../assets/img/icons/portfolio/witches_hut.jpg';
+import yellowSnake from '../../assets/img/icons/portfolio/yellow_snake.jpg';
 // import storyAboutNeha from '../../assets/img/icons/portfolio/story_about_neha.jpg';
 
 
@@ -139,6 +140,22 @@ export const ART: Project[] = [
       src: headphonesOnStand,
     },
     description: 'Made while on hold with customer service for a flight change.',
+    bullets: [],
+  },
+
+  {
+    id: 'sebastopol',
+    name: 'Sebastopol',
+    links: [{
+      text: 'behance',
+      url: 'https://www.behance.net/gallery/196837971/Sebastopol',
+    }],
+    date: '2023',
+    keywords: 'typewriter poetry',
+    icon: {
+      src: sebastopol,
+    },
+    description: 'Don\'t generally write poetry, but felt felt compelled to after finding a broken typewriter + going on a weekend trip.',
     bullets: [],
   },
 
@@ -331,21 +348,21 @@ export const ART: Project[] = [
     bullets: [],
   },
 
-  {
-    id: 'graduation',
-    name: 'Graduation Celebration',
-    links: [{
-      text: 'behance',
-      url: 'https://www.behance.net/gallery/123962403/Graduation-Celebration',
-    }],
-    date: '2020',
-    keywords: 'watercolor glitter',
-    icon: {
-      src: congrats,
-    },
-    description: 'My brother graduated during shelter-in-place.',
-    bullets: [],
-  },
+  // {
+  //   id: 'graduation',
+  //   name: 'Graduation Celebration',
+  //   links: [{
+  //     text: 'behance',
+  //     url: 'https://www.behance.net/gallery/123962403/Graduation-Celebration',
+  //   }],
+  //   date: '2020',
+  //   keywords: 'watercolor glitter',
+  //   icon: {
+  //     src: congrats,
+  //   },
+  //   description: 'My brother graduated during shelter-in-place.',
+  //   bullets: [],
+  // },
 
   {
     id: 'simi-the-dog',
