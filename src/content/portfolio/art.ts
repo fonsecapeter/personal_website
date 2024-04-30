@@ -2,11 +2,16 @@
 import { Project } from './projects';
 import artistsInResidence from '../../assets/img/icons/portfolio/artists_in_residence.png';
 import ceramicDeskSet from '../../assets/img/icons/portfolio/ceramic_desk_set.jpg';
-// import congrats from '../../assets/img/icons/portfolio/congrats.jpg';
 import crvClinometer from '../../assets/img/icons/portfolio/crv_clinometer.jpg';
 import desktopStatus from '../../assets/img/icons/portfolio/desktop_status.jpg';
 import headphonesOnStand from '../../assets/img/icons/portfolio/headphones_on_stand.jpg';
+import hHDoNotDisturb from '../../assets/img/icons/portfolio/hh_do_not_disturb.jpg';
+import hHInternalSigns from '../../assets/img/icons/portfolio/hh_internal_signs.jpg';
+import hHMap from '../../assets/img/icons/portfolio/hh_map.jpg';
+import hHMenus from '../../assets/img/icons/portfolio/hh_menus.jpg';
+import hHReception from '../../assets/img/icons/portfolio/hh_reception.jpg';
 import honda from '../../assets/img/icons/portfolio/honda.png';
+import hotelHallway from '../../assets/img/icons/portfolio/hotel_hallway.jpg';
 import intoTheCity from '../../assets/img/icons/portfolio/into_the_city.jpg';
 import jewelryBox from '../../assets/img/icons/portfolio/jewelry_box.jpg';
 import meuBem from '../../assets/img/icons/portfolio/meu_bem.jpg';
@@ -15,10 +20,8 @@ import oneCA from '../../assets/img/icons/portfolio/1_ca.jpg';
 import riverCrossing from '../../assets/img/icons/portfolio/river_crossing.jpg';
 import sebastopol from '../../assets/img/icons/portfolio/sebastopol.jpg';
 import sfBay from '../../assets/img/icons/portfolio/sf_bay.jpg';
-import simiTheDog from '../../assets/img/icons/portfolio/simi_the_dog.jpg';
 import skateboard from '../../assets/img/icons/portfolio/skateboard.jpg';
 import stepStool from '../../assets/img/icons/portfolio/step_stool.jpg';
-import symiIsland from '../../assets/img/icons/portfolio/symi_island.jpg';
 import tablecloth from '../../assets/img/icons/portfolio/tablecloth.jpg';
 import teaBox from '../../assets/img/icons/portfolio/tea_box.jpg';
 import threeCities from '../../assets/img/icons/portfolio/three_cities.jpg';
@@ -27,10 +30,178 @@ import twoZeroEightFive from '../../assets/img/icons/portfolio/2085.png';
 import vapoRub from '../../assets/img/icons/portfolio/vapo_rub.jpg';
 import witchesHut from '../../assets/img/icons/portfolio/witches_hut.jpg';
 import yellowSnake from '../../assets/img/icons/portfolio/yellow_snake.jpg';
+// import congrats from '../../assets/img/icons/portfolio/congrats.jpg';
+// import dads60th from '../../assets/img/icons/portfolio/dads_60th_thumb.jpg';
+// import simiTheDog from '../../assets/img/icons/portfolio/simi_the_dog.jpg';
 // import storyAboutNeha from '../../assets/img/icons/portfolio/story_about_neha.jpg';
+// import symiIsland from '../../assets/img/icons/portfolio/symi_island.jpg';
 
 
 export const ART: Project[] = [
+
+  {
+    id: 'hotel_hallway',
+    name: 'Hotel Hallway',
+    links: [
+      {
+        text: 'behance',
+        url: 'https://www.behance.net/gallery/196863355/Hotel-Hallway',
+      },
+      {
+        text: 'map',
+        url: '/#/project/art.hh_map',
+      },
+      {
+        text: 'internal signs',
+        url: '/#/project/art.hh_internal_signs',
+      },
+      {
+        text: 'reception',
+        url: '/#/project/art.hh_reception_sign',
+      },
+      {
+        text: 'do not disturb',
+        url: '/#/project/art.hh_do_not_disturb',
+      },
+      {
+        text: 'menus',
+        url: '/#/project/art.hh_do_not_disturb',
+      },
+    ],
+    date: '2022 - 2024?',
+    keywords: 'installation',
+    icon: {
+      src: hotelHallway,
+    },
+    description: 'My wife and I always wanted to open a hotel together, but we didn\'t want to uproot our lives to do it. We decided to make our apartment feel like one instead.',
+    bullets: ['made in collaboration with Neha'],
+  },
+
+  {
+    id: 'hh_map',
+    name: 'Hotel Hallway Map',
+    links: [
+      {
+        text: 'behance',
+        url: 'https://www.behance.net/gallery/197015003/Hotel-Hallway-Map',
+      },
+      {
+        text: 'hotel hallway',
+        url: '/#/project/art.hotel_hallway',
+      },
+    ],
+    date: '2024-04-19',
+    keywords: 'cartography',
+    icon: {
+      src: hHMap,
+    },
+    description: 'Because every hotel has one of these.',
+    bullets: [],
+  },
+
+  {
+    id: 'hh_internal_signs',
+    name: 'Internal Hotel Hallway Signs',
+    links: [
+      {
+        text: 'behance',
+        url: 'https://www.behance.net/gallery/197273767/Internal-Hotel-Hallway-Signs',
+      },
+      {
+        text: 'hotel hallway',
+        url: '/#/project/art.hotel_hallway',
+      },
+    ],
+    date: '2024-04-19',
+    keywords: 'plywood',
+    icon: {
+      src: hHInternalSigns,
+    },
+    description: 'Hand-made signs for a hand-made hotel.',
+    bullets: [],
+  },
+
+  {
+    id: 'hh_reception_sign',
+    name: 'Hotel Hallway Reception Sign',
+    links: [
+      {
+        text: 'behance',
+        url: 'https://www.behance.net/gallery/197015317/Hotel-Hallway-Menus',
+      },
+      {
+        text: 'hotel hallway',
+        url: '/#/project/art.hotel_hallway',
+      },
+    ],
+    date: '2023-12-07',
+    keywords: 'sheet metal',
+    icon: {
+      src: hHReception,
+    },
+    description: 'My first stab at sign-painting.',
+    bullets: [],
+  },
+
+
+  {
+    id: 'hh_do_not_disturb',
+    name: 'Do Not Disturb Sign',
+    links: [
+      {
+        text: 'behance',
+        url: 'https://www.behance.net/gallery/197425417/Do-Not-Disturb',
+      },
+      {
+        text: 'hotel hallway',
+        url: '/#/project/art.hotel_hallway',
+      },
+    ],
+    date: '2023-01-14',
+    keywords: 'functional art',
+    icon: {
+      src: hHDoNotDisturb,
+    },
+    description: 'There\'s nothing on the other side.',
+    bullets: ['made in collaboration with Neha'],
+  },
+
+  {
+    id: 'hh_menus',
+    name: 'Hotel Hallway Menus',
+    links: [
+      {
+        text: 'behance',
+        url: 'https://www.behance.net/gallery/197273457/Hotel-Hallway-Reception-Sign',
+      },
+      {
+        text: 'hotel hallway',
+        url: '/#/project/art.hotel_hallway',
+      },
+    ],
+    date: '2022-10-25',
+    keywords: 'functional art',
+    icon: {
+      src: hHMenus,
+    },
+    description: 'Tips not included.',
+    bullets: ['made in collaboration with Neha'],
+  },
+
+  // {
+  //   id: 'dads-sixtieth',
+  //   name: 'Dad\'s 60th',
+  //   links: [],
+  //   date: '2024-01-19',
+  //   keywords: 'YouTube',
+  //   icon: {
+  //     src: dads60th,
+  //   },
+  //   video: 'https://www.youtube.com/embed/ktDAwsaqTJI?si=dVHDYrM_ddlBknKL',
+  //   description: 'A movie about my dad.',
+  //   bullets: [],
+  //   aspectRatio: '16-9',
+  // },
 
   {
     id: 'into_the_city',
@@ -106,8 +277,8 @@ export const ART: Project[] = [
       src: artistsInResidence,
     },
     video: 'https://www.youtube.com/embed/-qTctYg1rQ0?si=UAhlXcl6lyrTOJH7',
-    description: 'A meditation on feeling lost and making art (made in collaboration with Neha).',
-    bullets: [],
+    description: 'A meditation on feeling lost and making art.',
+    bullets: ['made in collaboration with Neha'],
     aspectRatio: '4-3',
   },
 
@@ -364,37 +535,37 @@ export const ART: Project[] = [
   //   bullets: [],
   // },
 
-  {
-    id: 'simi-the-dog',
-    name: 'Simi',
-    links: [{
-      text: 'behance',
-      url: 'https://www.behance.net/gallery/95895733/Simi',
-    }],
-    date: '2020',
-    keywords: 'watercolor',
-    icon: {
-      src: simiTheDog,
-    },
-    description: 'He\'s a good boy (sometimes).',
-    bullets: [],
-  },
+  // {
+  //   id: 'simi-the-dog',
+  //   name: 'Simi',
+  //   links: [{
+  //     text: 'behance',
+  //     url: 'https://www.behance.net/gallery/95895733/Simi',
+  //   }],
+  //   date: '2020',
+  //   keywords: 'watercolor',
+  //   icon: {
+  //     src: simiTheDog,
+  //   },
+  //   description: 'He\'s a good boy (sometimes).',
+  //   bullets: [],
+  // },
 
-  {
-    id: 'symi-island',
-    name: 'Σύμη',
-    links: [{
-      text: 'behance',
-      url: 'https://www.behance.net/gallery/123962009/_',
-    }],
-    date: '2020',
-    keywords: 'watercolor',
-    icon: {
-      src: symiIsland,
-    },
-    description: 'Named our dog after this place.',
-    bullets: [],
-  },
+  // {
+  //   id: 'symi-island',
+  //   name: 'Σύμη',
+  //   links: [{
+  //     text: 'behance',
+  //     url: 'https://www.behance.net/gallery/123962009/_',
+  //   }],
+  //   date: '2020',
+  //   keywords: 'watercolor',
+  //   icon: {
+  //     src: symiIsland,
+  //   },
+  //   description: 'Named our dog after this place.',
+  //   bullets: [],
+  // },
 
   {
     id: 'sf-bay',
