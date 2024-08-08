@@ -6,9 +6,11 @@ import '../../assets/scss/experience.scss';
 import posterIcon from '../../assets/img/icons/poster.png';
 import presentationIcon from '../../assets/img/icons/presentation.png';
 import resumePDF from '../../assets/resume/PeterFonsecaResume.pdf';
+import { CodeListItem } from './code_list_item';
+import { LANGUAGES } from '../../content/languages';
 import { SEOTags } from '../common/seo';
 
-export const Experience = () => (
+export const Experience = () =>
   <div className="experience">
     <SEOTags title="P. Fonseca's experience" />
     <h1 className="page-title">
@@ -17,6 +19,17 @@ export const Experience = () => (
         [PDF]
       </a>
     </h1>
+    <div className="experience-code-list">
+      <h2 className="experience-section-title-first">Languages</h2>
+      <div>
+        {LANGUAGES.map(languageItem => (
+          <CodeListItem language={languageItem} key={languageItem.name} />
+        ))}
+      </div>
+    </div>
+    <div>
+      <h2 className="experience-section-title">Places I've Worked</h2>
+    </div>
     <div>
       {EXPERIENCES.workExperiences.map(experienceItem => (
         <ExperienceItem
@@ -26,7 +39,7 @@ export const Experience = () => (
       ))}
     </div>
     <div>
-      <h2 className="page-title">Education</h2>
+      <h2 className="experience-section-title">Education</h2>
     </div>
     <div>
       {EXPERIENCES.education.map(experienceItem => (
@@ -37,7 +50,7 @@ export const Experience = () => (
       ))}
     </div>
     <div>
-      <h2 className="page-title">Posters/Presentations</h2>
+      <h2 className="experience-section-title">Posters/Presentations</h2>
       <div className="experience-item-interactive">
         <div className="experience-item-content">
           <div className="experience-item-left">
@@ -92,6 +105,6 @@ export const Experience = () => (
       </div>
     </div>
   </div>
-);
+;
 
 export default Experience; // for dynamic import

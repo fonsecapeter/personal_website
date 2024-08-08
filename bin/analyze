@@ -2,6 +2,6 @@
 # Analyze bundle 🔍
 set -e -o pipefail
 
-docker-compose run --rm web bin/generate-stats
+docker compose run --rm web bin/generate-stats
 # for some reason isn't working in container, maybe related to call to open
 npx webpack-bundle-analyzer dist/stats.json

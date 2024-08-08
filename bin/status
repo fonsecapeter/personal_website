@@ -2,5 +2,5 @@
 # Check container health 🌡
 set -e -o pipefail
 
-docker-compose ps
+docker compose ps
 echo "Open in browser with $(tput setaf 2)bin/open$(tput sgr0)"

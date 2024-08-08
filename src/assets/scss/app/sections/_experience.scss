@@ -1,5 +1,15 @@
 .experience {
 
+  &-section-title {
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+    &-first {
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+  }
+
   &-pdf-tip {
     color: $mid-gray;
     display: inline-block;
@@ -68,6 +78,36 @@
       padding-left: 0;
       padding-top: 16px;
       white-space: normal;
+    }
+  }
+
+  &-code-list {
+    list-style: none;
+    margin-bottom: 25px;
+    margin-top: 10px;
+
+    &-item {
+      align-items: center;
+      display: flex;
+
+      &-name {
+        margin-right: 6px;
+      }
+
+      &-icon {
+        align-items: center;
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        padding: 4px 8px 4px 20px;
+        width: 30px;
+
+        &-image {
+          border-radius: 0;
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
     }
   }
 }

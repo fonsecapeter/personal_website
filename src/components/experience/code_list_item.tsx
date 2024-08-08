@@ -21,17 +21,17 @@ export const CodeListItem = ({ language }: CodeListItemProps) => {
   }
 
   return (
-    <div className="about-code-list-item">
-      <div className="about-code-list-item-icon">
+    <div className="experience-code-list-item">
+      <div className="experience-code-list-item-icon">
         <img
           src={language.icon}
-          className="about-code-list-item-icon-image"
+          className="experience-code-list-item-icon-image"
           alt={language.name}
         />
       </div>
       <div>
         <p>
-          <span className="about-code-list-item-name">
+          <span className="experience-code-list-item-name">
             {language.name}
           </span>
           {frameworks.length >= 1 && frameworks}

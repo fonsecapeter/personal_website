@@ -109,14 +109,14 @@ class NavBase extends Component<RouteComponentProps, NavState> {
         active: selected === ABOUT,
       },
       {
-        name: CODE,
-        select: this.selectCode,
-        active: selected === CODE,
-      },
-      {
         name: ART,
         select: this.selectArt,
         active: selected === ART,
+      },
+      {
+        name: CODE,
+        select: this.selectCode,
+        active: selected === CODE,
       },
       {
         name: EXPERIENCE,

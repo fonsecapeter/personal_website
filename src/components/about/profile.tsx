@@ -4,6 +4,7 @@ import me from '../../assets/img/me.jpg';
 import gitHub from '../../assets/img/icons/social/github.svg';
 import linkedIn from '../../assets/img/icons/social/linkedin.svg';
 import behance from '../../assets/img/icons/social/behance.svg';
+import ig from '../../assets/img/icons/social/ig.png';
 
 export const Profile = () => (
   <div className="profile">
@@ -18,9 +19,32 @@ export const Profile = () => (
     <div className="profile-content">
       <div className="profile-content-name">
         <h3>Peter Fonseca</h3>
-        <p>Software Engineer</p>
       </div>
       <div>
+        <a
+          href="https://www.instagram.com/peternfonseca/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="profile-content-social"
+            src={ig}
+            height="32px"
+            alt="Instagram"
+          />
+        </a>
+        <a
+          href="https://www.behance.net/peterfonseca"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="profile-content-social"
+            src={behance}
+            height="32px"
+            alt="Behance"
+          />
+        </a>
         <a
           href="http://github.com/fonsecapeter"
           target="_blank"
@@ -43,18 +67,6 @@ export const Profile = () => (
             src={linkedIn}
             height="32px"
             alt="LinkedIn"
-          />
-        </a>
-        <a
-          href="https://www.behance.net/peterfonseca"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            className="profile-content-social"
-            src={behance}
-            height="32px"
-            alt="Behance"
           />
         </a>
       </div>

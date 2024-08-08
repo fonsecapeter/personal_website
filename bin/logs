@@ -3,4 +3,4 @@
 set -e -o pipefail
 
 echo "Stop folloing output with $(tput setaf 2)^C$(tput sgr0)"
-docker-compose logs --follow
+docker compose logs --follow

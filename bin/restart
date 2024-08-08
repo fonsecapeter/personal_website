@@ -2,5 +2,5 @@
 # Restart the dev server ♻️
 set -e -o pipefail
 
-docker-compose restart
+docker compose restart
 bin/logs

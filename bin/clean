@@ -2,6 +2,6 @@
 # Burninate everything 💣
 set -e -o pipefail
 
-docker-compose rm --force --stop -v
+docker compose rm --force --stop -v
 npm run clean-dist
 rm -rf node_modules
