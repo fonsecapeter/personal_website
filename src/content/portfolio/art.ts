@@ -30,6 +30,10 @@ import twoZeroEightFive from '../../assets/img/icons/portfolio/2085.png';
 import vapoRub from '../../assets/img/icons/portfolio/vapo_rub.jpg';
 import witchesHut from '../../assets/img/icons/portfolio/witches_hut.jpg';
 import yellowSnake from '../../assets/img/icons/portfolio/yellow_snake.jpg';
+import workbench from '../../assets/img/icons/portfolio/workbench.jpg';
+import studio1Way from '../../assets/img/icons/portfolio/studio_1way.jpg';
+import shopClassShelf from '../../assets/img/icons/portfolio/shop_class_shelf.jpg';
+import doloresBench from '../../assets/img/icons/portfolio/dolores_bench_in_situ.jpg';
 // import congrats from '../../assets/img/icons/portfolio/congrats.jpg';
 // import dads60th from '../../assets/img/icons/portfolio/dads_60th_thumb.jpg';
 // import simiTheDog from '../../assets/img/icons/portfolio/simi_the_dog.jpg';
@@ -38,6 +42,78 @@ import yellowSnake from '../../assets/img/icons/portfolio/yellow_snake.jpg';
 
 
 export const ART: Project[] = [
+
+  {
+    id: 'dolores_bench',
+    name: 'Dolores Bench',
+    links: [
+      {
+        text: 'behance',
+        url: 'https://www.behance.net/gallery/205132693/Dolores-Bench',
+      },
+    ],
+    date: '2024-07-24',
+    keywords: 'pastel + sharpie',
+    icon: {
+      src: doloresBench,
+    },
+    description: 'A special place.',
+    bullets: [],
+  },
+
+  {
+    id: 'shop_class_shelf',
+    name: 'Shop Class Shelf',
+    links: [
+      {
+        text: 'behance',
+        url: 'https://www.behance.net/gallery/201460551/Shop-Class-Shelf',
+      },
+    ],
+    date: '2003?',
+    keywords: 'woodworking',
+    icon: {
+      src: shopClassShelf,
+    },
+    description: 'Some of my really early work.',
+    bullets: [],
+  },
+
+  {
+    id: 'studio_1way',
+    name: 'Studio 1Way',
+    links: [
+      {
+        text: 'behance',
+        url: 'https://www.behance.net/gallery/203665523/Studio-1Way',
+      },
+    ],
+    date: '2024-05-06',
+    keywords: 'art studio',
+    icon: {
+      src: studio1Way,
+    },
+    description: 'Here in San Francisco.',
+    bullets: [],
+  },
+
+  {
+    id: 'workbench',
+    name: 'Workbench',
+    links: [
+      {
+        text: 'behance',
+        url: 'https://www.behance.net/gallery/203419849/Workbench',
+      },
+    ],
+    date: '2024-05-18',
+    keywords: 'woodworking',
+    icon: {
+      src: workbench,
+    },
+    description: 'Always wanted one of these.',
+    bullets: [],
+  },
 
   {
     id: 'hotel_hallway',
@@ -113,7 +189,7 @@ export const ART: Project[] = [
       },
     ],
     date: '2024-04-19',
-    keywords: 'plywood',
+    keywords: 'woodworking',
     icon: {
       src: hHInternalSigns,
     },
@@ -338,7 +414,7 @@ export const ART: Project[] = [
       url: 'https://www.behance.net/gallery/166317739/Step-Stool',
     }],
     date: '2023',
-    keywords: 'plywood',
+    keywords: 'woodworking',
     icon: {
       src: stepStool,
     },
@@ -385,7 +461,7 @@ export const ART: Project[] = [
       url: 'https://www.behance.net/gallery/165218955/Desktop-Status',
     }],
     date: '2023',
-    keywords: 'plywood sheetmetal',
+    keywords: 'industrial design',
     icon: {
       src: desktopStatus,
     },
