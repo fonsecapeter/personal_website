@@ -71,8 +71,25 @@ export const LANGUAGES = [
     frameworks: [],
   },
   {
-    name: 'Bash',
+    name: 'Shell / DevOps',
     icon: bash,
-    frameworks: [],
+    frameworks: [
+      {
+        link: 'https://www.docker.com/',
+        name: 'Docker',
+      },
+      {
+        link: 'https://aws.amazon.com/',
+        name: 'AWS',
+      },
+      {
+        link: 'https://www.drone.io/',
+        name: 'Drone',
+      },
+      {
+        link: 'https://www.jenkins.io/',
+        name: 'Jenkins',
+      },
+    ],
   },
 ];

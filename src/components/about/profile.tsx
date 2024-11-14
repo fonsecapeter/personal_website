@@ -22,27 +22,15 @@ export const Profile = () => (
       </div>
       <div>
         <a
-          href="https://www.instagram.com/peternfonseca/"
+          href="https://www.linkedin.com/in/peter-fonseca-727576121"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             className="profile-content-social"
-            src={ig}
+            src={linkedIn}
             height="32px"
-            alt="Instagram"
-          />
-        </a>
-        <a
-          href="https://www.behance.net/peterfonseca"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            className="profile-content-social"
-            src={behance}
-            height="32px"
-            alt="Behance"
+            alt="LinkedIn"
           />
         </a>
         <a
@@ -58,15 +46,27 @@ export const Profile = () => (
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/peter-fonseca-727576121"
+          href="https://www.behance.net/peterfonseca"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             className="profile-content-social"
-            src={linkedIn}
+            src={behance}
             height="32px"
-            alt="LinkedIn"
+            alt="Behance"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/peternfonseca/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="profile-content-social"
+            src={ig}
+            height="32px"
+            alt="Instagram"
           />
         </a>
       </div>

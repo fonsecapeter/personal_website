@@ -12,10 +12,57 @@ import shellectricJsx from '../../assets/img/icons/portfolio/shellectric_jsx.png
 import thisWebsite from '../../assets/img/icons/portfolio/this_website.png';
 import ttamBook from '../../assets/img/icons/portfolio/ttam_book.jpg';
 import ttamFox from '../../assets/img/icons/portfolio/ttam_fox.png';
+import ttamHap from '../../assets/img/icons/portfolio/ttam_hap.png';
 import ttamLark from '../../assets/img/icons/portfolio/ttam_lark.jpg';
+import ttamMedCab from '../../assets/img/icons/portfolio/ttam_medcab.png';
 import jarvs from '../../assets/img/icons/portfolio/jarvs.png';
 
 export const CODE: Project[] = [
+  {
+    id: 'medicine-cabinet-update',
+    name: 'Medicine Cabinet Update',
+    links: [
+      {
+        text: 'blog post',
+        url: 'https://blog.23andme.com/articles/take-a-peek-inside-23andmes-upgrade-to-the-medicine-cabinet-feature',
+      },
+    ],
+    date: '2024',
+    keywords: '23andMe',
+    icon: {
+      src: ttamMedCab,
+    },
+    description: 'Import medications to compare with AI-driven reports',
+    bullets: [
+      'Led technical investigation of new and complex data sources, enabling thousands of customers to get actionable results',
+    ],
+  },
+
+  {
+    id: 'hap-lab-values',
+    name: 'Health Action Plan / Lab Results',
+    links: [
+      {
+        text: 'Action Plan blog post',
+        url: 'https://blog.23andme.com/articles/a-health-action-plan-for-you',
+      },
+      {
+        text: 'Lab Results blog post',
+        url: 'https://customercare.23andme.com/hc/en-us/articles/17330728225431-Lab-Results-Vitals',
+      },
+    ],
+    date: '2020-2024',
+    keywords: '23andMe',
+    icon: {
+      src: ttamHap,
+    },
+    description: 'Personalized recommendations based on genetics, clinical, and lifestyle data',
+    bullets: [
+      'Designed, built, and followed related long term, iterative full stack features that served millions of customers actionable information',
+      'Provided premium feature differentiation to drive subscriptions, enabling the company to begin a shift toward a more sustainable profit-structure',
+    ],
+  },
+
   {
     id: 'brass-mono',
     name: 'Brass Mono',
@@ -161,8 +208,12 @@ export const CODE: Project[] = [
     icon: {
       src: ttamBook,
     },
-    description: 'Led a team of engineers to build a physical coffee-table book with personalized reports from the website printed inside.',
-    bullets: [],
+    description: 'Coffee-table book with personalized ancestry results',
+    bullets: [
+      'Led a team to build the company\'s first recurring revenue feature in partnership with an external printing company',
+      'Was responsible for the entire project, from the overall approach to the cloud deployment',
+      'Shipped on a tight deadline, allowing sales to start ahead of the holiday rush',
+    ],
   },
 
   {
@@ -211,7 +262,7 @@ export const CODE: Project[] = [
       },
     ],
     date: '2017',
-    keywords: 'deep learning exploration',
+    keywords: 'deep learning AI exploration',
     icon: {
       src: brain,
     },
