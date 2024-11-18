@@ -5,7 +5,7 @@ import ceramicDeskSet from '../../assets/img/icons/portfolio/ceramic_desk_set.jp
 import crvClinometer from '../../assets/img/icons/portfolio/crv_clinometer.jpg';
 import desktopStatus from '../../assets/img/icons/portfolio/desktop_status.jpg';
 import headphonesOnStand from '../../assets/img/icons/portfolio/headphones_on_stand.jpg';
-import hHDoNotDisturb from '../../assets/img/icons/portfolio/hh_do_not_disturb.jpg';
+// import hHDoNotDisturb from '../../assets/img/icons/portfolio/hh_do_not_disturb.jpg';
 import hHInternalSigns from '../../assets/img/icons/portfolio/hh_internal_signs.jpg';
 import hHMap from '../../assets/img/icons/portfolio/hh_map.jpg';
 import hHMenus from '../../assets/img/icons/portfolio/hh_menus.jpg';
@@ -135,13 +135,13 @@ export const ART: Project[] = [
         text: 'reception',
         url: '/#/project/art.hh_reception_sign',
       },
-      {
-        text: 'do not disturb',
-        url: '/#/project/art.hh_do_not_disturb',
-      },
+      // {
+      //   text: 'do not disturb',
+      //   url: '/#/project/art.hh_do_not_disturb',
+      // },
       {
         text: 'menus',
-        url: '/#/project/art.hh_do_not_disturb',
+        url: '/#/project/art.hh_menus',
       },
     ],
     date: '2022 - 2024?',
@@ -220,27 +220,27 @@ export const ART: Project[] = [
   },
 
 
-  {
-    id: 'hh_do_not_disturb',
-    name: 'Do Not Disturb Sign',
-    links: [
-      {
-        text: 'behance',
-        url: 'https://www.behance.net/gallery/197425417/Do-Not-Disturb',
-      },
-      {
-        text: 'hotel hallway',
-        url: '/#/project/art.hotel_hallway',
-      },
-    ],
-    date: '2023-01-14',
-    keywords: 'functional art',
-    icon: {
-      src: hHDoNotDisturb,
-    },
-    description: 'There\'s nothing on the other side.',
-    bullets: ['made in collaboration with Neha'],
-  },
+  // {
+  //   id: 'hh_do_not_disturb',
+  //   name: 'Do Not Disturb Sign',
+  //   links: [
+  //     {
+  //       text: 'behance',
+  //       url: 'https://www.behance.net/gallery/197425417/Do-Not-Disturb',
+  //     },
+  //     {
+  //       text: 'hotel hallway',
+  //       url: '/#/project/art.hotel_hallway',
+  //     },
+  //   ],
+  //   date: '2023-01-14',
+  //   keywords: 'functional art',
+  //   icon: {
+  //     src: hHDoNotDisturb,
+  //   },
+  //   description: 'There\'s nothing on the other side.',
+  //   bullets: ['made in collaboration with Neha'],
+  // },
 
   {
     id: 'hh_menus',

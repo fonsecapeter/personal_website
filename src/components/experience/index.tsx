@@ -20,7 +20,7 @@ export const Experience = () =>
       </a>
     </h1>
     <div className="experience-code-list">
-      <h2 className="experience-section-title-first">Languages</h2>
+      <h2 className="experience-section-title-first">My Favorite Languages</h2>
       <div>
         {LANGUAGES.map(languageItem => (
           <CodeListItem language={languageItem} key={languageItem.name} />
