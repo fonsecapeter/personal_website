@@ -6,7 +6,7 @@ import '../../assets/scss/portfolio.scss';
 
 export const Code = () => (
   <div>
-    <Portfolio title="Code" projects={CODE} category="code" />
+    <Portfolio title="Code Projects" projects={CODE} category="code" />
   </div>
 );
 

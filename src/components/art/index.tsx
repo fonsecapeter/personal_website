@@ -6,7 +6,7 @@ import '../../assets/scss/portfolio.scss';
 
 
 export const Art = () => (
-  <Portfolio title="Art" projects={ART} category="art" />
+  <Portfolio title="Art Pieces" projects={ART} category="art" />
 );
 
 export default Art; // for dynamic import
