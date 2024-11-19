@@ -4,7 +4,6 @@ import { ExperienceItem } from './experience_item';
 import { EXPERIENCES } from '../../content/experiences';
 import '../../assets/scss/experience.scss';
 import posterIcon from '../../assets/img/icons/poster.png';
-import presentationIcon from '../../assets/img/icons/presentation.png';
 import resumePDF from '../../assets/resume/PeterFonsecaResume.pdf';
 import { CodeListItem } from './code_list_item';
 import { LANGUAGES } from '../../content/languages';
@@ -50,7 +49,7 @@ export const Experience = () =>
       ))}
     </div>
     <div>
-      <h2 className="experience-section-title">Posters/Presentations</h2>
+      <h2 className="experience-section-title">Publications</h2>
       <div className="experience-item-interactive">
         <div className="experience-item-content">
           <div className="experience-item-left">
@@ -73,32 +72,6 @@ export const Experience = () =>
               <span>poster</span>
               <span className="experience-item-dot">·</span>
               AAN
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="experience-item">
-        <div className="experience-item-content">
-          <div className="experience-item-left">
-            <img
-              src={presentationIcon}
-              className="experience-item-icon"
-              alt="presentation"
-            />
-          </div>
-          <div className="experience-item-right">
-            <p>
-              PP2A-Rts1: Master Regulator of Nutrient-Modulated Cell Size
-              Control in
-              <em>S. cerevisiae</em>
-            </p>
-            <p>
-              <span className="experience-item-date">2014</span>
-              <span className="experience-item-dot">·</span>
-              presentation
-              <span className="experience-item-dot">·</span>
-              Kellogg Lab Undergraduate Researchers Talks
             </p>
           </div>
         </div>

@@ -65,7 +65,7 @@ export const EXPERIENCES = {
       title: 'Undergraduate Researcher',
       icon: microscope,
       date: '2013-2014',
-      link: 'http://www.kellogglab.com/',
+      link: 'https://kellogg-lab.org',
       org: 'UCSC Kellogg Lab',
       primary: 'Primary Focus: Cell Size Control',
       bullets: [

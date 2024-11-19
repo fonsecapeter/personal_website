@@ -11,10 +11,10 @@ export const About = () => (
       <Profile />
       <p className="about-elevator-pitch-paragraph">
         I&#39;m a full-stack software engineer with 8+ years of experience that lives in
-        San Francisco and loves making art.
+        San Francisco and loves making art
       </p>
       <p className="about-elevator-pitch-paragraph">
-        You can find some of that here.
+        You can find some of that here
       </p>
     </div>
   </div>
