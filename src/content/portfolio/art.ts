@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from './projects';
-// import artistsInResidence from '../../assets/img/icons/portfolio/artists_in_residence.png';
+import artistsInResidence from '../../assets/img/icons/portfolio/artists_in_residence.png';
 import ceramicDeskSet from '../../assets/img/icons/portfolio/ceramic_desk_set.jpg';
 import crvClinometer from '../../assets/img/icons/portfolio/crv_clinometer.jpg';
 import desktopStatus from '../../assets/img/icons/portfolio/desktop_status.jpg';
@@ -24,8 +24,8 @@ import skateboard from '../../assets/img/icons/portfolio/skateboard.jpg';
 import stepStool from '../../assets/img/icons/portfolio/step_stool.jpg';
 import tablecloth from '../../assets/img/icons/portfolio/tablecloth.jpg';
 import teaBox from '../../assets/img/icons/portfolio/tea_box.jpg';
-// import threeCities from '../../assets/img/icons/portfolio/three_cities.jpg';
-// import travelStress from '../../assets/img/icons/portfolio/travel_stress.jpg';
+import threeCities from '../../assets/img/icons/portfolio/three_cities.jpg';
+import travelStress from '../../assets/img/icons/portfolio/travel_stress.jpg';
 import twoZeroEightFive from '../../assets/img/icons/portfolio/2085.png';
 import vapoRub from '../../assets/img/icons/portfolio/vapo_rub.jpg';
 import witchesHut from '../../assets/img/icons/portfolio/witches_hut.jpg';
@@ -343,20 +343,20 @@ export const ART: Project[] = [
     bullets: [],
   },
 
-  // {
-  //   id: 'artists-in-residence',
-  //   name: 'Artists In Residence',
-  //   links: [],
-  //   date: '2023',
-  //   keywords: 'YouTube',
-  //   icon: {
-  //     src: artistsInResidence,
-  //   },
-  //   video: 'https://www.youtube.com/embed/-qTctYg1rQ0?si=UAhlXcl6lyrTOJH7',
-  //   description: 'A meditation on feeling lost and making art.',
-  //   bullets: ['made in collaboration with Neha'],
-  //   aspectRatio: '4-3',
-  // },
+  {
+    id: 'artists-in-residence',
+    name: 'Artists In Residence',
+    links: [],
+    date: '2023',
+    keywords: 'YouTube',
+    icon: {
+      src: artistsInResidence,
+    },
+    video: 'https://www.youtube.com/embed/-qTctYg1rQ0?si=UAhlXcl6lyrTOJH7',
+    description: 'A meditation on feeling lost and making art.',
+    bullets: ['made in collaboration with Neha'],
+    aspectRatio: '4-3',
+  },
 
   {
     id: 'meu-bem',
@@ -438,20 +438,20 @@ export const ART: Project[] = [
     bullets: [],
   },
 
-  // {
-  //   id: 'travel-stress',
-  //   name: 'Travel Stress',
-  //   links: [],
-  //   date: '2023',
-  //   keywords: 'YouTube',
-  //   icon: {
-  //     src: travelStress,
-  //   },
-  //   video: 'https://www.youtube.com/embed/u5xZQ9aE_Dk?si=xuFDptgIVhGAh_2T',
-  //   description: 'A movie about travelling.',
-  //   bullets: [],
-  //   aspectRatio: '16-9',
-  // },
+  {
+    id: 'travel-stress',
+    name: 'Travel Stress',
+    links: [],
+    date: '2023',
+    keywords: 'YouTube',
+    icon: {
+      src: travelStress,
+    },
+    video: 'https://www.youtube.com/embed/u5xZQ9aE_Dk?si=xuFDptgIVhGAh_2T',
+    description: 'A movie about travelling.',
+    bullets: [],
+    aspectRatio: '16-9',
+  },
 
   {
     id: 'desktop-status',
@@ -516,20 +516,20 @@ export const ART: Project[] = [
     bullets: [],
   },
 
-  // {
-  //   id: 'three-cities',
-  //   name: '3 Cities',
-  //   links: [],
-  //   date: '2022',
-  //   keywords: 'YouTube',
-  //   icon: {
-  //     src: threeCities,
-  //   },
-  //   video: 'https://www.youtube.com/embed/videoseries?si=DSCik6f-aIWz6o-5&amp;list=PLZV4bTgIS1Vff5D7_jfhDFDq5nNgvLYVJ',
-  //   description: 'A challenge between friends that got me to try daily vlogging for 3 days.',
-  //   bullets: [],
-  //   aspectRatio: '16-9',
-  // },
+  {
+    id: 'three-cities',
+    name: '3 Cities',
+    links: [],
+    date: '2022',
+    keywords: 'YouTube',
+    icon: {
+      src: threeCities,
+    },
+    video: 'https://www.youtube.com/embed/videoseries?si=DSCik6f-aIWz6o-5&amp;list=PLZV4bTgIS1Vff5D7_jfhDFDq5nNgvLYVJ',
+    description: 'A challenge between friends that got me to try daily vlogging for 3 days.',
+    bullets: [],
+    aspectRatio: '16-9',
+  },
 
   {
     id: 'witches-hut',
