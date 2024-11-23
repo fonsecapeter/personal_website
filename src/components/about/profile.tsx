@@ -63,7 +63,7 @@ export const Profile = () => (
           rel="noopener noreferrer"
         >
           <img
-            className="profile-content-social"
+            className="profile-content-social-rounder"
             src={ig}
             height="32px"
             alt="Instagram"

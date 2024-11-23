@@ -1,5 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Project } from './projects';
+import { image } from '../image';
 import artistsInResidence from '../../assets/img/icons/portfolio/artists_in_residence.png';
 import ceramicDeskSet from '../../assets/img/icons/portfolio/ceramic_desk_set.jpg';
 import crvClinometer from '../../assets/img/icons/portfolio/crv_clinometer.jpg';
@@ -32,14 +33,12 @@ import witchesHut from '../../assets/img/icons/portfolio/witches_hut.jpg';
 import yellowSnake from '../../assets/img/icons/portfolio/yellow_snake.jpg';
 import workbench from '../../assets/img/icons/portfolio/workbench.jpg';
 import studio1Way from '../../assets/img/icons/portfolio/studio_1way.jpg';
-import shopClassShelf from '../../assets/img/icons/portfolio/shop_class_shelf.jpg';
 import doloresBench from '../../assets/img/icons/portfolio/dolores_bench_in_situ.jpg';
 // import congrats from '../../assets/img/icons/portfolio/congrats.jpg';
 // import dads60th from '../../assets/img/icons/portfolio/dads_60th_thumb.jpg';
 // import simiTheDog from '../../assets/img/icons/portfolio/simi_the_dog.jpg';
 // import storyAboutNeha from '../../assets/img/icons/portfolio/story_about_neha.jpg';
 // import symiIsland from '../../assets/img/icons/portfolio/symi_island.jpg';
-
 
 export const ART: Project[] = [
 
@@ -55,8 +54,15 @@ export const ART: Project[] = [
     date: '2024-07-24',
     keywords: 'pastel + sharpie',
     icon: {
-      src: doloresBench,
+      full: doloresBench,
+      alt: 'painting of a bench at dolores park',
     },
+    images: [
+      {
+        full: doloresBench,
+        alt: 'painting of a bench at dolores park',
+      },
+    ],
     description: 'A special place.',
     bullets: [],
   },
@@ -72,9 +78,12 @@ export const ART: Project[] = [
     ],
     date: '2003?',
     keywords: 'woodworking',
-    icon: {
-      src: shopClassShelf,
-    },
+    icon: image('portfolio/shop_class_shelf/main', 'jpg', 'wood shelf'),
+    images: [
+      image('portfolio/shop_class_shelf/main', 'jpg', 'wood shelf'),
+      image('portfolio/shop_class_shelf/edges', 'jpg', 'close up of edges'),
+      image('portfolio/shop_class_shelf/signature', 'jpg', 'peter fonseca period 2 written on shelf in pencil'),
+    ],
     description: 'Some of my really early work.',
     bullets: [],
   },
@@ -91,8 +100,15 @@ export const ART: Project[] = [
     date: '2024-05-06',
     keywords: 'art studio',
     icon: {
-      src: studio1Way,
+      full: studio1Way,
+      alt: 'one way sign',
     },
+    images: [
+      {
+        full: studio1Way,
+        alt: 'one way sign',
+      },
+    ],
     description: 'Here in San Francisco.',
     bullets: [],
   },
@@ -109,8 +125,15 @@ export const ART: Project[] = [
     date: '2024-05-18',
     keywords: 'woodworking',
     icon: {
-      src: workbench,
+      full: workbench,
+      alt: 'wood workbench',
     },
+    images: [
+      {
+        full: workbench,
+        alt: 'wood workbench',
+      },
+    ],
     description: 'Always wanted one of these.',
     bullets: [],
   },
@@ -147,8 +170,15 @@ export const ART: Project[] = [
     date: '2022 - 2024?',
     keywords: 'installation',
     icon: {
-      src: hotelHallway,
+      full: hotelHallway,
+      alt: 'hotel hallway sign',
     },
+    images: [
+      {
+        full: hotelHallway,
+        alt: 'hotel hallway sign',
+      },
+    ],
     description: 'My wife and I always wanted to open a hotel together, but we didn\'t want to uproot our lives to do it. We decided to make our apartment feel like one instead.',
     bullets: ['made in collaboration with Neha'],
   },
@@ -169,8 +199,15 @@ export const ART: Project[] = [
     date: '2024-04-19',
     keywords: 'cartography',
     icon: {
-      src: hHMap,
+      full: hHMap,
+      alt: 'hotel hallway map',
     },
+    images: [
+      {
+        full: hHMap,
+        alt: 'hotel hallway map',
+      },
+    ],
     description: 'Because every hotel has one of these.',
     bullets: [],
   },
@@ -191,8 +228,15 @@ export const ART: Project[] = [
     date: '2024-04-19',
     keywords: 'woodworking',
     icon: {
-      src: hHInternalSigns,
+      full: hHInternalSigns,
+      alt: 'hotel hallway internal signs',
     },
+    images: [
+      {
+        full: hHInternalSigns,
+        alt: 'hotel hallway internal signs',
+      },
+    ],
     description: 'Hand-made signs for a hand-made hotel.',
     bullets: [],
   },
@@ -213,8 +257,15 @@ export const ART: Project[] = [
     date: '2023-12-07',
     keywords: 'sheet metal',
     icon: {
-      src: hHReception,
+      full: hHReception,
+      alt: 'hotel hallway reception sign',
     },
+    images: [
+      {
+        full: hHReception,
+        alt: 'hotel hallway reception sign',
+      },
+    ],
     description: 'My first stab at sign-painting.',
     bullets: [],
   },
@@ -258,8 +309,15 @@ export const ART: Project[] = [
     date: '2022-10-25',
     keywords: 'functional art',
     icon: {
-      src: hHMenus,
+      full: hHMenus,
+      alt: 'hotel hallway menus',
     },
+    images: [
+      {
+        full: hHMenus,
+        alt: 'hotel hallway menus',
+      },
+    ],
     description: 'Tips not included.',
     bullets: ['made in collaboration with Neha'],
   },
@@ -289,8 +347,15 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'watercolor',
     icon: {
-      src: intoTheCity,
+      full: intoTheCity,
+      alt: 'painting of the bay bridge',
     },
+    images: [
+      {
+        full: intoTheCity,
+        alt: 'painting of the bay bridge',
+      },
+    ],
     description: 'We ran as fast as we could into that city.',
     bullets: [],
   },
@@ -305,8 +370,15 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'oil pastel',
     icon: {
-      src: riverCrossing,
+      full: riverCrossing,
+      alt: 'picture of truck in river',
     },
+    images: [
+      {
+        full: riverCrossing,
+        alt: 'picture of truck in river',
+      },
+    ],
     description: 'My dad drove us through a river when I was a kid.',
     bullets: [],
   },
@@ -321,8 +393,15 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'sharpie',
     icon: {
-      src: tablecloth,
+      full: tablecloth,
+      alt: 'tablecloth with drawings on it',
     },
+    images: [
+      {
+        full: tablecloth,
+        alt: 'tablecloth with drawings on it',
+      },
+    ],
     description: 'Saved a few hundred bucks with this one.',
     bullets: [],
   },
@@ -337,8 +416,15 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'acrylic',
     icon: {
-      src: jewelryBox,
+      full: jewelryBox,
+      alt: 'box with eyes painted on it',
     },
+    images: [
+      {
+        full: jewelryBox,
+        alt: 'box with eyes painted on it',
+      },
+    ],
     description: 'All I did was paint some eyes on a box but am really proud of it.',
     bullets: [],
   },
@@ -350,8 +436,10 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'YouTube',
     icon: {
-      src: artistsInResidence,
+      full: artistsInResidence,
+      alt: 'title page over apartment building',
     },
+    images: [],
     video: 'https://www.youtube.com/embed/-qTctYg1rQ0?si=UAhlXcl6lyrTOJH7',
     description: 'A meditation on feeling lost and making art.',
     bullets: ['made in collaboration with Neha'],
@@ -368,8 +456,15 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'pastel',
     icon: {
-      src: meuBem,
+      full: meuBem,
+      alt: 'picure of girl',
     },
+    images: [
+      {
+        full: meuBem,
+        alt: 'picure of girl',
+      },
+    ],
     description: 'Made while on vacation in Marrakesh.',
     bullets: [],
   },
@@ -384,8 +479,15 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'scrapwood',
     icon: {
-      src: headphonesOnStand,
+      full: headphonesOnStand,
+      alt: 'headphones on stand',
     },
+    images: [
+      {
+        full: headphonesOnStand,
+        alt: 'headphones on stand',
+      },
+    ],
     description: 'Made while on hold with customer service for a flight change.',
     bullets: [],
   },
@@ -400,8 +502,15 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'typewriter poetry',
     icon: {
-      src: sebastopol,
+      full: sebastopol,
+      alt: 'typewritten words',
     },
+    images: [
+      {
+        full: sebastopol,
+        alt: 'typewritten words',
+      },
+    ],
     description: 'Not one for writing poetry, but felt like it after fixing a typewriter + going on a weekend trip.',
     bullets: [],
   },
@@ -416,8 +525,15 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'woodworking',
     icon: {
-      src: stepStool,
+      full: stepStool,
+      alt: 'stool',
     },
+    images: [
+      {
+        full: stepStool,
+        alt: 'stool',
+      },
+    ],
     description: 'It\'s not fine woodworking, but it looks good and gets the job done.',
     bullets: [],
   },
@@ -432,8 +548,15 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'acrylic',
     icon: {
-      src: yellowSnake,
+      full: yellowSnake,
+      alt: 'painting of snake',
     },
+    images: [
+      {
+        full: yellowSnake,
+        alt: 'painting of snake',
+      },
+    ],
     description: 'Because I couldn\'t have the original.',
     bullets: [],
   },
@@ -445,8 +568,10 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'YouTube',
     icon: {
-      src: travelStress,
+      full: travelStress,
+      alt: 'paper flags with typewritten destinations',
     },
+    images: [],
     video: 'https://www.youtube.com/embed/u5xZQ9aE_Dk?si=xuFDptgIVhGAh_2T',
     description: 'A movie about travelling.',
     bullets: [],
@@ -463,8 +588,15 @@ export const ART: Project[] = [
     date: '2023',
     keywords: 'industrial design',
     icon: {
-      src: desktopStatus,
+      full: desktopStatus,
+      alt: 'display with painted letters',
     },
+    images: [
+      {
+        full: desktopStatus,
+        alt: 'display with painted letters',
+      },
+    ],
     description: 'Makes it easy to know if I can talk or not.',
     bullets: [],
   },
@@ -494,8 +626,15 @@ export const ART: Project[] = [
     date: '2022',
     keywords: 'automotive',
     icon: {
-      src: crvClinometer,
+      full: crvClinometer,
+      alt: 'clinometer',
     },
+    images: [
+      {
+        full: crvClinometer,
+        alt: 'clinometer',
+      },
+    ],
     description: 'Prevents rollover.',
     bullets: [],
   },
@@ -510,8 +649,15 @@ export const ART: Project[] = [
     date: '2022',
     keywords: 'ceramic',
     icon: {
-      src: ceramicDeskSet,
+      full: ceramicDeskSet,
+      alt: 'cup and bowl',
     },
+    images: [
+      {
+        full: ceramicDeskSet,
+        alt: 'cup and bowl',
+      },
+    ],
     description: 'Home office improvements.',
     bullets: [],
   },
@@ -523,8 +669,10 @@ export const ART: Project[] = [
     date: '2022',
     keywords: 'YouTube',
     icon: {
-      src: threeCities,
+      full: threeCities,
+      alt: 'peter skateboarding with coffee',
     },
+    images: [],
     video: 'https://www.youtube.com/embed/videoseries?si=DSCik6f-aIWz6o-5&amp;list=PLZV4bTgIS1Vff5D7_jfhDFDq5nNgvLYVJ',
     description: 'A challenge between friends that got me to try daily vlogging for 3 days.',
     bullets: [],
@@ -541,8 +689,15 @@ export const ART: Project[] = [
     date: '2022',
     keywords: 'oil pastel',
     icon: {
-      src: witchesHut,
+      full: witchesHut,
+      alt: 'painting of hut on hill',
     },
+    images: [
+      {
+        full: witchesHut,
+        alt: 'painting of hut on hill',
+      },
+    ],
     description: 'There\'s a comfort in loneliness.',
     bullets: [],
   },
@@ -557,8 +712,15 @@ export const ART: Project[] = [
     date: '2021',
     keywords: 'acrylic',
     icon: {
-      src: skateboard,
+      full: skateboard,
+      alt: 'skateboard',
     },
+    images: [
+      {
+        full: skateboard,
+        alt: 'skateboard',
+      },
+    ],
     description: 'Functional art.',
     bullets: [],
   },
@@ -573,8 +735,15 @@ export const ART: Project[] = [
     date: '2019',
     keywords: 'watercolor',
     icon: {
-      src: oneCA,
+      full: oneCA,
+      alt: 'painting of bus',
     },
+    images: [
+      {
+        full: oneCA,
+        alt: 'painting of bus',
+      },
+    ],
     description: 'A very sentimental muni line.',
     bullets: [],
   },
@@ -589,9 +758,16 @@ export const ART: Project[] = [
     date: '2021',
     keywords: 'acrylic',
     icon: {
-      src: vapoRub,
+      full: vapoRub,
+      alt: 'painting of vaporub',
     },
-    description: 'Love the stuff.',
+    images: [
+      {
+        full: vapoRub,
+        alt: 'painting of vaporub',
+      },
+    ],
+    description: 'Cures anything.',
     bullets: [],
   },
 
@@ -653,8 +829,15 @@ export const ART: Project[] = [
     date: '2019',
     keywords: 'oil pastel',
     icon: {
-      src: sfBay,
+      full: sfBay,
+      alt: 'map of san francisco',
     },
+    images: [
+      {
+        full: sfBay,
+        alt: 'map of san francisco',
+      },
+    ],
     description: 'Where I live.',
     bullets: [],
   },
@@ -669,8 +852,15 @@ export const ART: Project[] = [
     date: '2016',
     keywords: '3d printing',
     icon: {
-      src: myBrain,
+      full: myBrain,
+      alt: 'peter\'s brain',
     },
+    images: [
+      {
+        full: myBrain,
+        alt: 'peter\'s brain',
+      },
+    ],
     description: 'I used to run MRIs at UCSF.',
     bullets: [],
   },
@@ -685,8 +875,15 @@ export const ART: Project[] = [
     date: '2016',
     keywords: 'digital illustration',
     icon: {
-      src: honda,
+      full: honda,
+      alt: 'honda cb125',
     },
+    images: [
+      {
+        full: honda,
+        alt: 'honda cb125',
+      },
+    ],
     description: 'My first and only motorcycle.',
     bullets: [],
   },
@@ -701,8 +898,15 @@ export const ART: Project[] = [
     date: '2014',
     keywords: 'digital illustration',
     icon: {
-      src: twoZeroEightFive,
+      full: twoZeroEightFive,
+      alt: 'apartment building',
     },
+    images: [
+      {
+        full: twoZeroEightFive,
+        alt: 'apartment building',
+      },
+    ],
     description: 'My first apartment in SF.',
     bullets: [],
   },
@@ -717,8 +921,15 @@ export const ART: Project[] = [
     date: '2013',
     keywords: 'pine',
     icon: {
-      src: teaBox,
+      full: teaBox,
+      alt: 'box of tea',
     },
+    images: [
+      {
+        full: teaBox,
+        alt: 'box of tea',
+      },
+    ],
     description: 'Some of my early work.',
     bullets: [],
   },

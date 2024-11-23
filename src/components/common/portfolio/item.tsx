@@ -11,9 +11,6 @@ type CodeProps = {
 
 export const PortfolioItem = ({ project, category }: CodeProps) => {
   let iconImageClass = 'portfolio-item-icon-image';
-  if (project.icon.small) {
-    iconImageClass += ' portfolio-item-icon-image-small';
-  }
 
   return (
     <Link
@@ -23,7 +20,7 @@ export const PortfolioItem = ({ project, category }: CodeProps) => {
       <div className="portfolio-item-icon">
         <img
           className={iconImageClass}
-          src={project.icon.src}
+          src={project.icon.full}
           alt="portfolio icon"
         />
       </div>

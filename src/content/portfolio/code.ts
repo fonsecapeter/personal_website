@@ -30,8 +30,15 @@ export const CODE: Project[] = [
     date: '2024',
     keywords: '23andMe',
     icon: {
-      src: ttamMedCab,
+      full: ttamMedCab,
+      alt: 'phone with rx',
     },
+    images: [
+      {
+        full: ttamMedCab,
+        alt: 'phone with rx',
+      },
+    ],
     description: 'Import medications to compare with AI-driven reports',
     bullets: [
       'Led technical investigation of new and complex data sources, enabling thousands of customers to get actionable results',
@@ -54,8 +61,15 @@ export const CODE: Project[] = [
     date: '2020-2024',
     keywords: '23andMe',
     icon: {
-      src: ttamHap,
+      full: ttamHap,
+      alt: 'phone with action plan',
     },
+    images: [
+      {
+        full: ttamHap,
+        alt: 'phone with action plan',
+      },
+    ],
     description: 'Personalized recommendations based on genetics, clinical, and lifestyle data',
     bullets: [
       'Designed, built, and followed related long term, iterative full stack features that served millions of customers actionable information',
@@ -79,8 +93,15 @@ export const CODE: Project[] = [
     date: '2017',
     keywords: 'open source font',
     icon: {
-      src: brassMono,
+      full: brassMono,
+      alt: 'letters and electronics',
     },
+    images: [
+      {
+        full: brassMono,
+        alt: 'letters and electronics',
+      },
+    ],
     description: 'Retro monospaced font inspired by 70\'s electrical and mechanical design design. It\'s the only font I use on this website and write code in it every day.',
     bullets: [
       'Docker',
@@ -102,8 +123,15 @@ export const CODE: Project[] = [
     date: '2016',
     keywords: 'single page web app',
     icon: {
-      src: thisWebsite,
+      full: thisWebsite,
+      alt: 'smaller image of this page',
     },
+    images: [
+      {
+        full: thisWebsite,
+        alt: 'smaller image of this page',
+      },
+    ],
     description: 'You\'re on it right now!',
     bullets: [
       'React',
@@ -131,8 +159,15 @@ export const CODE: Project[] = [
     date: '2019',
     keywords: 'python cli tool',
     icon: {
-      src: apiBuddy,
+      full: apiBuddy,
+      alt: 'terminal with api call',
     },
+    images: [
+      {
+        full: apiBuddy,
+        alt: 'animated gif of terminal making api call',
+      },
+    ],
     description: 'CLI tool for exploring APIs. I Use this all the time at work. Postman is great, but it\'s also complicated and takes too long to set up when I want an answer right away. This has is exactly what I need for working with API\'s, nothing less, nothing more.',
     bullets: [
       'Intuitive interface',
@@ -157,8 +192,15 @@ export const CODE: Project[] = [
     date: '2022',
     keywords: 'colorscheme',
     icon: {
-      src: krafftachrome,
+      full: krafftachrome,
+      alt: 'katia and maurice krafft near a volcano and some code',
     },
+    images: [
+      {
+        full: krafftachrome,
+        alt: 'katia and maurice krafft near a volcano and some code',
+      },
+    ],
     description: 'Inspired by the work of Katia and Maurice Krafft, this project aims to capture the strange and beautiful world of 20th century volcanology. All colors were "droppered" directly from photos they took and "re-droppered" as I curated them into a cohesive palette that worked for daily use.',
     bullets: [
       'VS Code theme',
@@ -182,8 +224,15 @@ export const CODE: Project[] = [
     date: '2017',
     keywords: 'colorscheme',
     icon: {
-      src: shellectricJsx,
+      full: shellectricJsx,
+      alt: 'some code',
     },
+    images: [
+      {
+        full: shellectricJsx,
+        alt: 'some code',
+      },
+    ],
     description: 'Easy on the eyes, retro colors inspired by 70\'s design.',
     bullets: [
       'Atom theme',
@@ -206,8 +255,15 @@ export const CODE: Project[] = [
     date: '2018',
     keywords: '23andMe',
     icon: {
-      src: ttamBook,
+      full: ttamBook,
+      alt: 'hard-cover book',
     },
+    images: [
+      {
+        full: ttamBook,
+        alt: 'book cover',
+      },
+    ],
     description: 'Coffee-table book with personalized ancestry results',
     bullets: [
       'Led a team to build the company\'s first recurring revenue feature in partnership with an external printing company',
@@ -228,8 +284,15 @@ export const CODE: Project[] = [
     date: '2018',
     keywords: '23andMe',
     icon: {
-      src: ttamFox,
+      full: ttamFox,
+      alt: 'mobile and web research surveys',
     },
+    images: [
+      {
+        full: ttamFox,
+        alt: 'mobile and web research surveys',
+      },
+    ],
     description: 'Led the techinical side of an already existing research partnership with the Michael J. Fox foundation. Biggest contribution was a new set of API endpoints that improved performance by > 10 fold compared to the original integration.',
     bullets: [],
   },
@@ -246,8 +309,15 @@ export const CODE: Project[] = [
     date: '2019',
     keywords: '23andMe',
     icon: {
-      src: ttamLark,
+      full: ttamLark,
+      alt: 'phone with chatbot',
     },
+    images: [
+      {
+        full: ttamLark,
+        alt: 'phone with chatbot',
+      },
+    ],
     description: 'Led a team of engineers to build an API integration with a 3rd party mobile app that helps customers manage chronic diseases.',
     bullets: [],
   },
@@ -264,8 +334,15 @@ export const CODE: Project[] = [
     date: '2017',
     keywords: 'deep learning AI exploration',
     icon: {
-      src: brain,
+      full: brain,
+      alt: 'peter\'s brain',
     },
+    images: [
+      {
+        full: brain,
+        alt: 'peter\'s brain',
+      },
+    ],
     description: 'When I first learned how accessible tensor flow was, I had to see if I could hack together a quick deep learning model trained to diagnose Alzheimer\'s from 3D brain MRI scans. The models themselves are faily simple, but the intersting part is the pipeline I built to feed them data. This involved loading sample MRI scans from public sources (including a single MRI of my own brain) and the steps to normalize and process them so that they could be fed into tensorflow (including quality checks along the way). At the time, I could only find one paper on training models against MRI data so adapted what I learned from UCSF about volumetric studies to internet guides for image recognition models to see if I could replicate something similar. I quickly ran into scaling limitations so decided to try any other public, labelled brain MRI datasets for similar classification studies that I could find. I stopped at the point where I\'d need some sort of research partnership to scale up for more data, but did lay the groundwork for something that could be expanded and tuned.',
     bullets: [
       'Convolutional neural nets',
@@ -295,8 +372,15 @@ export const CODE: Project[] = [
     },
     keywords: 'web game',
     icon: {
-      src: colorShiftScreenShot,
+      full: colorShiftScreenShot,
+      alt: 'screenshot of game with multicolored bubbles',
     },
+    images: [
+      {
+        full: colorShiftScreenShot,
+        alt: 'screenshot of game with multicolored bubbles',
+      },
+    ],
     description: 'JavaScript canvas game that makes learning about neurology fun.',
     bullets: [
       'Artisinal, hand-made physics logic',
@@ -319,8 +403,15 @@ export const CODE: Project[] = [
     date: '2017',
     keywords: 'ruby cli tool',
     icon: {
-      src: peterNotes,
+      full: peterNotes,
+      alt: 'notebook logo',
     },
+    images: [
+      {
+        full: peterNotes,
+        alt: 'notebook logo',
+      },
+    ],
     description: 'Terminal-based notes manager.',
     bullets: [
       'Works with any text editor',
@@ -346,9 +437,15 @@ export const CODE: Project[] = [
     },
     keywords: 'ruby cli game',
     icon: {
-      src: rubyPawnPromotion,
-      small: false,
+      full: rubyPawnPromotion,
+      alt: 'terminal chess game',
     },
+    images: [
+      {
+        full: rubyPawnPromotion,
+        alt: 'animated gif of termain chess game pawn promotion',
+      },
+    ],
     description: 'Command-line chess.',
     bullets: [
       'Computer player that tries to win',
@@ -371,8 +468,15 @@ export const CODE: Project[] = [
     },
     keywords: 'crud web app',
     icon: {
-      src: gliaQuestionDetail,
+      full: gliaQuestionDetail,
+      alt: 'screenshot of question about frontotemporal dementia with one answer',
     },
+    images: [
+      {
+        full: gliaQuestionDetail,
+        alt: 'screenshot of question about frontotemporal dementia with one answer',
+      },
+    ],
     description: 'Online support group for caregivers of dementia patients.',
     bullets: [
       'React-Flux front end',
@@ -403,8 +507,15 @@ export const CODE: Project[] = [
     },
     keywords: 'automation',
     icon: {
-      src: jarvs,
+      full: jarvs,
+      alt: 'screenshot of terminal chatbot next to graph',
     },
+    images: [
+      {
+        full: jarvs,
+        alt: 'screenshot of terminal chatbot next to graph',
+      },
+    ],
     description: 'Jarvs is a research visist summary management system, designed with large-scale clinical research in mind. I built this to automate part of my job at UCSF while I was teaching myself python on the side.',
     bullets: [
       'apt-get installable',
