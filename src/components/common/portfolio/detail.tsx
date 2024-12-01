@@ -63,11 +63,19 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
     if (project.video) {
       const aspectRatio = project.aspectRatio || '16-9';
       media = <iframe className={`portfolio-detail-media-vid-${aspectRatio}`} src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>;
-    } else {
+    } else if (project.images.length > 1) {
       media = (
         <div className="portfolio-detail-media-img">
           <Carousel images={project.images} />
         </div>
+      );
+    } else {
+      media = (
+        <img
+          className="portfolio-detail-media-img"
+          src={project.images[0].full}
+          alt="portfolio icon"
+        />
       );
     }
 
