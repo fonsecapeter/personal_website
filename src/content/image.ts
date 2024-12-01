@@ -7,7 +7,7 @@ export type Image = {
   readonly alt: string,
 };
 
-export const image = (path: string, ext: str, alt: string): Image => ({
+export const image = (path: string, ext: string, alt: string): Image => ({
   // full: `${prefix}${path}/100.${ext} => ${mainImage}`,
   full: require(`../assets/img/${path}/100.${ext}`).default,
   half: require(`../assets/img/${path}/50.${ext}`).default,
