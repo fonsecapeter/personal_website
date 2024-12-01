@@ -53,7 +53,6 @@
   }
 
   &-detail {
-    float: left;
     margin: 0 10px 20px;
     width: 100%;
 
@@ -137,7 +136,8 @@
     }
   }
 
-  @media only screen and (max-width: $responsive-width) {
+  @media only screen and (max-width: 1000px) {
+    // collapse into single column before major responsive layout change
     &-list {
       display: flex;
       flex-direction: column;
@@ -148,9 +148,9 @@
       align-items: center;
       display: flex;
       flex-direction: column;
-      margin: 0;
-      max-width: 100%;
-      padding: 0;
+      margin: 0 auto;
+      max-width: 500px;
+      padding: 0 10px;
 
       &-desktop {
         display: none;
@@ -158,13 +158,9 @@
     }
 
     &-item {
-      float: none;
       margin-bottom: 25px;
+      max-width: $max-responsive-content-width;
       width: 100%;
-    }
-
-    &-detail {
-      float: none;
     }
   }
 }

@@ -3,15 +3,15 @@
     &-main {
       border-radius: 3px;
       display: block;
-      margin: auto;
-      max-height: 480px;
+      max-height: calc(80vw - 80px);
       min-height: 180px;
       max-width: $max-responsive-content-width;
 
       &-container {
         align-items: center;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        max-height: calc(80vw - 80px);
         min-height: 180px;
         width: 100%;
       }
@@ -46,12 +46,12 @@
     width: 100%;
   }
 
-  @media only screen and (max-width: $responsive-width) {
+  @media only screen and (min-width: $responsive-width) {
     &-image-main {
-      max-height: calc(80vw - 80px);
+      max-height: 480px;
 
       &-container {
-        max-height: calc(80vw - 80px);
+        max-height: none;
       }
     }
   }
