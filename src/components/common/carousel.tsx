@@ -1,16 +1,16 @@
 // TODO: REMOVE other top of file eslint comments???
 import React, { Component } from 'react';
-import { ProjectImage } from '../../content/portfolio/projects';
+import { Image } from '../../content/image';
 
 
 interface CarouselProps {
-  readonly images: ProjectImage[];  // TODO: REMOVE.small???
+  readonly images: Image[];  // TODO: REMOVE.small???
 }
 type CarouselState = {
   selected: number,
 };
 type LaneImage = {
-  image: ProjectImage,
+  image: Image,
   selected: boolean,
 };
 
