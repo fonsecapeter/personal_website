@@ -19,21 +19,13 @@
     }
 
     &-social {
-      @include shadow-interactive;
+      @include shadow-interactive-mini;
       margin: 0 6px;
 
-      &:hover {
-        transform: scale(1.05);
-      }
-
-      &-git {
+      &-rounder {
         @include shadow-interactive;
-        border-radius: 50%;
+        border-radius: 10px;
         margin: 0 6px;
-
-        &:hover {
-          transform: scale(1.05);
-        }
       }
     }
   }

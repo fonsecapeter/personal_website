@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { ALL_PROJECTS } from '../../../content/portfolio/all';
+import { Carousel } from '../carousel';
 import { NotFound } from '../not_found';
 import { SEOTags } from '../seo';
 
@@ -63,16 +64,10 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
       const aspectRatio = project.aspectRatio || '16-9';
       media = <iframe className={`portfolio-detail-media-vid-${aspectRatio}`} src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>;
     } else {
-      let iconImageClass = 'portfolio-detail-media-img';
-      if (project.icon.small) {
-        iconImageClass += ' portfolio-detail-media-img-small';
-      }
       media = (
-        <img
-          className={iconImageClass}
-          src={project.icon.src}
-          alt="portfolio icon"
-        />
+        <div className="portfolio-detail-media-img">
+          <Carousel images={project.images} />
+        </div>
       );
     }
 
@@ -80,7 +75,7 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
       <div
         className="portfolio-detail"
       >
-        <SEOTags title={project.name} description={project.description} image={project.icon.src} />
+        <SEOTags title={project.name} description={project.description} image={project.icon.full} />
         <h1 className="portfolio-detail-title">
           {project.name}
         </h1>

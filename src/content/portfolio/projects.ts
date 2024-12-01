@@ -1,12 +1,9 @@
+import { Image } from '../image';
+
 type Org = {
   readonly name: string,
   readonly url: string,
   readonly link?: string,
-};
-
-type ProjectIcon = {
-  readonly src: string,
-  readonly small?: boolean,
 };
 
 type ProjectLink = {
@@ -20,10 +17,11 @@ export type Project = {
   readonly links: ProjectLink[],
   readonly date: string,
   readonly keywords: string,
-  readonly icon: ProjectIcon,
+  readonly icon: Image,
+  readonly images: Image[],
   readonly video?: string,
   readonly description: string,
   readonly bullets: string[],
   readonly org?: Org,
   readonly aspectRatio?: string,  // default: '16-9'
-}
+};
