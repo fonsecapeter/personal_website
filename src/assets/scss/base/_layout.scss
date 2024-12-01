@@ -14,6 +14,7 @@
 .right-column {
   margin: 0 auto;
   padding: 25px 40px 0;
+  max-width: $max-responsive-content-width;
 }
 
 .hidden {
@@ -37,5 +38,6 @@
 
   .right-column {
     margin-left: $left-column-width;
+    max-width: none;
   }
 }
