@@ -1,4 +1,4 @@
-import { Image } from '../image';
+import { Icon, Image, Video } from '../media';
 
 type Org = {
   readonly name: string,
@@ -17,11 +17,10 @@ export type Project = {
   readonly links: ProjectLink[],
   readonly date: string,
   readonly keywords: string,
-  readonly icon: Image,
+  readonly icon: Icon,
   readonly images: Image[],
-  readonly video?: string,
+  readonly video?: Video,
   readonly description: string,
   readonly bullets: string[],
   readonly org?: Org,
-  readonly aspectRatio?: string,  // default: '16-9'
 };

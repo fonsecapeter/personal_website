@@ -20,8 +20,8 @@ export const PortfolioItem = ({ project, category }: CodeProps) => {
       <div className="portfolio-item-icon">
         <img
           className={iconImageClass}
-          src={project.icon.full}
-          alt="portfolio icon"
+          src={project.icon.src}
+          alt={project.icon.alt}
         />
       </div>
       <div className="portfolio-item-content">

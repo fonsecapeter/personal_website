@@ -61,8 +61,8 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
 
     let media;
     if (project.video) {
-      const aspectRatio = project.aspectRatio || '16-9';
-      media = <iframe className={`portfolio-detail-media-vid-${aspectRatio}`} src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>;
+      const aspectRatio = project.video.aspectRatio || '16-9';
+      media = <iframe className={`portfolio-detail-media-vid-${aspectRatio}`} src={project.video.src} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>;
     } else if (project.images.length > 1) {
       media = (
         <div className="portfolio-detail-media-img">
@@ -73,8 +73,8 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
       media = (
         <img
           className="portfolio-detail-media-img"
-          src={project.images[0].full}
-          alt="portfolio icon"
+          src={project.images[0].half}
+          alt={project.images[0].alt}
         />
       );
     }
@@ -83,7 +83,7 @@ export class PortfolioDetail extends Component<PortfolioDetailProps> {
       <div
         className="portfolio-detail"
       >
-        <SEOTags title={project.name} description={project.description} image={project.icon.full} />
+        <SEOTags title={project.name} description={project.description} image={project.icon.src} />
         <h1 className="portfolio-detail-title">
           {project.name}
         </h1>
