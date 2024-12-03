@@ -18,7 +18,7 @@ export type Project = {
   readonly date: string,
   readonly keywords: string,
   readonly icon: Icon,
-  readonly images: Image[],
+  readonly images: Image[],  // landscape or square work best
   readonly video?: Video,
   readonly description: string,
   readonly bullets: string[],
