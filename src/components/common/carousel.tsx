@@ -35,6 +35,10 @@ export class Carousel extends Component<CarouselProps> {
   public render() {
     let mainImage;
     let laneImages: LaneImage[] = [];
+    let laneImageClass = 'carousel-lane-image';
+    if (this.props.images.length > 4) {
+      laneImageClass = 'carousel-lane-image-mini';
+    }
     this.props.images.forEach((image, idx) => {
       if (idx == this.state.selected) {
         mainImage = image;
@@ -58,7 +62,7 @@ export class Carousel extends Component<CarouselProps> {
         <div className="carousel-lane">
           {laneImages.map((laneImage, idx) => (
             <img
-              className={laneImage.selected ? 'carousel-image-mini-selected' : 'carousel-image-mini'}
+              className={laneImage.selected ? `${laneImageClass}-selected` : laneImageClass}
               src={laneImage.image.quarter}
               alt={laneImage.image.alt}
               onClick={this.select(idx)}
