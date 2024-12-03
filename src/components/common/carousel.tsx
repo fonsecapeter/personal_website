@@ -1,6 +1,6 @@
 // TODO: REMOVE other top of file eslint comments???
 import React, { Component } from 'react';
-import { Image } from '../../content/image';
+import { Image } from '../../content/media';
 
 
 interface CarouselProps {
@@ -51,16 +51,16 @@ export class Carousel extends Component<CarouselProps> {
         <div className="carousel-image-main-container">
           <img
             className="carousel-image-main"
-            src={mainImage.full}
-            alt="TODO: PUT THIS IN CONTENT"
+            src={mainImage.half}
+            alt={mainImage.alt}
           />
         </div>
         <div className="carousel-lane">
           {laneImages.map((laneImage, idx) => (
             <img
               className={laneImage.selected ? 'carousel-image-mini-selected' : 'carousel-image-mini'}
-              src={laneImage.image.full}
-              alt="TODO: PUT THIS IN CONTENT"
+              src={laneImage.image.quarter}
+              alt={laneImage.image.alt}
               onClick={this.select(idx)}
               key={idx}
             />
