@@ -1,7 +1,6 @@
 import { Project } from '../projects';
 
 import peterNotes100 from '../../../assets/img/portfolio/peter_notes/100.png';
-import peterNotes50 from '../../../assets/img/portfolio/peter_notes/50.png';
 import peterNotes25 from '../../../assets/img/portfolio/peter_notes/25.png';
 
 
@@ -21,13 +20,13 @@ export const PETER_NOTES: Project = {
   date: '2017',
   keywords: 'ruby cli tool',
   icon: {
-    src: peterNotes50,
+    src: peterNotes100, // 50 is too small
     alt: 'notebook logo',
   },
   images: [
     {
       full: peterNotes100,
-      half: peterNotes50,
+      half: peterNotes100, // 50 is too small
       quarter: peterNotes25,
       alt: 'notebook logo',
     },

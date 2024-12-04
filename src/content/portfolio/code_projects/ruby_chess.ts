@@ -1,7 +1,6 @@
 import { Project } from '../projects';
 
 import rubyPawnPromotion100 from '../../../assets/img/portfolio/ruby_pawn_promotion/100.gif';
-import rubyPawnPromotion50 from '../../../assets/img/portfolio/ruby_pawn_promotion/50.gif';
 import rubyPawnPromotion25 from '../../../assets/img/portfolio/ruby_pawn_promotion/25.gif';
 
 
@@ -21,13 +20,13 @@ export const RUBY_CHESS: Project = {
   },
   keywords: 'ruby cli game',
   icon: {
-    src: rubyPawnPromotion50,
+    src: rubyPawnPromotion100, // 50 is too small
     alt: 'terminal chess game',
   },
   images: [
     {
       full: rubyPawnPromotion100,
-      half: rubyPawnPromotion50,
+      half: rubyPawnPromotion100, // 50 is too small
       quarter: rubyPawnPromotion25,
       alt: 'animated gif of termain chess game pawn promotion',
     },

@@ -1,8 +1,9 @@
 import { Project } from '../projects';
 
-import ttamHap100 from '../../../assets/img/portfolio/ttam_hap/100.png';
-import ttamHap50 from '../../../assets/img/portfolio/ttam_hap/50.png';
-import ttamHap25 from '../../../assets/img/portfolio/ttam_hap/25.png';
+import icon100 from '../../../assets/img/portfolio/ttam_hap/icon/100.png';
+import main100 from '../../../assets/img/portfolio/ttam_hap/main/100.png';
+import main50 from '../../../assets/img/portfolio/ttam_hap/main/50.png';
+import main25 from '../../../assets/img/portfolio/ttam_hap/main/25.png';
 
 
 export const HAP_LAB_VALUES: Project = {
@@ -21,14 +22,14 @@ export const HAP_LAB_VALUES: Project = {
   date: '2020-2024',
   keywords: '23andMe',
   icon: {
-    src: ttamHap50,
+    src: icon100, // 50 is too small
     alt: 'phone with action plan',
   },
   images: [
     {
-      full: ttamHap100,
-      half: ttamHap50,
-      quarter: ttamHap25,
+      full: main100,
+      half: main50,
+      quarter: main25,
       alt: 'phone with action plan',
     },
   ],
