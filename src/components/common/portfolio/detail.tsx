@@ -6,10 +6,14 @@ import { Carousel } from '../carousel';
 import { NotFound } from '../not_found';
 import { SEOTags } from '../seo';
 
+type PortfolioDetailParams = {
+  projectKey: string,
+};
+
 const notFoundMsg = "I haven't made that project.... yet";
 
 export const PortfolioDetail = () => {
-  const { projectKey } = useParams();
+  const { projectKey } = useParams<PortfolioDetailParams>();
   const history = useHistory();
 
   const goBack = (category: string) => {
