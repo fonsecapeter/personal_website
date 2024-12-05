@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import { Loading } from './components/common/loading';
@@ -41,16 +41,16 @@ const LoadablePortfolioItem = Loadable({
   ...baseLoadableConfig,
 });
 
-export class AppRoutes extends Component {
-  public componentDidMount() {
+export const AppRoutes = () => {
+  useEffect(() => {
     LoadableAbout.preload();
     LoadableExperience.preload();
     LoadableCode.preload();
     LoadableArt.preload();
     LoadablePortfolioItem.preload();
-  }
+  });
 
-  public render = () => (
+  return (
     <Switch>
       <Route path="/" exact component={LoadableAbout} />
       <Route path="/about" component={LoadableAbout} />
@@ -66,4 +66,4 @@ export class AppRoutes extends Component {
       <Route path="*" exact component={NotFound} />
     </Switch>
   );
-}
+};

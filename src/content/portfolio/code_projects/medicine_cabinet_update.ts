@@ -1,8 +1,8 @@
 import { Project } from '../projects';
 
-import ttamMedCab100 from '../../../assets/img/portfolio/ttam_medcab/100.png';
-import ttamMedCab50 from '../../../assets/img/portfolio/ttam_medcab/50.png';
-import ttamMedCab25 from '../../../assets/img/portfolio/ttam_medcab/25.png';
+import icon100 from '../../../assets/img/portfolio/ttam_medcab/icon/100.png';
+import main100 from '../../../assets/img/portfolio/ttam_medcab/main/100.png';
+import main25 from '../../../assets/img/portfolio/ttam_medcab/main/25.png';
 
 
 export const MEDICINE_CABINET_UPDATE: Project = {
@@ -17,14 +17,14 @@ export const MEDICINE_CABINET_UPDATE: Project = {
   date: '2024',
   keywords: '23andMe',
   icon: {
-    src: ttamMedCab50,
+    src: icon100, // 50 is too small
     alt: 'phone with rx',
   },
   images: [
     {
-      full: ttamMedCab100,
-      half: ttamMedCab50,
-      quarter: ttamMedCab25,
+      full: main100,
+      half: main100, // 50 is too small
+      quarter: main25,
       alt: 'phone with rx',
     },
   ],
