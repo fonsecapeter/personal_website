@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # List all commands 📋
-set -e -o pipefail
+set -eu -o pipefail
 
 tput sgr0
 for file in bin/*; do

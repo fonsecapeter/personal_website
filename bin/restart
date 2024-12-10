@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Restart the dev server ♻️
-set -e -o pipefail
+set -eu -o pipefail
 
 docker compose restart
 bin/logs

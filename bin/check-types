@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Check static types 📋
+set -eu -o pipefail
+
+docker compose run --rm web npm run check-types

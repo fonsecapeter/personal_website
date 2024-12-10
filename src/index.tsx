@@ -19,5 +19,4 @@ rootEl.render(
       </App>
     </HashRouter>
   </HelmetProvider>,
-  rootEl,
 );

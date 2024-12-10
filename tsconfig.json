@@ -19,7 +19,12 @@
       "dom",
       "es5",
       "es2015.promise"
-    ]
+    ],
+    "types": [
+      "node",
+      "jest",
+      "@testing-library/jest-dom"
+    ],
   },
   "include": ["/app/src/**/*"]
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Analyze bundle 🔍
-set -e -o pipefail
+set -eu -o pipefail
 
 docker compose run --rm web bin/generate-stats
 # for some reason isn't working in container, maybe related to call to open

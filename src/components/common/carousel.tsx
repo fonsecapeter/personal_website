@@ -33,7 +33,7 @@ export const Carousel = ({ images }: CarouselProps) => {
 
   return (
     <>
-      <div className="carousel-image-main-container">
+      <div className="carousel-image-main-container" data-testid="carousel">
         <img
           className="carousel-image-main"
           src={mainImage.half}
