@@ -38,7 +38,7 @@ export const PortfolioDetail = () => {
           {project.links[0].text}
         </a>
         {project.links.slice(1).map(projectLink => (
-          <span>
+          <span key={projectLink.url}>
             <span className="portfolio-detail-dot">·</span>
             <a href={projectLink.url} className={linkClass} target="blank">
               {projectLink.text}
@@ -52,7 +52,16 @@ export const PortfolioDetail = () => {
   let media;
   if (project.video) {
     const aspectRatio = project.video.aspectRatio || '16-9';
-    media = <iframe className={`portfolio-detail-media-vid-${aspectRatio}`} src={project.video.src} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen={true}></iframe>;
+    media = (
+      <iframe
+        data-testid="portfolio-detail-vid"
+        className={`portfolio-detail-media-vid-${aspectRatio}`}
+        src={project.video.src}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen={true}>
+      </iframe>
+    );
   } else if (project.images.length > 1) {
     media = (
       <div className="portfolio-detail-media-img">
@@ -62,6 +71,7 @@ export const PortfolioDetail = () => {
   } else {
     media = (
       <img
+        data-testid="portfolio-detail-img"
         className="portfolio-detail-media-img"
         src={project.images[0].half}
         alt={project.images[0].alt}
