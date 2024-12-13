@@ -37,20 +37,24 @@ describe('Crousel', () => {
     beforeEach(() => {
       render(<Carousel images={[IMAGE_1, IMAGE_2]} />);
     });
+
     it('can render with one image', () => {
       const crouselElement = screen.getByTestId('carousel');
       expect(crouselElement).toBeInTheDocument();
     });
+
     it('displays the first image by default', () => {
       const mainImageElement = screen.getByTestId('carousel-main-image');
       expect(mainImageElement).toHaveAttribute('src', 'test/1/50.png');
     });
+
     it('displays normal sized lane images for both images', () => {
       const laneImage1Element = screen.getByAltText('test image 1 (small)')
       const laneImage2Element = screen.getByAltText('test image 2 (small)')
       expect(laneImage1Element).toHaveAttribute('class', 'carousel-lane-image-selected');
       expect(laneImage2Element).toHaveAttribute('class', 'carousel-lane-image');
     })
+
     describe('when a lane image is clicked on', () => {
       it('replaces the main image', () => {
         const secondImage = screen.getByAltText('test image 2 (small)');
@@ -60,11 +64,10 @@ describe('Crousel', () => {
       });
     });
   });
+
   describe('with 5 images', () => {
-    beforeEach(() => {
-      render(<Carousel images={[IMAGE_1, IMAGE_2, IMAGE_3, IMAGE_4, IMAGE_5]} />);
-    });
     it('displays mini lane images for all images', () => {
+      render(<Carousel images={[IMAGE_1, IMAGE_2, IMAGE_3, IMAGE_4, IMAGE_5]} />);
       const laneImage1Element = screen.getByAltText('test image 1 (small)')
       const laneImage2Element = screen.getByAltText('test image 2 (small)')
       const laneImage3Element = screen.getByAltText('test image 3 (small)')
