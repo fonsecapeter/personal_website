@@ -2,6 +2,7 @@
 # Generate 50% and 25% images from path/to/100
 # arg1 = path
 # arg2 = file extension
+set -eu -o pipefail
 
 if [ ! -d "${1}" ]; then
   echo "img dir doesn't exit"

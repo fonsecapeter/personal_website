@@ -1,6 +1,5 @@
 import React from 'react';
-import { render } from '@hot-loader/react-dom';
-import { AppContainer } from 'react-hot-loader';
+import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -10,36 +9,14 @@ import { AppRoutes } from './routes';
 import './assets/scss/base.scss';
 import './assets/img/favicon.ico';
 
-const rootEl = document.getElementById('root');
+const rootEl = ReactDOM.createRoot(document.getElementById('root'));
 
-render(
+rootEl.render(
   <HelmetProvider>
-    <AppContainer>
-      <HashRouter>
-        <App>
-          <AppRoutes />
-        </App>
-      </HashRouter>
-    </AppContainer>
+    <HashRouter>
+      <App>
+        <AppRoutes />
+      </App>
+    </HashRouter>
   </HelmetProvider>,
-  rootEl,
 );
-
-// Hot Module Replacement API
-declare let module: { hot: any };
-
-if (module.hot) {
-  module.hot.accept('./components/app', () => {
-    const NewApp = require('./components/app').default;
-    render(
-      <AppContainer>
-        <HashRouter>
-          <NewApp>
-            <AppRoutes />
-          </NewApp>
-        </HashRouter>
-      </AppContainer>,
-      rootEl,
-    );
-  });
-}

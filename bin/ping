@@ -3,7 +3,7 @@
 
 # Ping the production server (Run in cron)
 # 45 * * * * abs/path/to/bin/ping
-set -e -o pipefail
+set -eu -o pipefail
 
 function now() {
   echo $(date '+%A, %x at %I:%M %p')

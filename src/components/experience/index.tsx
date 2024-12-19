@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
-import { ExperienceItem } from './experience_item';
+import { ExperienceItem } from './item';
 import { EXPERIENCES } from '../../content/experiences';
 import '../../assets/scss/experience.scss';
 import posterIcon from '../../assets/img/icons/poster.png';

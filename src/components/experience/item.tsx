@@ -82,7 +82,7 @@ export const ExperienceItem = ({ experience }: ExperienceProps) => {
           </p>
           {primary}
           <div>
-            <ul className={expandClass}>
+            <ul className={expandClass} data-testid="experience-item-bullets">
               {experience.bullets.map(bullet => (
                 <li
                   key={bullet}

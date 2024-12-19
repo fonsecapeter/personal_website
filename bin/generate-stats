@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Generate webpack stats (Run in container)
-set -e -o pipefail
+set -eu -o pipefail
 
 npm run build-with-stats
 # https://github.com/s-panferov/awesome-typescript-loader/issues/375

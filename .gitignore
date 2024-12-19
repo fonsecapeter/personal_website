@@ -1,6 +1,7 @@
 node_modules/
 dist/
 src/**/*.jsx
+coverage/
 
 .DS_Store
 .AppleDouble

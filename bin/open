@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Open in browser 🦊
-set -e -o pipefail
+set -eu -o pipefail
 
 open http://0.0.0.0:8080/

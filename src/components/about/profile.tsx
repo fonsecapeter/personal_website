@@ -58,7 +58,7 @@ export const Profile = () => (
           />
         </a>
         <a
-          href="https://www.instagram.com/peternfonseca/"
+          href="https://www.instagram.com/peternfonseca"
           target="_blank"
           rel="noopener noreferrer"
         >

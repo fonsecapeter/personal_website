@@ -33,7 +33,7 @@ jobs:
       - run:
           name: Test
           command: |
-            docker run "fonsecapeter/web:${CIRCLE_SHA1}" npm run test
+            docker run "fonsecapeter/web:${CIRCLE_SHA1}" npm run test-ci
 
   deploy:
     docker:

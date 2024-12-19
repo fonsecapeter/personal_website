@@ -33,11 +33,12 @@ export const Carousel = ({ images }: CarouselProps) => {
 
   return (
     <>
-      <div className="carousel-image-main-container">
+      <div className="carousel-image-main-container" data-testid="carousel">
         <img
           className="carousel-image-main"
+          data-testid="carousel-main-image"
           src={mainImage.half}
-          alt={mainImage.alt}
+          alt={`${mainImage.alt} (large)`}
         />
       </div>
       <div className="carousel-lane">
@@ -45,7 +46,7 @@ export const Carousel = ({ images }: CarouselProps) => {
           <img
             className={laneImage.selected ? `${laneImageClass}-selected` : laneImageClass}
             src={laneImage.image.quarter}
-            alt={laneImage.image.alt}
+            alt={`${laneImage.image.alt} (small)`}
             onClick={() => selectImage(idx)}
             key={idx}
           />

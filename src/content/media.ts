@@ -2,8 +2,8 @@
 
 export type Image = {
   readonly full: string,
-  readonly half?: string,
-  readonly quarter?: string,
+  readonly half: string,
+  readonly quarter: string,
   readonly alt: string,
 };
 

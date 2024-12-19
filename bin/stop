@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Pump the brakes 🛑
-set -e -o pipefail
+set -eu -o pipefail
 
 docker compose down
