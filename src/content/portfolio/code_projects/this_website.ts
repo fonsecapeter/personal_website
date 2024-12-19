@@ -36,5 +36,6 @@ export const THIS_WEBSITE: Project = {
     'Sass',
     'Docker',
     'Continuous Deployment',
+    'Unit Tests',
   ],
 };
