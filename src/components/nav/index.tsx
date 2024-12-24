@@ -1,8 +1,10 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { NavLink } from './link';
 
 const NavBase = () => {
+  const location = useLocation();
   const ABOUT = 'about';
   const EXPERIENCE = 'experience';
   const CODE = 'code';
@@ -12,14 +14,17 @@ const NavBase = () => {
   if (path.length === 0) {
     path = ABOUT;
   }
-  const scrollToTop = () => window.scrollTo(0, 0);
+  useEffect(() => {
+    path = window.location.hash.replace('#/', '');
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <nav id="nav" className="nav">
       {links.map((link) => (
         <NavLink
           name={link}
           active={path === link}
-          onClick={scrollToTop}
           key={link}
         />
       ))}
@@ -27,4 +32,4 @@ const NavBase = () => {
   );
 };
 
-export const Nav = withRouter(NavBase);
+export const Nav = NavBase;

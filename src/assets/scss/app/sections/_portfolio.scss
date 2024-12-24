@@ -1,3 +1,6 @@
+@use "../../utils/cards";
+@use "../../utils/variables";
+
 .portfolio {
 
   &-list {
@@ -26,16 +29,16 @@
   }
 
   &-item {
-    @include shadow-interactive;
+    @include cards.shadow-interactive;
     float: left;
     margin: 0 10px 20px;
     width: 320px;
 
     &-icon {
-      @include card-top;
+      @include cards.card-top;
 
       &-image {
-        @include card-top;
+        @include cards.card-top;
         display: block;
         margin: auto;
         width: 100%;
@@ -43,7 +46,7 @@
     }
 
     &-content {
-      @include card-bottom;
+      @include cards.card-bottom;
     }
 
     &-title {
@@ -57,16 +60,16 @@
     width: 100%;
 
     &-back-button {
-      @include shadow-interactive;
-      background-color: $black;
+      @include cards.shadow-interactive;
+      background-color: variables.$black;
       border: 0;
       border-radius: 4px;
-      color: $white;
+      color: variables.$white;
       margin-top: 20px;
       padding: 4px 8px;
 
       &:focus {
-        color: $yellow;
+        color: variables.$yellow;
       }
     }
 
@@ -122,11 +125,11 @@
     }
 
     &-date {
-      color: $mid-gray;
+      color: variables.$mid-gray;
     }
 
     &-keywords {
-      color: $mid-gray;
+      color: variables.$mid-gray;
       font-size: 13px;
       text-decoration: none;
     }
@@ -160,7 +163,7 @@
 
     &-item {
       margin-bottom: 25px;
-      max-width: $max-responsive-content-width;
+      max-width: variables.$max-responsive-content-width;
       width: 100%;
     }
   }

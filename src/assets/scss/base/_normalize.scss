@@ -1,7 +1,9 @@
+@use '../utils/variables';
+
 // Global Styling
 body {
-  background: $hecka-light-gray;
-  color: $black;
+  background: variables.$hecka-light-gray;
+  color: variables.$black;
   font-family: 'Brass Mono', monospace;
   font-size: 14px;
   font-weight: 400;
@@ -10,11 +12,11 @@ body {
 }
 
 a {
-  color: $blue;
+  color: variables.$blue;
   text-decoration: none;
 
   &:hover {
-    color: $green;
+    color: variables.$green;
   }
 }
 
@@ -24,14 +26,14 @@ div {
 }
 
 h1 {
-  color: $dark-black;
+  color: variables.$dark-black;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 40px;
 }
 
 h2 {
-  color: $dark-black;
+  color: variables.$dark-black;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 40px;
@@ -39,7 +41,7 @@ h2 {
 }
 
 h3 {
-  color: $dark-black;
+  color: variables.$dark-black;
   font-size: 16px;
   margin: 0;
 }

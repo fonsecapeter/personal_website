@@ -1,4 +1,3 @@
-if (process.env.NODE_ENV === 'production') require('newrelic');
 const express = require('express');
 const compression = require('compression'); // gzip
 const path = require('path');

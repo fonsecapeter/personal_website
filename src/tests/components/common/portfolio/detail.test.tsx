@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { MemoryRouter, Route } from 'react-router-dom';
+import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { PortfolioDetail } from '../../../../components/common/portfolio/detail'
 
@@ -10,9 +10,9 @@ describe('PortfolioDetail', () => {
       render(
         <HelmetProvider>
           <MemoryRouter initialEntries={['/project/art.something_bogus']}>
-            <Route path="/project/:projectKey">
-              <PortfolioDetail />
-            </Route>
+            <Routes>
+              <Route path="/project/:projectKey" element={<PortfolioDetail />} />
+            </Routes>
           </MemoryRouter>
         </HelmetProvider>
       );
@@ -25,9 +25,9 @@ describe('PortfolioDetail', () => {
       render(
         <HelmetProvider>
           <MemoryRouter initialEntries={['/project/bonk.dolores_bench']}>
-            <Route path="/project/:projectKey">
-              <PortfolioDetail />
-            </Route>
+            <Routes>
+              <Route path="/project/:projectKey" element={<PortfolioDetail />} />
+            </Routes>
           </MemoryRouter>
         </HelmetProvider>
       );
@@ -40,9 +40,9 @@ describe('PortfolioDetail', () => {
       render(
         <HelmetProvider>
           <MemoryRouter initialEntries={['/project/art.dolores_bench']}>
-            <Route path="/project/:projectKey">
-              <PortfolioDetail />
-            </Route>
+            <Routes>
+              <Route path="/project/:projectKey" element={<PortfolioDetail />} />
+            </Routes>
           </MemoryRouter>
         </HelmetProvider>
       );
@@ -57,9 +57,9 @@ describe('PortfolioDetail', () => {
         render(
           <HelmetProvider>
             <MemoryRouter initialEntries={['/project/code.api-buddy']}>
-              <Route path="/project/:projectKey">
-                <PortfolioDetail />
-              </Route>
+              <Routes>
+                <Route path="/project/:projectKey" element={<PortfolioDetail />} />
+              </Routes>
             </MemoryRouter>
           </HelmetProvider>
         );
@@ -74,9 +74,9 @@ describe('PortfolioDetail', () => {
         render(
           <HelmetProvider>
             <MemoryRouter initialEntries={['/project/art.shop_class_shelf']}>
-              <Route path="/project/:projectKey">
-                <PortfolioDetail />
-              </Route>
+              <Routes>
+                <Route path="/project/:projectKey" element={<PortfolioDetail />} />
+              </Routes>
             </MemoryRouter>
           </HelmetProvider>
         );
@@ -92,9 +92,9 @@ describe('PortfolioDetail', () => {
           render(
             <HelmetProvider>
               <MemoryRouter initialEntries={['/project/art.three-cities']}>
-                <Route path="/project/:projectKey">
-                  <PortfolioDetail />
-                </Route>
+                <Routes>
+                  <Route path="/project/:projectKey" element={<PortfolioDetail />} />
+                </Routes>
               </MemoryRouter>
             </HelmetProvider>
           );
@@ -112,9 +112,9 @@ describe('PortfolioDetail', () => {
           render(
             <HelmetProvider>
               <MemoryRouter initialEntries={['/project/art.artists-in-residence']}>
-                <Route path="/project/:projectKey">
-                  <PortfolioDetail />
-                </Route>
+                <Routes>
+                  <Route path="/project/:projectKey" element={<PortfolioDetail />} />
+                </Routes>
               </MemoryRouter>
             </HelmetProvider>
           );

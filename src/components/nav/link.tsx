@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 type NavLinkProps = {
   readonly name: string,
   readonly active: boolean,
-  readonly onClick: () => void,
 };
 
 const slugify = (words: string): string => (
@@ -22,7 +21,7 @@ const capitalize = (word: string): string => (
   word.charAt(0).toUpperCase() + word.slice(1)
 );
 
-export const NavLink = ({ name, active, onClick }: NavLinkProps) => {
+export const NavLink = ({ name, active }: NavLinkProps) => {
   const text = capitalize(name);
   if (active) {
     return (
@@ -35,7 +34,6 @@ export const NavLink = ({ name, active, onClick }: NavLinkProps) => {
     <Link
       className="nav-link"
       to={`/${slugify(name)}`}
-      onClick={() => onClick()}
     >
       {text}
     </Link>

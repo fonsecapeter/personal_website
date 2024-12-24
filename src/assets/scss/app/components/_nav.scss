@@ -1,3 +1,5 @@
+@use '../../utils/variables';
+
 .nav {
   font-size: 16px;
   font-weight: 300;
@@ -10,14 +12,14 @@
   z-index: 10;
 
   &-link {
-    color: $black;
+    color: variables.$black;
     display: block;
     font-weight: 400;
     margin: 0 10px;
     text-decoration: none;
 
     &-active {
-      color: $black;
+      color: variables.$black;
       cursor: default;
       font-weight: 400;
       margin: 0 10px;
@@ -25,12 +27,12 @@
     }
 
     &:hover {
-      color: $black;
+      color: variables.$black;
       text-decoration: underline;
     }
   }
 
-  @media only screen and (min-width: $responsive-width) {
+  @media only screen and (min-width: variables.$responsive-width) {
     &-link,
     &-link-active {
       margin: 0 20px;

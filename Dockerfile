@@ -1,5 +1,4 @@
-# FROM --platform=linux/amd64 node:8.15.1
-FROM --platform=linux/amd64 node:18.17.1
+FROM --platform=linux/amd64 node:20.5.1
 
 ENV NODE_OPTIONS=--openssl-legacy-provider
 
