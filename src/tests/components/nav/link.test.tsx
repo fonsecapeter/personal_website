@@ -13,7 +13,6 @@ describe('NavLink', () => {
             <NavLink
               name='Test'
               active={false}
-              onClick={() => {}}
             />
           </MemoryRouter>
         </HelmetProvider>
@@ -41,7 +40,6 @@ describe('NavLink', () => {
             <NavLink
               name='Test'
               active={true}
-              onClick={() => {}}
             />
           </MemoryRouter>
         </HelmetProvider>

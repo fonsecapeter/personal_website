@@ -1,3 +1,6 @@
+@use "../../utils/cards";
+@use "../../utils/variables";
+
 .experience {
 
   &-section-title {
@@ -11,7 +14,7 @@
   }
 
   &-pdf-tip {
-    color: $mid-gray;
+    color: variables.$mid-gray;
     display: inline-block;
     font-size: 13px;
     height: 100%;
@@ -21,12 +24,12 @@
   }
 
   &-item-interactive {
-    @include shadow-interactive;
+    @include cards.shadow-interactive;
   }
 
   &-item,
   &-item-interactive {
-    @include card;
+    @include cards.card;
     display: block;
     margin-bottom: 25px;
     overflow: auto;
@@ -61,7 +64,7 @@
     }
 
     &-date {
-      color: $mid-gray;
+      color: variables.$mid-gray;
     }
 
     &-dot {

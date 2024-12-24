@@ -1,15 +1,16 @@
 // development config
 const { merge } = require('webpack-merge');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const commonConfig = require('./common');
 
 module.exports = merge(commonConfig, {
   mode: 'development',
-  entry: [
-    './index.tsx',
-  ],
-  devtool: 'cheap-module-eval-source-map',
-  plugins: [
-    new webpack.NamedModulesPlugin(),
-  ],
+  devtool: 'eval-cheap-module-source-map',
+  devServer: {
+    static: {
+      directory: '/app/dist',
+    },
+    compress: true,
+    port: 8080,
+  },
 });

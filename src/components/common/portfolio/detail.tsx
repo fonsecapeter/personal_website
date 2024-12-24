@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { ALL_PROJECTS } from '../../../content/portfolio/all';
 import { Carousel } from '../carousel';
 import { NotFound } from '../not_found';
@@ -14,10 +14,10 @@ const notFoundMsg = "I haven't made that project.... yet";
 
 export const PortfolioDetail = () => {
   const { projectKey } = useParams<PortfolioDetailParams>();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const goBack = (category: string) => {
-    history.push(`/${category}`);
+    navigate(`/${category}`);
   };
 
   const [category, projectId] = projectKey.split('.');

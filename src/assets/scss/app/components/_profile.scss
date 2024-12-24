@@ -1,3 +1,5 @@
+@use "../../utils/cards";
+
 .profile {
   padding: 40px 20px 0;
   text-align: center;
@@ -19,11 +21,11 @@
     }
 
     &-social {
-      @include shadow-interactive-mini;
+      @include cards.shadow-interactive-mini;
       margin: 0 6px;
 
       &-rounder {
-        @include shadow-interactive;
+        @include cards.shadow-interactive;
         border-radius: 10px;
         margin: 0 6px;
       }

@@ -15,6 +15,7 @@ describe('Nav', () => {
         },
         writable: true
       });
+      Object.defineProperty(window, 'scrollTo', { value: () => {} });
       render(
         <HelmetProvider>
           <MemoryRouter>
