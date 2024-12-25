@@ -11,7 +11,7 @@ describe('Experience', () => {
         <MemoryRouter>
           <Experience />
         </MemoryRouter>
-      </HelmetProvider>
+      </HelmetProvider>,
     );
   });
 

@@ -4,9 +4,6 @@
 const webpack = require('webpack');
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
-const TerserPlugin = require("terser-webpack-plugin");
-
 
 module.exports = {
   resolve: {
@@ -20,12 +17,12 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: ['babel-loader', 'source-map-loader', { loader: 'eslint-loader', options: { fix: true } }],
+        use: ['babel-loader', 'source-map-loader'],
         exclude: /node_modules/,
       },
       {
         test: /\.tsx?$/,
-        use: ['babel-loader', { loader: 'eslint-loader', options: { fix: true } }],
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/,
@@ -67,39 +64,25 @@ module.exports = {
       template: 'index.html',
       favicon: 'assets/img/favicon.ico',
     }),
-    new CompressionPlugin(),
   ],
   performance: {
     hints: false,
   },
 
   output: {
-    filename: 'js/[name].[hash].bundle.min.js',
-    chunkFilename: 'js/[name].[hash].bundle.min.js',
+    filename: 'js/[name].[contenthash].bundle.min.js',
+    chunkFilename: 'js/[name].[contenthash].bundle.min.js',
     path: resolve(__dirname, '../../dist'),
     publicPath: '/',
   },
   optimization: {
     chunkIds: 'named',
     moduleIds: 'named',
-    minimize: true,
-    minimizer: [
-      new TerserPlugin(),
-    ],
     runtimeChunk: {
-      // use manifest for component splitting
       name: 'manifest',
     },
     splitChunks: {
-      cacheGroups: {
-        vendor: {
-          // split out node modules
-          name: 'vendor',
-          chunks: 'all',
-          priority: -20,
-          test: /node_modules/,
-        },
-      },
+      chunks: 'all',
     },
   },
   devtool: 'source-map',

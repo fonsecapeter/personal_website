@@ -15,20 +15,20 @@ describe('NavLink', () => {
               active={false}
             />
           </MemoryRouter>
-        </HelmetProvider>
+        </HelmetProvider>,
       );
     });
 
     it('renders the name', () => {
-      expect(screen.getByText("Test")).toBeInTheDocument();
+      expect(screen.getByText('Test')).toBeInTheDocument();
     });
 
     it('links to a route that matches the name', () => {
-      expect(screen.getByText("Test")).toHaveAttribute('href', '/test');
+      expect(screen.getByText('Test')).toHaveAttribute('href', '/test');
     });
 
     it('has an active class', () => {
-      expect(screen.getByText("Test")).toHaveAttribute('class', 'nav-link');
+      expect(screen.getByText('Test')).toHaveAttribute('class', 'nav-link');
     });
   });
 
@@ -42,20 +42,20 @@ describe('NavLink', () => {
               active={true}
             />
           </MemoryRouter>
-        </HelmetProvider>
+        </HelmetProvider>,
       );
     });
 
     it('renders the name', () => {
-      expect(screen.getByText("Test")).toBeInTheDocument();
+      expect(screen.getByText('Test')).toBeInTheDocument();
     });
 
     it('has no link', () => {
-      expect(screen.getByText("Test")).not.toHaveAttribute('href');
+      expect(screen.getByText('Test')).not.toHaveAttribute('href');
     });
 
     it('has an inactive class', () => {
-      expect(screen.getByText("Test")).toHaveAttribute('class', 'nav-link-active');
+      expect(screen.getByText('Test')).toHaveAttribute('class', 'nav-link-active');
     });
   });
 });

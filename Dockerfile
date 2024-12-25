@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:20.5.1
+FROM --platform=linux/amd64 node:20.9.0
 
 ENV NODE_OPTIONS=--openssl-legacy-provider
 

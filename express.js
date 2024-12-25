@@ -25,4 +25,5 @@ app.get('/wakemydyno.txt', (req, res) => {
 app.listen(portNumber, () => {
   console.log(`Express web server started: http://localhost:${portNumber}`);
   console.log(`Serving content from /${sourceDir}/`);
+  console.log(`Index path will load /${sourceDir}/index.html`);
 });

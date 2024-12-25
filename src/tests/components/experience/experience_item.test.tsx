@@ -18,7 +18,7 @@ describe('ExperienceItem', () => {
             'Pretty cool if u ask me',
           ],
         }}
-      />
+      />,
     ).container;
   });
 

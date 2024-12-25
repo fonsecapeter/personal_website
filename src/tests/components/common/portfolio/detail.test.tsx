@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { PortfolioDetail } from '../../../../components/common/portfolio/detail'
+import { PortfolioDetail } from '../../../../components/common/portfolio/detail';
 
 describe('PortfolioDetail', () => {
   describe('when given an invalid project key', () => {
@@ -14,9 +14,9 @@ describe('PortfolioDetail', () => {
               <Route path="/project/:projectKey" element={<PortfolioDetail />} />
             </Routes>
           </MemoryRouter>
-        </HelmetProvider>
+        </HelmetProvider>,
       );
-      expect(screen.getByText("Not Found")).toBeInTheDocument();
+      expect(screen.getByText('Not Found')).toBeInTheDocument();
     });
   });
 
@@ -29,9 +29,9 @@ describe('PortfolioDetail', () => {
               <Route path="/project/:projectKey" element={<PortfolioDetail />} />
             </Routes>
           </MemoryRouter>
-        </HelmetProvider>
+        </HelmetProvider>,
       );
-      expect(screen.getByText("Not Found")).toBeInTheDocument();
+      expect(screen.getByText('Not Found')).toBeInTheDocument();
     });
   });
 
@@ -44,7 +44,7 @@ describe('PortfolioDetail', () => {
               <Route path="/project/:projectKey" element={<PortfolioDetail />} />
             </Routes>
           </MemoryRouter>
-        </HelmetProvider>
+        </HelmetProvider>,
       );
       expect(screen.getByText('Dolores Bench')).toBeInTheDocument();
       expect(screen.getByText('2024-07-24')).toBeInTheDocument();
@@ -61,7 +61,7 @@ describe('PortfolioDetail', () => {
                 <Route path="/project/:projectKey" element={<PortfolioDetail />} />
               </Routes>
             </MemoryRouter>
-          </HelmetProvider>
+          </HelmetProvider>,
         );
         expect(screen.getByTestId('portfolio-detail-img')).toBeInTheDocument();
         expect(screen.queryByTestId('carousel-main-image')).toBeNull();
@@ -78,7 +78,7 @@ describe('PortfolioDetail', () => {
                 <Route path="/project/:projectKey" element={<PortfolioDetail />} />
               </Routes>
             </MemoryRouter>
-          </HelmetProvider>
+          </HelmetProvider>,
         );
         expect(screen.queryByTestId('portfolio-detail-img')).toBeNull();
         expect(screen.getByTestId('carousel-main-image')).toBeInTheDocument();
@@ -96,7 +96,7 @@ describe('PortfolioDetail', () => {
                   <Route path="/project/:projectKey" element={<PortfolioDetail />} />
                 </Routes>
               </MemoryRouter>
-            </HelmetProvider>
+            </HelmetProvider>,
           );
           expect(screen.queryByTestId('portfolio-detail-img')).toBeNull();
           expect(screen.queryByTestId('carousel-main-image')).toBeNull();
@@ -116,7 +116,7 @@ describe('PortfolioDetail', () => {
                   <Route path="/project/:projectKey" element={<PortfolioDetail />} />
                 </Routes>
               </MemoryRouter>
-            </HelmetProvider>
+            </HelmetProvider>,
           );
           expect(screen.queryByTestId('portfolio-detail-img')).toBeNull();
           expect(screen.queryByTestId('carousel-main-image')).toBeNull();

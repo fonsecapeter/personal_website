@@ -15,4 +15,4 @@ export type Icon = {
 export type Video = {
   readonly src: string,
   readonly aspectRatio?: string, // default: '16-9'
-}
+};

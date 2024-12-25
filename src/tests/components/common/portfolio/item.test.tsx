@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { PortfolioItem } from '../../../../components/common/portfolio/item'
+import { PortfolioItem } from '../../../../components/common/portfolio/item';
 
 describe('PortfolioItem', () => {
   let container;
@@ -10,24 +10,24 @@ describe('PortfolioItem', () => {
       <MemoryRouter>
         <PortfolioItem
           project={{
-            id: "a_test_project",
-            name: "A Test Project",
+            id: 'a_test_project',
+            name: 'A Test Project',
             links: [],
-            date: "2024",
-            keywords: "testable",
+            date: '2024',
+            keywords: 'testable',
             icon: {
-              src: "test_img/50.png",
+              src: 'test_img/50.png',
               alt: 'fake image',
             },
             images: [
-              { full: "test_img/100.png", half: "test_img/50.png", quarter: "test_img/25.png", alt: 'fake image' },
+              { full: 'test_img/100.png', half: 'test_img/50.png', quarter: 'test_img/25.png', alt: 'fake image' },
             ],
-            description: "Something I worked very hard on.",
+            description: 'Something I worked very hard on.',
             bullets: [],
           }}
           category="test"
         />
-      </MemoryRouter>
+      </MemoryRouter>,
     ).container;
   });
 

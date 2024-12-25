@@ -11,9 +11,9 @@ describe('Nav', () => {
       Object.defineProperty(window, 'location', {
         value: {
           href: 'https://peternfonseca.com/#/',
-          hash: '#/'
+          hash: '#/',
         },
-        writable: true
+        writable: true,
       });
       Object.defineProperty(window, 'scrollTo', { value: () => {} });
       render(
@@ -21,22 +21,22 @@ describe('Nav', () => {
           <MemoryRouter>
             <Nav />
           </MemoryRouter>
-        </HelmetProvider>
+        </HelmetProvider>,
       );
     });
 
     it('renders all links', () => {
-      expect(screen.getByText("About")).toBeInTheDocument();
-      expect(screen.getByText("Experience")).toBeInTheDocument();
-      expect(screen.getByText("Code")).toBeInTheDocument();
-      expect(screen.getByText("Art")).toBeInTheDocument();
+      expect(screen.getByText('About')).toBeInTheDocument();
+      expect(screen.getByText('Experience')).toBeInTheDocument();
+      expect(screen.getByText('Code')).toBeInTheDocument();
+      expect(screen.getByText('Art')).toBeInTheDocument();
     });
 
     it('activates the about link', () => {
-      expect(screen.getByText("About")).toHaveAttribute('class', 'nav-link-active');
-      expect(screen.getByText("Experience")).toHaveAttribute('class', 'nav-link');
-      expect(screen.getByText("Code")).toHaveAttribute('class', 'nav-link');
-      expect(screen.getByText("Art")).toHaveAttribute('class', 'nav-link');
+      expect(screen.getByText('About')).toHaveAttribute('class', 'nav-link-active');
+      expect(screen.getByText('Experience')).toHaveAttribute('class', 'nav-link');
+      expect(screen.getByText('Code')).toHaveAttribute('class', 'nav-link');
+      expect(screen.getByText('Art')).toHaveAttribute('class', 'nav-link');
     });
   });
 
@@ -46,24 +46,24 @@ describe('Nav', () => {
       Object.defineProperty(window, 'location', {
         value: {
           href: 'https://peternfonseca.com/#/code',
-          hash:'#/code'
+          hash:'#/code',
         },
-        writable: true
+        writable: true,
       });
       render(
         <HelmetProvider>
           <MemoryRouter initialEntries={['/code']}>
             <Nav />
           </MemoryRouter>
-        </HelmetProvider>
+        </HelmetProvider>,
       );
     });
 
     it('activates the matching link', () => {
-      expect(screen.getByText("About")).toHaveAttribute('class', 'nav-link');
-      expect(screen.getByText("Experience")).toHaveAttribute('class', 'nav-link');
-      expect(screen.getByText("Code")).toHaveAttribute('class', 'nav-link-active');
-      expect(screen.getByText("Art")).toHaveAttribute('class', 'nav-link');
+      expect(screen.getByText('About')).toHaveAttribute('class', 'nav-link');
+      expect(screen.getByText('Experience')).toHaveAttribute('class', 'nav-link');
+      expect(screen.getByText('Code')).toHaveAttribute('class', 'nav-link-active');
+      expect(screen.getByText('Art')).toHaveAttribute('class', 'nav-link');
     });
   });
 });

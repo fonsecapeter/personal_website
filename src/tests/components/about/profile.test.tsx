@@ -11,8 +11,8 @@ describe('Profile', () => {
             <MemoryRouter>
               <Profile />
             </MemoryRouter>
-          </HelmetProvider>
-        );;
+          </HelmetProvider>,
+    );
   });
 
   it('includes my name', () => {
