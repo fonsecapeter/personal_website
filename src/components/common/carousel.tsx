@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Image } from '../../content/media';
+import useImagePreloader from './preload_images';
 
 
 interface CarouselProps {
@@ -30,6 +31,9 @@ export const Carousel = ({ images }: CarouselProps) => {
   if (laneImages.length == 1) {
     laneImages = [];
   }
+  // preload main version of lane images on first load so they're ready
+  // for carousel clicking
+  useImagePreloader(laneImages.map((img) => img.image.half));
 
   return (
     <>

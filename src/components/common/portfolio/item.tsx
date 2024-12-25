@@ -17,6 +17,7 @@ export const PortfolioItem = ({ project, category }: CodeProps) => (
         className="portfolio-item-icon-image"
         src={project.icon.src}
         alt={project.icon.alt}
+        loading="lazy"
       />
     </div>
     <div className="portfolio-item-content">
