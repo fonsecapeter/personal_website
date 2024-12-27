@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Automatically fix code style 🔧
+set -eu -o pipefail
+
+docker compose run --rm web npm run lint-fix

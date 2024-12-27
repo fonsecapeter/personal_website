@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { act } from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { Carousel } from '../../../components/common/carousel';
+import Carousel from '../../../components/common/image/carousel';
+
+jest.mock('../../../components/common/image/preload', () => ({
+  ...jest.requireActual('../../../components/common/image/preload'),
+  __esModule: true,
+  default: jest.fn(args => {
+    args.setIsPreloaded(true);
+  }),
+}));
+
+// import preloadImages from '../../../components/common/image/preload';
 
 describe('Crousel', () => {
   const IMAGE_1 = {
@@ -34,8 +44,8 @@ describe('Crousel', () => {
     alt: 'test image 5',
   };
   describe('with 2 images', () => {
-    beforeEach(() => {
-      render(<Carousel images={[IMAGE_1, IMAGE_2]} />);
+    beforeEach(async () => {
+      await act(async () => render(<Carousel images={[IMAGE_1, IMAGE_2]} />));
     });
 
     it('can render with one image', () => {

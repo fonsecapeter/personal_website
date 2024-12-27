@@ -2,13 +2,13 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import logo from '../../assets/img/logo.png';
 
-type SEOProps = {
-  readonly title?: string,
-  readonly description?: string,
-  readonly image?: string,
-};
+interface SEOProps {
+  readonly title?: string;
+  readonly description?: string;
+  readonly image?: string;
+}
 
-export const SEOTags = ({
+const SEOTags = ({
   title = 'P. Fonseca',
   description = 'his personal website',
   image = logo,
@@ -21,3 +21,5 @@ export const SEOTags = ({
     <meta property="og:image" content={`http://www.peternfonseca.com/${image}`} />
   </Helmet>
 );
+
+export default SEOTags;

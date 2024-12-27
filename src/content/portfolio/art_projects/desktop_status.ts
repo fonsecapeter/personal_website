@@ -7,8 +7,7 @@ import inSitu100 from '../../../assets/img/portfolio/desktop_status/in_situ/100.
 import inSitu50 from '../../../assets/img/portfolio/desktop_status/in_situ/50.jpg';
 import inSitu25 from '../../../assets/img/portfolio/desktop_status/in_situ/25.jpg';
 
-
-export const DESKTOP_STATUS: Project = {
+const DESKTOP_STATUS: Project = {
   id: 'desktop-status',
   name: 'Desktop Status',
   links: [{
@@ -38,3 +37,5 @@ export const DESKTOP_STATUS: Project = {
   description: 'Makes it easy to know if I can talk or not.',
   bullets: [],
 };
+
+export default DESKTOP_STATUS;

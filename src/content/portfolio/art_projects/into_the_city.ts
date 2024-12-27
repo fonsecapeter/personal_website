@@ -5,7 +5,7 @@ import intoTheCity50 from '../../../assets/img/portfolio/into_the_city/50.jpg';
 import intoTheCity25 from '../../../assets/img/portfolio/into_the_city/25.jpg';
 
 
-export const INTO_THE_CITY: Project = {
+const INTO_THE_CITY: Project = {
   id: 'into_the_city',
   name: 'Into the City',
   links: [{
@@ -29,3 +29,5 @@ export const INTO_THE_CITY: Project = {
   description: 'We ran as fast as we could into that city.',
   bullets: [],
 };
+
+export default INTO_THE_CITY;

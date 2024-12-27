@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { ExperienceItem } from '../../../components/experience/item';
+import ExperienceItem from '../../../components/experience/item';
 
 describe('ExperienceItem', () => {
   let container;

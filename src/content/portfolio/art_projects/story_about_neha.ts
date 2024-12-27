@@ -3,7 +3,7 @@ import { Project } from '../projects';
 import storyAboutNeha50 from '../../../assets/img/portfolio/story_about_neha/50.jpg';
 
 
-export const STORY_ABOUT_NEHA: Project = {
+const STORY_ABOUT_NEHA: Project = {
   id: 'story-about-neha',
   name: 'A Story About Neha',
   links: [],
@@ -21,3 +21,5 @@ export const STORY_ABOUT_NEHA: Project = {
   description: 'For those who don\'t know.',
   bullets: [],
 };
+
+export default STORY_ABOUT_NEHA;

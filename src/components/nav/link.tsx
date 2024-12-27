@@ -2,10 +2,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-type NavLinkProps = {
-  readonly name: string,
-  readonly active: boolean,
-};
+interface NavLinkProps {
+  readonly name: string;
+  readonly active: boolean;
+}
 
 const slugify = (words: string): string => (
   words
@@ -21,7 +21,7 @@ const capitalize = (word: string): string => (
   word.charAt(0).toUpperCase() + word.slice(1)
 );
 
-export const NavLink = ({ name, active }: NavLinkProps) => {
+const NavLink = ({ name, active }: NavLinkProps) => {
   const text = capitalize(name);
   if (active) {
     return (
@@ -39,3 +39,5 @@ export const NavLink = ({ name, active }: NavLinkProps) => {
     </Link>
   );
 };
+
+export default NavLink;

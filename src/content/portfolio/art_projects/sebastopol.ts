@@ -14,7 +14,7 @@ import typewriterRepair50 from '../../../assets/img/portfolio/sebastopol/typewri
 import typewriterRepair25 from '../../../assets/img/portfolio/sebastopol/typewriter_repair/25.jpg';
 
 
-export const SEBASTOPOL: Project = {
+const SEBASTOPOL: Project = {
   id: 'sebastopol',
   name: 'Sebastopol',
   links: [{
@@ -56,3 +56,5 @@ export const SEBASTOPOL: Project = {
   description: 'Not one for writing poetry, but felt like it after fixing a typewriter + going on a weekend trip.',
   bullets: [],
 };
+
+export default SEBASTOPOL;

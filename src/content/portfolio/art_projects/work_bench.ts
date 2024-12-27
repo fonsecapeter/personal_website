@@ -5,7 +5,7 @@ import workbench50 from '../../../assets/img/portfolio/workbench/50.jpg';
 import workbench25 from '../../../assets/img/portfolio/workbench/25.jpg';
 
 
-export const WORK_BENCH: Project = {
+const WORK_BENCH: Project = {
   id: 'workbench',
   name: 'Workbench',
   links: [
@@ -31,3 +31,5 @@ export const WORK_BENCH: Project = {
   description: 'Always wanted one of these.',
   bullets: [],
 };
+
+export default WORK_BENCH;

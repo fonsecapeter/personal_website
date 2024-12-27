@@ -5,7 +5,7 @@ import ttamLark50 from '../../../assets/img/portfolio/ttam_lark/50.jpg';
 import ttamLark25 from '../../../assets/img/portfolio/ttam_lark/25.jpg';
 
 
-export const TTAM_LARK: Project = {
+const TTAM_LARK: Project = {
   id: 'ttam-lark',
   name: '23andMe / Lark Partnership',
   links: [
@@ -31,3 +31,5 @@ export const TTAM_LARK: Project = {
   description: 'Led a team of engineers to build an API integration with a 3rd party mobile app that helps customers manage chronic diseases.',
   bullets: [],
 };
+
+export default TTAM_LARK;

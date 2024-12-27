@@ -3,7 +3,7 @@ import { Project } from '../projects';
 import travelStress50 from '../../../assets/img/portfolio/travel_stress/50.jpg';
 
 
-export const TRAVEL_STRESS: Project = {
+const TRAVEL_STRESS: Project = {
   id: 'travel-stress',
   name: 'Travel Stress',
   links: [],
@@ -21,3 +21,5 @@ export const TRAVEL_STRESS: Project = {
   description: 'A movie about traveling.',
   bullets: [],
 };
+
+export default TRAVEL_STRESS;

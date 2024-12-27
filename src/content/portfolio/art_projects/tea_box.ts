@@ -5,7 +5,7 @@ import teaBox50 from '../../../assets/img/portfolio/tea_box/50.jpg';
 import teaBox25 from '../../../assets/img/portfolio/tea_box/25.jpg';
 
 
-export const TEA_BOX: Project = {
+const TEA_BOX: Project = {
   id: 'tea-box',
   name: 'Tea Box',
   links: [{
@@ -29,3 +29,5 @@ export const TEA_BOX: Project = {
   description: 'Some of my early work.',
   bullets: [],
 };
+
+export default TEA_BOX;

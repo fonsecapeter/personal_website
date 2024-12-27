@@ -5,7 +5,7 @@ import crvClinometer50 from '../../../assets/img/portfolio/crv_clinometer/50.jpg
 import crvClinometer25 from '../../../assets/img/portfolio/crv_clinometer/25.jpg';
 
 
-export const CRV_CLINOMETER: Project = {
+const CRV_CLINOMETER: Project = {
   id: 'crv-clinometer',
   name: 'CR-V Clinometer',
   links: [{
@@ -29,3 +29,5 @@ export const CRV_CLINOMETER: Project = {
   description: 'Prevents rollover.',
   bullets: [],
 };
+
+export default CRV_CLINOMETER;

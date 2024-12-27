@@ -4,7 +4,7 @@ import peterNotes100 from '../../../assets/img/portfolio/peter_notes/100.png';
 import peterNotes25 from '../../../assets/img/portfolio/peter_notes/25.png';
 
 
-export const PETER_NOTES: Project = {
+const PETER_NOTES: Project = {
   id: 'peter-notes',
   name: 'Peter Notes',
   links: [
@@ -39,3 +39,5 @@ export const PETER_NOTES: Project = {
     'Easy to hook into the cloud',
   ],
 };
+
+export default PETER_NOTES;

@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
-import { Portfolio } from '../common/portfolio';
-import { ART } from '../../content/portfolio/art';
+import Portfolio from '../common/portfolio';
+import ART from '../../content/portfolio/art';
 import '../../assets/scss/portfolio.scss';
 
 

@@ -5,7 +5,7 @@ import honda50 from '../../../assets/img/portfolio/honda_cb125/50.png';
 import honda25 from '../../../assets/img/portfolio/honda_cb125/25.png';
 
 
-export const MY_MOTORCYCLE: Project = {
+const MY_MOTORCYCLE: Project = {
   id: 'my-motorcycle',
   name: 'My Motorcycle',
   links: [{
@@ -29,3 +29,5 @@ export const MY_MOTORCYCLE: Project = {
   description: 'My first and only motorcycle.',
   bullets: [],
 };
+
+export default MY_MOTORCYCLE;

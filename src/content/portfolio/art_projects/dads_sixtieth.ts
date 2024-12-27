@@ -3,7 +3,7 @@ import { Project } from '../projects';
 import dads60th50 from '../../../assets/img/portfolio/dads_60th_thumb/50.jpg';
 
 
-export const DADS_60TH: Project =   {
+const DADS_60TH: Project =   {
   id: 'dads-sixtieth',
   name: 'Dad\'s 60th',
   links: [],
@@ -21,3 +21,5 @@ export const DADS_60TH: Project =   {
   description: 'A movie about my dad.',
   bullets: [],
 };
+
+export default DADS_60TH;

@@ -17,7 +17,7 @@ import sign50 from '../../../assets/img/portfolio/hotel_hallway/sign/50.jpg';
 import sign25 from '../../../assets/img/portfolio/hotel_hallway/sign/25.jpg';
 
 
-export const HOTEL_HALLWAY: Project = {
+const HOTEL_HALLWAY: Project = {
   id: 'hotel_hallway',
   name: 'Hotel Hallway',
   links: [
@@ -71,3 +71,5 @@ export const HOTEL_HALLWAY: Project = {
   description: 'My wife and I always wanted to open a hotel together, but we didn\'t want to uproot our lives to do it. We decided to make our apartment feel like one instead.',
   bullets: ['made in collaboration with Neha'],
 };
+
+export default HOTEL_HALLWAY;

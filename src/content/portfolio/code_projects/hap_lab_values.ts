@@ -6,7 +6,7 @@ import main50 from '../../../assets/img/portfolio/ttam_hap/main/50.png';
 import main25 from '../../../assets/img/portfolio/ttam_hap/main/25.png';
 
 
-export const HAP_LAB_VALUES: Project = {
+const HAP_LAB_VALUES: Project = {
   id: 'hap-lab-values',
   name: 'Health Action Plan / Lab Results',
   links: [
@@ -39,3 +39,5 @@ export const HAP_LAB_VALUES: Project = {
     'Provided premium feature differentiation to drive subscriptions, enabling the company to begin a shift toward a more sustainable profit-structure',
   ],
 };
+
+export default HAP_LAB_VALUES;

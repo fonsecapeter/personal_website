@@ -5,7 +5,7 @@ import ttamFox50 from '../../../assets/img/portfolio/ttam_fox/50.png';
 import ttamFox25 from '../../../assets/img/portfolio/ttam_fox/25.png';
 
 
-export const TTAM_FOX: Project = {
+const TTAM_FOX: Project = {
   id: 'ttam-fox',
   name: '23andMe / MJFF Partnership',
   links: [
@@ -31,3 +31,5 @@ export const TTAM_FOX: Project = {
   description: 'Led the techinical side of an already existing research partnership with the Michael J. Fox foundation. Biggest contribution was a new set of API endpoints that improved performance by > 10 fold compared to the original integration.',
   bullets: [],
 };
+
+export default TTAM_FOX;

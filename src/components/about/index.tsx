@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
-import { Profile } from './profile';
-import { SEOTags } from '../common/seo';
+import Profile from './profile';
+import SEOTags from '../common/seo';
 import '../../assets/scss/about.scss';
 
 export const About = () => (

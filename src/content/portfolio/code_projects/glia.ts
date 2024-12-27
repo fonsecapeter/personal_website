@@ -5,7 +5,7 @@ import gliaQuestionDetail50 from '../../../assets/img/portfolio/glia_question_de
 import gliaQuestionDetail25 from '../../../assets/img/portfolio/glia_question_detail/25.png';
 
 
-export const GLIA: Project = {
+const GLIA: Project = {
   id: 'glia',
   name: 'Glia',
   links: [
@@ -41,3 +41,5 @@ export const GLIA: Project = {
     'Minimized data requests with nested Flux resources to reduce load time',
   ],
 };
+
+export default GLIA;

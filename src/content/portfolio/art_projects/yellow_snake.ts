@@ -5,7 +5,7 @@ import yellowSnake50 from '../../../assets/img/portfolio/yellow_snake/50.jpg';
 import yellowSnake25 from '../../../assets/img/portfolio/yellow_snake/25.jpg';
 
 
-export const YELLOW_SNAKE: Project = {
+const YELLOW_SNAKE: Project = {
   id: 'yellow-snake',
   name: 'Yellow Snake',
   links: [{
@@ -29,3 +29,5 @@ export const YELLOW_SNAKE: Project = {
   description: 'Because I couldn\'t have the original.',
   bullets: [],
 };
+
+export default YELLOW_SNAKE;

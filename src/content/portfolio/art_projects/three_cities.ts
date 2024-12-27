@@ -3,7 +3,7 @@ import { Project } from '../projects';
 import threeCities50 from '../../../assets/img/portfolio/three_cities/50.jpg';
 
 
-export const THREE_CITIES: Project = {
+const THREE_CITIES: Project = {
   id: 'three-cities',
   name: '3 Cities',
   links: [],
@@ -21,3 +21,5 @@ export const THREE_CITIES: Project = {
   description: 'A challenge between friends that got me to try daily vlogging for 3 days.',
   bullets: [],
 };
+
+export default THREE_CITIES;

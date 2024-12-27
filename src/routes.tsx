@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import OhNoErrorBoundary from './components/common/error';
-import { NotFound } from './components/common/not_found';
+import NotFound from './components/common/not_found';
 
 const LoadableAbout = lazy(() => import(
   /* webpackPrefetch: true */
@@ -24,7 +24,7 @@ const LoadablePortfolioItem = lazy(() => import(
   './components/common/portfolio/detail'
 ));
 
-export const AppRoutes = () => {
+const AppRoutes = () => {
   return (
     <OhNoErrorBoundary>
       <Suspense fallback={<div>Loading...</div>}>
@@ -44,3 +44,5 @@ export const AppRoutes = () => {
     </OhNoErrorBoundary>
   );
 };
+
+export default AppRoutes;

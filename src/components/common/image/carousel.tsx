@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
-import { Image } from '../../content/media';
-import useImagePreloader from './preload_images';
+import React, { useEffect, useState } from 'react';
+import { Image } from '../../../content/media';
+import preloadImages from './preload';
+import ImagePlaceholder from './placeholder';
 
 
 interface CarouselProps {
   readonly images: Image[];
 }
-type LaneImage = {
-  image: Image,
-  selected: boolean,
-};
 
-export const Carousel = ({ images }: CarouselProps) => {
+interface LaneImage {
+  image: Image;
+  selected: boolean;
+}
+
+const Carousel = ({ images }: CarouselProps) => {
   const [selectedImage, selectImage] = useState(0);
+  const [isPreloaded, setIsPreloaded] = useState(false);
 
   let mainImage;
   let laneImages: LaneImage[] = [];
@@ -33,17 +36,26 @@ export const Carousel = ({ images }: CarouselProps) => {
   }
   // preload main version of lane images on first load so they're ready
   // for carousel clicking
-  useImagePreloader(laneImages.map((img) => img.image.half));
-
+  useEffect(() => {
+    preloadImages({
+      images: laneImages.map((img) => img.image.half),
+      isPreloaded,
+      setIsPreloaded,
+    });
+  }, []);
   return (
     <>
       <div className="carousel-image-main-container" data-testid="carousel">
-        <img
-          className="carousel-image-main"
-          data-testid="carousel-main-image"
-          src={mainImage.half}
-          alt={`${mainImage.alt} (large)`}
-        />
+        {isPreloaded ? (
+          <img
+            className="carousel-image-main"
+            data-testid="carousel-main-image"
+            src={mainImage.half}
+            alt={`${mainImage.alt} (large)`}
+          />
+        ) : (
+          <ImagePlaceholder width={300} height={300} />
+        )}
       </div>
       <div className="carousel-lane">
         {laneImages.map((laneImage, idx) => (
@@ -59,3 +71,5 @@ export const Carousel = ({ images }: CarouselProps) => {
     </>
   );
 };
+
+export default Carousel;

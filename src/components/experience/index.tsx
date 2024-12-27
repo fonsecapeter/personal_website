@@ -1,13 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
-import { ExperienceItem } from './item';
+import ExperienceItem from './item';
 import { EXPERIENCES } from '../../content/experiences';
 import '../../assets/scss/experience.scss';
 import posterIcon from '../../assets/img/icons/poster.png';
 import resumePDF from '../../assets/resume/PeterFonsecaResume.pdf';
-import { CodeListItem } from './code_list_item';
+import CodeListItem from './code_list_item';
 import { LANGUAGES } from '../../content/languages';
-import { SEOTags } from '../common/seo';
+import SEOTags from '../common/seo';
 
 export const Experience = () =>
   <div className="experience">

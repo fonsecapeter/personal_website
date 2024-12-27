@@ -5,7 +5,7 @@ import meuBem50 from '../../../assets/img/portfolio/meu_bem/50.jpg';
 import meuBem25 from '../../../assets/img/portfolio/meu_bem/25.jpg';
 
 
-export const MEU_BEM: Project = {
+const MEU_BEM: Project = {
   id: 'meu-bem',
   name: 'Meu Bem',
   links: [{
@@ -29,3 +29,5 @@ export const MEU_BEM: Project = {
   description: 'Made while on vacation in Marrakesh.',
   bullets: [],
 };
+
+export default MEU_BEM;

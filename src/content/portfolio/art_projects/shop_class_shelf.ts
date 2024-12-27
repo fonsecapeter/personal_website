@@ -9,7 +9,7 @@ import signature100 from '../../../assets/img/portfolio/shop_class_shelf/signatu
 import signature50 from '../../../assets/img/portfolio/shop_class_shelf/signature/50.jpg';
 import signature25 from '../../../assets/img/portfolio/shop_class_shelf/signature/25.jpg';
 
-export const SHOP_CLASS_SHELF: Project = {
+const SHOP_CLASS_SHELF: Project = {
   id: 'shop_class_shelf',
   name: 'Shop Class Shelf',
   links: [
@@ -41,3 +41,5 @@ export const SHOP_CLASS_SHELF: Project = {
   description: 'Some of my really early work.',
   bullets: [],
 };
+
+export default SHOP_CLASS_SHELF;

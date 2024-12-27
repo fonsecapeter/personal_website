@@ -5,7 +5,7 @@ import colorShiftScreenShot50 from '../../../assets/img/portfolio/color_shift_sc
 import colorShiftScreenShot25 from '../../../assets/img/portfolio/color_shift_screenshot/25.png';
 
 
-export const COLOR_SHIFT: Project = {
+const COLOR_SHIFT: Project = {
   id: 'color-shift',
   name: 'Color Shift',
   links: [
@@ -41,3 +41,5 @@ export const COLOR_SHIFT: Project = {
     'Artisinal, hand-made physics logic',
   ],
 };
+
+export default COLOR_SHIFT;

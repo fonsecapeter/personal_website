@@ -5,7 +5,7 @@ import jarvs50 from '../../../assets/img/portfolio/jarvs/50.png';
 import jarvs25 from '../../../assets/img/portfolio/jarvs/25.png';
 
 
-export const JARVS: Project = {
+const JARVS: Project = {
   id: 'jarvs',
   name: 'Jarvs',
   links: [
@@ -46,3 +46,5 @@ export const JARVS: Project = {
     'Cronjobs',
   ],
 };
+
+export default JARVS;

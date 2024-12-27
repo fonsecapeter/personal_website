@@ -5,7 +5,7 @@ import krafftachrome50 from '../../../assets/img/portfolio/krafftachrome/50.png'
 import krafftachrome25 from '../../../assets/img/portfolio/krafftachrome/25.png';
 
 
-export const KRAFFTACHROME: Project = {
+const KRAFFTACHROME: Project = {
   id: 'krafftachrome',
   name: 'Krafftachrome',
   links: [
@@ -38,3 +38,5 @@ export const KRAFFTACHROME: Project = {
     'iTerm2 theme',
   ],
 };
+
+export default KRAFFTACHROME;
