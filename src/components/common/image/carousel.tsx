@@ -54,7 +54,7 @@ const Carousel = ({ images }: CarouselProps) => {
             alt={`${mainImage.alt} (large)`}
           />
         ) : (
-          <ImagePlaceholder width={300} height={300} />
+          <ImagePlaceholder width={300} height={220} />
         )}
       </div>
       <div className="carousel-lane">
