@@ -1,24 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Project } from '../../../content/portfolio/projects';
+import ImagePlaceholder from '../image/placeholder';
 
-type CodeProps = {
-  readonly project: Project,
-  readonly category: string,
-};
+interface CodeProps {
+  readonly project: Project;
+  readonly category: string;
+  readonly imagePreloaded: boolean;
+}
 
-export const PortfolioItem = ({ project, category }: CodeProps) => (
+const PortfolioItem = ({ project, category, imagePreloaded = true }: CodeProps) => (
   <Link
     to={`/project/${category}.${project.id}`}
     className="portfolio-item"
   >
     <div className="portfolio-item-icon">
-      <img
-        className="portfolio-item-icon-image"
-        src={project.icon.src}
-        alt={project.icon.alt}
-        loading="lazy"
-      />
+      {imagePreloaded ? (
+        <img
+          className="portfolio-item-icon-image"
+          src={project.icon.src}
+          alt={project.icon.alt}
+        />
+      ) : (
+        <div className="portfolio-item-icon-image">
+          <ImagePlaceholder height={200} />
+        </div>
+      )}
     </div>
     <div className="portfolio-item-content">
       <h3 className="portfolio-item-title">
@@ -27,3 +34,5 @@ export const PortfolioItem = ({ project, category }: CodeProps) => (
     </div>
   </Link>
 );
+
+export default PortfolioItem;

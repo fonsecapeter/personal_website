@@ -2,7 +2,7 @@ import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { render, screen } from '@testing-library/react';
-import { Portfolio } from '../../../../components/common/portfolio/index';
+import Portfolio from '../../../../components/common/portfolio/index';
 
 describe('Portfolio', () => {
   describe('when given a set of projects', () => {

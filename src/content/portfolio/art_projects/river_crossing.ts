@@ -5,7 +5,7 @@ import riverCrossing50 from '../../../assets/img/portfolio/river_crossing/50.jpg
 import riverCrossing25 from '../../../assets/img/portfolio/river_crossing/25.jpg';
 
 
-export const RIVER_CROSSING: Project = {
+const RIVER_CROSSING: Project = {
   id: 'river_crossing',
   name: 'River Crossing',
   links: [{
@@ -29,3 +29,5 @@ export const RIVER_CROSSING: Project = {
   description: 'My dad drove us through a river when I was a kid.',
   bullets: [],
 };
+
+export default RIVER_CROSSING;

@@ -5,7 +5,7 @@ import stepStool50 from '../../../assets/img/portfolio/step_stool/50.jpg';
 import stepStool25 from '../../../assets/img/portfolio/step_stool/25.jpg';
 
 
-export const STEP_STOOL: Project = {
+const STEP_STOOL: Project = {
   id: 'step-stool',
   name: 'Step Stool',
   links: [{
@@ -29,3 +29,5 @@ export const STEP_STOOL: Project = {
   description: 'It\'s not fine woodworking, but it looks good and gets the job done.',
   bullets: [],
 };
+
+export default STEP_STOOL;

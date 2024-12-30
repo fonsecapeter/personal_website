@@ -3,11 +3,11 @@ import React from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Language } from '../../content/languages';
 
-type CodeListItemProps = {
-  readonly language: Language,
-};
+interface CodeListItemProps {
+  readonly language: Language;
+}
 
-export const CodeListItem = ({ language }: CodeListItemProps) => {
+const CodeListItem = ({ language }: CodeListItemProps) => {
   let frameworks = [];
   if (language.frameworks.length > 0) {
     frameworks = language.frameworks.map((framework, idx) => (
@@ -40,3 +40,5 @@ export const CodeListItem = ({ language }: CodeListItemProps) => {
     </div>
   );
 };
+
+export default CodeListItem;

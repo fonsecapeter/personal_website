@@ -5,7 +5,7 @@ import shellectricJsx50 from '../../../assets/img/portfolio/shellectric_jsx/50.p
 import shellectricJsx25 from '../../../assets/img/portfolio/shellectric_jsx/25.png';
 
 
-export const SHELLECTRIC: Project = {
+const SHELLECTRIC: Project = {
   id: 'shellectric',
   name: 'Shellectric',
   links: [
@@ -41,3 +41,5 @@ export const SHELLECTRIC: Project = {
     'Chrome theme',
   ],
 };
+
+export default SHELLECTRIC;

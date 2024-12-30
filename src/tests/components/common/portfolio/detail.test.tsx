@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { act } from 'react';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { PortfolioDetail } from '../../../../components/common/portfolio/detail';
 
+jest.mock('../../../../components/common/image/preload', () => ({
+  ...jest.requireActual('../../../../components/common/image/preload'),
+  __esModule: true,
+  default: jest.fn(args => {
+    args.setIsPreloaded(true);
+  }),
+}));
+
+
 describe('PortfolioDetail', () => {
   describe('when given an invalid project key', () => {
-    it('renders a nice not found message', () => {
-      render(
+    it('renders a nice not found message', async () => {
+      await act(async () => render(
         <HelmetProvider>
           <MemoryRouter initialEntries={['/project/art.something_bogus']}>
             <Routes>
@@ -15,14 +24,14 @@ describe('PortfolioDetail', () => {
             </Routes>
           </MemoryRouter>
         </HelmetProvider>,
-      );
+      ));
       expect(screen.getByText('Not Found')).toBeInTheDocument();
     });
   });
 
   describe('when given an invalid project category', () => {
-    it('renders a nice not found message', () => {
-      render(
+    it('renders a nice not found message', async () => {
+      await act(async () => render(
         <HelmetProvider>
           <MemoryRouter initialEntries={['/project/bonk.dolores_bench']}>
             <Routes>
@@ -30,14 +39,14 @@ describe('PortfolioDetail', () => {
             </Routes>
           </MemoryRouter>
         </HelmetProvider>,
-      );
+      ));
       expect(screen.getByText('Not Found')).toBeInTheDocument();
     });
   });
 
   describe('when given a valid project', () => {
-    it('locates and renders the project', () => {
-      render(
+    it('locates and renders the project', async () => {
+      await act(async () => render(
         <HelmetProvider>
           <MemoryRouter initialEntries={['/project/art.dolores_bench']}>
             <Routes>
@@ -45,7 +54,7 @@ describe('PortfolioDetail', () => {
             </Routes>
           </MemoryRouter>
         </HelmetProvider>,
-      );
+      ));
       expect(screen.getByText('Dolores Bench')).toBeInTheDocument();
       expect(screen.getByText('2024-07-24')).toBeInTheDocument();
       expect(screen.getByText('pastel + sharpie')).toBeInTheDocument();
@@ -53,8 +62,8 @@ describe('PortfolioDetail', () => {
     });
 
     describe('with one image', () => {
-      it('renders a simple img', () => {
-        render(
+      it('renders a simple img', async () => {
+        await act(async () => render(
           <HelmetProvider>
             <MemoryRouter initialEntries={['/project/code.api-buddy']}>
               <Routes>
@@ -62,7 +71,7 @@ describe('PortfolioDetail', () => {
               </Routes>
             </MemoryRouter>
           </HelmetProvider>,
-        );
+        ));
         expect(screen.getByTestId('portfolio-detail-img')).toBeInTheDocument();
         expect(screen.queryByTestId('carousel-main-image')).toBeNull();
         expect(screen.queryByTestId('portfolio-detail-vid')).toBeNull();
@@ -70,8 +79,8 @@ describe('PortfolioDetail', () => {
     });
 
     describe('with multiple images', () => {
-      it('renders a carousel', () => {
-        render(
+      it('renders a carousel', async () => {
+        await act(async () => render(
           <HelmetProvider>
             <MemoryRouter initialEntries={['/project/art.shop_class_shelf']}>
               <Routes>
@@ -79,7 +88,7 @@ describe('PortfolioDetail', () => {
               </Routes>
             </MemoryRouter>
           </HelmetProvider>,
-        );
+        ));
         expect(screen.queryByTestId('portfolio-detail-img')).toBeNull();
         expect(screen.getByTestId('carousel-main-image')).toBeInTheDocument();
         expect(screen.queryByTestId('portfolio-detail-vid')).toBeNull();
@@ -88,8 +97,8 @@ describe('PortfolioDetail', () => {
 
     describe('with a video', () => {
       describe('that has a standard aspect ratio', () => {
-        it('renders a 16-9 video player', () => {
-          render(
+        it('renders a 16-9 video player', async () => {
+          await act(async () => render(
             <HelmetProvider>
               <MemoryRouter initialEntries={['/project/art.three-cities']}>
                 <Routes>
@@ -97,7 +106,7 @@ describe('PortfolioDetail', () => {
                 </Routes>
               </MemoryRouter>
             </HelmetProvider>,
-          );
+          ));
           expect(screen.queryByTestId('portfolio-detail-img')).toBeNull();
           expect(screen.queryByTestId('carousel-main-image')).toBeNull();
           expect(screen.getByTestId('portfolio-detail-vid')).toHaveAttribute(
@@ -108,8 +117,8 @@ describe('PortfolioDetail', () => {
       });
 
       describe('that has a non-standard aspect-ratio', () => {
-        it('honors it', () => {
-          render(
+        it('honors it', async () => {
+          await act(async () => render(
             <HelmetProvider>
               <MemoryRouter initialEntries={['/project/art.artists-in-residence']}>
                 <Routes>
@@ -117,7 +126,7 @@ describe('PortfolioDetail', () => {
                 </Routes>
               </MemoryRouter>
             </HelmetProvider>,
-          );
+          ));
           expect(screen.queryByTestId('portfolio-detail-img')).toBeNull();
           expect(screen.queryByTestId('carousel-main-image')).toBeNull();
           expect(screen.getByTestId('portfolio-detail-vid')).toHaveAttribute(

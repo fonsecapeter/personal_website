@@ -1,10 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ALL_PROJECTS } from '../../../content/portfolio/all';
-import { Carousel } from '../carousel';
-import { NotFound } from '../not_found';
-import { SEOTags } from '../seo';
+import ALL_PROJECTS from '../../../content/portfolio/all';
+import Carousel from '../image/carousel';
+import NotFound from '../not_found';
+import '../../../assets/scss/portfolio.scss';
+import SEOTags from '../seo';
 
 type PortfolioDetailParams = {
   projectKey: string,

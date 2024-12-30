@@ -1,9 +1,9 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { NavLink } from './link';
+import NavLink from './link';
 
-const NavBase = () => {
+const Nav = () => {
   const location = useLocation();
   const ABOUT = 'about';
   const EXPERIENCE = 'experience';
@@ -32,4 +32,4 @@ const NavBase = () => {
   );
 };
 
-export const Nav = NavBase;
+export default Nav;

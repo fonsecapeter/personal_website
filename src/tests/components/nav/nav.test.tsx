@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { Nav } from '../../../components/nav/index';
+import Nav from '../../../components/nav/index';
 
 describe('Nav', () => {
   describe('by default', () => {

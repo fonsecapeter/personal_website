@@ -6,15 +6,15 @@ import tube from '../assets/img/icons/experience/tube.png';
 import aa from '../assets/img/icons/aa.png';
 import ucsc from '../assets/img/icons/ucsc.png';
 
-export type Experience = {
-  readonly title: string,
-  readonly icon: string,
-  readonly date: string,
-  readonly link: string,
-  readonly org: string,
-  readonly bullets: string[],
-  readonly primary?: string,
-};
+export interface Experience {
+  readonly title: string;
+  readonly icon: string;
+  readonly date: string;
+  readonly link: string;
+  readonly org: string;
+  readonly bullets: string[];
+  readonly primary?: string;
+}
 
 export const EXPERIENCES = {
   workExperiences: [

@@ -5,7 +5,7 @@ import ttamBook50 from '../../../assets/img/portfolio/ttam_book/50.jpg';
 import ttamBook25 from '../../../assets/img/portfolio/ttam_book/25.jpg';
 
 
-export const TTAM_BOOK: Project = {
+const TTAM_BOOK: Project = {
   id: 'ttam-book',
   name: '23andMe Book',
   links: [
@@ -35,3 +35,5 @@ export const TTAM_BOOK: Project = {
     'Shipped on a tight deadline, allowing sales to start ahead of the holiday rush',
   ],
 };
+
+export default TTAM_BOOK;

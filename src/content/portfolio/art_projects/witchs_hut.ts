@@ -5,7 +5,7 @@ import witchsHut50 from '../../../assets/img/portfolio/witchs_hut/50.jpg';
 import witchsHut25 from '../../../assets/img/portfolio/witchs_hut/25.jpg';
 
 
-export const WITCHS_HUT: Project = {
+const WITCHS_HUT: Project = {
   id: 'witchs-hut',
   name: 'Witch\'s Hut',
   links: [{
@@ -29,3 +29,5 @@ export const WITCHS_HUT: Project = {
   description: 'There\'s a comfort in loneliness.',
   bullets: [],
 };
+
+export default WITCHS_HUT;

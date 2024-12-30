@@ -5,7 +5,7 @@ import vaporub50 from '../../../assets/img/portfolio/vaporub/50.jpg';
 import vaporub25 from '../../../assets/img/portfolio/vaporub/25.jpg';
 
 
-export const VAPORUB: Project = {
+const VAPORUB: Project = {
   id: 'vaporub',
   name: 'VapoRub',
   links: [{
@@ -29,3 +29,5 @@ export const VAPORUB: Project = {
   description: 'Cures anything.',
   bullets: [],
 };
+
+export default VAPORUB;

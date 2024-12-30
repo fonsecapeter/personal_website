@@ -5,7 +5,7 @@ import jewelryBox50 from '../../../assets/img/portfolio/jewelry_box/50.jpg';
 import jewelryBox25 from '../../../assets/img/portfolio/jewelry_box/25.jpg';
 
 
-export const JEWELRY_BOX: Project = {
+const JEWELRY_BOX: Project = {
   id: 'jewelry_box',
   name: 'Jewelry Box',
   links: [{
@@ -29,3 +29,5 @@ export const JEWELRY_BOX: Project = {
   description: 'All I did was paint some eyes on a box but am really proud of it.',
   bullets: [],
 };
+
+export default JEWELRY_BOX;

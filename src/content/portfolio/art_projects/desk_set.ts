@@ -5,7 +5,7 @@ import ceramicDeskSet50 from '../../../assets/img/portfolio/ceramic_desk_set/50.
 import ceramicDeskSet25 from '../../../assets/img/portfolio/ceramic_desk_set/25.jpg';
 
 
-export const DESK_SET: Project = {
+const DESK_SET: Project = {
   id: 'desk-set',
   name: 'Desk Set',
   links: [{
@@ -29,3 +29,5 @@ export const DESK_SET: Project = {
   description: 'Home office improvements.',
   bullets: [],
 };
+
+export default DESK_SET;

@@ -5,7 +5,7 @@ import twoZeroEightFive50 from '../../../assets/img/portfolio/2085/50.png';
 import twoZeroEightFive25 from '../../../assets/img/portfolio/2085/25.png';
 
 
-export const TWO_ZERO_EIGHT_FIVE: Project = {
+const TWO_ZERO_EIGHT_FIVE: Project = {
   id: '2085',
   name: '2085',
   links: [{
@@ -29,3 +29,5 @@ export const TWO_ZERO_EIGHT_FIVE: Project = {
   description: 'My first apartment in SF.',
   bullets: [],
 };
+
+export default TWO_ZERO_EIGHT_FIVE;

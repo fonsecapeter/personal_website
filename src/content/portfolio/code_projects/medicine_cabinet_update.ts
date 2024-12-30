@@ -5,7 +5,7 @@ import main100 from '../../../assets/img/portfolio/ttam_medcab/main/100.png';
 import main25 from '../../../assets/img/portfolio/ttam_medcab/main/25.png';
 
 
-export const MEDICINE_CABINET_UPDATE: Project = {
+const MEDICINE_CABINET_UPDATE: Project = {
   id: 'medicine-cabinet-update',
   name: 'Medicine Cabinet Update',
   links: [
@@ -33,3 +33,5 @@ export const MEDICINE_CABINET_UPDATE: Project = {
     'Led technical investigation of new and complex data sources, enabling thousands of customers to get actionable results',
   ],
 };
+
+export default MEDICINE_CABINET_UPDATE;

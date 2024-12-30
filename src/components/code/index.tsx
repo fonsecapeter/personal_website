@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
-import { Portfolio } from '../common/portfolio';
-import { CODE } from '../../content/portfolio/code';
+import Portfolio from '../common/portfolio';
+import CODE from '../../content/portfolio/code';
 import '../../assets/scss/portfolio.scss';
 
 export const Code = () => (

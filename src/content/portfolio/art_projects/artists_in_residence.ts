@@ -3,7 +3,7 @@ import { Project } from '../projects';
 import artistsInResidence50 from '../../../assets/img/portfolio/artists_in_residence/50.png';
 
 
-export const ARTISTS_IN_RESIDENCE: Project = {
+const ARTISTS_IN_RESIDENCE: Project = {
   id: 'artists-in-residence',
   name: 'Artists In Residence',
   links: [],
@@ -21,3 +21,5 @@ export const ARTISTS_IN_RESIDENCE: Project = {
   description: 'A meditation on feeling lost and making art.',
   bullets: ['made in collaboration with Neha'],
 };
+
+export default ARTISTS_IN_RESIDENCE;

@@ -2,7 +2,7 @@ import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { render, screen } from '@testing-library/react';
-import { Profile } from '../../../components/about/profile';
+import Profile from '../../../components/about/profile';
 
 describe('Profile', () => {
   beforeEach(() => {

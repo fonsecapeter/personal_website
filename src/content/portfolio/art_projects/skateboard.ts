@@ -5,7 +5,7 @@ import skateboard50 from '../../../assets/img/portfolio/skateboard/50.jpg';
 import skateboard25 from '../../../assets/img/portfolio/skateboard/25.jpg';
 
 
-export const SKATEBOARD: Project = {
+const SKATEBOARD: Project = {
   id: 'skateboard',
   name: 'Skateboard',
   links: [{
@@ -29,3 +29,5 @@ export const SKATEBOARD: Project = {
   description: 'Functional art.',
   bullets: [],
 };
+
+export default SKATEBOARD;

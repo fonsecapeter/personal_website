@@ -5,7 +5,7 @@ import studio1Way50 from '../../../assets/img/portfolio/studio_1way/50.jpg';
 import studio1Way25 from '../../../assets/img/portfolio/studio_1way/25.jpg';
 
 
-export const STUDIO_1WAY: Project = {
+const STUDIO_1WAY: Project = {
   id: 'studio_1way',
   name: 'Studio 1Way',
   links: [
@@ -35,3 +35,5 @@ export const STUDIO_1WAY: Project = {
   description: 'Here in San Francisco.',
   bullets: [],
 };
+
+export default STUDIO_1WAY;

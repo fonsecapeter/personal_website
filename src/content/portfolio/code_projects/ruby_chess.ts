@@ -4,7 +4,7 @@ import rubyPawnPromotion100 from '../../../assets/img/portfolio/ruby_pawn_promot
 import rubyPawnPromotion25 from '../../../assets/img/portfolio/ruby_pawn_promotion/25.gif';
 
 
-export const RUBY_CHESS: Project = {
+const RUBY_CHESS: Project = {
   id: 'ruby-chess',
   name: 'Ruby Chess',
   links: [
@@ -36,3 +36,5 @@ export const RUBY_CHESS: Project = {
     'Computer player that tries to win',
   ],
 };
+
+export default RUBY_CHESS;

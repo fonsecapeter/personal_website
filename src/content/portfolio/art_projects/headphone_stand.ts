@@ -5,7 +5,7 @@ import headphonesOnStand50 from '../../../assets/img/portfolio/headphones_on_sta
 import headphonesOnStand25 from '../../../assets/img/portfolio/headphones_on_stand/25.jpg';
 
 
-export const HEADPHONE_STAND: Project = {
+const HEADPHONE_STAND: Project = {
   id: 'headphone-stand',
   name: 'Headphone Stand',
   links: [{
@@ -29,3 +29,5 @@ export const HEADPHONE_STAND: Project = {
   description: 'Made while on hold with customer service for a flight change.',
   bullets: [],
 };
+
+export default HEADPHONE_STAND;

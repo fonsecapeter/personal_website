@@ -5,7 +5,7 @@ import brassMono50 from '../../../assets/img/portfolio/brass_mono/50.png';
 import brassMono25 from '../../../assets/img/portfolio/brass_mono/25.png';
 
 
-export const BRASS_MONO: Project = {
+const BRASS_MONO: Project = {
   id: 'brass-mono',
   name: 'Brass Mono',
   links: [
@@ -40,3 +40,5 @@ export const BRASS_MONO: Project = {
     'Rad design',
   ],
 };
+
+export default BRASS_MONO;

@@ -5,7 +5,7 @@ import brain50 from '../../../assets/img/portfolio/brain/50.png';
 import brain25 from '../../../assets/img/portfolio/brain/25.png';
 
 
-export const NEUROPY: Project = {
+const NEUROPY: Project = {
   id: 'neuropy',
   name: 'Brain MRI Deep Learning',
   links: [
@@ -36,3 +36,5 @@ export const NEUROPY: Project = {
     'Voxels',
   ],
 };
+
+export default NEUROPY;

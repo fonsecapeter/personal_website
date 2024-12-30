@@ -5,7 +5,7 @@ import apiBuddy50 from '../../../assets/img/portfolio/api_buddy/50.gif';
 import apiBuddy25 from '../../../assets/img/portfolio/api_buddy/25.gif';
 
 
-export const API_BUDDY: Project = {
+const API_BUDDY: Project = {
   id: 'api-buddy',
   name: 'API Buddy',
   links: [
@@ -39,3 +39,5 @@ export const API_BUDDY: Project = {
     'Pleasant text-based UI/UX',
   ],
 };
+
+export default API_BUDDY;

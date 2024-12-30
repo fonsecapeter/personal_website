@@ -5,7 +5,7 @@ import oneCA50 from '../../../assets/img/portfolio/1_ca/50.jpg';
 import oneCA25 from '../../../assets/img/portfolio/1_ca/25.jpg';
 
 
-export const ONE_CA: Project = {
+const ONE_CA: Project = {
   id: 'one-ca',
   name: '1 California',
   links: [{
@@ -29,3 +29,5 @@ export const ONE_CA: Project = {
   description: 'A very sentimental muni line.',
   bullets: [],
 };
+
+export default ONE_CA;

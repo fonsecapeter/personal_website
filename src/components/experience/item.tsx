@@ -3,11 +3,11 @@ import React, { useState, KeyboardEvent } from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Experience } from '../../content/experiences';
 
-type ExperienceProps = {
-  readonly experience: Experience,
-};
+interface ExperienceProps {
+  readonly experience: Experience;
+}
 
-export const ExperienceItem = ({ experience }: ExperienceProps) => {
+const ExperienceItem = ({ experience }: ExperienceProps) => {
   const [hidden, setHidden] = useState(false);
 
   const toggleDrop = () => {
@@ -96,3 +96,5 @@ export const ExperienceItem = ({ experience }: ExperienceProps) => {
     </div>
   );
 };
+
+export default ExperienceItem;

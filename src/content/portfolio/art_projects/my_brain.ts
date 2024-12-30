@@ -5,7 +5,7 @@ import myBrain50 from '../../../assets/img/portfolio/my_brain/50.jpg';
 import myBrain25 from '../../../assets/img/portfolio/my_brain/25.jpg';
 
 
-export const MY_BRAIN: Project = {
+const MY_BRAIN: Project = {
   id: 'my-brain',
   name: 'My Brain',
   links: [{
@@ -29,3 +29,5 @@ export const MY_BRAIN: Project = {
   description: 'I used to run MRIs at UCSF.',
   bullets: [],
 };
+
+export default MY_BRAIN;

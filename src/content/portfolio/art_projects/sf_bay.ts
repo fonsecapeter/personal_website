@@ -5,7 +5,7 @@ import sfBay50 from '../../../assets/img/portfolio/sf_bay/50.jpg';
 import sfBay25 from '../../../assets/img/portfolio/sf_bay/25.jpg';
 
 
-export const SF_BAY: Project = {
+const SF_BAY: Project = {
   id: 'sf-bay',
   name: 'SF Bay',
   links: [{
@@ -29,3 +29,5 @@ export const SF_BAY: Project = {
   description: 'Where I live.',
   bullets: [],
 };
+
+export default SF_BAY;

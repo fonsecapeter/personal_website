@@ -5,7 +5,7 @@ import doloresBench50 from '../../../assets/img/portfolio/dolores_bench_in_situ/
 import doloresBench25 from '../../../assets/img/portfolio/dolores_bench_in_situ/25.jpg';
 
 
-export const DOLORES_BENCH: Project = {
+const DOLORES_BENCH: Project = {
   id: 'dolores_bench',
   name: 'Dolores Bench',
   links: [
@@ -31,3 +31,5 @@ export const DOLORES_BENCH: Project = {
   description: 'A special place.',
   bullets: [],
 };
+
+export default DOLORES_BENCH;

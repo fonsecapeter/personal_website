@@ -5,7 +5,7 @@ import thisWebsite50 from '../../../assets/img/portfolio/this_website/50.png';
 import thisWebsite25 from '../../../assets/img/portfolio/this_website/25.png';
 
 
-export const THIS_WEBSITE: Project = {
+const THIS_WEBSITE: Project = {
   id: 'this-website',
   name: 'This Website',
   links: [
@@ -39,3 +39,5 @@ export const THIS_WEBSITE: Project = {
     'Unit Tests',
   ],
 };
+
+export default THIS_WEBSITE;
