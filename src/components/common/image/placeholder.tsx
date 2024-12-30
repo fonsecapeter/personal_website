@@ -26,7 +26,7 @@ const ImagePlaceholder = ({ height, width, round = false }: ImagePlaceholderProp
   const numRows = Math.ceil((height - 1) / 20) - 1;
   const style: PlaceHolderStyle = {};
   if (width) {
-    style.width = '{width}px';
+    style.width = `${width}px`;
   }
   return (
     <div className={`image-placeholder${round ? '-round' : ''}`} style={style}>

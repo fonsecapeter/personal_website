@@ -29,7 +29,7 @@ const Portfolio = ({ title, projects, category }: PortfolioProps) => {
       images: [],
       isPreloaded: isGroup0Preloaded,
       setIsPreloaded: setIsGroup0Preloaded,
-      delay: 0,
+      delay: 500,
     },
     {
       images: [],
