@@ -2,7 +2,6 @@ import { Project } from '../projects';
 
 import main100 from '../../../assets/img/portfolio/krafftachrome/main/100.jpg';
 import main50 from '../../../assets/img/portfolio/krafftachrome/main/50.jpg';
-import main25 from '../../../assets/img/portfolio/krafftachrome/main/25.jpg';
 import sample100 from '../../../assets/img/portfolio/krafftachrome/sample/100.png';
 import sample50 from '../../../assets/img/portfolio/krafftachrome/sample/50.png';
 import sample25 from '../../../assets/img/portfolio/krafftachrome/sample/25.png';
