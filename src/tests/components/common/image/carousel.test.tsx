@@ -1,16 +1,14 @@
 import React, { act } from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import Carousel from '../../../components/common/image/carousel';
+import Carousel from '../../../../components/common/image/carousel';
 
-jest.mock('../../../components/common/image/preload', () => ({
-  ...jest.requireActual('../../../components/common/image/preload'),
+jest.mock('../../../../components/common/image/preload', () => ({
+  ...jest.requireActual('../../../../components/common/image/preload'),
   __esModule: true,
   default: jest.fn(args => {
     args.setIsPreloaded(true);
   }),
 }));
-
-// import preloadImages from '../../../components/common/image/preload';
 
 describe('Crousel', () => {
   const IMAGE_1 = {

@@ -1,8 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ALL_PROJECTS from '../../../content/portfolio/all';
 import Carousel from '../image/carousel';
+import ImageModal from '../image/modal';
 import NotFound from '../not_found';
 import '../../../assets/scss/portfolio.scss';
 import SEOTags from '../seo';
@@ -16,6 +17,7 @@ const notFoundMsg = "I haven't made that project.... yet";
 export const PortfolioDetail = () => {
   const { projectKey } = useParams<PortfolioDetailParams>();
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const goBack = (category: string) => {
     navigate(`/${category}`);
@@ -71,12 +73,22 @@ export const PortfolioDetail = () => {
     );
   } else {
     media = (
-      <img
-        data-testid="portfolio-detail-img"
-        className="portfolio-detail-media-img"
-        src={project.images[0].half}
-        alt={project.images[0].alt}
-      />
+      <>
+        <img
+          data-testid="portfolio-detail-img"
+          className="portfolio-detail-media-img"
+          src={project.images[0].half}
+          alt={project.images[0].alt}
+          onClick={() => setIsModalOpen(true)}
+        />
+        <ImageModal isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)}>
+          <img
+            className="image-modal-full-size-image"
+              src={project.images[0].full}
+              alt={project.images[0].alt}
+          />
+        </ImageModal>
+      </>
     );
   }
 

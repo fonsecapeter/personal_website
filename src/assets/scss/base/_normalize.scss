@@ -20,6 +20,10 @@ a {
   }
 }
 
+button {
+  font-family: "Brass Mono", monospace; // some user-agent stylesheets mess up buttons
+}
+
 div {
   margin: 0;
   padding: 0;
