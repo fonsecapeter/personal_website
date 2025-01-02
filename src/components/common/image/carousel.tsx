@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Image } from '../../../content/media';
 import preloadImages from './preload';
 import ImagePlaceholder from './placeholder';
+import ImageModal from './modal';
 
 
 interface CarouselProps {
@@ -16,6 +17,7 @@ interface LaneImage {
 const Carousel = ({ images }: CarouselProps) => {
   const [selectedImage, selectImage] = useState(0);
   const [isPreloaded, setIsPreloaded] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   let mainImage;
   let laneImages: LaneImage[] = [];
@@ -52,6 +54,7 @@ const Carousel = ({ images }: CarouselProps) => {
             data-testid="carousel-main-image"
             src={mainImage.half}
             alt={`${mainImage.alt} (large)`}
+            onClick={() => setIsModalOpen(true)}
           />
         ) : (
           <ImagePlaceholder width={300} height={220} />
@@ -68,6 +71,13 @@ const Carousel = ({ images }: CarouselProps) => {
           />
         ))}
       </div>
+      <ImageModal isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)}>
+        <img
+          className="image-modal-full-size-image"
+          src={mainImage.full}
+          alt={`${mainImage.alt}`}
+        />
+      </ImageModal>
     </>
   );
 };
