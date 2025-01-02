@@ -1,8 +1,11 @@
 import { Project } from '../projects';
 
-import krafftachrome100 from '../../../assets/img/portfolio/krafftachrome/100.png';
-import krafftachrome50 from '../../../assets/img/portfolio/krafftachrome/50.png';
-import krafftachrome25 from '../../../assets/img/portfolio/krafftachrome/25.png';
+import main100 from '../../../assets/img/portfolio/krafftachrome/main/100.jpg';
+import main50 from '../../../assets/img/portfolio/krafftachrome/main/50.jpg';
+import main25 from '../../../assets/img/portfolio/krafftachrome/main/25.jpg';
+import sample100 from '../../../assets/img/portfolio/krafftachrome/sample/100.png';
+import sample50 from '../../../assets/img/portfolio/krafftachrome/sample/50.png';
+import sample25 from '../../../assets/img/portfolio/krafftachrome/sample/25.png';
 
 
 const KRAFFTACHROME: Project = {
@@ -21,15 +24,21 @@ const KRAFFTACHROME: Project = {
   date: '2022',
   keywords: 'colorscheme',
   icon: {
-    src: krafftachrome50,
+    src: main50,
     alt: 'katia and maurice krafft near a volcano and some code',
   },
   images: [
     {
-      full: krafftachrome100,
-      half: krafftachrome50,
-      quarter: krafftachrome25,
-      alt: 'katia and maurice krafft near a volcano and some code',
+      full: main100,
+      half: main100, // source img is pretty low-res
+      quarter: main50,
+      alt: 'katia and maurice krafft near a live volcano',
+    },
+    {
+      full: sample100,
+      half: sample50,
+      quarter: sample25,
+      alt: 'some code displayed in sick colors',
     },
   ],
   description: 'Inspired by the work of Katia and Maurice Krafft, this project aims to capture the strange and beautiful world of 20th century volcanology. All colors were "droppered" directly from photos they took and "re-droppered" as I curated them into a cohesive palette that worked for daily use.',
