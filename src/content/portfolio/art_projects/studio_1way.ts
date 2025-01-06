@@ -79,6 +79,12 @@ const STUDIO_1WAY: Project = {
       quarter: wheel25,
       alt: 'pottery wheel',
     },
+    {
+      full: clock100,
+      half: clock50,
+      quarter: clock25,
+      alt: 'clock on hand-made shelf',
+    },
   ],
   description: 'Here in San Francisco.',
   bullets: [],
