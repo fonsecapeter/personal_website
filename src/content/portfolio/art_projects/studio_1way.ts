@@ -18,9 +18,6 @@ import sign25 from '../../../assets/img/portfolio/studio_1way/sign/25.jpg';
 import shelf100 from '../../../assets/img/portfolio/studio_1way/shelf/100.jpg';
 import shelf50 from '../../../assets/img/portfolio/studio_1way/shelf/50.jpg';
 import shelf25 from '../../../assets/img/portfolio/studio_1way/shelf/25.jpg';
-import wheel100 from '../../../assets/img/portfolio/studio_1way/wheel/100.jpg';
-import wheel50 from '../../../assets/img/portfolio/studio_1way/wheel/50.jpg';
-import wheel25 from '../../../assets/img/portfolio/studio_1way/wheel/25.jpg';
 
 
 const STUDIO_1WAY: Project = {
@@ -72,12 +69,6 @@ const STUDIO_1WAY: Project = {
       half: saw50,
       quarter: saw25,
       alt: 'hand-saw mid-cut',
-    },
-    {
-      full: wheel100,
-      half: wheel50,
-      quarter: wheel25,
-      alt: 'pottery wheel',
     },
     {
       full: clock100,
