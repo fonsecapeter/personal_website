@@ -30,10 +30,11 @@ const API_BUDDY: Project = {
       alt: 'animated gif of terminal making api call',
     },
   ],
-  description: 'CLI tool for exploring APIs. I Use this all the time at work. Postman is great, but it\'s also fully feature and takes too long to set up when I want an answer right away. This has is exactly what I need for working with API\'s, nothing more, nothing less.',
+  description: 'I Use this all the time at work. There are more fully-featured tools out there, but they take too long to set up when I want an answer right away. This has is exactly what I need for working with API\'s, nothing more, nothing less.',
   bullets: [
     'Pleasant, intuitive interface',
     'Automatic OAuth2 authentication',
+    'Quick to use + copy/paste output',
     '100% code coverage',
   ],
 };
