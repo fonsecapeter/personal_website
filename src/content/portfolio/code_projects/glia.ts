@@ -30,6 +30,7 @@ const GLIA: Project = {
       half: gliaQuestionDetail50,
       quarter: gliaQuestionDetail25,
       alt: 'screenshot of question about frontotemporal dementia with one answer',
+      modalTopGap: true
     },
   ],
   description: 'Online support group for caregivers of dementia patients.',

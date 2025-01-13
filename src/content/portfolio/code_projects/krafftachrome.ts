@@ -38,6 +38,7 @@ const KRAFFTACHROME: Project = {
       half: sample50,
       quarter: sample25,
       alt: 'some code displayed in sick colors',
+      modalTopGap: true,
     },
   ],
   description: 'Inspired by the work of Katia and Maurice Krafft, this project aims to capture the strange and beautiful world of 20th century volcanology. All colors were "droppered" directly from photos they took and "re-droppered" as I curated them into a cohesive palette that worked for daily use.',

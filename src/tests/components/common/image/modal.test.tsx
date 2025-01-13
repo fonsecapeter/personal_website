@@ -15,22 +15,40 @@ const TestComponent = () => {
 };
 
 describe('ImageModal', () => {
-  beforeEach(async () => {
-    render(<TestComponent />);
+  describe('by default', () => {
+    beforeEach(async () => {
+      render(<TestComponent />);
+    });
+
+    it('is hidden when not isOpen', () => {
+      expect(screen.queryByTestId('test-modal-content')).toBeNull();
+    });
+
+    it('renders when isOpen', () => {
+      fireEvent.click(screen.getByTestId('test-modal-open-button'));
+      expect(screen.getByTestId('test-modal-content')).toBeInTheDocument();
+    });
+
+    it('includes a close button', () => {
+      fireEvent.click(screen.getByTestId('test-modal-open-button'));
+      fireEvent.click(screen.getByText('x'));
+      expect(screen.queryByTestId('test-modal-content')).toBeNull();
+    });
+
+    it('renders the close button directly over the image', () => {
+      fireEvent.click(screen.getByTestId('test-modal-open-button'));
+      expect(screen.queryByTestId('image-modal-top-gap')).toBeNull();
+    });
   });
 
-  it('is hidden when not isOpen', () => {
-    expect(screen.queryByTestId('test-modal-content')).toBeNull();
-  });
-
-  it('renders when isOpen', () => {
-    fireEvent.click(screen.getByTestId('test-modal-open-button'));
-    expect(screen.getByTestId('test-modal-content')).toBeInTheDocument();
-  });
-
-  it('includes a close button', () => {
-    fireEvent.click(screen.getByTestId('test-modal-open-button'));
-    fireEvent.click(screen.getByText('x'));
-    expect(screen.queryByTestId('test-modal-content')).toBeNull();
+  describe('with topGap=True', () => {
+    it('renders the gap to isolate the close button', () => {
+      render(
+        <ImageModal isOpen closeModal={() => {}} withTopGap>
+          <img data-testid="test-modal-content" />
+        </ImageModal>
+      )
+      expect(screen.queryByTestId('image-modal-top-gap')).toBeInTheDocument();
+    });
   });
 });

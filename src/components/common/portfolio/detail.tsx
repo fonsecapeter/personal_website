@@ -81,7 +81,11 @@ export const PortfolioDetail = () => {
           alt={project.images[0].alt}
           onClick={() => setIsModalOpen(true)}
         />
-        <ImageModal isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)}>
+        <ImageModal
+          isOpen={isModalOpen}
+          closeModal={() => setIsModalOpen(false)}
+          withTopGap={project.images[0].modalTopGap || false}
+        >
           <img
             className="image-modal-full-size-image"
               src={project.images[0].full}

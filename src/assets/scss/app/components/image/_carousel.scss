@@ -8,7 +8,7 @@
       display: block;
       max-height: calc(80vw - 80px);
       min-height: 180px;
-      max-width: variables.$max-responsive-content-width;
+      max-width: 100%;
 
       &-container {
         align-items: center;

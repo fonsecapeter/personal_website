@@ -30,6 +30,7 @@ const SHELLECTRIC: Project = {
       half: shellectricJsx50,
       quarter: shellectricJsx25,
       alt: 'some code',
+      modalTopGap: true,
     },
   ],
   description: 'Easy on the eyes, retro colors inspired by 70\'s design.',

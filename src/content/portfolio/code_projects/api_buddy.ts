@@ -32,6 +32,7 @@ const API_BUDDY: Project = {
       half: demo100,  // doesn't look good low-res, just use 100 everywhere
       quarter: demo50,
       alt: 'animated gif of terminal making api calls',
+      modalTopGap: true,
     },
     {
       full: main100,

@@ -5,6 +5,7 @@ export interface Image {
   readonly half: string;
   readonly quarter: string;
   readonly alt: string;
+  readonly modalTopGap?: boolean;
 }
 
 export interface Icon {

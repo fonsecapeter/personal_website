@@ -69,6 +69,7 @@ const STUDIO_1WAY: Project = {
       half: saw50,
       quarter: saw25,
       alt: 'hand-saw mid-cut',
+      modalTopGap: true,
     },
     {
       full: clock100,

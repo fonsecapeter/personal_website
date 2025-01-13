@@ -2,7 +2,6 @@ import { Project } from '../projects';
 
 import icon100 from '../../../assets/img/portfolio/ttam_hap/icon/100.png';
 import main100 from '../../../assets/img/portfolio/ttam_hap/main/100.png';
-import main50 from '../../../assets/img/portfolio/ttam_hap/main/50.png';
 import main25 from '../../../assets/img/portfolio/ttam_hap/main/25.png';
 
 
@@ -28,7 +27,7 @@ const HAP_LAB_VALUES: Project = {
   images: [
     {
       full: main100,
-      half: main50,
+      half: main100,  // doesn't look good at this low of res
       quarter: main25,
       alt: 'phone with action plan',
     },

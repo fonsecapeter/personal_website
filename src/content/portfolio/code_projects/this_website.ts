@@ -26,6 +26,7 @@ const THIS_WEBSITE: Project = {
       half: thisWebsite50,
       quarter: thisWebsite25,
       alt: 'smaller image of this page',
+      modalTopGap: true,
     },
   ],
   description: 'You\'re on it right now!',

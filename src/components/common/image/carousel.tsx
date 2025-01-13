@@ -71,7 +71,11 @@ const Carousel = ({ images }: CarouselProps) => {
           />
         ))}
       </div>
-      <ImageModal isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)}>
+      <ImageModal
+        isOpen={isModalOpen}
+        closeModal={() => setIsModalOpen(false)}
+        withTopGap={mainImage.modalTopGap || false}
+      >
         <img
           className="image-modal-full-size-image"
           src={mainImage.full}
