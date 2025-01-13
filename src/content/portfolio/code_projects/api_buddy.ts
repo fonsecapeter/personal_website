@@ -1,6 +1,10 @@
 import { Project } from '../projects';
 
-import apiBuddy100 from '../../../assets/img/portfolio/api_buddy/100.gif';
+import main100 from '../../../assets/img/portfolio/api_buddy/main/100.png';
+import main50 from '../../../assets/img/portfolio/api_buddy/main/50.png';
+import main25 from '../../../assets/img/portfolio/api_buddy/main/25.png';
+import demo100 from '../../../assets/img/portfolio/api_buddy/demo/100.gif';
+import demo50 from '../../../assets/img/portfolio/api_buddy/demo/50.png';
 
 
 const API_BUDDY: Project = {
@@ -17,24 +21,31 @@ const API_BUDDY: Project = {
     },
   ],
   date: '2019',
-  keywords: 'python cli tool',
+  keywords: 'the most pleasant http api cli tool',
   icon: {
-    src: apiBuddy100,
-    alt: 'terminal with api call',
+    src: main50,
+    alt: 'cartoon terminal with an arrow on screen',
   },
   images: [
     {
-      full: apiBuddy100,
-      half: apiBuddy100,  // doesn't look good low-res, just use 100 everywhere
-      quarter: apiBuddy100,
-      alt: 'animated gif of terminal making api call',
+      full: demo100,
+      half: demo100,  // doesn't look good low-res, just use 100 everywhere
+      quarter: demo50,
+      alt: 'animated gif of terminal making api calls',
+    },
+    {
+      full: main100,
+      half: main50,
+      quarter: main25,
+      alt: 'cartoon terminal with an arrow on screen',
     },
   ],
   description: 'I Use this all the time at work. There are more fully-featured tools out there, but they take too long to set up when I want an answer right away. This has is exactly what I need for working with API\'s, nothing more, nothing less.',
   bullets: [
-    'Pleasant, intuitive interface',
-    'Automatic OAuth2 authentication',
-    'Quick to use + copy/paste output',
+    'Quick to set up',
+    'Easy to use',
+    'Automated OAuth2 sign-in',
+    'Copy/paste-able results',
     '100% code coverage',
   ],
 };
