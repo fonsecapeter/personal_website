@@ -21,7 +21,7 @@ const API_BUDDY: Project = {
     },
   ],
   date: '2019',
-  keywords: 'the most pleasant http api cli tool',
+  keywords: 'open source python package',
   icon: {
     src: main50,
     alt: 'cartoon terminal with an arrow on screen',
@@ -40,7 +40,7 @@ const API_BUDDY: Project = {
       alt: 'cartoon terminal with an arrow on screen',
     },
   ],
-  description: 'I Use this all the time at work. There are more fully-featured tools out there, but they take too long to set up when I want an answer right away. This has is exactly what I need for working with API\'s, nothing more, nothing less.',
+  description: 'The most pleasant HTTP API CLI tool. I use it all the time, whether I\'m writing a new endpoint or testing out someone else\'s. It\'s perfect when I want an answer right away or need to document request/response structures. This has exactly what you need when working with API\'s, nothing more, nothing less.',
   bullets: [
     'Quick to set up',
     'Easy to use',
