@@ -65,7 +65,7 @@ describe('PortfolioDetail', () => {
       it('renders a simple img', async () => {
         await act(async () => render(
           <HelmetProvider>
-            <MemoryRouter initialEntries={['/project/code.api-buddy']}>
+            <MemoryRouter initialEntries={['/project/code.ttam-fox']}>
               <Routes>
                 <Route path="/project/:projectKey" element={<PortfolioDetail />} />
               </Routes>
