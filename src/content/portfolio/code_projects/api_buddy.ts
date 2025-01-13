@@ -41,7 +41,7 @@ const API_BUDDY: Project = {
       alt: 'cartoon terminal with an arrow on screen',
     },
   ],
-  description: 'The most pleasant HTTP API CLI tool. I use it all the time, whether I\'m writing a new endpoint or testing out someone else\'s. It\'s perfect when I want an answer right away or need to document request/response structures. This has exactly what you need when working with API\'s, nothing more, nothing less.',
+  description: 'The most pleasant HTTP API CLI tool. I use it all the time – It\'s perfect when I want an answer right away or need to document request/response structures.',
   bullets: [
     'Quick to set up',
     'Easy to use',
