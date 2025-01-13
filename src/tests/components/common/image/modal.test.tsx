@@ -46,8 +46,8 @@ describe('ImageModal', () => {
       render(
         <ImageModal isOpen closeModal={() => {}} withTopGap>
           <img data-testid="test-modal-content" />
-        </ImageModal>
-      )
+        </ImageModal>,
+      );
       expect(screen.queryByTestId('image-modal-top-gap')).toBeInTheDocument();
     });
   });
