@@ -2,7 +2,7 @@ import { Project } from '../projects';
 
 import main100 from '../../../assets/img/portfolio/1way_dunks/main/100.jpg';
 import main25 from '../../../assets/img/portfolio/1way_dunks/main/25.jpg';
-import animated100 from '../../../assets/img/portfolio/1way_dunks/animation/100.gif';
+import animation50 from '../../../assets/img/portfolio/1way_dunks/animation/50.gif';
 import inside100 from '../../../assets/img/portfolio/1way_dunks/inside/100.jpg';
 import inside50 from '../../../assets/img/portfolio/1way_dunks/inside/50.jpg';
 import inside25 from '../../../assets/img/portfolio/1way_dunks/inside/25.jpg';
@@ -20,13 +20,13 @@ const DUNKS: Project = {
   date: '2024-11',
   keywords: 'fashion',
   icon: {
-    src: animated100,
+    src: animation50,
     alt: 'custom sneaker',
   },
   images: [
     {
       full: main100,
-      half: animated100,
+      half: animation50,
       quarter: main25,
       alt: 'customer sneaker animation',
     },
