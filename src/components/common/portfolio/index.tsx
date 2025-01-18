@@ -22,8 +22,7 @@ interface PreloadGroup {
 const Portfolio = ({ title, projects, category }: PortfolioProps) => {
   const [isGroup0Preloaded, setIsGroup0Preloaded] = useState(false);
   const [isGroup1Preloaded, setIsGroup1Preloaded] = useState(false);
-  const [isGroup2Preloaded, setIsGroup2Preloaded] = useState(false);
-  const groupId = idx => Math.floor(idx / Math.ceil(projects.length / 3));
+  let groupCount = 2;
   const preloadGroups: PreloadGroup[] = [
     {
       images: [],
@@ -37,13 +36,27 @@ const Portfolio = ({ title, projects, category }: PortfolioProps) => {
       setIsPreloaded: setIsGroup1Preloaded,
       delay: 1000,
     },
-    {
-      images: [],
-      isPreloaded: isGroup2Preloaded,
-      setIsPreloaded: setIsGroup2Preloaded,
-      delay: 2000,
-    },
   ];
+  if (projects.length > 32) {
+    const [isGroup2Preloaded, setIsGroup2Preloaded] = useState(false);
+    const [isGroup3Preloaded, setIsGroup3Preloaded] = useState(false);
+    groupCount = 4;
+    preloadGroups.push(
+      {
+        images: [],
+        isPreloaded: isGroup2Preloaded,
+        setIsPreloaded: setIsGroup2Preloaded,
+        delay: 2000,
+      },
+      {
+        images: [],
+        isPreloaded: isGroup3Preloaded,
+        setIsPreloaded: setIsGroup3Preloaded,
+        delay: 3000,
+      },
+    );
+  }
+  const groupId = idx => Math.floor(idx / Math.ceil(projects.length / groupCount));
   projects.forEach((project, idx) => {
     if (project.images.length > 0) {
       preloadGroups[groupId(idx)].images.push(project.images[0].half);
