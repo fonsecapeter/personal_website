@@ -1,9 +1,16 @@
 import { Project } from '../projects';
 
-import ceramicDeskSet100 from '../../../assets/img/portfolio/ceramic_desk_set/100.jpg';
-import ceramicDeskSet50 from '../../../assets/img/portfolio/ceramic_desk_set/50.jpg';
-import ceramicDeskSet25 from '../../../assets/img/portfolio/ceramic_desk_set/25.jpg';
-
+import main100 from '../../../assets/img/portfolio/ceramic_desk_set/main/100.jpg';
+import main50 from '../../../assets/img/portfolio/ceramic_desk_set/main/50.jpg';
+import main25 from '../../../assets/img/portfolio/ceramic_desk_set/main/25.jpg';
+import inSitu100 from '../../../assets/img/portfolio/ceramic_desk_set/in_situ/100.jpg';
+import inSitu50 from '../../../assets/img/portfolio/ceramic_desk_set/in_situ/50.jpg';
+import inSitu25 from '../../../assets/img/portfolio/ceramic_desk_set/in_situ/25.jpg';
+import animation100 from '../../../assets/img/portfolio/ceramic_desk_set/animation/100.gif';
+import animationPreview25 from '../../../assets/img/portfolio/ceramic_desk_set/animation/25.png';
+import plan100 from '../../../assets/img/portfolio/ceramic_desk_set/plan/100.jpg';
+import plan50 from '../../../assets/img/portfolio/ceramic_desk_set/plan/50.jpg';
+import plan25 from '../../../assets/img/portfolio/ceramic_desk_set/plan/25.jpg';
 
 const DESK_SET: Project = {
   id: 'desk-set',
@@ -15,15 +22,33 @@ const DESK_SET: Project = {
   date: '2022',
   keywords: 'ceramic',
   icon: {
-    src: ceramicDeskSet50,
+    src: animation100,
     alt: 'cup and bowl',
   },
   images: [
     {
-      full: ceramicDeskSet100,
-      half: ceramicDeskSet50,
-      quarter: ceramicDeskSet25,
+      full: main100,
+      half: main50,
+      quarter: main25,
       alt: 'cup and bowl',
+    },
+    {
+      full: inSitu100,
+      half: inSitu50,
+      quarter: inSitu25,
+      alt: 'cup on desk',
+    },
+    {
+      full: animation100,
+      half: animation100,
+      quarter: animationPreview25,
+      alt: 'animation of spinning cup and bowl',
+    },
+    {
+      full: plan100,
+      half: plan50,
+      quarter: plan25,
+      alt: 'drawing of pen cup with design notes',
     },
   ],
   description: 'Home office improvements.',

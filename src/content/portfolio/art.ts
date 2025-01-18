@@ -5,6 +5,7 @@ import CRV_CLINOMETER from './art_projects/crv_clinometer';
 import DESK_SET from './art_projects/desk_set';
 import DESKTOP_STATUS from './art_projects/desktop_status';
 import DOLORES_BENCH from './art_projects/dolores_bench';
+import DUNKS from './art_projects/1way_dunks';
 import ESPRESSO_CUP from './art_projects/espresso_cup';
 import GARLIC_GRATER from './art_projects/garlic_grater';
 import HEADPHONE_STAND from './art_projects/headphone_stand';
@@ -39,6 +40,7 @@ import YELLOW_SNAKE from './art_projects/yellow_snake';
 // import { DADS_60TH } from './art_projects/dads_sixtieth';
 
 const ART: Project[] = [
+  DUNKS,
   ESPRESSO_CUP,
   PARIS,
   NOD_TO_VIRGIL,

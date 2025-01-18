@@ -1,8 +1,14 @@
 import { Project } from '../projects';
 
-import workbench100 from '../../../assets/img/portfolio/workbench/100.jpg';
-import workbench50 from '../../../assets/img/portfolio/workbench/50.jpg';
-import workbench25 from '../../../assets/img/portfolio/workbench/25.jpg';
+import main100 from '../../../assets/img/portfolio/workbench/main/100.jpg';
+import main50 from '../../../assets/img/portfolio/workbench/main/50.jpg';
+import main25 from '../../../assets/img/portfolio/workbench/main/25.jpg';
+import plan100 from '../../../assets/img/portfolio/workbench/plan/100.jpg';
+import plan50 from '../../../assets/img/portfolio/workbench/plan/50.jpg';
+import plan25 from '../../../assets/img/portfolio/workbench/plan/25.jpg';
+import signature100 from '../../../assets/img/portfolio/workbench/signature/100.jpg';
+import signature50 from '../../../assets/img/portfolio/workbench/signature/50.jpg';
+import signature25 from '../../../assets/img/portfolio/workbench/signature/25.jpg';
 
 
 const WORK_BENCH: Project = {
@@ -17,15 +23,27 @@ const WORK_BENCH: Project = {
   date: '2024-05-18',
   keywords: 'woodworking',
   icon: {
-    src: workbench50,
+    src: main50,
     alt: 'wood workbench',
   },
   images: [
     {
-      full: workbench100,
-      half: workbench50,
-      quarter: workbench25,
+      full: main100,
+      half: main50,
+      quarter: main25,
       alt: 'wood workbench',
+    },
+    {
+      full: signature100,
+      half: signature50,
+      quarter: signature25,
+      alt: 'signature on bottom',
+    },
+    {
+      full: plan100,
+      half: plan50,
+      quarter: plan25,
+      alt: 'drawing of building plan',
     },
   ],
   description: 'Always wanted one of these.',
