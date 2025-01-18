@@ -34,33 +34,38 @@ const Portfolio = ({ title, projects, category }: PortfolioProps) => {
       images: [],
       isPreloaded: isGroup1Preloaded,
       setIsPreloaded: setIsGroup1Preloaded,
-      delay: 1000,
+      delay: 1500,
     },
   ];
   if (projects.length > 32) {
     const [isGroup2Preloaded, setIsGroup2Preloaded] = useState(false);
     const [isGroup3Preloaded, setIsGroup3Preloaded] = useState(false);
-    groupCount = 4;
+    const [isGroup4Preloaded, setIsGroup4Preloaded] = useState(false);
+    groupCount = 5;
     preloadGroups.push(
       {
         images: [],
         isPreloaded: isGroup2Preloaded,
         setIsPreloaded: setIsGroup2Preloaded,
-        delay: 2000,
+        delay: 2500,
       },
       {
         images: [],
         isPreloaded: isGroup3Preloaded,
         setIsPreloaded: setIsGroup3Preloaded,
-        delay: 3000,
+        delay: 3500,
+      },
+      {
+        images: [],
+        isPreloaded: isGroup4Preloaded,
+        setIsPreloaded: setIsGroup4Preloaded,
+        delay: 4500,
       },
     );
   }
   const groupId = idx => Math.floor(idx / Math.ceil(projects.length / groupCount));
   projects.forEach((project, idx) => {
-    if (project.images.length > 0) {
-      preloadGroups[groupId(idx)].images.push(project.images[0].half);
-    }
+    preloadGroups[groupId(idx)].images.push(project.icon.src);
   });
   useEffect(() => {
     preloadGroups.forEach(group => {
