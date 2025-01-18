@@ -25,6 +25,10 @@ const STUDIO_1WAY: Project = {
   name: 'Studio 1Way',
   links: [
     {
+      text: 'art explosion',
+      url: 'https://artexplosionstudios.com/artists/artistpage.php?name=924',
+    },
+    {
       text: 'instagram',
       url: 'https://www.instagram.com/peternfonseca/p/C7-R914y3zP',
     },
