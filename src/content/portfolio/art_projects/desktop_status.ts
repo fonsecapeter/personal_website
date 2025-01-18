@@ -1,6 +1,7 @@
 import { Project } from '../projects';
 
 import animation100 from '../../../assets/img/portfolio/desktop_status/animation/100.gif';
+import animation15 from '../../../assets/img/portfolio/desktop_status/animation/15.gif';
 import hero100 from '../../../assets/img/portfolio/desktop_status/hero/100.jpg';
 import hero25 from '../../../assets/img/portfolio/desktop_status/hero/25.jpg';
 import inSitu100 from '../../../assets/img/portfolio/desktop_status/in_situ/100.jpg';
@@ -23,7 +24,7 @@ const DESKTOP_STATUS: Project = {
   date: '2023',
   keywords: 'industrial design',
   icon: {
-    src: animation100,
+    src: animation15,
     alt: 'display with painted letters',
   },
   images: [

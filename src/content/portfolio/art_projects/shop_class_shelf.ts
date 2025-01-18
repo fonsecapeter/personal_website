@@ -1,5 +1,6 @@
 import { Project } from '../projects';
-import animation100 from '../../../assets/img/portfolio/shop_class_shelf/animation/100.gif';
+import animation50 from '../../../assets/img/portfolio/shop_class_shelf/animation/50.gif';
+import animation25 from '../../../assets/img/portfolio/shop_class_shelf/animation/25.gif';
 import main100 from '../../../assets/img/portfolio/shop_class_shelf/main/100.jpg';
 import main25 from '../../../assets/img/portfolio/shop_class_shelf/main/25.jpg';
 import edges100 from '../../../assets/img/portfolio/shop_class_shelf/edges/100.jpg';
@@ -25,11 +26,11 @@ const SHOP_CLASS_SHELF: Project = {
   date: '2003?',
   keywords: 'woodworking',
   icon: {
-    src: animation100,
+    src: animation25,
     alt: 'small wood shelf',
   },
   images: [
-    { full: main100, half: animation100, quarter: main25, alt: 'small wood shelf' },
+    { full: main100, half: animation50, quarter: main25, alt: 'small wood shelf' },
     { full: edges100, half: edges50, quarter: edges25, alt: 'close up of edges' },
     {
       full: signature100,
