@@ -14,56 +14,32 @@ interface PortfolioProps {
 
 interface PreloadGroup {
   images: string[];
-  isPreloaded: boolean;
   setIsPreloaded: CallableFunction;
   delay: number;
 }
 
 const Portfolio = ({ title, projects, category }: PortfolioProps) => {
-  const [isGroup0Preloaded, setIsGroup0Preloaded] = useState(false);
-  const [isGroup1Preloaded, setIsGroup1Preloaded] = useState(false);
-  let groupCount = 2;
-  const preloadGroups: PreloadGroup[] = [
-    {
-      images: [],
-      isPreloaded: isGroup0Preloaded,
-      setIsPreloaded: setIsGroup0Preloaded,
-      delay: 500,
-    },
-    {
-      images: [],
-      isPreloaded: isGroup1Preloaded,
-      setIsPreloaded: setIsGroup1Preloaded,
-      delay: 1500,
-    },
-  ];
+  const preloadGroups: PreloadGroup[] = [];
+  let preloadGroupCount = 2;
   if (projects.length > 32) {
-    const [isGroup2Preloaded, setIsGroup2Preloaded] = useState(false);
-    const [isGroup3Preloaded, setIsGroup3Preloaded] = useState(false);
-    const [isGroup4Preloaded, setIsGroup4Preloaded] = useState(false);
-    groupCount = 5;
-    preloadGroups.push(
-      {
-        images: [],
-        isPreloaded: isGroup2Preloaded,
-        setIsPreloaded: setIsGroup2Preloaded,
-        delay: 2500,
-      },
-      {
-        images: [],
-        isPreloaded: isGroup3Preloaded,
-        setIsPreloaded: setIsGroup3Preloaded,
-        delay: 3500,
-      },
-      {
-        images: [],
-        isPreloaded: isGroup4Preloaded,
-        setIsPreloaded: setIsGroup4Preloaded,
-        delay: 4500,
-      },
-    );
+    preloadGroupCount = 5;
   }
-  const groupId = idx => Math.floor(idx / Math.ceil(projects.length / groupCount));
+  const [areGroupsPreloaded, setAreGroupsPreloaded] = useState(Array(preloadGroupCount).fill(false));
+  const setIsGroupPreloaded = (idx) => {
+    return (isGroupPreloaded) => setAreGroupsPreloaded(prevAreGroupsPreloaded => {
+      const newAreGroupsPreloaded = [...prevAreGroupsPreloaded];
+      newAreGroupsPreloaded[idx] = isGroupPreloaded;
+      return newAreGroupsPreloaded;
+    });
+  };
+  for (let idx = 0; idx < preloadGroupCount; idx++) {
+    preloadGroups.push({
+      images: [],
+      setIsPreloaded: setIsGroupPreloaded(idx),
+      delay: (idx * 1000) + 500,
+    });
+  }
+  const groupId = idx => Math.floor(idx / Math.ceil(projects.length / preloadGroupCount));
   projects.forEach((project, idx) => {
     preloadGroups[groupId(idx)].images.push(project.icon.src);
   });
@@ -71,7 +47,6 @@ const Portfolio = ({ title, projects, category }: PortfolioProps) => {
     preloadGroups.forEach(group => {
       preloadImages({
         images: group.images,
-        isPreloaded: group.isPreloaded,
         setIsPreloaded: group.setIsPreloaded,
         delay: group.delay,
       });
@@ -88,7 +63,7 @@ const Portfolio = ({ title, projects, category }: PortfolioProps) => {
               project={project}
               key={project.name}
               category={category}
-              imagePreloaded={preloadGroups[groupId(idx)].isPreloaded}
+              imagePreloaded={areGroupsPreloaded[groupId(idx)]}
             />
           ))}
         </div>
@@ -100,7 +75,7 @@ const Portfolio = ({ title, projects, category }: PortfolioProps) => {
                   project={project}
                   key={project.name}
                   category={category}
-                  imagePreloaded={preloadGroups[groupId(idx)].isPreloaded}
+                  imagePreloaded={areGroupsPreloaded[groupId(idx)]}
                 />
               );
             }
@@ -115,7 +90,7 @@ const Portfolio = ({ title, projects, category }: PortfolioProps) => {
                   project={project}
                   key={project.name}
                   category={category}
-                  imagePreloaded={preloadGroups[groupId(idx)].isPreloaded}
+                  imagePreloaded={areGroupsPreloaded[groupId(idx)]}
                 />
               );
             }

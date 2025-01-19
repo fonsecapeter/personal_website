@@ -13,7 +13,6 @@ const Profile = () => {
   useEffect(() => {
     preloadImages({
       images: [me],
-      isPreloaded,
       setIsPreloaded,
     });
   }, []);

@@ -15,12 +15,11 @@ const preloadImage = (src: string) => {
 
 interface PreloadImagesArgs {
   readonly images: string[];
-  readonly isPreloaded: boolean;
   readonly setIsPreloaded: CallableFunction;
   readonly delay?: number;
 }
 
-const preloadImages = async ({ images, isPreloaded, setIsPreloaded, delay = 500 }: PreloadImagesArgs) => {
+const preloadImages = async ({ images, setIsPreloaded, delay = 500 }: PreloadImagesArgs) => {
   if (delay > 0) {
     await holdUp(delay);
   }
@@ -30,7 +29,6 @@ const preloadImages = async ({ images, isPreloaded, setIsPreloaded, delay = 500 
   });
   await Promise.all(promises);
   setIsPreloaded(true);
-  return isPreloaded;
 };
 
 export default preloadImages;

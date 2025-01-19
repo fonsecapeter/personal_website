@@ -41,7 +41,6 @@ const Carousel = ({ images }: CarouselProps) => {
   useEffect(() => {
     preloadImages({
       images: laneImages.map((img) => img.image.half),
-      isPreloaded,
       setIsPreloaded,
     });
   }, []);
