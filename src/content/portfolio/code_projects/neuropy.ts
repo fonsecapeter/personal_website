@@ -1,8 +1,8 @@
 import { Project } from '../projects';
 
-import brain100 from '../../../assets/img/portfolio/brain/100.png';
-import brain50 from '../../../assets/img/portfolio/brain/50.png';
-import brain25 from '../../../assets/img/portfolio/brain/25.png';
+import brain100 from '../../../assets/img/portfolio/brain/render/100.png';
+import brain50 from '../../../assets/img/portfolio/brain/render/50.png';
+import brain25 from '../../../assets/img/portfolio/brain/render/25.png';
 
 
 const NEUROPY: Project = {
