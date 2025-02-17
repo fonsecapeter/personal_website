@@ -1,9 +1,10 @@
-import python from '../assets/img/icons/code/python.png';
-import js from '../assets/img/icons/code/js.png';
-import html from '../assets/img/icons/code/html.png';
-import ruby from '../assets/img/icons/code/ruby.png';
+import python from '../assets/img/icons/code/python.svg';
+import java from '../assets/img/icons/code/java.svg';
+import js from '../assets/img/icons/code/js.svg';
+import html from '../assets/img/icons/code/html.svg';
+import ruby from '../assets/img/icons/code/ruby.svg';
 import sql from '../assets/img/icons/code/sql.png';
-import bash from '../assets/img/icons/code/bash.png';
+import bash from '../assets/img/icons/code/bash.svg';
 
 interface Framework {
   readonly name: string;
@@ -64,6 +65,11 @@ export const LANGUAGES = [
         name: 'RSpec',
       },
     ],
+  },
+  {
+    name: 'Java',
+    icon: java,
+    frameworks: [],
   },
   {
     name: 'SQL',
