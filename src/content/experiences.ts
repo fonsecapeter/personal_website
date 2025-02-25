@@ -26,7 +26,7 @@ export const EXPERIENCES = {
       org: '23andMe',
       bullets: [
         'Built high-visibility features across our product used by millions of customers, supporting rapid growth of the company',
-        'Created a pre-approved Medical Device API, replacing FDA legal reviews and accelerating new health feature launches from months to weeks',
+        'Created a pre-approved Medical Device API, streamlining legal/FDA reviews and accelerating new health feature launches from months to weeks',
         'Led technical designs with cross-functional teams, setting best practices for working with product scientists',
         'Piloted technical stack architectural improvements including microservices, new CI/CD frameworks, modern ORM adoption, react-based frontends, static type-checking, and asynchronous processing',
       ],
@@ -53,8 +53,8 @@ export const EXPERIENCES = {
       org: 'UCSF Memory and Aging Center',
       primary: 'Primary Study: Frontotemporal Dementia: Genes, Images and Emotions',
       bullets: [
+        'Automated key aspects of my role with Python, most notably a patient summary approval bottleneck',
         'Introduced scientific Python to excel-only data analysis workflows, improving data quality and visibility during presentations',
-        'Automated key aspects of my role by writing a Python tool, accelerating a patient summary approval bottleneck',
         'Was responsible for a $5M competitive grant renewal application, which allowed the study to continue operating',
         'Managed metrics, IRB approval, team meetings, and external presentations',
         'Administered MRIs and cognitive / psychometric tests',

@@ -28,11 +28,11 @@ const NEUROPY: Project = {
       alt: 'peter\'s brain',
     },
   ],
-  description: 'When I first learned how accessible tensor flow was, I had to see if I could hack together a quick deep learning model trained to diagnose Alzheimer\'s from 3D brain MRI scans. The models themselves are faily simple, but the intersting part is the pipeline I built to feed them data. This involved loading sample MRI scans from public sources (including a single MRI of my own brain) and the steps to normalize and process them so that they could be fed into tensorflow (including quality checks along the way). At the time, I could only find one paper on training models against MRI data so adapted what I learned from UCSF about volumetric studies to internet guides for image recognition models to see if I could replicate something similar. I quickly ran into scaling limitations so decided to try any other public, labelled brain MRI datasets for similar classification studies that I could find. I stopped at the point where I\'d need some sort of research partnership to scale up for more data, but did lay the groundwork for something that could be expanded and tuned.',
+  description: 'In an effort to learn more about AI, I thought I\'d try putting together a deep learning model that could diagnose Alzheimer\'s from 3D brain MRI scans. The models themselves are fairly simple, but I\'m most proud of the pipeline I built to feed them data. This involved loading sample MRI scans from public sources (including a single MRI of my own brain) and normalizing + processing them so that they could feed into tensorflow (with quality checks along the way). At the time, I couldn\'t find any guides on training models against 3D MRI data, so adapted what I learned from UCSF about volumetric studies to internet guides for 2D image recognition models to see if I could get something working. Preliminary results were far better than the average human doctor, but my training data scale felt too low, so I decided to pull in any other public, labelled brain MRI datasets from similar classification studies that I could find. I stopped at the point where I\'d need some sort of research partnership to scale up for more data, but did lay the groundwork for something that could be expanded and tuned.',
   bullets: [
     'Convolutional neural nets',
-    'Leveraged a public datasets',
     'Complete data pipeline from raw MRI exports',
+    'Leveraged public datasets',
     'Voxels',
   ],
 };
