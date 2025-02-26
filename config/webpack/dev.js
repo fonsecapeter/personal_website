@@ -1,6 +1,5 @@
 // development config
 const { merge } = require('webpack-merge');
-// const webpack = require('webpack');
 const commonConfig = require('./common');
 
 module.exports = merge(commonConfig, {
@@ -11,6 +10,6 @@ module.exports = merge(commonConfig, {
       directory: '/app/dist',
     },
     compress: true,
-    port: 8080,
+    port: 8000,
   },
 });

@@ -5,7 +5,7 @@ import main100 from '../../../assets/img/portfolio/ttam_hap/main/100.png';
 import main25 from '../../../assets/img/portfolio/ttam_hap/main/25.png';
 
 
-const HAP_LAB_VALUES: Project = {
+const TTAM_HAP_LAB_VALUES: Project = {
   id: 'hap-lab-values',
   name: 'Health Action Plan / Lab Results',
   links: [
@@ -39,4 +39,4 @@ const HAP_LAB_VALUES: Project = {
   ],
 };
 
-export default HAP_LAB_VALUES;
+export default TTAM_HAP_LAB_VALUES;

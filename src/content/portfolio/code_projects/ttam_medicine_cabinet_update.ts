@@ -5,7 +5,7 @@ import main100 from '../../../assets/img/portfolio/ttam_medcab/main/100.png';
 import main25 from '../../../assets/img/portfolio/ttam_medcab/main/25.png';
 
 
-const MEDICINE_CABINET_UPDATE: Project = {
+const TTAM_MEDICINE_CABINET_UPDATE: Project = {
   id: 'medicine-cabinet-update',
   name: 'Medicine Cabinet Update',
   links: [
@@ -34,4 +34,4 @@ const MEDICINE_CABINET_UPDATE: Project = {
   ],
 };
 
-export default MEDICINE_CABINET_UPDATE;
+export default TTAM_MEDICINE_CABINET_UPDATE;

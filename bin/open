@@ -2,4 +2,4 @@
 # Open in browser 🦊
 set -eu -o pipefail
 
-open http://0.0.0.0:8080/
+open http://0.0.0.0:8000/

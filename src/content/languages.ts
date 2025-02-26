@@ -21,12 +21,7 @@ export const LANGUAGES = [
   {
     name: 'Python',
     icon: python,
-    frameworks: [
-      {
-        link: 'https://www.djangoproject.com/',
-        name: 'Django',
-      },
-    ],
+    frameworks: [],
   },
   {
     name: 'JavaScript',
@@ -45,30 +40,16 @@ export const LANGUAGES = [
   {
     name: 'HTML / CSS',
     icon: html,
-    frameworks: [
-      {
-        name: 'Sass',
-        link: 'http://sass-lang.com/',
-      },
-    ],
-  },
-  {
-    name: 'Ruby',
-    icon: ruby,
-    frameworks: [
-      {
-        link: 'http://rubyonrails.org/',
-        name: 'Rails',
-      },
-      {
-        link: 'http://rspec.info/',
-        name: 'RSpec',
-      },
-    ],
+    frameworks: [],
   },
   {
     name: 'Java',
     icon: java,
+    frameworks: [],
+  },
+  {
+    name: 'Ruby',
+    icon: ruby,
     frameworks: [],
   },
   {
@@ -77,7 +58,7 @@ export const LANGUAGES = [
     frameworks: [],
   },
   {
-    name: 'Shell / DevOps',
+    name: 'System / DevOps',
     icon: bash,
     frameworks: [
       {
@@ -95,6 +76,10 @@ export const LANGUAGES = [
       {
         link: 'https://www.jenkins.io/',
         name: 'Jenkins',
+      },
+      {
+        link: 'https://circleci.com/',
+        name: 'circleci',
       },
     ],
   },

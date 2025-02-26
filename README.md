@@ -21,5 +21,5 @@ Requires [docker](https://www.docker.com/community-edition)
 
 - `bin/build`
 - `bin/logs`
-- Open `http://localhost:8080`
+- Open `http://localhost:8000`
 - See other helpful commands at `bin/list`
