@@ -12,7 +12,7 @@ import HEADPHONE_STAND from './art_projects/headphone_stand';
 import HOTEL_HALLWAY from './art_projects/hotel_hallway';
 import INTO_THE_CITY from './art_projects/into_the_city';
 import JEWELRY_BOX from './art_projects/jewelry_box';
-import MEU_BEM from './art_projects/meu_bem';
+import MARRAKESH from './art_projects/marrakesh';
 import MY_BRAIN from './art_projects/my_brain';
 import MY_MOTORCYCLE from './art_projects/my_motorcycle';
 import NOD_TO_VIRGIL from './art_projects/nod_to_virgil';
@@ -58,7 +58,7 @@ const ART: Project[] = [
   TABLECLOTH,
   JEWELRY_BOX,
   ARTISTS_IN_RESIDENCE,
-  MEU_BEM,
+  MARRAKESH,
   HEADPHONE_STAND,
   SEBASTOPOL,
   STEP_STOOL,
