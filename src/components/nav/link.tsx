@@ -4,24 +4,16 @@ import { Link } from 'react-router-dom';
 
 interface NavLinkProps {
   readonly name: string;
+  readonly to: string;
   readonly active: boolean;
 }
-
-const slugify = (words: string): string => (
-  words
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/[\s_-]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-);
 
 
 const capitalize = (word: string): string => (
   word.charAt(0).toUpperCase() + word.slice(1)
 );
 
-const NavLink = ({ name, active }: NavLinkProps) => {
+const NavLink = ({ name, to, active }: NavLinkProps) => {
   const text = capitalize(name);
   if (active) {
     return (
@@ -33,7 +25,8 @@ const NavLink = ({ name, active }: NavLinkProps) => {
   return (
     <Link
       className="nav-link"
-      to={`/${slugify(name)}`}
+      to={to}
+      target={to.startsWith('http') ? '_blank' : undefined}
     >
       {text}
     </Link>

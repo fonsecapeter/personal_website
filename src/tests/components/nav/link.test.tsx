@@ -12,6 +12,7 @@ describe('NavLink', () => {
           <MemoryRouter>
             <NavLink
               name='Test'
+              to='/test'
               active={false}
             />
           </MemoryRouter>
@@ -23,11 +24,11 @@ describe('NavLink', () => {
       expect(screen.getByText('Test')).toBeInTheDocument();
     });
 
-    it('links to a route that matches the name', () => {
+    it('links to the given destination', () => {
       expect(screen.getByText('Test')).toHaveAttribute('href', '/test');
     });
 
-    it('has an active class', () => {
+    it('has an inactive class', () => {
       expect(screen.getByText('Test')).toHaveAttribute('class', 'nav-link');
     });
   });
@@ -39,6 +40,7 @@ describe('NavLink', () => {
           <MemoryRouter>
             <NavLink
               name='Test'
+              to='/test'
               active={true}
             />
           </MemoryRouter>
@@ -54,8 +56,37 @@ describe('NavLink', () => {
       expect(screen.getByText('Test')).not.toHaveAttribute('href');
     });
 
-    it('has an inactive class', () => {
+    it('has an active class', () => {
       expect(screen.getByText('Test')).toHaveAttribute('class', 'nav-link-active');
     });
+  });
+
+  describe('when given an absolute url', () => {
+    beforeEach(() => {
+      render(
+        <HelmetProvider>
+          <MemoryRouter>
+            <NavLink
+              name='Test'
+              to='https://example.com'
+              active={false}
+            />
+          </MemoryRouter>
+        </HelmetProvider>,
+      );
+    });
+
+    it('renders the name', () => {
+      expect(screen.getByText('Test')).toBeInTheDocument();
+    });
+
+    it('links to the given destination', () => {
+      expect(screen.getByText('Test')).toHaveAttribute('href', 'https://example.com');
+    });
+
+    it('opens in a new tab', () => {
+      expect(screen.getByText('Test')).toHaveAttribute('target', '_blank');
+    });
+
   });
 });
