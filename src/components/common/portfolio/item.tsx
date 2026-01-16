@@ -23,7 +23,7 @@ const PortfolioItem = ({ project, category, imagePreloaded = true }: CodeProps) 
         />
       ) : (
         <div className="portfolio-item-icon-image">
-          <ImagePlaceholder height={200} />
+          <ImagePlaceholder height={200} sharpBottom={true} />
         </div>
       )}
     </div>
