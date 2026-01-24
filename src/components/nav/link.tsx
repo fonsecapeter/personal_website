@@ -26,7 +26,6 @@ const NavLink = ({ name, to, active }: NavLinkProps) => {
     <Link
       className="nav-link"
       to={to}
-      target={to.startsWith('http') ? '_blank' : undefined}
     >
       {text}
     </Link>
