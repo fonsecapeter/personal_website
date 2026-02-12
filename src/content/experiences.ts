@@ -1,5 +1,6 @@
 import dna from '../assets/img/icons/experience/dna.png';
 import brain from '../assets/img/icons/experience/brain.png';
+import meta from '../assets/img/icons/experience/meta.png';
 import microscope from '../assets/img/icons/experience/microscope.png';
 import stethoscope from '../assets/img/icons/experience/stethoscope.png';
 import tube from '../assets/img/icons/experience/tube.png';
@@ -19,10 +20,25 @@ export interface Experience {
 export const EXPERIENCES = {
   workExperiences: [
     {
+      title: 'Software Engineer',
+      icon: meta,
+      date: '2025-Present',
+      link: 'https://www.meta.com',
+      org: 'Meta',
+      bullets: [
+        'Led notification experiments promoting parental supervision features, driving statistically significant increases in usage, time-spent, and topline DAU',
+        'Diagnosed and resolved cross-team race condition in notification delivery system by implementing a distributed locking mechanism, eliminating duplicate notifications across millions of weekly sends',
+        'Owned client-side parental content pre-approval feature through international launch, achieving strong opt -in rates and measurable engagement gains',
+        'Increased team\'s mobile test coverage from minimal to comprehensive by developing AI-driven, quality-focused testing workflow, which I used to mentor engineers on the team',
+        'Redesigned parental screentime tracking algorithm, eliminating timezone / DST bugs and improving calculation accuracy.Overhauled observability dashboarding, leading to proactive event stream reconnection implementation',
+      ],
+    },
+
+    {
       title: 'Sr. Software Engineer',
       icon: dna,
-      date: '2019-Present',
-      link: 'https://www.23andme.com/',
+      date: '2019-2024',
+      link: 'https://www.23andme.com',
       org: '23andMe',
       bullets: [
         'Built high-visibility features across our product used by millions of customers, supporting rapid growth of the company',
@@ -36,7 +52,7 @@ export const EXPERIENCES = {
       title: 'Software Engineer',
       icon: dna,
       date: '2016-2019',
-      link: 'https://www.23andme.com/',
+      link: 'https://www.23andme.com',
       org: '23andMe',
       bullets: [
         'Hired, mentored and led a team of five engineers across three concurrent projects, fostering growth of our talent pool',
@@ -49,7 +65,7 @@ export const EXPERIENCES = {
       title: 'Clinical Research Coordinator',
       icon: brain,
       date: '2014-2016',
-      link: 'http://memory.ucsf.edu/',
+      link: 'http://memory.ucsf.edu',
       org: 'UCSF Memory and Aging Center',
       primary: 'Primary Study: Frontotemporal Dementia: Genes, Images and Emotions',
       bullets: [
@@ -96,7 +112,7 @@ export const EXPERIENCES = {
       title: 'Technician / Designer',
       icon: tube,
       date: '2010-2012 Summers',
-      link: 'http://www.vintage47amps.com/',
+      link: 'http://www.vintage47amps.com',
       org: 'Vintage 47 Amplifiers',
       bullets: [
         'Hand-made complete vacuum-tube guitar amplifiers from schematics',
@@ -110,7 +126,7 @@ export const EXPERIENCES = {
       title: 'App Academy',
       icon: aa,
       date: 'May-July 2016',
-      link: 'https://www.appacademy.io/',
+      link: 'https://www.appacademy.io',
       org: 'a/A San Francisco',
       primary: 'Industry-focused programming course',
       bullets: [],
@@ -120,7 +136,7 @@ export const EXPERIENCES = {
       title: 'Bachelor of Science in Biology',
       icon: ucsc,
       date: '2010-2014',
-      link: 'https://www.ucsc.edu/',
+      link: 'https://www.ucsc.edu',
       org: 'University of California, Santa Cruz',
       primary: 'Minor in Chemistry',
       bullets: [],

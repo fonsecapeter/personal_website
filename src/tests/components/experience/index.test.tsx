@@ -25,7 +25,7 @@ describe('Experience', () => {
   });
 
   it('lists job history', () => {
-    expect(screen.getByText('Software Engineer')).toBeInTheDocument();
+    expect(screen.getByText('Clinical Research Coordinator')).toBeInTheDocument();
     expect(screen.getByText('Technician / Designer')).toBeInTheDocument();
   });
 

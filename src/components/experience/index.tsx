@@ -33,7 +33,7 @@ export const Experience = () =>
       {EXPERIENCES.workExperiences.map(experienceItem => (
         <ExperienceItem
           experience={experienceItem}
-          key={experienceItem.title}
+          key={`${experienceItem.org}:${experienceItem.title}`}
         />
       ))}
     </div>
